@@ -1,0 +1,50 @@
+# ============================================================
+# MedRAG DDXPlus — .gitignore
+# ============================================================
+
+# 敏感文件（包含 API Key，绝对不能上传）
+authentication.py
+.env
+
+# 数据集（需要用户自行准备）
+dataset/df/
+dataset/ddxplus_raw/
+dataset/*.csv
+dataset/*.xlsx
+
+# Embedding 缓存（避免上传几十 MB 的 .npy）
+dataset/document_embeddings_*
+*.npy
+
+# 本地模型缓存
+models/
+
+# KG Embedding 缓存
+Embeddings_saved/
+
+# Python 字节码
+__pycache__/
+__pycache__/**/*
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+
+# 备份文件夹（含旧版 authentication.py，不应上传）
+备份原文件/
+第二次备份原文件/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# 输出结果（每次运行都会生成）
+test_results_*.csv
