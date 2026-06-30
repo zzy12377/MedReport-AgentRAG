@@ -46,5 +46,11 @@ venv/
 .venv/
 env/
 
+# 外部数据集（大文件，用户自行准备）
+external_datasets/
+
+# 向量库（构建产物，用户自行构建）
+vector_db/
+
 # 输出结果（每次运行都会生成）
 test_results_*.csv

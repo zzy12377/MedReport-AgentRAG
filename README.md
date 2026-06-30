@@ -160,16 +160,171 @@ MedRAG-main/
 ├── requirements.txt            # Python 依赖
 ├── .gitignore                  # Git 忽略规则
 ├── LICENCE                     # 许可证
+├── vector_store/               # 多向量库模块
+│   ├── adapters.py             #   数据源适配器（7 种格式 → 统一 record）
+│   ├── builder.py              #   FAISS 向量库构建
+│   ├── retriever.py            #   单库检索
+│   ├── registry.py             #   多库联合检索
+│   └── utils.py                #   Embedding 函数工厂
 ├── scripts/
-│   └── prepare_ddxplus_for_medrag.py  # DDXPlus 原始数据 → MedRAG 格式
+│   ├── prepare_ddxplus_for_medrag.py  # DDXPlus 原始数据 → MedRAG 格式
+│   ├── build_vector_stores.py         # 构建向量库
+│   ├── retrieve_multi_vector.py       # 多库检索
+│   └── inspect_vector_store.py        # 检查向量库
 ├── dataset/                    # 数据目录（不上传 GitHub）
 │   ├── df/train/               # 训练病例 JSON
 │   ├── df/test/                # 测试病例 JSON
 │   └── ...
+├── external_datasets/          # 外部数据集（不上传 GitHub）
+├── vector_db/                  # 向量库构建产物（不上传 GitHub）
 ├── images/                     # 论文插图
 ├── appendix/                   # 论文附录
 └── metrics/                    # 评估指标脚本
 ```
+
+## 多向量库设计 (Multi-Vector Store Design)
+
+### 为什么不把所有数据混成一个库？
+
+如果将所有临床文本（DDXPlus、PubMed 病例、诊断推理、KG 三元组）混入一个 FAISS 索引：
+
+- **语义混淆**：KG 三元组（如"Bronchitis has_symptomatology cough"）和临床叙事属于完全不同的语义空间
+- **维度不一致**：不同后端/模型产生的向量维度可能不同（远程 BAAI/bge-m3 1024 维 vs 本地 bge-small 384 维）
+- **无法按需选择**：某些诊断场景只需搜 DDXPlus 历史病例，不需要 PubMed 文章干扰
+- **增量更新困难**：加一个新数据源需要重建整个索引，而独立库只需重建新库
+
+### 支持的向量库
+
+| 库名 | 数据来源 | 用途 | 含诊断标签 |
+|------|----------|------|:---:|
+| `ddxplus_cases` | `dataset/df/train/*.json` | DDXPlus 症状-诊断相似病例检索 | ✅ |
+| `ddxplus_kg` | `dataset/knowledge graph of DDXPlus.xlsx` | 知识图谱三元组检索 | ❌ |
+| `pmc_patients` | `external_datasets/pmc_patients/` | PMC 临床病例摘要检索（167k+） | ❌ |
+| `medcase_reasoning` | `external_datasets/medcase_reasoning/` | 诊断推理案例检索（14k+） | ✅ |
+| `open_patients` | `external_datasets/open_patients/` | 多源患者描述检索（180k+） | ❌ |
+| `multicare_cases` | Zenodo (DOI: 10.5281/zenodo.10079369) | 多模态病例文本检索 | ❌ |
+| `synthea_records` | `external_datasets/synthea/output/` | 模拟患者记录检索 | ❌ |
+
+> **注意**：MultiCaRe 临床文本托管在 Zenodo，Synthea 需要 JDK 运行生成器。这两种数据需要额外步骤才能用于构建向量库。
+
+### 下载外部数据集
+
+外部数据集**不随仓库上传**，需要自行下载并放入 `external_datasets/`：
+
+```bash
+external_datasets/
+├── pmc_patients/
+│   └── PMC-Patients.csv          # https://github.com/zhao-zw/PMC-Patients
+├── medcase_reasoning/
+│   └── medcasereasoning_core.csv # https://huggingface.co/datasets/MedCase/MedCase-Reasoning
+├── open_patients/
+│   └── Open-Patients.jsonl       # https://github.com/zhao-zw/Open-Patients
+├── multicare_repo/               # git clone + Zenodo 下载
+└── synthea/                      # git clone + ./run_synthea 生成
+```
+
+### 构建向量库
+
+```bash
+# 只构建 ddxplus_cases，100 条，强制覆盖，纯本地 embedding
+python scripts/build_vector_stores.py --sources ddxplus_cases --max-per-source 100 --force --local
+
+# 构建所有可用源（每个源最多 5000 条）
+python scripts/build_vector_stores.py --sources all --max-per-source 5000
+
+# 构建指定几个源
+python scripts/build_vector_stores.py --sources ddxplus_cases ddxplus_kg pmc_patients --max-per-source 1000 --batch-size 8
+```
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--sources` | 要构建的库名（可多个），`all` 表示全部 | 必填 |
+| `--max-per-source` | 每个源最大记录数 | 5000 |
+| `--batch-size` | 每批 embedding 文本数 | 8 |
+| `--force` | 强制覆盖已有索引 | 关闭 |
+| `--local` | 仅使用本地 sentence-transformers | 关闭 |
+
+构建产物：
+```
+vector_db/<source_name>/
+├── index.faiss     # FAISS 向量索引
+├── meta.jsonl      # 每行一条标准化 record JSON
+└── config.json     # source, dim, num_records, embedding_backend, model
+```
+
+### 检索
+
+```bash
+# 查询所有可用库
+python scripts/retrieve_multi_vector.py --query "70-year-old with cough, night sweats and chest pain" --top-k 10 --local
+
+# 只在指定库中检索
+python scripts/retrieve_multi_vector.py --query "fever and rash" --sources ddxplus_cases pmc_patients --top-k 10
+```
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--query` / `-q` | 查询文本 | 必填 |
+| `--sources` | 检索的库名（可多个） | 全部 |
+| `--top-k` | 最终返回结果数 | 10 |
+| `--top-k-per-source` | 每个库返回数 | 5 |
+| `--local` | 仅使用本地 embedding | 关闭 |
+| `--output` | 保存结果到 JSON 文件 | 无 |
+| `--verbose` | 打印完整字段 | 关闭 |
+
+### 检查向量库
+
+```bash
+python scripts/inspect_vector_store.py --source ddxplus_cases
+python scripts/inspect_vector_store.py --source pmc_patients --samples 10
+```
+
+### 多库检索 Python API
+
+```python
+from vector_store.registry import MultiVectorRetriever
+from vector_store.utils import create_embedding_fn, create_query_embedding_fn
+
+# 创建 embedding 函数
+embed_fn = create_embedding_fn(force_local=True)
+query_fn = create_query_embedding_fn(embed_fn)
+
+# 初始化检索器
+retriever = MultiVectorRetriever(base_dir="./vector_db")
+print("Available sources:", retriever.sources)
+
+# 联合检索
+results = retriever.search(
+    query="fever, cough, night sweats",
+    embedding_fn=query_fn,
+    sources=["ddxplus_cases", "pmc_patients"],
+    top_k_per_source=5,
+    final_top_k=10,
+)
+
+for r in results:
+    print(f"[{r['score']:.4f}] [{r['source']}] {r['title']}: {r['text'][:100]}...")
+```
+
+### 数据流
+
+```
+external_datasets/     adapters.py       builder.py        vector_db/
+┌───────────────┐    ┌──────────┐      ┌──────────┐      ┌──────────────┐
+│ PMC-Patients  │ -> │ adapter  │ ->   │  build   │ ->   │ index.faiss  │
+│ MedCase       │    │ per src  │      │  FAISS   │      │ meta.jsonl   │
+│ Open-Patients │    └──────────┘      │  store   │      │ config.json  │
+│ DDXPlus       │                      └──────────┘      └──────────────┘
+└───────────────┘                           │
+                                        embedding_fn
+                                            │
+                                  embedding_backend.py
+                                  (SiliconFlow / local)
+```
+
+### Embedding 一致性
+
+每个向量库的 `config.json` 记录了构建时使用的 embedding 后端和模型名。`embedding_backend.py` 的全局状态确保同一进程中 query embedding 和 document embedding 使用相同的模型和维度，避免 FAISS 维度不匹配错误。如果切换了 embedding 后端（如远程 API 失败切到本地），已缓存的向量库需要用 `--force` 重建。
 
 ## 许可证
 
