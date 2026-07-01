@@ -59,6 +59,18 @@ def main() -> int:
         return 1
 
     # 读取 config
+    required_files = ["index.faiss", "meta.jsonl", "config.json"]
+    missing_files = [
+        name for name in required_files
+        if not os.path.exists(os.path.join(store_dir, name))
+    ]
+    if missing_files:
+        print(f"[ERROR] 向量库目录不完整：{store_dir}")
+        print(f"[ERROR] 缺少文件：{', '.join(missing_files)}")
+        print("[INFO] 请重新构建，例如：")
+        print(f"  python scripts/build_vector_stores.py --sources {args.source} --force --local")
+        return 1
+
     config_path = os.path.join(store_dir, "config.json")
     if os.path.exists(config_path):
         with open(config_path, "r", encoding="utf-8") as f:

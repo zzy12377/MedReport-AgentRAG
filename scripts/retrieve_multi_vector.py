@@ -111,6 +111,9 @@ def main() -> int:
 
     args = parser.parse_args()
 
+    if args.sources and any(str(source).lower() == "all" for source in args.sources):
+        args.sources = None
+
     # 创建 embedding 函数
     print("[INFO] Loading embedding model...")
     try:

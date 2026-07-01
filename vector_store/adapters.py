@@ -88,6 +88,7 @@ def adapt_ddxplus_cases(
     test_dir: str = "./dataset/df/test",
     max_per_split: Optional[int] = None,
     max_rows: Optional[int] = None,
+    include_test: bool = False,
 ) -> List[dict]:
     """
     读取 dataset/df/train/ 和 dataset/df/test/ 下的 participant_*.json。
@@ -102,7 +103,11 @@ def adapt_ddxplus_cases(
     train_dir = os.path.normpath(train_dir)
     test_dir = os.path.normpath(test_dir)
 
-    for split_label, folder in [("train", train_dir), ("test", test_dir)]:
+    split_dirs = [("train", train_dir)]
+    if include_test:
+        split_dirs.append(("test", test_dir))
+
+    for split_label, folder in split_dirs:
         if not os.path.isdir(folder):
             print(f"[WARN] ddxplus_cases: 目录不存在 -> {folder}")
             continue
@@ -137,6 +142,8 @@ def adapt_ddxplus_cases(
 
             participant_no = case.get("Participant No.", os.path.basename(fpath))
             text = _clean_text(case.get("Text") or case.get("Symptoms") or "")
+            if split_label == "test":
+                text = re.sub(r"\n?Diagnosis:\s*.*$", "", text, flags=re.IGNORECASE | re.DOTALL).strip()
             diagnosis = str(case.get("Diagnosis") or case.get("Processed Diagnosis") or "").strip()
 
             record = {

@@ -45,6 +45,7 @@ _EMBEDDING_STATE: Dict[str, Any] = {
     "dim": None,
 }
 _LOCAL_MODEL_CACHE: Dict[str, Any] = {}
+_LAST_LOCAL_REASON: Optional[str] = None
 
 
 def _get_auth_value(name: str, default: Any) -> Any:
@@ -129,6 +130,27 @@ def get_local_cache_dir() -> str:
     return cache_dir
 
 
+def _get_cached_model_path(model_name: str, cache_dir: str) -> Optional[str]:
+    cache_name = "models--" + str(model_name).replace("/", "--")
+    snapshots_dir = os.path.join(cache_dir, cache_name, "snapshots")
+    if not os.path.isdir(snapshots_dir):
+        return None
+
+    candidates = []
+    for entry in os.listdir(snapshots_dir):
+        snapshot_path = os.path.join(snapshots_dir, entry)
+        if not os.path.isdir(snapshot_path):
+            continue
+        if os.path.exists(os.path.join(snapshot_path, "config.json")):
+            candidates.append(snapshot_path)
+
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda path: os.path.getmtime(path), reverse=True)
+    return candidates[0]
+
+
 def _get_max_memory_gb() -> float:
     try:
         return float(_get_auth_value("local_embedding_max_memory_gb", DEFAULT_MAX_MEMORY_GB))
@@ -207,16 +229,22 @@ def _load_local_sentence_transformer(model_name: str):
 
     cache_dir = get_local_cache_dir()
     device = _get_device()
+    cached_model_path = _get_cached_model_path(model_name, cache_dir)
+    model_name_or_path = cached_model_path or model_name
+    local_files_only = cached_model_path is not None
 
     print(f"[INFO] Loading local embedding model: {model_name}")
     print(f"[INFO] Local model cache dir: {cache_dir}")
     print(f"[INFO] Local embedding device: {device}, batch_size={_get_batch_size()}")
+    if cached_model_path:
+        print(f"[INFO] Using cached local model snapshot: {cached_model_path}")
     print("[INFO] 如果本地缓存不存在，sentence-transformers 会自动下载模型。")
 
     model = SentenceTransformer(
-        model_name,
+        model_name_or_path,
         cache_folder=cache_dir,
         device=device,
+        local_files_only=local_files_only,
     )
     _LOCAL_MODEL_CACHE[model_name] = model
     return model
@@ -235,7 +263,10 @@ def local_sentence_transformer_embeddings(texts: List[str], reason: str = "remot
     clean_texts = [str(t or "empty medical text") for t in texts]
     last_error: Optional[BaseException] = None
 
-    print(f"[WARN] Switch to local embedding because: {reason}")
+    global _LAST_LOCAL_REASON
+    if reason != _LAST_LOCAL_REASON:
+        print(f"[WARN] Switch to local embedding because: {reason}")
+        _LAST_LOCAL_REASON = reason
 
     for model_name in get_local_embedding_models():
         if not _is_model_within_memory_budget(model_name):
