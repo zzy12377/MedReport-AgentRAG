@@ -32,6 +32,7 @@ from engines.kg.kg_extractor import DDXPlusKGRetriever
 from engines.llm.llm_gateway import LLMGateway, extract_prediction
 from engines.ner.medical_ner import entities_to_query_text, extract_medical_entities
 from engines.retrieval.faiss_retriever import FaissCaseRetriever
+from engines.retrieval.multi_source_retriever import MultiSourceRetriever, normalize_vector_sources
 
 
 SYSTEM_PROMPT = (
@@ -48,14 +49,24 @@ def run_b2(
     kg_top_k: int = 10,
     mock: bool = True,
     output_dir: Optional[str] = None,
-    retriever: Optional[FaissCaseRetriever] = None,
+    retriever: Optional[Any] = None,
     kg_retriever: Optional[DDXPlusKGRetriever] = None,
+    vector_sources: Optional[list[str]] = None,
+    top_k_per_source: Optional[int] = None,
     mode: str = "B2",
 ) -> Dict[str, Any]:
     entities = extract_medical_entities(case_text)
     query_text = entities_to_query_text(entities) or case_text
     active_retriever = retriever or FaissCaseRetriever(top_k=top_k, force_local=True)
-    retrieved_cases = active_retriever.retrieve_similar_cases(query_text, top_k=top_k)
+    if isinstance(active_retriever, MultiSourceRetriever):
+        retrieved_cases = active_retriever.retrieve(
+            query_text,
+            sources=vector_sources,
+            top_k=top_k,
+            top_k_per_source=top_k_per_source,
+        )
+    else:
+        retrieved_cases = active_retriever.retrieve_similar_cases(query_text, top_k=top_k)
 
     active_kg = kg_retriever or DDXPlusKGRetriever()
     kg_evidence = active_kg.retrieve(query_text=case_text, entities=entities, top_k=kg_top_k)
@@ -86,6 +97,8 @@ def run_b2(
     )
     result["entities"] = entities
     result["llm_response"] = response
+    result["retrieval_mode"] = "multi_vector" if isinstance(retriever, MultiSourceRetriever) else "ddxplus_faiss"
+    result["retrieval_sources"] = normalize_vector_sources(vector_sources) or ["all"] if isinstance(retriever, MultiSourceRetriever) else ["ddxplus_cases"]
     result["status"] = "SUCCESS"
     if output_dir:
         result["output_files"] = save_result(result, output_dir)
@@ -117,13 +130,21 @@ def run_b2_batch(
     resume: bool = False,
     mock: bool = True,
     retries: int = 1,
+    vector_sources: Optional[list[str]] = None,
+    vector_base_dir: str = "./vector_db",
+    top_k_per_source: Optional[int] = None,
 ) -> Dict[str, Any]:
     payloads = load_case_payloads(test_dir, limit=limit)
     if not payloads:
         return {"total": 0, "success": 0, "failed": 0, "output": output}
 
     done = completed_case_ids(output) if resume else set()
-    retriever = FaissCaseRetriever(top_k=top_k, force_local=True)
+    retriever: Any
+    if vector_sources:
+        retriever = MultiSourceRetriever(base_dir=vector_base_dir, force_local=True)
+        print(f"[INFO] B2 multi-vector sources: {normalize_vector_sources(vector_sources) or 'all'}")
+    else:
+        retriever = FaissCaseRetriever(top_k=top_k, force_local=True)
     kg_retriever = DDXPlusKGRetriever()
     success = 0
     failed = 0
@@ -154,6 +175,8 @@ def run_b2_batch(
                     output_dir=None,
                     retriever=retriever,
                     kg_retriever=kg_retriever,
+                    vector_sources=vector_sources,
+                    top_k_per_source=top_k_per_source,
                     mode="B2_KG_RAG",
                 )
                 append_jsonl(output, row)
@@ -183,6 +206,14 @@ def main() -> int:
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--retries", type=int, default=1)
     parser.add_argument("--mock", action="store_true")
+    parser.add_argument(
+        "--vector-sources",
+        nargs="+",
+        default=None,
+        help="Optional vector_db sources for multi-source retrieval, e.g. ddxplus_cases ddxplus_kg or all.",
+    )
+    parser.add_argument("--vector-base-dir", default="./vector_db")
+    parser.add_argument("--top-k-per-source", type=int, default=None)
     parser.add_argument("--output", default="./storage/results/b2_kg_rag_results.jsonl")
     parser.add_argument("--output-dir", default="./storage/results")
     args = parser.parse_args()
@@ -198,6 +229,9 @@ def main() -> int:
             resume=args.resume,
             mock=args.mock,
             retries=args.retries,
+            vector_sources=args.vector_sources,
+            vector_base_dir=args.vector_base_dir,
+            top_k_per_source=args.top_k_per_source,
         )
         return 0
 
@@ -210,6 +244,9 @@ def main() -> int:
         kg_top_k=args.kg_top_k,
         mock=args.mock,
         output_dir=args.output_dir,
+        retriever=MultiSourceRetriever(base_dir=args.vector_base_dir, force_local=True) if args.vector_sources else None,
+        vector_sources=args.vector_sources,
+        top_k_per_source=args.top_k_per_source,
     )
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0

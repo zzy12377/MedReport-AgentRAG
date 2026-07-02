@@ -34,6 +34,7 @@ from baselines.common import (
 from engines.llm.llm_gateway import LLMGateway, extract_prediction
 from engines.ner.medical_ner import entities_to_query_text, extract_medical_entities
 from engines.retrieval.faiss_retriever import DATA_PREP_HINT, FaissCaseRetriever
+from engines.retrieval.multi_source_retriever import MultiSourceRetriever, normalize_vector_sources
 
 
 SYSTEM_PROMPT = (
@@ -63,7 +64,9 @@ def run_b1(
     top_k: int = 3,
     mock: bool = False,
     output_dir: Optional[str] = None,
-    retriever: Optional[FaissCaseRetriever] = None,
+    retriever: Optional[Any] = None,
+    vector_sources: Optional[list[str]] = None,
+    top_k_per_source: Optional[int] = None,
     mode: str = "B1",
 ) -> Dict[str, Any]:
     entities = extract_medical_entities(case_text)
@@ -72,7 +75,15 @@ def run_b1(
     retrieved_cases = []
     try:
         active_retriever = retriever or FaissCaseRetriever(top_k=top_k, force_local=True)
-        retrieved_cases = active_retriever.retrieve_similar_cases(query_text, top_k=top_k)
+        if isinstance(active_retriever, MultiSourceRetriever):
+            retrieved_cases = active_retriever.retrieve(
+                query_text,
+                sources=vector_sources,
+                top_k=top_k,
+                top_k_per_source=top_k_per_source,
+            )
+        else:
+            retrieved_cases = active_retriever.retrieve_similar_cases(query_text, top_k=top_k)
     except Exception as exc:
         print(f"[WARN] B1 检索不可用：{exc}")
         print(DATA_PREP_HINT)
@@ -93,6 +104,8 @@ def run_b1(
     )
     result["entities"] = entities
     result["llm_response"] = response
+    result["retrieval_mode"] = "multi_vector" if isinstance(retriever, MultiSourceRetriever) else "ddxplus_faiss"
+    result["retrieval_sources"] = normalize_vector_sources(vector_sources) or ["all"] if isinstance(retriever, MultiSourceRetriever) else ["ddxplus_cases"]
     result["status"] = "SUCCESS"
     if output_dir:
         result["output_files"] = save_result(result, output_dir)
@@ -123,13 +136,21 @@ def run_b1_batch(
     resume: bool = False,
     mock: bool = False,
     retries: int = 1,
+    vector_sources: Optional[list[str]] = None,
+    vector_base_dir: str = "./vector_db",
+    top_k_per_source: Optional[int] = None,
 ) -> Dict[str, Any]:
     payloads = load_case_payloads(test_dir, limit=limit)
     if not payloads:
         return {"total": 0, "success": 0, "failed": 0, "output": output}
 
     done = completed_case_ids(output) if resume else set()
-    retriever = FaissCaseRetriever(top_k=top_k, force_local=True)
+    retriever: Any
+    if vector_sources:
+        retriever = MultiSourceRetriever(base_dir=vector_base_dir, force_local=True)
+        print(f"[INFO] B1 multi-vector sources: {normalize_vector_sources(vector_sources) or 'all'}")
+    else:
+        retriever = FaissCaseRetriever(top_k=top_k, force_local=True)
     success = 0
     failed = 0
     skipped = 0
@@ -157,6 +178,8 @@ def run_b1_batch(
                     mock=mock,
                     output_dir=None,
                     retriever=retriever,
+                    vector_sources=vector_sources,
+                    top_k_per_source=top_k_per_source,
                     mode="B1_RAG",
                 )
                 append_jsonl(output, row)
@@ -185,6 +208,14 @@ def main() -> int:
     parser.add_argument("--resume", action="store_true", help="Skip completed case_id values in output JSONL.")
     parser.add_argument("--retries", type=int, default=1, help="Per-case retry count in batch mode.")
     parser.add_argument("--mock", action="store_true", help="Force mock LLM output.")
+    parser.add_argument(
+        "--vector-sources",
+        nargs="+",
+        default=None,
+        help="Optional vector_db sources for multi-source retrieval, e.g. ddxplus_cases ddxplus_kg or all.",
+    )
+    parser.add_argument("--vector-base-dir", default="./vector_db", help="Base directory for multi-source vector stores.")
+    parser.add_argument("--top-k-per-source", type=int, default=None, help="Per-source top-k for multi-source retrieval.")
     parser.add_argument("--output", default="./storage/results/b1_rag_results.jsonl", help="Batch JSONL output.")
     parser.add_argument("--output-dir", default="./storage/results", help="Single-case JSON/CSV output directory.")
     args = parser.parse_args()
@@ -199,6 +230,9 @@ def main() -> int:
             resume=args.resume,
             mock=args.mock,
             retries=args.retries,
+            vector_sources=args.vector_sources,
+            vector_base_dir=args.vector_base_dir,
+            top_k_per_source=args.top_k_per_source,
         )
         return 0
 
@@ -213,6 +247,9 @@ def main() -> int:
         top_k=args.top_k,
         mock=args.mock,
         output_dir=args.output_dir,
+        retriever=MultiSourceRetriever(base_dir=args.vector_base_dir, force_local=True) if args.vector_sources else None,
+        vector_sources=args.vector_sources,
+        top_k_per_source=args.top_k_per_source,
     )
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0

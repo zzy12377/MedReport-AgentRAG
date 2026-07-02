@@ -468,3 +468,44 @@ storage\metrics\*.csv
 这些运行产物已被 `.gitignore` 忽略，不建议提交到 GitHub。仓库只保留 `.gitkeep` 用于占位目录。
 
 不要提交真实 API Key。`authentication.py` 必须保持被 `.gitignore` 忽略。
+
+### 可选多数据集检索
+
+项目已经提供多数据集向量库适配器，包括 `ddxplus_cases`、`ddxplus_kg`、`pmc_patients`、`medcase_reasoning`、`open_patients`、`multicare_cases`、`synthea_records`。这些外部数据集不会自动随仓库下载；只有当对应原始文件放入 `external_datasets/` 并构建向量库后，才会被实际检索使用。
+
+当前 B1/B2 默认仍使用 DDXPlus 病例检索库，保证课程主线稳定：
+
+```bat
+python baselines\run_b1_rag.py --limit all --top-k 5 --mock --resume --output storage\results\b1_rag_results.jsonl
+```
+
+如果已经构建了 `vector_db/` 下的多源向量库，可以显式启用：
+
+```bat
+python baselines\run_b1_rag.py --text "fever cough night sweats" --mock --top-k 6 --top-k-per-source 3 --vector-sources all
+```
+
+也可以指定某几个源：
+
+```bat
+python baselines\run_b2_kg_rag.py --text "fever cough night sweats" --mock --top-k 6 --kg-top-k 5 --top-k-per-source 3 --vector-sources ddxplus_cases ddxplus_kg
+```
+
+构建多源向量库示例：
+
+```bat
+python scripts\build_vector_stores.py --sources ddxplus_cases ddxplus_kg --force --local
+```
+
+如果外部数据集尚未下载，对应 adapter 会输出清晰 warning 并跳过，不会影响 DDXPlus 主流程。
+
+### KG evidence 增强
+
+B2 的 KG evidence 现在支持：
+
+- 从 `dataset/knowledge graph of DDXPlus.xlsx` 全量读取 KG triples。
+- 如果存在 `vector_db/ddxplus_kg`，自动合并 KG 向量检索证据。
+- 为每条证据增加 `relation_category`，例如 `symptom`、`risk_factor`、`test_indicator`。
+- 为 top-k evidence 增加一跳 `neighbors` 子图证据。
+
+这部分不依赖多 Agent 深推理，属于 KG 检索证据增强。
