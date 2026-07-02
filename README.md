@@ -338,3 +338,133 @@ Copyright (c) 2024 Xuejiao Zhao. Contact: xuejiaozhao_snow@foxmail.com
 - [SNOWTEAM2023/MedRAG](https://github.com/SNOWTEAM2023/MedRAG) — 原始 RAG 框架
 - [SiliconFlow](https://siliconflow.cn) — LLM & Embedding API 服务
 - [sentence-transformers](https://www.sbert.net/) — 本地 Embedding 模型
+
+## 课程阶段验收说明：全量 DDXPlus RAG / KG-RAG
+
+本仓库在保留原有 `python main.py` 运行方式的基础上，新增了面向课程设计的模块化骨架与全量 DDXPlus 批量评估能力。当前重点完成的是：
+
+- `dataset/df/train` 全量构建 FAISS 病例检索库。
+- `dataset/knowledge graph of DDXPlus.xlsx` 全量读取并用于 KG evidence 检索。
+- `dataset/df/test` 全量批量运行 B1 / B2。
+- B1 RAG baseline 支持 `--limit all`、`--resume`、失败不中断、逐条追加 JSONL。
+- B2 KG-RAG baseline 复用 B1 FAISS 检索，并增加 KG evidence 与 Agent 骨架输出。
+- 新增非 LLM 检索评估脚本，支持快速计算 Recall@1 / Recall@3 / Recall@5。
+- `metrics/metrics_DDXPlus.py` 支持读取 JSON、JSONL、CSV 并输出汇总 CSV。
+
+### 环境切换
+
+如果从 Anaconda Prompt 的初始目录打开，请先切换环境和项目目录：
+
+```bat
+conda activate medrag
+cd /d D:\MedRAG-main
+```
+
+如果你的环境名称是 `merge`，则把第一行改成：
+
+```bat
+conda activate merge
+cd /d D:\MedRAG-main
+```
+
+### 数据准备
+
+如果缺少 `dataset/df/train` 或 `dataset/df/test`，请先运行：
+
+```bat
+python scripts\prepare_ddxplus_for_medrag.py
+```
+
+KG 文件应放在：
+
+```text
+dataset\knowledge graph of DDXPlus.xlsx
+```
+
+### 代码正确性验证
+
+静态编译检查：
+
+```bat
+python -m py_compile main.py main_MedRAG.py KG_Retrieve.py embedding_backend.py engines\retrieval\embedding_engine.py engines\retrieval\faiss_retriever.py baselines\run_b1_rag.py baselines\run_b2_kg_rag.py baselines\run_retrieval_eval.py metrics\metrics_DDXPlus.py
+```
+
+Smoke tests：
+
+```bat
+python tests\smoke_test_ner.py
+python tests\smoke_test_faiss.py
+python tests\smoke_test_baseline.py
+```
+
+### B1 全量 RAG baseline
+
+Mock 模式不调用真实 LLM，适合课程验收和流程验证：
+
+```bat
+python baselines\run_b1_rag.py --limit all --top-k 5 --mock --resume --output storage\results\b1_rag_results.jsonl
+```
+
+输出：
+
+```text
+storage\results\b1_rag_results.jsonl
+```
+
+### B2 全量 KG-RAG baseline
+
+```bat
+python baselines\run_b2_kg_rag.py --limit all --top-k 5 --kg-top-k 10 --mock --resume --output storage\results\b2_kg_rag_results.jsonl
+```
+
+输出：
+
+```text
+storage\results\b2_kg_rag_results.jsonl
+```
+
+### 非 LLM 检索评估
+
+该脚本不调用 LLM，只评估 ground truth 是否命中 top-k retrieved cases：
+
+```bat
+python baselines\run_retrieval_eval.py --limit all --top-k 5 --output storage\results\retrieval_eval_full.json --details-output storage\results\retrieval_eval_full_details.jsonl
+```
+
+已验证的全量 test 结果：
+
+```text
+total_cases = 300
+Recall@1 = 0.9567
+Recall@3 = 0.9833
+Recall@5 = 0.99
+```
+
+### Metrics 汇总
+
+```bat
+python metrics\metrics_DDXPlus.py --inputs storage\results\b1_rag_results.jsonl storage\results\b2_kg_rag_results.jsonl storage\results\retrieval_eval_full_details.jsonl --output storage\metrics\metrics_summary.csv
+```
+
+输出：
+
+```text
+storage\metrics\metrics_summary.csv
+```
+
+### 缓存与 Git 提交注意事项
+
+运行时会自动生成以下缓存和结果文件：
+
+```text
+storage\embeddings\ddxplus_cases.npy
+storage\embeddings\ddxplus_cases_metadata.jsonl
+storage\indexes\ddxplus_cases.faiss
+storage\indexes\ddxplus_cases_metadata.jsonl
+storage\results\*.jsonl
+storage\metrics\*.csv
+```
+
+这些运行产物已被 `.gitignore` 忽略，不建议提交到 GitHub。仓库只保留 `.gitkeep` 用于占位目录。
+
+不要提交真实 API Key。`authentication.py` 必须保持被 `.gitignore` 忽略。

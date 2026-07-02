@@ -54,3 +54,13 @@ vector_db/
 
 # 输出结果（每次运行都会生成）
 test_results_*.csv
+
+# Phase-2 runtime artifacts
+storage/embeddings/*
+storage/indexes/*
+storage/results/*
+storage/metrics/*
+!storage/embeddings/.gitkeep
+!storage/indexes/.gitkeep
+!storage/results/.gitkeep
+!storage/metrics/.gitkeep
