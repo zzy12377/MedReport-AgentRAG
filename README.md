@@ -1,392 +1,310 @@
-# MedRAG — DDXPlus 差分诊断辅助系统
+# MedReport AgentRAG
 
-基于检索增强生成（RAG）与知识图谱（KG）的 DDXPlus 医疗差分诊断决策支持系统。
+本项目在原 MedRAG / DDXPlus / KG-RAG / FAISS / SiliconFlow 基础上，扩展为课程设计要求的“多模态医疗报告智能解读与多 Agent 辅助诊断系统”。
 
-## 项目功能
+当前保留原有入口：
 
-- **病例检索（RAG）**：使用 FAISS 对训练集病例做语义检索，找到与当前患者最相似的病例，辅助 LLM 推理。
-- **知识图谱增强（KG）**：利用 DDXPlus 疾病知识图谱，从症状出发定位候选疾病和相关医学关系。
-- **LLM 诊断推理**：结合检索到的相似病例和知识图谱信息，由 LLM 生成结构化的诊断报告。
-- **自动回退机制**：当远程 Embedding API 不可用时，自动切换到本地 `sentence-transformers` 模型，保证流程不中断。
-
-## 环境安装
-
-```bash
-# 1. 克隆仓库
-git clone <your-repo-url>
-cd MedRAG-main
-
-# 2. 创建虚拟环境（推荐）
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Linux / macOS:
-source venv/bin/activate
-
-# 3. 安装依赖
-pip install -r requirements.txt
-```
-
-**主要依赖**：`openai`、`faiss-cpu`、`numpy`、`pandas`、`sentence-transformers`、`transformers`、`torch`、`networkx`、`scikit-learn`、`openpyxl`
-
-## 配置 API Key
-
-本项目使用**硅基流动（SiliconFlow）**作为 LLM 和 Embedding 的 API 后端。
-
-1. 将 `authentication.example.py` 复制为 `authentication.py`：
-   ```bash
-   # Windows
-   copy authentication.example.py authentication.py
-   # Linux / macOS
-   cp authentication.example.py authentication.py
-   ```
-
-2. 编辑 `authentication.py`，将 `api_key` 替换为你自己的硅基流动 API Key：
-   ```python
-   api_key = "sk-your-actual-api-key"
-   ```
-
-3. （可选）如需使用 Hugging Face 模型，可填入 `hf_token`。当前版本不使用 Hugging Face 推理 API，可留空。
-
-> ⚠️ **安全警告**：`authentication.py` 已被 `.gitignore` 忽略，**切勿**将包含真实 API Key 的 `authentication.py` 上传到公开仓库。
-
-## 数据准备
-
-数据集文件**不随仓库上传**，你需要自行准备 DDXPlus 原始数据。
-
-### 1. 下载 DDXPlus 数据集
-
-将以下文件放入 `dataset/ddxplus_raw/` 目录：
-
-```
-dataset/ddxplus_raw/
-├── release_train_patients.zip      # 训练集
-├── release_validate_patients.zip   # 验证集
-├── release_test_patients.zip       # 测试集
-├── release_evidences.json          # 证据定义
-├── release_conditions.json         # 疾病条件映射
-└── ...
-```
-
-### 2. 准备知识图谱文件
-
-将 DDXPlus 知识图谱 Excel 文件放入：
-```
-dataset/knowledge graph of DDXPlus.xlsx
-```
-
-### 3. 运行数据转换脚本
-
-```bash
-# 少量测试（默认 1000 条训练 / 300 条测试）
-python scripts/prepare_ddxplus_for_medrag.py
-
-# 全量生成
-python scripts/prepare_ddxplus_for_medrag.py --all
-
-# 自定义数量
-python scripts/prepare_ddxplus_for_medrag.py --max-train 200 --max-test 100
-```
-
-转换完成后会生成：
-```
-dataset/
-├── AI Data Set with Categories.csv    # 总标注 CSV
-├── df/
-│   ├── train/
-│   │   ├── participant_1.json         # 训练病例
-│   │   └── ...
-│   └── test/
-│       ├── participant_1.json         # 测试病例
-│       └── ...
-```
-
-## 运行
-
-```bash
+```bat
 python main.py
 ```
 
-首次运行时会：
-1. 调用 SiliconFlow Embedding API 为所有训练病例生成向量（约需几分钟）。
-2. 缓存向量到 `dataset/document_embeddings_*.npy`，下次运行直接加载。
-3. 对前 5 个测试病例逐一执行：检索 → KG 增强 → LLM 诊断。
-4. 结果保存为 `test_results_medrag_topk3_topn1_matchn5_cases5.csv`。
+同时新增文档规定的工程化入口：
 
-### 可调参数
-
-在 `main.py` 的 `main` 部分修改：
-
-```python
-run_medrag(
-    top_k=3,        # FAISS 检索的相似病例数
-    top_n=1,        # KG 候选类别数
-    match_n=5,      # KG 症状匹配数
-    max_cases=5,    # 运行的测试病例数（调大可以跑更多）
-)
+```bat
+uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
+python frontend\app_gradio.py
 ```
 
-## Embedding 回退机制
+## Anaconda 启动
 
-当 SiliconFlow Embedding API 调用失败时，系统会**自动回退**到本地 `sentence-transformers` 模型：
+如果从 Anaconda Prompt 的初始目录打开：
 
-| 优先级 | 模型 | 维度 | 说明 |
-|--------|------|------|------|
-| 1 | `BAAI/bge-small-en-v1.5` | 384 | 约 100MB，CPU 友好，默认首选 |
-| 2 | `sentence-transformers/all-MiniLM-L6-v2` | 384 | 更小兜底模型 |
-| 3 | `BAAI/bge-m3` | 1024 | 与远程模型同名，需要较多内存（~5GB） |
+```bat
+conda activate medrag
+D:
+cd D:\MedRAG-main
+```
 
-回退逻辑：
-- 远程 API 报错 → 自动下载本地模型到 `./models/embedding/`
-- 自动重建 document embeddings 和 KG embeddings
-- 可通过 `authentication.py` 配置本地模型参数：
+如果你的环境名是 `merge`，把第一行换成：
 
-```python
-local_embedding_model = "BAAI/bge-small-en-v1.5"   # 首选本地模型
-local_embedding_device = "cpu"                      # 默认 CPU，可改为 "cuda"
-local_embedding_batch_size = 16                     # 批处理大小
-local_embedding_max_memory_gb = 16.0                # 内存上限
+```bat
+conda activate merge
+D:
+cd D:\MedRAG-main
 ```
 
 ## 项目结构
 
-```
-MedRAG-main/
-├── main.py                     # 入口：数据检查 + 运行诊断流程
-├── main_MedRAG.py              # 核心：RAG 检索 + KG 增强 + LLM 诊断
-├── KG_Retrieve.py              # 知识图谱症状检索与类别推断
-├── embedding_backend.py        # Embedding 后端（远程 API / 本地回退）
-├── authentication.example.py   # 配置文件模板（需复制为 authentication.py）
-├── requirements.txt            # Python 依赖
-├── .gitignore                  # Git 忽略规则
-├── LICENCE                     # 许可证
-├── vector_store/               # 多向量库模块
-│   ├── adapters.py             #   数据源适配器（7 种格式 → 统一 record）
-│   ├── builder.py              #   FAISS 向量库构建
-│   ├── retriever.py            #   单库检索
-│   ├── registry.py             #   多库联合检索
-│   └── utils.py                #   Embedding 函数工厂
-├── scripts/
-│   ├── prepare_ddxplus_for_medrag.py  # DDXPlus 原始数据 → MedRAG 格式
-│   ├── build_vector_stores.py         # 构建向量库
-│   ├── retrieve_multi_vector.py       # 多库检索
-│   └── inspect_vector_store.py        # 检查向量库
-├── dataset/                    # 数据目录（不上传 GitHub）
-│   ├── df/train/               # 训练病例 JSON
-│   ├── df/test/                # 测试病例 JSON
-│   └── ...
-├── external_datasets/          # 外部数据集（不上传 GitHub）
-├── vector_db/                  # 向量库构建产物（不上传 GitHub）
-├── images/                     # 论文插图
-├── appendix/                   # 论文附录
-└── metrics/                    # 评估指标脚本
+核心保留结构：
+
+```text
+main.py
+main_MedRAG.py
+KG_Retrieve.py
+embedding_backend.py
+engines/
+baselines/
+metrics/
+scripts/
+vector_store/
 ```
 
-## 多向量库设计 (Multi-Vector Store Design)
+课程文档对齐结构：
 
-### 为什么不把所有数据混成一个库？
-
-如果将所有临床文本（DDXPlus、PubMed 病例、诊断推理、KG 三元组）混入一个 FAISS 索引：
-
-- **语义混淆**：KG 三元组（如"Bronchitis has_symptomatology cough"）和临床叙事属于完全不同的语义空间
-- **维度不一致**：不同后端/模型产生的向量维度可能不同（远程 BAAI/bge-m3 1024 维 vs 本地 bge-small 384 维）
-- **无法按需选择**：某些诊断场景只需搜 DDXPlus 历史病例，不需要 PubMed 文章干扰
-- **增量更新困难**：加一个新数据源需要重建整个索引，而独立库只需重建新库
-
-### 支持的向量库
-
-| 库名 | 数据来源 | 用途 | 含诊断标签 |
-|------|----------|------|:---:|
-| `ddxplus_cases` | `dataset/df/train/*.json` | DDXPlus 症状-诊断相似病例检索 | ✅ |
-| `ddxplus_kg` | `dataset/knowledge graph of DDXPlus.xlsx` | 知识图谱三元组检索 | ❌ |
-| `pmc_patients` | `external_datasets/pmc_patients/` | PMC 临床病例摘要检索（167k+） | ❌ |
-| `medcase_reasoning` | `external_datasets/medcase_reasoning/` | 诊断推理案例检索（14k+） | ✅ |
-| `open_patients` | `external_datasets/open_patients/` | 多源患者描述检索（180k+） | ❌ |
-| `multicare_cases` | Zenodo (DOI: 10.5281/zenodo.10079369) | 多模态病例文本检索 | ❌ |
-| `synthea_records` | `external_datasets/synthea/output/` | 模拟患者记录检索 | ❌ |
-
-> **注意**：MultiCaRe 临床文本托管在 Zenodo，Synthea 需要 JDK 运行生成器。这两种数据需要额外步骤才能用于构建向量库。
-
-### 下载外部数据集
-
-外部数据集**不随仓库上传**，需要自行下载并放入 `external_datasets/`：
-
-```bash
-external_datasets/
-├── pmc_patients/
-│   └── PMC-Patients.csv          # https://github.com/zhao-zw/PMC-Patients
-├── medcase_reasoning/
-│   └── medcasereasoning_core.csv # https://huggingface.co/datasets/MedCase/MedCase-Reasoning
-├── open_patients/
-│   └── Open-Patients.jsonl       # https://github.com/zhao-zw/Open-Patients
-├── multicare_repo/               # git clone + Zenodo 下载
-└── synthea/                      # git clone + ./run_synthea 生成
+```text
+backend/
+  app/
+    main.py
+    api/
+      router_diagnosis.py
+      router_upload.py
+      router_task.py
+      router_history.py
+      router_chat.py
+    schemas/
+      patient_case.py
+      diagnosis_result.py
+      task_status.py
+    services/
+      pipeline.py
+      task_service.py
+      ocr_service.py
+      report_service.py
+    core/
+      nlp/
+      retrieval/
+      kg/
+      agents/
+      llm/
+      ocr/
+frontend/
+  app_gradio.py
+data/
+  raw/
+  processed/
+  df/
+    train/
+    test/
+  kg/
+  embeddings_cache/
+  uploads/
+  reports/
+eval/
+  metrics.py
 ```
 
-### 构建向量库
+`backend/app/core/...` 是适配层，复用现有 `engines/`、`baselines/` 里的实现，不重复写两套算法。
 
-```bash
-# 只构建 ddxplus_cases，100 条，强制覆盖，纯本地 embedding
-python scripts/build_vector_stores.py --sources ddxplus_cases --max-per-source 100 --force --local
+## 数据放置
 
-# 构建所有可用源（每个源最多 5000 条）
-python scripts/build_vector_stores.py --sources all --max-per-source 5000
+旧路径继续支持：
 
-# 构建指定几个源
-python scripts/build_vector_stores.py --sources ddxplus_cases ddxplus_kg pmc_patients --max-per-source 1000 --batch-size 8
+```text
+dataset/df/train/
+dataset/df/test/
+dataset/knowledge graph of DDXPlus.xlsx
 ```
 
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| `--sources` | 要构建的库名（可多个），`all` 表示全部 | 必填 |
-| `--max-per-source` | 每个源最大记录数 | 5000 |
-| `--batch-size` | 每批 embedding 文本数 | 8 |
-| `--force` | 强制覆盖已有索引 | 关闭 |
-| `--local` | 仅使用本地 sentence-transformers | 关闭 |
+课程文档路径也支持：
 
-构建产物：
-```
-vector_db/<source_name>/
-├── index.faiss     # FAISS 向量索引
-├── meta.jsonl      # 每行一条标准化 record JSON
-└── config.json     # source, dim, num_records, embedding_backend, model
+```text
+data/df/train/
+data/df/test/
+data/kg/knowledge graph of DDXPlus.xlsx
 ```
 
-### 检索
-
-```bash
-# 查询所有可用库
-python scripts/retrieve_multi_vector.py --query "70-year-old with cough, night sweats and chest pain" --top-k 10 --local
-
-# 只在指定库中检索
-python scripts/retrieve_multi_vector.py --query "fever and rash" --sources ddxplus_cases pmc_patients --top-k 10
-```
-
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| `--query` / `-q` | 查询文本 | 必填 |
-| `--sources` | 检索的库名（可多个） | 全部 |
-| `--top-k` | 最终返回结果数 | 10 |
-| `--top-k-per-source` | 每个库返回数 | 5 |
-| `--local` | 仅使用本地 embedding | 关闭 |
-| `--output` | 保存结果到 JSON 文件 | 无 |
-| `--verbose` | 打印完整字段 | 关闭 |
-
-### 检查向量库
-
-```bash
-python scripts/inspect_vector_store.py --source ddxplus_cases
-python scripts/inspect_vector_store.py --source pmc_patients --samples 10
-```
-
-### 多库检索 Python API
-
-```python
-from vector_store.registry import MultiVectorRetriever
-from vector_store.utils import create_embedding_fn, create_query_embedding_fn
-
-# 创建 embedding 函数
-embed_fn = create_embedding_fn(force_local=True)
-query_fn = create_query_embedding_fn(embed_fn)
-
-# 初始化检索器
-retriever = MultiVectorRetriever(base_dir="./vector_db")
-print("Available sources:", retriever.sources)
-
-# 联合检索
-results = retriever.search(
-    query="fever, cough, night sweats",
-    embedding_fn=query_fn,
-    sources=["ddxplus_cases", "pmc_patients"],
-    top_k_per_source=5,
-    final_top_k=10,
-)
-
-for r in results:
-    print(f"[{r['score']:.4f}] [{r['source']}] {r['title']}: {r['text'][:100]}...")
-```
-
-### 数据流
-
-```
-external_datasets/     adapters.py       builder.py        vector_db/
-┌───────────────┐    ┌──────────┐      ┌──────────┐      ┌──────────────┐
-│ PMC-Patients  │ -> │ adapter  │ ->   │  build   │ ->   │ index.faiss  │
-│ MedCase       │    │ per src  │      │  FAISS   │      │ meta.jsonl   │
-│ Open-Patients │    └──────────┘      │  store   │      │ config.json  │
-│ DDXPlus       │                      └──────────┘      └──────────────┘
-└───────────────┘                           │
-                                        embedding_fn
-                                            │
-                                  embedding_backend.py
-                                  (SiliconFlow / local)
-```
-
-### Embedding 一致性
-
-每个向量库的 `config.json` 记录了构建时使用的 embedding 后端和模型名。`embedding_backend.py` 的全局状态确保同一进程中 query embedding 和 document embedding 使用相同的模型和维度，避免 FAISS 维度不匹配错误。如果切换了 embedding 后端（如远程 API 失败切到本地），已缓存的向量库需要用 `--force` 重建。
-
-## 许可证
-
-本项目代码基于 [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/) 许可。
-
-Copyright (c) 2024 Xuejiao Zhao. Contact: xuejiaozhao_snow@foxmail.com
-
-## 致谢
-
-- [DDXPlus](https://github.com/mila-iqia/ddxplus) — 合成医疗诊断数据集
-- [SNOWTEAM2023/MedRAG](https://github.com/SNOWTEAM2023/MedRAG) — 原始 RAG 框架
-- [SiliconFlow](https://siliconflow.cn) — LLM & Embedding API 服务
-- [sentence-transformers](https://www.sbert.net/) — 本地 Embedding 模型
-
-## 课程阶段验收说明：全量 DDXPlus RAG / KG-RAG
-
-本仓库在保留原有 `python main.py` 运行方式的基础上，新增了面向课程设计的模块化骨架与全量 DDXPlus 批量评估能力。当前重点完成的是：
-
-- `dataset/df/train` 全量构建 FAISS 病例检索库。
-- `dataset/knowledge graph of DDXPlus.xlsx` 全量读取并用于 KG evidence 检索。
-- `dataset/df/test` 全量批量运行 B1 / B2。
-- B1 RAG baseline 支持 `--limit all`、`--resume`、失败不中断、逐条追加 JSONL。
-- B2 KG-RAG baseline 复用 B1 FAISS 检索，并增加 KG evidence 与 Agent 骨架输出。
-- 新增非 LLM 检索评估脚本，支持快速计算 Recall@1 / Recall@3 / Recall@5。
-- `metrics/metrics_DDXPlus.py` 支持读取 JSON、JSONL、CSV 并输出汇总 CSV。
-
-### 环境切换
-
-如果从 Anaconda Prompt 的初始目录打开，请先切换环境和项目目录：
-
-```bat
-conda activate medrag
-cd /d D:\MedRAG-main
-```
-
-如果你的环境名称是 `merge`，则把第一行改成：
-
-```bat
-conda activate merge
-cd /d D:\MedRAG-main
-```
-
-### 数据准备
-
-如果缺少 `dataset/df/train` 或 `dataset/df/test`，请先运行：
+如果缺少 DDXPlus JSON，请先运行：
 
 ```bat
 python scripts\prepare_ddxplus_for_medrag.py
 ```
 
-KG 文件应放在：
-
-```text
-dataset\knowledge graph of DDXPlus.xlsx
-```
-
-### 代码正确性验证
-
-静态编译检查：
+或者使用文档别名：
 
 ```bat
-python -m py_compile main.py main_MedRAG.py KG_Retrieve.py embedding_backend.py engines\retrieval\embedding_engine.py engines\retrieval\faiss_retriever.py baselines\run_b1_rag.py baselines\run_b2_kg_rag.py baselines\run_retrieval_eval.py metrics\metrics_DDXPlus.py
+python scripts\prepare_ddxplus_for_runtime.py
+```
+
+## 后端接口
+
+启动后端：
+
+```bat
+conda activate medrag
+D:
+cd D:\MedRAG-main
+uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
+```
+
+打开：
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+健康检查：
+
+```bat
+curl http://127.0.0.1:8000/health
+```
+
+同步诊断：
+
+```bat
+curl -X POST http://127.0.0.1:8000/api/v1/diagnosis/text/sync ^
+-H "Content-Type: application/json" ^
+-d "{\"text\":\"患者男，56岁，血压150/95mmHg，LDL-C 4.2 mmol/L，GLU 7.1 mmol/L，ALT 68 U/L，自述近期乏力。\",\"top_k\":3,\"use_multi_agent\":true,\"vector_sources\":[\"all\"]}"
+```
+
+返回格式：
+
+```json
+{
+  "status": "done",
+  "report": {
+    "task_id": "...",
+    "overall_risk": "...",
+    "possible_diagnoses": [],
+    "retrieved_cases": [],
+    "kg_evidence": [],
+    "agent_opinions": [],
+    "critique": {},
+    "summary_markdown": "...",
+    "followup_questions": [],
+    "entities": [],
+    "safety_note": "..."
+  }
+}
+```
+
+异步诊断：
+
+```bat
+curl -X POST http://127.0.0.1:8000/api/v1/diagnosis/text ^
+-H "Content-Type: application/json" ^
+-d "{\"text\":\"患者女，49岁，胸口烧灼感，饭后反酸，平躺加重。\",\"top_k\":3,\"use_multi_agent\":true}"
+```
+
+查询任务：
+
+```bat
+curl http://127.0.0.1:8000/api/v1/tasks/你的task_id
+```
+
+查询报告：
+
+```bat
+curl http://127.0.0.1:8000/api/v1/diagnosis/你的task_id/report
+```
+
+上传报告：
+
+```bat
+curl -X POST http://127.0.0.1:8000/api/v1/reports/upload ^
+-F "file=@D:\MedRAG-main\data\raw\health_reports\sample.txt"
+```
+
+历史记录：
+
+```bat
+curl http://127.0.0.1:8000/api/v1/history
+```
+
+## 前端
+
+新开一个 Anaconda Prompt：
+
+```bat
+conda activate medrag
+D:
+cd D:\MedRAG-main
+python frontend\app_gradio.py
+```
+
+打开：
+
+```text
+http://127.0.0.1:7860
+```
+
+## Baseline
+
+B0 纯 LLM/mock：
+
+```bat
+python baselines\run_b0_direct.py --text "ALT 85.2 U/L GLU 7.2 mmol/L LDL-C 4.1 mmol/L 血压 150/95 mmHg" --mock
+```
+
+B1 RAG：
+
+```bat
+python baselines\run_b1_rag.py --text "ALT 85.2 U/L GLU 7.2 mmol/L LDL-C 4.1 mmol/L 血压 150/95 mmHg" --mock --top-k 3 --output-dir storage\results
+```
+
+B1 多向量库：
+
+```bat
+python baselines\run_b1_rag.py --text "18-year-old male with fever cough sore throat and night sweats" --mock --top-k 10 --top-k-per-source 2 --vector-sources all --output-dir storage\results
+```
+
+B1 全量批处理：
+
+```bat
+python baselines\run_b1_rag.py --limit all --top-k 5 --mock --resume --output storage\results\b1_rag_results.jsonl
+```
+
+B2 KG-RAG：
+
+```bat
+python baselines\run_b2_kg_rag.py --limit all --top-k 5 --kg-top-k 10 --mock --resume --output storage\results\b2_kg_rag_results.jsonl
+```
+
+非 LLM 检索评估：
+
+```bat
+python baselines\run_retrieval_eval.py --limit all --top-k 5 --output storage\results\retrieval_eval_full.json --details-output storage\results\retrieval_eval_full_details.jsonl
+```
+
+Metrics：
+
+```bat
+python metrics\metrics_DDXPlus.py --inputs storage\results\b1_rag_results.jsonl storage\results\b2_kg_rag_results.jsonl storage\results\retrieval_eval_full_details.jsonl --output storage\metrics\metrics_summary.csv
+```
+
+文档别名：
+
+```bat
+python eval\metrics.py --help
+```
+
+## 向量库
+
+构建 DDXPlus 病例 FAISS：
+
+```bat
+python scripts\build_case_embeddings.py
+```
+
+构建多数据源向量库：
+
+```bat
+python scripts\build_vector_stores.py --sources ddxplus_cases ddxplus_kg pmc_patients medcase_reasoning open_patients --max-per-source 5000 --batch-size 32 --force --local
+```
+
+跨库检索：
+
+```bat
+python scripts\retrieve_multi_vector.py --query "18-year-old male with fever cough sore throat and night sweats" --sources all --top-k 10 --top-k-per-source 2 --local
+```
+
+## 验证
+
+静态编译：
+
+```bat
+python -m py_compile main.py main_MedRAG.py KG_Retrieve.py embedding_backend.py
+python -m py_compile backend\app\main.py backend\app\services\pipeline.py backend\app\api\router_diagnosis.py
+python -m py_compile frontend\app_gradio.py scripts\build_case_embeddings.py scripts\run_api_test.py
 ```
 
 Smoke tests：
@@ -395,117 +313,58 @@ Smoke tests：
 python tests\smoke_test_ner.py
 python tests\smoke_test_faiss.py
 python tests\smoke_test_baseline.py
+python tests\smoke_test_multi_source.py
+python tests\smoke_test_kg_hybrid.py
 ```
 
-### B1 全量 RAG baseline
-
-Mock 模式不调用真实 LLM，适合课程验收和流程验证：
+API 测试需要先启动后端，然后运行：
 
 ```bat
-python baselines\run_b1_rag.py --limit all --top-k 5 --mock --resume --output storage\results\b1_rag_results.jsonl
+python scripts\run_api_test.py
 ```
 
-输出：
+## Git 安全
+
+不要提交：
 
 ```text
-storage\results\b1_rag_results.jsonl
+authentication.py
+.env
+dataset/
+data/df/
+data/kg/
+data/uploads/
+data/reports/
+external_datasets/
+vector_db/
+storage/results/
+storage/indexes/
+storage/embeddings/
+models/
 ```
 
-### B2 全量 KG-RAG baseline
+这些都是本地数据、缓存、运行结果或密钥。仓库只保留 `.gitkeep` 占位目录。
 
-```bat
-python baselines\run_b2_kg_rag.py --limit all --top-k 5 --kg-top-k 10 --mock --resume --output storage\results\b2_kg_rag_results.jsonl
-```
+## 当前状态
 
-输出：
+已完成：
 
-```text
-storage\results\b2_kg_rag_results.jsonl
-```
+- B0/B1/B2 baseline 骨架和全量 DDXPlus 批处理。
+- DDXPlus FAISS 病例检索。
+- DDXPlus KG 证据检索和可选 KG 向量检索。
+- 多向量库检索：DDXPlus cases、DDXPlus KG、PMC Patients、MedCase Reasoning、Open Patients。
+- `backend.app.main:app` FastAPI 入口。
+- `/api/v1/diagnosis/text/sync`、`/api/v1/diagnosis/text`、`/api/v1/tasks/{task_id}`、`/api/v1/reports/upload`、`/api/v1/history`。
+- `frontend/app_gradio.py` 前端入口。
 
-### 非 LLM 检索评估
+下一阶段：
 
-该脚本不调用 LLM，只评估 ground truth 是否命中 top-k retrieved cases：
+- 接入真实 PaddleOCR 和 PDF 解析。
+- 扩展中文体检知识图谱。
+- 深化多 Agent 专科推理和 Critique 规则。
+- Redis 替换内存任务缓存。
+- Dockerfile 和 docker-compose 一键启动。
 
-```bat
-python baselines\run_retrieval_eval.py --limit all --top-k 5 --output storage\results\retrieval_eval_full.json --details-output storage\results\retrieval_eval_full_details.jsonl
-```
+## License
 
-已验证的全量 test 结果：
-
-```text
-total_cases = 300
-Recall@1 = 0.9567
-Recall@3 = 0.9833
-Recall@5 = 0.99
-```
-
-### Metrics 汇总
-
-```bat
-python metrics\metrics_DDXPlus.py --inputs storage\results\b1_rag_results.jsonl storage\results\b2_kg_rag_results.jsonl storage\results\retrieval_eval_full_details.jsonl --output storage\metrics\metrics_summary.csv
-```
-
-输出：
-
-```text
-storage\metrics\metrics_summary.csv
-```
-
-### 缓存与 Git 提交注意事项
-
-运行时会自动生成以下缓存和结果文件：
-
-```text
-storage\embeddings\ddxplus_cases.npy
-storage\embeddings\ddxplus_cases_metadata.jsonl
-storage\indexes\ddxplus_cases.faiss
-storage\indexes\ddxplus_cases_metadata.jsonl
-storage\results\*.jsonl
-storage\metrics\*.csv
-```
-
-这些运行产物已被 `.gitignore` 忽略，不建议提交到 GitHub。仓库只保留 `.gitkeep` 用于占位目录。
-
-不要提交真实 API Key。`authentication.py` 必须保持被 `.gitignore` 忽略。
-
-### 可选多数据集检索
-
-项目已经提供多数据集向量库适配器，包括 `ddxplus_cases`、`ddxplus_kg`、`pmc_patients`、`medcase_reasoning`、`open_patients`、`multicare_cases`、`synthea_records`。这些外部数据集不会自动随仓库下载；只有当对应原始文件放入 `external_datasets/` 并构建向量库后，才会被实际检索使用。
-
-当前 B1/B2 默认仍使用 DDXPlus 病例检索库，保证课程主线稳定：
-
-```bat
-python baselines\run_b1_rag.py --limit all --top-k 5 --mock --resume --output storage\results\b1_rag_results.jsonl
-```
-
-如果已经构建了 `vector_db/` 下的多源向量库，可以显式启用：
-
-```bat
-python baselines\run_b1_rag.py --text "fever cough night sweats" --mock --top-k 6 --top-k-per-source 3 --vector-sources all
-```
-
-也可以指定某几个源：
-
-```bat
-python baselines\run_b2_kg_rag.py --text "fever cough night sweats" --mock --top-k 6 --kg-top-k 5 --top-k-per-source 3 --vector-sources ddxplus_cases ddxplus_kg
-```
-
-构建多源向量库示例：
-
-```bat
-python scripts\build_vector_stores.py --sources ddxplus_cases ddxplus_kg --force --local
-```
-
-如果外部数据集尚未下载，对应 adapter 会输出清晰 warning 并跳过，不会影响 DDXPlus 主流程。
-
-### KG evidence 增强
-
-B2 的 KG evidence 现在支持：
-
-- 从 `dataset/knowledge graph of DDXPlus.xlsx` 全量读取 KG triples。
-- 如果存在 `vector_db/ddxplus_kg`，自动合并 KG 向量检索证据。
-- 为每条证据增加 `relation_category`，例如 `symptom`、`risk_factor`、`test_indicator`。
-- 为 top-k evidence 增加一跳 `neighbors` 子图证据。
-
-这部分不依赖多 Agent 深推理，属于 KG 检索证据增强。
+本项目继承原 MedRAG 仓库许可和引用要求。原项目代码基于 CC BY-NC 4.0，数据集和外部模型请遵守各自许可。
