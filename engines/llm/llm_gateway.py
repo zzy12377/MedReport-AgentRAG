@@ -4,7 +4,15 @@
 from __future__ import annotations
 
 import re
+import os
 from typing import Optional
+
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+except Exception:
+    pass
 
 
 def mock_generate(prompt: str, mode: str = "B0") -> str:
@@ -36,9 +44,24 @@ class LLMGateway:
             return mock_generate(prompt, mode=mode)
 
         try:
-            from authentication import api_key, base_url, chat_model
             import openai
 
+            api_key = os.getenv("LLM_API_KEY", "")
+            base_url = os.getenv("LLM_BASE_URL", "")
+            chat_model = os.getenv("LLM_CHAT_MODEL", "")
+            if not api_key:
+                try:
+                    from authentication import api_key as auth_api_key
+                    from authentication import base_url as auth_base_url
+                    from authentication import chat_model as auth_chat_model
+
+                    api_key = auth_api_key
+                    base_url = auth_base_url
+                    chat_model = auth_chat_model
+                except Exception:
+                    api_key = ""
+                    base_url = ""
+                    chat_model = ""
             if not api_key or "your_" in str(api_key).lower():
                 return mock_generate(prompt, mode=mode)
             model_to_use = self.model or chat_model
@@ -65,4 +88,3 @@ def extract_prediction(text: str) -> str:
     if match:
         return match.group(1).strip()
     return cleaned[:120]
-

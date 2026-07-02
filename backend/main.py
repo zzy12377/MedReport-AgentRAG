@@ -1,23 +1,16 @@
 # -*- coding: utf-8 -*-
-"""FastAPI entrypoint.
+"""Legacy FastAPI entrypoint.
 
-FastAPI is optional in phase 1. Importing this module should not fail if the
-web stack is not installed.
+The course documents now use ``backend.app.main:app``. This file remains as a
+compatibility proxy so existing imports do not break.
 """
 
 from __future__ import annotations
 
 
 try:
-    from fastapi import FastAPI
-
-    app = FastAPI(title="MedReport AgentRAG", version="0.1.0")
-
-    @app.get("/health")
-    def health() -> dict:
-        return {"status": "ok", "phase": "baseline"}
+    from backend.app.main import app
 
 except Exception as exc:  # pragma: no cover - optional dependency path
     app = None
     FASTAPI_IMPORT_ERROR = str(exc)
-

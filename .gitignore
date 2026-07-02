@@ -6,6 +6,37 @@
 authentication.py
 .env
 
+# Local runtime data in the document-aligned project layout
+data/raw/**
+data/processed/**
+data/df/**
+data/kg/**
+data/embeddings_cache/**
+data/uploads/**
+data/reports/**
+!data/raw/
+!data/raw/.gitkeep
+!data/raw/ddxplus_raw/
+!data/raw/ddxplus_raw/.gitkeep
+!data/raw/health_reports/
+!data/raw/health_reports/.gitkeep
+!data/processed/
+!data/processed/.gitkeep
+!data/df/
+!data/df/.gitkeep
+!data/df/train/
+!data/df/train/.gitkeep
+!data/df/test/
+!data/df/test/.gitkeep
+!data/kg/
+!data/kg/.gitkeep
+!data/embeddings_cache/
+!data/embeddings_cache/.gitkeep
+!data/uploads/
+!data/uploads/.gitkeep
+!data/reports/
+!data/reports/.gitkeep
+
 # 数据集（需要用户自行准备）
 dataset/df/
 dataset/ddxplus_raw/
@@ -33,6 +64,7 @@ __pycache__/**/*
 
 # IDE
 .idea/
+.claude/
 
 # 备份文件夹（含旧版 authentication.py，不应上传）
 备份原文件/
