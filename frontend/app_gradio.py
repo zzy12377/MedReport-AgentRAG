@@ -5,7 +5,12 @@ from __future__ import annotations
 
 import time
 import os
+import sys
 from typing import Any, Dict
+
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 from frontend.components import chat_tab, history_tab, result_tab, upload_tab
 
