@@ -1,0 +1,46 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      DATA_TRAIN_DIR: /app/data/df/train
+      DATA_TEST_DIR: /app/data/df/test
+      DATA_KG_PATH: /app/data/kg/knowledge graph of DDXPlus.xlsx
+      VECTOR_BASE_DIR: /app/vector_db
+      UPLOAD_DIR: /app/data/uploads
+      REPORT_DIR: /app/data/reports
+      OCR_TEXT_DIR: /app/data/processed/ocr_text
+      CHINESE_KG_PATH: /app/resources/chinese_medical_kg.json
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./vector_db:/app/vector_db
+      - ./models:/app/models
+    depends_on:
+      - redis
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      MEDRAG_API_BASE: http://backend:8000/api/v1
+      GRADIO_SERVER_NAME: 0.0.0.0
+      GRADIO_SERVER_PORT: 7860
+    ports:
+      - "7860:7860"
+    depends_on:
+      - backend
+
+volumes:
+  redis-data:

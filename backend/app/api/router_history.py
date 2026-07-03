@@ -5,11 +5,11 @@ from __future__ import annotations
 
 from fastapi import APIRouter
 
-from backend.app.cache.memory_store import MemoryStore
+from backend.app.cache.store import get_store
 from backend.app.services.report_service import ReportService
 
 router = APIRouter()
-store = MemoryStore.get_instance()
+store = get_store()
 reports = ReportService()
 
 

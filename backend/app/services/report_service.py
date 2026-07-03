@@ -19,10 +19,18 @@ class ReportService:
         safe_id = "".join(ch if ch.isalnum() or ch in {"-", "_"} else "_" for ch in str(task_id))
         return os.path.join(self.report_dir, f"{safe_id}.json")
 
+    def markdown_path(self, task_id: str) -> str:
+        safe_id = "".join(ch if ch.isalnum() or ch in {"-", "_"} else "_" for ch in str(task_id))
+        return os.path.join(self.report_dir, f"{safe_id}.md")
+
     def save_report(self, task_id: str, report: Dict[str, Any]) -> str:
         path = self.report_path(task_id)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(report, f, ensure_ascii=False, indent=2)
+        markdown = str(report.get("summary_markdown") or "").strip()
+        if markdown:
+            with open(self.markdown_path(task_id), "w", encoding="utf-8") as f:
+                f.write(markdown)
         return path
 
     def load_report(self, task_id: str) -> Optional[Dict[str, Any]]:

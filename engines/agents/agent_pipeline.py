@@ -10,13 +10,17 @@ from engines.agents.specialist_agent import SpecialistAgent
 from engines.agents.summary_agent import summarize_agent_outputs
 
 
-def run_agent_pipeline(entities: Iterable[Dict[str, object]], retrieved_cases: List[Dict[str, object]] | None = None) -> Dict[str, object]:
+def run_agent_pipeline(
+    entities: Iterable[Dict[str, object]],
+    retrieved_cases: List[Dict[str, object]] | None = None,
+    kg_evidence: List[Dict[str, object]] | None = None,
+) -> Dict[str, object]:
     entity_list = list(entities)
     outputs = [
-        SpecialistAgent("cardiovascular").analyze(entity_list, retrieved_cases),
-        SpecialistAgent("liver").analyze(entity_list, retrieved_cases),
-        SpecialistAgent("endocrine").analyze(entity_list, retrieved_cases),
+        SpecialistAgent("cardiovascular").analyze(entity_list, retrieved_cases, kg_evidence),
+        SpecialistAgent("liver").analyze(entity_list, retrieved_cases, kg_evidence),
+        SpecialistAgent("endocrine").analyze(entity_list, retrieved_cases, kg_evidence),
+        SpecialistAgent("hematology").analyze(entity_list, retrieved_cases, kg_evidence),
     ]
     critique = critique_agent_outputs(outputs)
     return summarize_agent_outputs(outputs, critique)
-

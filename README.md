@@ -227,6 +227,39 @@ python frontend\app_gradio.py
 http://127.0.0.1:7860
 ```
 
+前端包含：
+
+```text
+Text Diagnosis  文本诊断
+Upload          文件上传 + OCR/PDF 文本提取 + 异步分析
+Report          按 Task ID 加载报告
+Chat            基于已生成报告追问
+History         历史报告列表
+```
+
+## Docker / Redis
+
+Docker 一键启动后端、前端和 Redis：
+
+```bat
+docker compose up --build
+```
+
+打开：
+
+```text
+后端 API: http://127.0.0.1:8000/docs
+前端界面: http://127.0.0.1:7860
+```
+
+如果不使用 Docker，也可以只在本地启 Redis，然后设置：
+
+```bat
+set REDIS_URL=redis://127.0.0.1:6379/0
+```
+
+不设置 `REDIS_URL` 时，系统自动使用内存任务缓存。
+
 ## Baseline
 
 B0 纯 LLM/mock：
@@ -329,10 +362,15 @@ Smoke tests：
 
 ```bat
 python tests\smoke_test_ner.py
+python tests\smoke_test_ner_noise.py
 python tests\smoke_test_faiss.py
 python tests\smoke_test_baseline.py
 python tests\smoke_test_multi_source.py
 python tests\smoke_test_kg_hybrid.py
+python tests\smoke_test_chinese_kg.py
+python tests\smoke_test_ocr_service.py
+python tests\smoke_test_frontend_import.py
+python tests\smoke_test_upload_contract.py
 ```
 
 API 测试需要先启动后端，然后运行：
@@ -370,18 +408,23 @@ models/
 - B0/B1/B2 baseline 骨架和全量 DDXPlus 批处理。
 - DDXPlus FAISS 病例检索。
 - DDXPlus KG 证据检索和可选 KG 向量检索。
+- 中文体检领域 KG：心血管、肝脏、内分泌/代谢、血常规、炎症风险。
 - 多向量库检索：DDXPlus cases、DDXPlus KG、PMC Patients、MedCase Reasoning、Open Patients。
+- NER 指标覆盖扩展、脏文本容错和 Precision/Recall/F1 评估。
+- OCR/PDF 服务封装：文本 PDF 解析、图片 OCR 可选、扫描 PDF 可选渲染 OCR。
+- 多 Agent 专科分析、Critique 和报告汇总规则增强。
 - `backend.app.main:app` FastAPI 入口。
-- `/api/v1/diagnosis/text/sync`、`/api/v1/diagnosis/text`、`/api/v1/tasks/{task_id}`、`/api/v1/reports/upload`、`/api/v1/history`。
-- `frontend/app_gradio.py` 前端入口。
+- `/api/v1/diagnosis/text/sync`、`/api/v1/diagnosis/text`、`/api/v1/tasks/{task_id}`、`/api/v1/reports/upload`、`/api/v1/history`、`/api/v1/chat`。
+- Redis 可选任务缓存，未配置时自动回退内存缓存。
+- `frontend/app_gradio.py` 多标签页前端入口。
+- Dockerfile 和 docker-compose 一键启动配置。
 
 下一阶段：
 
-- 接入真实 PaddleOCR 和 PDF 解析。
-- 扩展中文体检知识图谱。
-- 深化多 Agent 专科推理和 Critique 规则。
-- Redis 替换内存任务缓存。
-- Dockerfile 和 docker-compose 一键启动。
+- 准备真实脱敏体检报告样例，扩大 OCR 和 NER 评估集。
+- 如果演示必须识别扫描 PDF/图片，安装并测试 PaddleOCR。
+- 根据老师反馈继续扩充中文 KG 节点和专科规则。
+- 补充答辩 PPT、消融实验表和演示脚本。
 
 ## License
 

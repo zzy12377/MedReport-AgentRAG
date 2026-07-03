@@ -60,14 +60,16 @@ class DiagnosisPipeline:
         )
 
         if use_multi_agent:
-            agent_summary = run_agent_pipeline(entities, retrieved_cases)
+            agent_summary = run_agent_pipeline(entities, retrieved_cases, kg_evidence)
             agent_outputs = list(agent_summary.get("agent_outputs", []))
             critique = dict(agent_summary.get("critique", {}))
             overall_risk = str(agent_summary.get("overall_risk", "unknown"))
+            recommendations = list(agent_summary.get("recommendations", []))
         else:
             agent_outputs = []
             critique = {}
             overall_risk = "unknown"
+            recommendations = []
 
         llm_response = self._generate_summary(text, features, retrieved_cases, kg_evidence, agent_outputs, critique)
         prediction = extract_prediction(llm_response)
@@ -93,7 +95,8 @@ class DiagnosisPipeline:
             followup_questions=[
                 "Confirm symptom onset, duration, and medication history.",
                 "Repeat abnormal lab indicators or consult a qualified clinician when needed.",
-            ],
+            ]
+            + recommendations[:3],
             entities=entities,
             raw_baseline_result={
                 "prediction": prediction,
@@ -179,7 +182,8 @@ class DiagnosisPipeline:
         for item in agent_outputs:
             agent_lines.append(
                 f"- {item.get('specialty') or item.get('agent_name')}: "
-                f"{item.get('risk_level', 'unknown')} confidence={item.get('confidence', 0)}"
+                f"{item.get('risk_level', 'unknown')} confidence={item.get('confidence', 0)}; "
+                f"diagnosis={', '.join(item.get('diagnosis') or [])}"
             )
         return "\n".join(
             [

@@ -35,9 +35,12 @@ class OCREngine:
             }
         result = self._ocr.ocr(file_path, cls=True)
         lines: List[str] = []
+        line_items: List[Dict[str, object]] = []
         for page in result or []:
             for item in page or []:
                 if len(item) >= 2 and item[1]:
-                    lines.append(str(item[1][0]))
-        return {"text": "\n".join(lines), "pages": result or []}
-
+                    text = str(item[1][0])
+                    score = float(item[1][1]) if len(item[1]) > 1 else None
+                    lines.append(text)
+                    line_items.append({"text": text, "confidence": score, "box": item[0] if item else None})
+        return {"text": "\n".join(lines), "pages": result or [], "lines": line_items}

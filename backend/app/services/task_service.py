@@ -9,14 +9,14 @@ from typing import Optional
 
 from fastapi import BackgroundTasks
 
-from backend.app.cache.memory_store import MemoryStore
+from backend.app.cache.store import get_store
 from backend.app.services.pipeline import DiagnosisPipeline
 from backend.app.services.report_service import ReportService
 
 
 class TaskService:
     def __init__(self) -> None:
-        self.store = MemoryStore.get_instance()
+        self.store = get_store()
         self.report_service = ReportService()
 
     def create_diagnosis_task(

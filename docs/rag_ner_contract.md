@@ -94,7 +94,64 @@ from engines.retrieval.multi_source_retriever import MultiSourceRetriever
 | `raw_text` | 检索命中的原始文本 |
 | `metadata` | 来源数据的补充字段 |
 
-## 4. 后端调用边界
+## 4. KG 证据输出
+
+后端会合并两类 KG：
+
+```text
+resources/chinese_medical_kg.json        中文体检风险 KG
+data/kg/knowledge graph of DDXPlus.xlsx  DDXPlus 疾病症状 KG
+```
+
+`kg_evidence` 标准字段：
+
+```json
+{
+  "head": "ALT升高",
+  "relation": "supports",
+  "tail": "肝细胞损伤风险",
+  "source": "Chinese_Physical_Exam_KG",
+  "relation_category": "test_indicator",
+  "score": 10.0,
+  "retrieval_method": "indicator_rule",
+  "indicator": "ALT",
+  "value": 85.2,
+  "unit": "U/L",
+  "neighbors": []
+}
+```
+
+DDXPlus KG 证据也遵循 `head/relation/tail/source/score/retrieval_method/neighbors` 这组字段。
+
+## 5. Agent 输出
+
+`agent_opinions` 标准字段：
+
+```json
+{
+  "specialty": "cardiovascular",
+  "agent_name": "cardiovascular",
+  "risk_level": "medium",
+  "confidence": 0.78,
+  "diagnosis": ["高血压风险", "血脂异常风险"],
+  "evidence": ["收缩压=150 mmHg ..."],
+  "matched_indicators": [],
+  "kg_evidence_count": 2,
+  "retrieved_case_count": 5,
+  "suggestion": "建议复测血压和血脂..."
+}
+```
+
+当前专科 Agent：
+
+```text
+cardiovascular  心血管
+liver           肝脏
+endocrine       内分泌/代谢
+hematology      血常规/炎症
+```
+
+## 6. 后端调用边界
 
 后端实时流程通过：
 
@@ -106,7 +163,7 @@ backend.app.services.pipeline.DiagnosisPipeline
 
 调用 NER 和检索。模块不依赖 PaddleOCR、Redis、Gradio，后端可以安全 import。
 
-## 5. Baseline / 消融实验边界
+## 7. Baseline / 消融实验边界
 
 B1 和“A2 去 KG，仅向量 RAG”应直接调用：
 

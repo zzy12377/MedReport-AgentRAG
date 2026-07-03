@@ -4,9 +4,12 @@
 from __future__ import annotations
 
 import time
+import os
 from typing import Any, Dict
 
-API_BASE = "http://127.0.0.1:8000/api/v1"
+from frontend.components import chat_tab, history_tab, result_tab, upload_tab
+
+API_BASE = os.getenv("MEDRAG_API_BASE", "http://127.0.0.1:8000/api/v1")
 
 
 def _requests():
@@ -57,7 +60,6 @@ def build_app():
 
     with gr.Blocks(title="MedReport AgentRAG") as demo:
         gr.Markdown("# MedReport AgentRAG")
-        gr.Markdown("Text/OCR input -> entity extraction -> retrieval -> KG evidence -> agent analysis -> final report.")
 
         with gr.Tab("Text Diagnosis"):
             text_input = gr.Textbox(
@@ -78,12 +80,27 @@ def build_app():
             output_sync = gr.Markdown()
             btn_sync.click(diagnose_sync, inputs=[text_input_sync, top_k_sync], outputs=[output_sync])
 
+        with gr.Tab("Upload"):
+            upload_tab.render(gr, _requests(), API_BASE)
+
+        with gr.Tab("Report"):
+            result_tab.render(gr, _requests(), API_BASE)
+
+        with gr.Tab("Chat"):
+            chat_tab.render(gr, _requests(), API_BASE)
+
+        with gr.Tab("History"):
+            history_tab.render(gr, _requests(), API_BASE)
+
     return demo
 
 
 if __name__ == "__main__":
     app = build_app()
     if hasattr(app, "launch"):
-        app.launch(server_name="127.0.0.1", server_port=7860)
+        app.launch(
+            server_name=os.getenv("GRADIO_SERVER_NAME", "127.0.0.1"),
+            server_port=int(os.getenv("GRADIO_SERVER_PORT", "7860")),
+        )
     else:
         print(app)

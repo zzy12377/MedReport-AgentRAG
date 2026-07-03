@@ -39,3 +39,9 @@ pydantic>=2.7.0,<3.0.0
 python-multipart>=0.0.9,<1.0.0
 requests>=2.32.0,<3.0.0
 gradio>=4.44.0,<5.0.0
+python-dotenv>=1.0.1,<2.0.0
+redis>=5.0.0,<6.0.0
+pdfplumber>=0.11.0,<1.0.0
+pymupdf>=1.24.0,<2.0.0
+# Optional heavy OCR dependency:
+# paddleocr>=2.7.0
