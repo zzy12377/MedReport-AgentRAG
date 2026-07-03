@@ -271,6 +271,18 @@ Metrics：
 python metrics\metrics_DDXPlus.py --inputs storage\results\b1_rag_results.jsonl storage\results\b2_kg_rag_results.jsonl storage\results\retrieval_eval_full_details.jsonl --output storage\metrics\metrics_summary.csv
 ```
 
+NER 指标抽取评估：
+
+```bat
+python scripts\evaluate_ner.py --gold tests\fixtures\ner_eval_samples.jsonl --output storage\metrics\ner_eval_summary.json --details-csv storage\metrics\ner_eval_details.csv
+```
+
+NER/RAG 对接字段说明见：
+
+```text
+docs\rag_ner_contract.md
+```
+
 文档别名：
 
 ```bat
@@ -295,6 +307,12 @@ python scripts\build_vector_stores.py --sources ddxplus_cases ddxplus_kg pmc_pat
 
 ```bat
 python scripts\retrieve_multi_vector.py --query "18-year-old male with fever cough sore throat and night sweats" --sources all --top-k 10 --top-k-per-source 2 --local
+```
+
+FAISS / 多向量库 top-k 调优表：
+
+```bat
+python scripts\tune_faiss_retrieval.py --sources all --top-k-values 3 5 10 --top-k-per-source-values 2 3 5 --local --output storage\metrics\faiss_tuning_results.csv
 ```
 
 ## 验证
