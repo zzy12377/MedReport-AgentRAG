@@ -154,7 +154,46 @@ text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, l
     "task_id": "7de7a1b9-xxxx",
     "case_id": "demo-001",
     "overall_risk": "medium",
+    "detection_conclusion": {
+      "primary_diagnosis": "Diabetes",
+      "conclusion_type": "suspected_disease",
+      "overall_risk": "medium",
+      "confidence": 0.81,
+      "confidence_percent": 81.0,
+      "basis": "发现异常指标：GLU、LDL-C"
+    },
     "possible_diagnoses": [],
+    "kg_disease_symptoms": [
+      {
+        "disease": "Diabetes",
+        "matched_to_primary": true,
+        "symptoms": ["Polyuria and polydipsia"],
+        "evidence_count": 2
+      }
+    ],
+    "baseline_match_rates": [
+      {
+        "mode": "B0",
+        "name": "Direct Prompting",
+        "prediction": "Diabetes",
+        "match_rate": 0.61,
+        "match_percent": 61.0
+      },
+      {
+        "mode": "B1",
+        "name": "RAG Similar Case Retrieval",
+        "prediction": "Diabetes",
+        "match_rate": 0.81,
+        "match_percent": 81.0
+      },
+      {
+        "mode": "B2",
+        "name": "KG-RAG + Agent Evidence",
+        "prediction": "Diabetes",
+        "match_rate": 0.7478,
+        "match_percent": 74.78
+      }
+    ],
     "retrieved_cases": [],
     "kg_evidence": [],
     "agent_opinions": [],
@@ -175,6 +214,10 @@ text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, l
 | 字段 | 用途 |
 |---|---|
 | normalized_input.text_preview | 展示 OCR 解析出的文本预览 |
+| report.detection_conclusion.primary_diagnosis | 展示报告最前面的疾病/风险结论 |
+| report.detection_conclusion.basis | 展示结论依据 |
+| report.kg_disease_symptoms | 展示知识图谱中与结论疾病对应的症状 |
+| report.baseline_match_rates | 展示 B0、B1、B2 的匹配率对比 |
 | report.entities | 展示 NER 抽取出的指标 |
 | report.retrieved_cases | 展示相似病例 |
 | report.kg_evidence | 展示知识图谱证据 |
@@ -182,6 +225,19 @@ text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, l
 | report.critique | 展示冲突检测和置信度校准 |
 | report.summary_markdown | 展示最终报告正文 |
 | report_path | 后端本地保存路径 |
+
+`summary_markdown` 已按检测报告顺序组织：
+
+```text
+一、检测结论
+二、知识图谱对应疾病症状
+三、B0 / B1 / B2 匹配率
+四、相似病例证据
+五、知识图谱证据明细
+六、专科 Agent 意见
+七、模型摘要
+八、安全提示
+```
 
 ### 2.6 失败返回
 
