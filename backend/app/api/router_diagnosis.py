@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Diagnosis API routes."""
+"""Diagnosis and report-generation API routes."""
 
 from __future__ import annotations
 
@@ -10,13 +10,13 @@ from typing import Any, Dict, Optional
 
 from fastapi import APIRouter, BackgroundTasks, Body, File, Form, HTTPException, UploadFile
 
-from backend.app.schemas.patient_case import DiagnosisRequest
-from backend.app.config.settings import settings
 from backend.app.cache.memory_store import MemoryStore
+from backend.app.config.settings import settings
+from backend.app.schemas.patient_case import DiagnosisRequest
+from backend.app.services.ocr_json_service import normalize_ocr_json, split_ocr_request_payload
 from backend.app.services.pipeline import DiagnosisPipeline
 from backend.app.services.report_service import ReportService
 from backend.app.services.task_service import TaskService
-from backend.app.services.ocr_json_service import normalize_ocr_json, split_ocr_request_payload
 
 router = APIRouter()
 task_service = TaskService()
@@ -65,6 +65,7 @@ async def diagnose_text_sync(req: DiagnosisRequest) -> dict:
 async def diagnose_ocr_json(background_tasks: BackgroundTasks, payload: Any = Body(...)) -> dict:
     ocr_json, options = _split_payload(payload)
     normalized = _normalize_or_400(ocr_json)
+    normalized_preview = _normalized_preview(normalized, options)
     task_id = task_service.create_diagnosis_task(
         background_tasks=background_tasks,
         text=normalized["text"],
@@ -74,13 +75,13 @@ async def diagnose_ocr_json(background_tasks: BackgroundTasks, payload: Any = Bo
         vector_sources=_vector_sources_option(options.get("vector_sources")),
         case_id=_optional_str(options.get("case_id")),
         input_type="ocr_json",
-        normalized_input=_normalized_preview(normalized, options),
+        normalized_input=normalized_preview,
     )
     return {
         "task_id": task_id,
         "status": "pending",
         "input_type": "ocr_json",
-        "normalized_input": _normalized_preview(normalized, options),
+        "normalized_input": normalized_preview,
         "message": "OCR JSON diagnosis task submitted",
     }
 
@@ -225,7 +226,10 @@ def _normalize_or_400(ocr_json: Any) -> Dict[str, Any]:
     if not normalized.get("text"):
         raise HTTPException(
             status_code=400,
-            detail="OCR JSON 中没有可用于诊断的文本。请确认包含 text、ocr_text、pages、lines、blocks 或 results 字段。",
+            detail=(
+                "OCR JSON 中没有可用于诊断的文本。请确认包含 text、ocr_text、"
+                "plain_text、pages、lines、blocks 或 results 字段。"
+            ),
         )
     return normalized
 
