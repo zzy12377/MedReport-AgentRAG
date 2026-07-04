@@ -46,6 +46,9 @@ def main() -> int:
     body = response.json()
     assert body.get("status") == "done", body
     assert body.get("input_type") == "ocr_json", body
+    assert body.get("task_id"), body
+    assert body.get("report_id") == body.get("task_id"), body
+    assert body.get("report_path"), body
     normalized = body.get("normalized_input") or {}
     assert "ALT 85.2" in normalized.get("text", ""), normalized
     assert normalized.get("case_id") == "ocr-smoke-001", normalized
@@ -53,6 +56,9 @@ def main() -> int:
     for key in ["task_id", "retrieved_cases", "kg_evidence", "entities", "summary_markdown", "safety_note"]:
         assert key in report, f"missing report field: {key}"
     assert report.get("case_id") == "ocr-smoke-001", report
+    alias = client.post("/api/v1/reports/from-ocr-json", json={"plain_text": "ALT 85.2 U/L\nGLU 7.2 mmol/L"})
+    assert alias.status_code == 200, alias.text
+    assert alias.json().get("report_id"), alias.text
     print("[OK] OCR JSON API smoke test passed.")
     print(f"[INFO] normalized_lines={normalized.get('line_count')}")
     print(f"[INFO] entities={len(report.get('entities') or [])}")

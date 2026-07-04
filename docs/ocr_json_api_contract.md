@@ -6,6 +6,10 @@ This document defines the frontend/backend contract for OCR-recognized report JS
 
 `POST /api/v1/diagnosis/ocr-json/sync`
 
+Frontend-friendly alias:
+
+`POST /api/v1/reports/from-ocr-json`
+
 Recommended request:
 
 ```json
@@ -41,6 +45,15 @@ The backend also accepts raw OCR JSON directly, for example:
 }
 ```
 
+If the OCR service already generated a pure-text JSON file, send it directly:
+
+```json
+{
+  "case_id": "demo-plain-text-001",
+  "plain_text": "ALT 85.2 U/L 参考范围 7-40\nGLU 7.2 mmol/L\nLDL-C 4.1 mmol/L\n血压 150/95 mmHg"
+}
+```
+
 Supported OCR JSON text fields include:
 
 - `text`
@@ -60,6 +73,9 @@ Response:
 ```json
 {
   "status": "done",
+  "task_id": "...",
+  "report_id": "...",
+  "report_path": "./data/reports/....json",
   "input_type": "ocr_json",
   "normalized_input": {
     "case_id": "demo-001",
@@ -85,6 +101,12 @@ Response:
   }
 }
 ```
+
+The report is persisted automatically. It can be queried again through:
+
+- `GET /api/v1/tasks/{task_id}`
+- `GET /api/v1/diagnosis/{task_id}/report`
+- `GET /api/v1/history`
 
 ## Async Diagnosis
 

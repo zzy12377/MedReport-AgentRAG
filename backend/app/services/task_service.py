@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import traceback
 import uuid
-from typing import Optional
+from typing import Any, Dict, Optional
 
 from fastapi import BackgroundTasks
 
@@ -27,6 +27,9 @@ class TaskService:
         use_multi_agent: bool = True,
         use_kg: bool = True,
         vector_sources: Optional[list[str]] = None,
+        case_id: Optional[str] = None,
+        input_type: str = "text",
+        normalized_input: Optional[Dict[str, Any]] = None,
     ) -> str:
         task_id = str(uuid.uuid4())
         self.store.set_task(
@@ -36,6 +39,9 @@ class TaskService:
                 "status": "pending",
                 "progress": 0,
                 "message": "Task created",
+                "case_id": case_id,
+                "input_type": input_type,
+                "normalized_input": normalized_input or {},
                 "result": None,
                 "error": None,
             },
@@ -48,6 +54,9 @@ class TaskService:
             use_multi_agent,
             use_kg,
             vector_sources,
+            case_id,
+            input_type,
+            normalized_input or {},
         )
         return task_id
 
@@ -59,6 +68,9 @@ class TaskService:
         use_multi_agent: bool,
         use_kg: bool,
         vector_sources: Optional[list[str]],
+        case_id: Optional[str],
+        input_type: str,
+        normalized_input: Dict[str, Any],
     ) -> None:
         try:
             self.store.update_task(task_id, status="extracting", progress=10, message="Extracting medical entities")
@@ -71,6 +83,10 @@ class TaskService:
                 use_kg=use_kg,
                 vector_sources=vector_sources,
             )
+            if case_id:
+                report["case_id"] = str(case_id)
+            report["input_type"] = input_type
+            report["normalized_input"] = normalized_input
             report["task_id"] = task_id
             path = self.report_service.save_report(task_id, report)
             self.store.add_history(task_id, report)

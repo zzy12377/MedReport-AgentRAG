@@ -12,12 +12,16 @@ from fastapi import APIRouter, BackgroundTasks, Body, File, Form, HTTPException,
 
 from backend.app.schemas.patient_case import DiagnosisRequest
 from backend.app.config.settings import settings
+from backend.app.cache.memory_store import MemoryStore
 from backend.app.services.pipeline import DiagnosisPipeline
+from backend.app.services.report_service import ReportService
 from backend.app.services.task_service import TaskService
 from backend.app.services.ocr_json_service import normalize_ocr_json, split_ocr_request_payload
 
 router = APIRouter()
 task_service = TaskService()
+report_service = ReportService()
+memory_store = MemoryStore.get_instance()
 
 
 @router.post("/diagnosis/text")
@@ -29,6 +33,7 @@ async def diagnose_text(req: DiagnosisRequest, background_tasks: BackgroundTasks
         use_multi_agent=req.use_multi_agent,
         use_kg=req.use_kg,
         vector_sources=req.vector_sources,
+        input_type="text",
     )
     return {
         "task_id": task_id,
@@ -46,8 +51,12 @@ async def diagnose_text_sync(req: DiagnosisRequest) -> dict:
         use_kg=req.use_kg,
         vector_sources=req.vector_sources,
     )
+    saved = _save_sync_report(report, input_type="text")
     return {
         "status": "done",
+        "task_id": report.get("task_id"),
+        "report_id": report.get("task_id"),
+        "report_path": saved["report_path"],
         "report": report,
     }
 
@@ -63,6 +72,9 @@ async def diagnose_ocr_json(background_tasks: BackgroundTasks, payload: Any = Bo
         use_multi_agent=_bool_option(options.get("use_multi_agent"), default=True),
         use_kg=_bool_option(options.get("use_kg"), default=True),
         vector_sources=_vector_sources_option(options.get("vector_sources")),
+        case_id=_optional_str(options.get("case_id")),
+        input_type="ocr_json",
+        normalized_input=_normalized_preview(normalized, options),
     )
     return {
         "task_id": task_id,
@@ -75,6 +87,17 @@ async def diagnose_ocr_json(background_tasks: BackgroundTasks, payload: Any = Bo
 
 @router.post("/diagnosis/ocr-json/sync")
 async def diagnose_ocr_json_sync(payload: Any = Body(...)) -> dict:
+    return await _diagnose_ocr_json_sync_impl(payload, input_type="ocr_json")
+
+
+@router.post("/reports/from-ocr-json")
+async def create_report_from_ocr_json(payload: Any = Body(...)) -> dict:
+    """Frontend-friendly alias: OCR JSON in, saved diagnosis report out."""
+
+    return await _diagnose_ocr_json_sync_impl(payload, input_type="ocr_json")
+
+
+async def _diagnose_ocr_json_sync_impl(payload: Any, input_type: str) -> dict:
     ocr_json, options = _split_payload(payload)
     normalized = _normalize_or_400(ocr_json)
     report = await DiagnosisPipeline().run(
@@ -87,10 +110,19 @@ async def diagnose_ocr_json_sync(payload: Any = Body(...)) -> dict:
     case_id = options.get("case_id")
     if case_id:
         report["case_id"] = str(case_id)
+    normalized_preview = _normalized_preview(normalized, options)
+    saved = _save_sync_report(
+        report,
+        input_type=input_type,
+        normalized_input=normalized_preview,
+    )
     return {
         "status": "done",
-        "input_type": "ocr_json",
-        "normalized_input": _normalized_preview(normalized, options),
+        "task_id": report.get("task_id"),
+        "report_id": report.get("task_id"),
+        "report_path": saved["report_path"],
+        "input_type": input_type,
+        "normalized_input": normalized_preview,
         "report": report,
     }
 
@@ -135,13 +167,51 @@ async def diagnose_ocr_json_file_sync(
     )
     if case_id:
         report["case_id"] = str(case_id)
+    normalized_preview = _normalized_preview(normalized, options)
+    saved = _save_sync_report(
+        report,
+        input_type="ocr_json_file",
+        normalized_input=normalized_preview,
+    )
     return {
         "status": "done",
+        "task_id": report.get("task_id"),
+        "report_id": report.get("task_id"),
+        "report_path": saved["report_path"],
         "input_type": "ocr_json_file",
         "file_path": save_path,
-        "normalized_input": _normalized_preview(normalized, options),
+        "normalized_input": normalized_preview,
         "report": report,
     }
+
+
+def _save_sync_report(
+    report: Dict[str, Any],
+    input_type: str,
+    normalized_input: Optional[Dict[str, Any]] = None,
+) -> Dict[str, Any]:
+    task_id = str(report.get("task_id") or uuid.uuid4())
+    report["task_id"] = task_id
+    report["input_type"] = input_type
+    if normalized_input is not None:
+        report["normalized_input"] = normalized_input
+    report_path = report_service.save_report(task_id, report)
+    memory_store.add_history(task_id, report)
+    memory_store.set_task(
+        task_id,
+        {
+            "task_id": task_id,
+            "status": "done",
+            "progress": 100,
+            "message": "Diagnosis completed",
+            "input_type": input_type,
+            "normalized_input": normalized_input or {},
+            "result": report,
+            "report_path": report_path,
+            "error": None,
+        },
+    )
+    return {"report_path": report_path}
 
 
 def _split_payload(payload: Any) -> tuple[Any, Dict[str, Any]]:
@@ -192,3 +262,9 @@ def _vector_sources_option(value: Any) -> Optional[list[str]]:
     if isinstance(value, list):
         return [str(item).strip() for item in value if str(item).strip()]
     return [item.strip() for item in str(value).split(",") if item.strip()]
+
+
+def _optional_str(value: Any) -> Optional[str]:
+    if value in (None, ""):
+        return None
+    return str(value)
