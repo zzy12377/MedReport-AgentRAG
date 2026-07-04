@@ -3,7 +3,7 @@ from __future__ import annotations
 
 def render(gr, requests, api_base: str):
     refresh_btn = gr.Button("刷新历史")
-    history_table = gr.Dataframe(headers=["task_id", "overall_risk", "diagnoses"], datatype=["str", "str", "str"])
+    history_table = gr.Dataframe(headers=["任务 ID", "总体风险", "可能诊断"], datatype=["str", "str", "str"])
 
     def load_history():
         resp = requests.get(f"{api_base}/history", timeout=30)
@@ -20,4 +20,4 @@ def render(gr, requests, api_base: str):
             )
         return rows
 
-    refresh_btn.click(load_history, outputs=[history_table])
+    refresh_btn.click(load_history, outputs=[history_table], show_api=False)

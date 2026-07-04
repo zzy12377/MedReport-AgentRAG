@@ -5,11 +5,14 @@ from typing import Any, Dict
 
 
 def render(gr, requests, api_base: str):
-    file_input = gr.File(label="上传体检报告图片/PDF/文本", file_types=[".pdf", ".png", ".jpg", ".jpeg", ".txt", ".md", ".csv"])
+    file_input = gr.File(
+        label="上传体检报告图片/PDF/文本",
+        file_types=[".pdf", ".png", ".jpg", ".jpeg", ".txt", ".md", ".csv"],
+    )
     upload_btn = gr.Button("上传并分析")
     task_id_box = gr.Textbox(label="Task ID", interactive=False)
     ocr_preview = gr.Textbox(label="OCR/文本预览", lines=6, interactive=False)
-    report_md = gr.Markdown()
+    report_md = gr.Markdown(label="诊断报告")
 
     def upload_and_wait(file_obj):
         if file_obj is None:
@@ -32,4 +35,4 @@ def render(gr, requests, api_base: str):
             time.sleep(1)
         return task_id, preview, "任务仍在运行，请稍后到历史记录查看。"
 
-    upload_btn.click(upload_and_wait, inputs=[file_input], outputs=[task_id_box, ocr_preview, report_md])
+    upload_btn.click(upload_and_wait, inputs=[file_input], outputs=[task_id_box, ocr_preview, report_md], show_api=False)
