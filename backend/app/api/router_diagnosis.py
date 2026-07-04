@@ -242,6 +242,7 @@ def _normalized_preview(normalized: Dict[str, Any], options: Dict[str, Any]) -> 
         "line_count": normalized.get("line_count", 0),
         "text": text,
         "text_preview": text[:500],
+        "interpretive_notes": normalized.get("interpretive_notes", []),
     }
 
 

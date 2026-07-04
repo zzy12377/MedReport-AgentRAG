@@ -119,8 +119,15 @@ text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, l
 体重 68.0 kg
 血压 118/76 mmHg
 心率 72 bpm
-结论 各项指标基本正常，建议保持规律作息、均衡饮食、适量运动，每年定期体检。
 ```
+
+注意：`conclusion`、`advice`、`recommendation`、`diagnosis` 这类解释性字段不会参与自动诊断结论和 B0/B1/B2 匹配率计算。后端会把它们放入：
+
+```text
+normalized_input.interpretive_notes
+```
+
+也就是说，原始报告写了“各项指标基本正常”只会作为原报告备注保留，不会被系统直接当成检测结果。系统检测依据来自可解析医学指标、相似病例检索、知识图谱和 Agent 证据。
 
 ### 2.4 请求字段说明
 

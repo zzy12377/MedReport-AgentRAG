@@ -68,6 +68,11 @@ Supported OCR JSON text fields include:
 - `paragraphs`
 - `results`
 
+Interpretive fields such as `conclusion`, `advice`, `recommendation`, and
+`diagnosis` are preserved in `normalized_input.interpretive_notes`, but they are
+not used as automatic diagnosis evidence. The report conclusion is computed from
+parsed indicators, retrieval evidence, KG evidence, and agent evidence.
+
 Response:
 
 ```json

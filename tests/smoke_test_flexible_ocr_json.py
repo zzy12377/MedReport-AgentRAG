@@ -28,9 +28,12 @@ def main() -> int:
     }
     normalized = normalize_ocr_json(payload)
     text = normalized["text"]
-    required = ["姓名 张三", "性别 男", "年龄 28岁", "身高 175.0 cm", "体重 68.0 kg", "血压 118/76 mmHg", "心率 72 bpm", "各项指标基本正常"]
+    required = ["姓名 张三", "性别 男", "年龄 28岁", "身高 175.0 cm", "体重 68.0 kg", "血压 118/76 mmHg", "心率 72 bpm"]
     missing = [item for item in required if item not in text]
     assert not missing, f"missing normalized fragments: {missing}\n{text}"
+    assert "各项指标基本正常" not in text
+    notes = normalized.get("interpretive_notes") or []
+    assert notes and "各项指标基本正常" in notes[0].get("text", "")
     assert "_source" not in text
     print("[OK] flexible OCR JSON normalization passed.")
     print(text)

@@ -13,17 +13,20 @@ TEXT_KEYS = {
     "plain_text",
     "raw_text",
     "report_text",
+    "recognized_text",
+    "recognised_text",
+    "line_text",
+    "content",
+    "value_text",
+}
+
+INTERPRETIVE_KEYS = {
     "conclusion",
     "summary",
     "impression",
     "advice",
     "recommendation",
     "diagnosis",
-    "recognized_text",
-    "recognised_text",
-    "line_text",
-    "content",
-    "value_text",
 }
 
 KEY_LABELS = {
@@ -88,11 +91,13 @@ def normalize_ocr_json(payload: Any) -> Dict[str, Any]:
     fragments.extend(_extract_structured_lines(payload))
     fragments.extend(_extract_text_fragments(payload))
     fragments = _dedupe_preserve_order(_clean_fragment(item) for item in fragments)
+    interpretive_notes = _extract_interpretive_notes(payload)
     text = "\n".join(item for item in fragments if item)
     return {
         "text": text,
         "line_count": len([item for item in fragments if item]),
         "source_format": _guess_source_format(payload),
+        "interpretive_notes": interpretive_notes,
         "raw": payload,
     }
 
@@ -141,6 +146,8 @@ def _extract_text_fragments(value: Any) -> List[str]:
     if isinstance(value, dict):
         for key, item in value.items():
             key_l = str(key).lower()
+            if key_l in INTERPRETIVE_KEYS:
+                continue
             if key_l in TEXT_KEYS and isinstance(item, str):
                 fragments.append(item)
             elif key_l in CONTAINER_KEYS or isinstance(item, (dict, list, tuple)):
@@ -175,6 +182,8 @@ def _extract_structured_lines(value: Any, parent_key: str = "") -> List[str]:
             key_l = key_s.lower()
             if _should_ignore_key(key_l):
                 continue
+            if key_l in INTERPRETIVE_KEYS:
+                continue
             line = _structured_value_to_line(key_l, item)
             if line:
                 lines.append(line)
@@ -187,6 +196,8 @@ def _extract_structured_lines(value: Any, parent_key: str = "") -> List[str]:
 
 
 def _structured_value_to_line(key: str, value: Any) -> str:
+    if key in INTERPRETIVE_KEYS:
+        return ""
     label = _label_for_key(key)
     if value in (None, ""):
         return ""
@@ -217,6 +228,27 @@ def _label_for_key(key: str) -> str:
 
 def _should_ignore_key(key: str) -> bool:
     return key.startswith("_") or key in IGNORED_KEYS
+
+
+def _extract_interpretive_notes(value: Any) -> List[Dict[str, str]]:
+    notes: List[Dict[str, str]] = []
+    if isinstance(value, dict):
+        for key, item in value.items():
+            key_l = str(key).lower()
+            if key_l in INTERPRETIVE_KEYS and item not in (None, ""):
+                notes.append(
+                    {
+                        "field": key_l,
+                        "label": _label_for_key(key_l),
+                        "text": str(item).strip(),
+                    }
+                )
+            elif isinstance(item, (dict, list, tuple)):
+                notes.extend(_extract_interpretive_notes(item))
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            notes.extend(_extract_interpretive_notes(item))
+    return notes
 
 
 def _extract_indicator_lines(value: Any) -> List[str]:

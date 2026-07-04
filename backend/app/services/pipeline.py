@@ -195,14 +195,13 @@ class DiagnosisPipeline:
         overall_risk: str,
     ) -> Dict[str, Any]:
         abnormal_entities = [item for item in entities if item.get("is_abnormal")]
-        normal_hint = bool(re.search(r"基本正常|未见明显异常|无明显异常|normal|within normal", text, re.I))
-        if normal_hint and not abnormal_entities:
-            primary = "未见明确疾病风险"
-            conclusion_type = "normal_or_low_risk"
-            basis = "OCR/体检文本提示各项指标基本正常，当前规则抽取未发现明显异常指标。"
-            confidence = 0.82
+        top_case = retrieved_cases[0] if retrieved_cases else {}
+        if not abnormal_entities and not top_case:
+            primary = "未发现明确异常指标"
+            conclusion_type = "no_obvious_abnormality"
+            basis = "基于可解析医学指标判断，当前未抽取到明显异常指标；未使用原始报告 conclusion 字段作为判断依据。"
+            confidence = 0.65 if entities else 0.35
         else:
-            top_case = retrieved_cases[0] if retrieved_cases else {}
             primary = (
                 str(top_case.get("diagnosis") or "").strip()
                 or (possible_diagnoses[0] if possible_diagnoses else "")
@@ -289,8 +288,13 @@ class DiagnosisPipeline:
         entities: List[Dict[str, Any]],
     ) -> List[Dict[str, Any]]:
         abnormal_count = len([item for item in entities if item.get("is_abnormal")])
-        normal_hint = bool(re.search(r"基本正常|未见明显异常|无明显异常|normal|within normal", text, re.I))
-        b0_score = 0.82 if normal_hint and abnormal_count == 0 else min(0.72, 0.45 + abnormal_count * 0.08)
+        parsed_count = len(entities)
+        if abnormal_count > 0:
+            b0_score = min(0.72, 0.45 + abnormal_count * 0.08)
+        elif parsed_count > 0:
+            b0_score = 0.58
+        else:
+            b0_score = 0.25
         top_case = retrieved_cases[0] if retrieved_cases else {}
         b1_score = _clamp01(float(top_case.get("similarity", 0.0) or 0.0))
         primary_norm = _norm_text(primary_diagnosis)
@@ -309,7 +313,7 @@ class DiagnosisPipeline:
                 "prediction": prediction or primary_diagnosis,
                 "match_rate": round(b0_score, 4),
                 "match_percent": round(b0_score * 100, 2),
-                "basis": "仅依据输入文本和异常指标数量估计，不使用检索或知识图谱。",
+                "basis": "仅依据可解析医学指标和异常指标数量估计，不使用原始 conclusion 字段、检索或知识图谱。",
             },
             {
                 "mode": "B1",
