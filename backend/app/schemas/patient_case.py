@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -30,6 +30,18 @@ class PatientFeatures(BaseModel):
 
 class DiagnosisRequest(BaseModel):
     text: str = Field(..., description="User text or OCR-recognized report text")
+    top_k: int = Field(3, ge=1, le=30)
+    use_multi_agent: bool = True
+    use_kg: bool = True
+    vector_sources: Optional[List[str]] = Field(
+        default=None,
+        description="Optional vector store names, e.g. ['all'] or ['ddxplus_cases']",
+    )
+
+
+class OcrJsonDiagnosisRequest(BaseModel):
+    ocr_json: Dict[str, Any] = Field(..., description="OCR-recognized JSON payload")
+    case_id: Optional[str] = Field(default=None, description="Optional frontend case id")
     top_k: int = Field(3, ge=1, le=30)
     use_multi_agent: bool = True
     use_kg: bool = True
