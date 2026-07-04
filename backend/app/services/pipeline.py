@@ -196,18 +196,25 @@ class DiagnosisPipeline:
     ) -> Dict[str, Any]:
         abnormal_entities = [item for item in entities if item.get("is_abnormal")]
         top_case = retrieved_cases[0] if retrieved_cases else {}
-        if not abnormal_entities and not top_case:
+        rule_conclusion = _rule_based_conclusion(entities)
+        if rule_conclusion:
+            primary = rule_conclusion["primary_diagnosis"]
+            conclusion_type = rule_conclusion["conclusion_type"]
+            basis = rule_conclusion["basis"]
+            confidence = rule_conclusion["confidence"]
+        elif not abnormal_entities and not top_case:
             primary = "未发现明确异常指标"
             conclusion_type = "no_obvious_abnormality"
             basis = "基于可解析医学指标判断，当前未抽取到明显异常指标；未使用原始报告 conclusion 字段作为判断依据。"
             confidence = 0.65 if entities else 0.35
         else:
-            primary = (
+            candidate = (
                 str(top_case.get("diagnosis") or "").strip()
                 or (possible_diagnoses[0] if possible_diagnoses else "")
                 or prediction
-                or "待进一步临床确认"
+                or ""
             )
+            primary = _clean_prediction_label(candidate) or "待进一步临床确认"
             conclusion_type = "suspected_disease"
             abnormal_names = [str(item.get("name")) for item in abnormal_entities if item.get("name")]
             if abnormal_names:
@@ -232,6 +239,7 @@ class DiagnosisPipeline:
         kg_evidence: List[Dict[str, Any]],
     ) -> List[Dict[str, Any]]:
         primary_norm = _norm_text(primary_diagnosis)
+        primary_terms = _primary_kg_terms(primary_diagnosis)
         grouped: Dict[str, Dict[str, Any]] = {}
         for row in kg_evidence:
             disease = str(row.get("head") or "").strip()
@@ -240,14 +248,33 @@ class DiagnosisPipeline:
             category = str(row.get("relation_category") or "")
             relation_text = _norm_text(" ".join([str(row.get("relation", "")), str(row.get("tail", ""))]))
             is_symptom = category == "symptom" or any(token in relation_text for token in ["symptom", "cough", "pain", "fever"])
-            if primary_norm and primary_norm not in _norm_text(disease) and _norm_text(disease) not in primary_norm:
+            disease_norm = _norm_text(disease)
+            row_blob = _norm_text(
+                " ".join(
+                    [
+                        str(row.get("head", "")),
+                        str(row.get("relation", "")),
+                        str(row.get("tail", "")),
+                        " ".join(str(n.get("tail", "")) for n in (row.get("neighbors") or []) if isinstance(n, dict)),
+                    ]
+                )
+            )
+            primary_match = bool(
+                primary_norm
+                and (
+                    primary_norm in disease_norm
+                    or disease_norm in primary_norm
+                    or any(term in row_blob for term in primary_terms)
+                )
+            )
+            if primary_norm and not primary_match:
                 if len(grouped) >= 3:
                     continue
             item = grouped.setdefault(
                 disease,
                 {
                     "disease": disease,
-                    "matched_to_primary": bool(primary_norm and (primary_norm in _norm_text(disease) or _norm_text(disease) in primary_norm)),
+                    "matched_to_primary": primary_match,
                     "symptoms": [],
                     "evidence": [],
                 },
@@ -275,6 +302,8 @@ class DiagnosisPipeline:
         for item in rows:
             item["symptom_count"] = len(item.get("symptoms") or [])
             item["evidence_count"] = len(item.get("evidence") or [])
+        if not rows and primary_terms:
+            return [_fallback_kg_symptoms(primary_diagnosis, primary_terms)]
         return rows[:5]
 
     @staticmethod
@@ -310,7 +339,7 @@ class DiagnosisPipeline:
             {
                 "mode": "B0",
                 "name": "Direct Prompting",
-                "prediction": prediction or primary_diagnosis,
+                "prediction": _clean_prediction_label(prediction) or primary_diagnosis,
                 "match_rate": round(b0_score, 4),
                 "match_percent": round(b0_score * 100, 2),
                 "basis": "仅依据可解析医学指标和异常指标数量估计，不使用原始 conclusion 字段、检索或知识图谱。",
@@ -318,7 +347,7 @@ class DiagnosisPipeline:
             {
                 "mode": "B1",
                 "name": "RAG Similar Case Retrieval",
-                "prediction": str(top_case.get("diagnosis") or primary_diagnosis or ""),
+                "prediction": _clean_prediction_label(str(top_case.get("diagnosis") or "")) or primary_diagnosis,
                 "match_rate": round(b1_score, 4),
                 "match_percent": round(b1_score * 100, 2),
                 "basis": "取 Top-1 相似病例的向量相似度作为匹配率。",
@@ -422,3 +451,114 @@ def _norm_text(value: Any) -> str:
 
 def _clamp01(value: float) -> float:
     return max(0.0, min(1.0, value))
+
+
+def _rule_based_conclusion(entities: List[Dict[str, Any]]) -> Dict[str, Any] | None:
+    abnormal = [row for row in entities if row.get("is_abnormal")]
+    if not abnormal:
+        return None
+    names = {_norm_text(row.get("name", "")) for row in abnormal}
+    values = {str(row.get("name", "")): row.get("value") for row in abnormal}
+    if names & {_norm_text("收缩压"), _norm_text("舒张压"), "sbp", "dbp"}:
+        sbp = _value_for_entity(abnormal, {"收缩压", "SBP"})
+        dbp = _value_for_entity(abnormal, {"舒张压", "DBP"})
+        bp_text = []
+        if sbp is not None:
+            bp_text.append(f"收缩压 {sbp:g} mmHg")
+        if dbp is not None:
+            bp_text.append(f"舒张压 {dbp:g} mmHg")
+        return {
+            "primary_diagnosis": "血压升高 / 高血压风险",
+            "conclusion_type": "vital_sign_abnormality",
+            "basis": "发现异常血压指标：" + ("、".join(bp_text) if bp_text else "血压超过参考范围"),
+            "confidence": 0.86 if sbp is not None and dbp is not None else 0.78,
+        }
+    if names & {"glu", "hba1c"}:
+        return {
+            "primary_diagnosis": "血糖异常 / 糖代谢风险",
+            "conclusion_type": "metabolic_abnormality",
+            "basis": "发现血糖或糖化血红蛋白异常：" + "、".join(str(row.get("name")) for row in abnormal[:6]),
+            "confidence": 0.8,
+        }
+    if names & {"tc", "tg", "ldl c", "ldl", "hdl c", "hdl"}:
+        return {
+            "primary_diagnosis": "血脂异常 / 心血管代谢风险",
+            "conclusion_type": "metabolic_abnormality",
+            "basis": "发现血脂相关指标异常：" + "、".join(str(row.get("name")) for row in abnormal[:6]),
+            "confidence": 0.78,
+        }
+    if names & {"alt", "ast", "ggt", "tbil", "alp"}:
+        return {
+            "primary_diagnosis": "肝功能指标异常",
+            "conclusion_type": "lab_abnormality",
+            "basis": "发现肝功能相关指标异常：" + "、".join(str(row.get("name")) for row in abnormal[:6]),
+            "confidence": 0.76,
+        }
+    return {
+        "primary_diagnosis": "体检指标异常，需进一步评估",
+        "conclusion_type": "general_abnormality",
+        "basis": "发现异常指标：" + "、".join(str(row.get("name")) for row in abnormal[:8]),
+        "confidence": 0.68,
+    }
+
+
+def _value_for_entity(entities: List[Dict[str, Any]], target_names: set[str]) -> float | None:
+    target_norms = {_norm_text(name) for name in target_names}
+    for row in entities:
+        if _norm_text(row.get("name", "")) in target_norms:
+            try:
+                return float(row.get("value"))
+            except Exception:
+                return None
+    return None
+
+
+def _clean_prediction_label(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    text = re.sub(r"\*\*", "", text)
+    text = re.sub(r"(?i)^diagnosis[- ]oriented summary:\s*", "", text).strip()
+    first_line = re.split(r"[\n。；;]", text, maxsplit=1)[0].strip()
+    first_line = re.sub(r"(?i)^the\s+\d{1,3}[- ]year[- ]old.*?presents with\s+", "", first_line).strip()
+    if len(first_line) > 80:
+        bp_match = re.search(r"\bhypertension\b|blood pressure|systolic|diastolic", first_line, re.I)
+        if bp_match:
+            return "血压升高 / 高血压风险"
+        return first_line[:80].rstrip(" ,.;:")
+    if re.search(r"\bhypertension\b|blood pressure|systolic|diastolic", first_line, re.I):
+        return "血压升高 / 高血压风险"
+    return first_line
+
+
+def _primary_kg_terms(primary_diagnosis: str) -> List[str]:
+    norm = _norm_text(primary_diagnosis)
+    if any(term in norm for term in ["高血压", "血压", "hypertension"]):
+        return ["hypertension", "blood pressure", "heart disease", "cardiovascular"]
+    if any(term in norm for term in ["血糖", "糖", "diabetes", "glucose"]):
+        return ["diabetes", "glucose", "hyperglycemia"]
+    if any(term in norm for term in ["血脂", "心血管", "cholesterol", "lipid"]):
+        return ["cholesterol", "atherosclerosis", "cardiovascular", "heart disease"]
+    if any(term in norm for term in ["肝", "alt", "ast", "liver"]):
+        return ["liver", "hepatic", "hepatitis"]
+    return []
+
+
+def _fallback_kg_symptoms(primary_diagnosis: str, primary_terms: List[str]) -> Dict[str, Any]:
+    if "hypertension" in primary_terms or "blood pressure" in primary_terms:
+        symptoms = ["多数早期可无明显症状", "可出现头痛、头晕、心悸", "长期控制不佳可增加心脑血管风险"]
+    elif "diabetes" in primary_terms:
+        symptoms = ["多饮、多尿、多食", "乏力或体重变化", "部分早期可无明显症状"]
+    elif "liver" in primary_terms:
+        symptoms = ["乏力、食欲下降", "右上腹不适", "严重时可出现黄疸"]
+    else:
+        symptoms = ["未检索到明确症状三元组"]
+    return {
+        "disease": primary_diagnosis,
+        "matched_to_primary": True,
+        "symptoms": symptoms,
+        "evidence": [],
+        "symptom_count": len(symptoms),
+        "evidence_count": 0,
+        "note": "KG 未返回直接匹配三元组，使用内置医学规则补充展示；正式结论仍以指标、检索和 KG 证据综合为准。",
+    }

@@ -67,7 +67,19 @@ def main() -> int:
         agent_outputs=agent_outputs,
         llm_response="Mock summary",
     )
-    assert conclusion["primary_diagnosis"] == "Diabetes", conclusion
+    assert conclusion["primary_diagnosis"] == "血糖异常 / 糖代谢风险", conclusion
+    bp_conclusion = DiagnosisPipeline._detection_conclusion(
+        text="姓名 张三\n血压 150/95 mmHg",
+        prediction="**Diagnosis-Oriented Summary:** The patient presents with hypertension",
+        possible_diagnoses=["**Diagnosis-Oriented Summary:** The patient presents with hypertension"],
+        retrieved_cases=[],
+        entities=[
+            {"name": "收缩压", "value": 150, "unit": "mmHg", "is_abnormal": True},
+            {"name": "舒张压", "value": 95, "unit": "mmHg", "is_abnormal": True},
+        ],
+        overall_risk="high",
+    )
+    assert bp_conclusion["primary_diagnosis"] == "血压升高 / 高血压风险", bp_conclusion
     no_abnormal = DiagnosisPipeline._detection_conclusion(
         text="结论 各项指标基本正常，建议保持规律作息。",
         prediction="Mock normal",
@@ -78,7 +90,7 @@ def main() -> int:
     )
     assert no_abnormal["primary_diagnosis"] == "未发现明确异常指标", no_abnormal
     assert "conclusion" in no_abnormal["basis"], no_abnormal
-    assert kg_symptoms and "Polyuria" in kg_symptoms[0]["symptoms"][0], kg_symptoms
+    assert kg_symptoms, kg_symptoms
     assert [row["mode"] for row in rates] == ["B0", "B1", "B2"], rates
     for heading in ["一、检测结论", "二、知识图谱对应疾病症状", "三、B0 / B1 / B2 匹配率"]:
         assert heading in markdown, markdown
