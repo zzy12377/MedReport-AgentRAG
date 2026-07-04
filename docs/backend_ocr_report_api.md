@@ -92,7 +92,37 @@ Content-Type: application/json
 text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, line_text, content
 ```
 
-### 2.3 请求字段说明
+### 2.3 请求体格式 C：非固定结构化 JSON
+
+输入 JSON 不要求固定格式。后端会尽量把常见字段自动转换为诊断文本，例如姓名、性别、年龄、身高、体重、血压、心率、结论等。
+
+```json
+{
+  "name": "张三",
+  "gender": "男",
+  "age": 28,
+  "height": {"value": 175.0, "unit": "cm"},
+  "weight": {"value": 68.0, "unit": "kg"},
+  "blood_pressure": {"systolic": 118, "diastolic": 76, "unit": "mmHg"},
+  "heart_rate": {"value": 72, "unit": "bpm"},
+  "conclusion": "各项指标基本正常，建议保持规律作息、均衡饮食、适量运动，每年定期体检。"
+}
+```
+
+后端会转换为类似文本：
+
+```text
+姓名 张三
+性别 男
+年龄 28岁
+身高 175.0 cm
+体重 68.0 kg
+血压 118/76 mmHg
+心率 72 bpm
+结论 各项指标基本正常，建议保持规律作息、均衡饮食、适量运动，每年定期体检。
+```
+
+### 2.4 请求字段说明
 
 | 字段 | 类型 | 必填 | 默认值 | 说明 |
 |---|---:|---:|---:|---|
@@ -104,7 +134,7 @@ text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, l
 | ocr_json | object | 否 | null | OCR 原始 JSON；若传包装格式则建议使用 |
 | plain_text/text/ocr_text | string | 否 | null | OCR 后纯文本内容 |
 
-### 2.4 成功返回
+### 2.5 成功返回
 
 ```json
 {
@@ -153,7 +183,7 @@ text, ocr_text, full_text, plain_text, raw_text, report_text, recognized_text, l
 | report.summary_markdown | 展示最终报告正文 |
 | report_path | 后端本地保存路径 |
 
-### 2.5 失败返回
+### 2.6 失败返回
 
 当 OCR JSON 中没有可提取文本时：
 

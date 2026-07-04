@@ -13,11 +13,49 @@ TEXT_KEYS = {
     "plain_text",
     "raw_text",
     "report_text",
+    "conclusion",
+    "summary",
+    "impression",
+    "advice",
+    "recommendation",
+    "diagnosis",
     "recognized_text",
     "recognised_text",
     "line_text",
     "content",
     "value_text",
+}
+
+KEY_LABELS = {
+    "name": "姓名",
+    "gender": "性别",
+    "sex": "性别",
+    "age": "年龄",
+    "height": "身高",
+    "weight": "体重",
+    "blood_pressure": "血压",
+    "bp": "血压",
+    "heart_rate": "心率",
+    "pulse": "脉搏",
+    "conclusion": "结论",
+    "summary": "总结",
+    "impression": "印象",
+    "advice": "建议",
+    "recommendation": "建议",
+    "diagnosis": "诊断",
+}
+
+IGNORED_KEYS = {
+    "_source",
+    "_text_length",
+    "source",
+    "metadata",
+    "created_at",
+    "updated_at",
+    "page_no",
+    "page_num",
+    "confidence",
+    "score",
 }
 
 CONTAINER_KEYS = {
@@ -47,6 +85,7 @@ def normalize_ocr_json(payload: Any) -> Dict[str, Any]:
 
     fragments: List[str] = []
     fragments.extend(_extract_indicator_lines(payload))
+    fragments.extend(_extract_structured_lines(payload))
     fragments.extend(_extract_text_fragments(payload))
     fragments = _dedupe_preserve_order(_clean_fragment(item) for item in fragments)
     text = "\n".join(item for item in fragments if item)
@@ -126,6 +165,58 @@ def _extract_paddle_tuple_text(value: Iterable[Any]) -> str:
         if isinstance(first, str):
             return first
     return ""
+
+
+def _extract_structured_lines(value: Any, parent_key: str = "") -> List[str]:
+    lines: List[str] = []
+    if isinstance(value, dict):
+        for key, item in value.items():
+            key_s = str(key).strip()
+            key_l = key_s.lower()
+            if _should_ignore_key(key_l):
+                continue
+            line = _structured_value_to_line(key_l, item)
+            if line:
+                lines.append(line)
+            if isinstance(item, (dict, list, tuple)):
+                lines.extend(_extract_structured_lines(item, parent_key=key_l))
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            lines.extend(_extract_structured_lines(item, parent_key=parent_key))
+    return lines
+
+
+def _structured_value_to_line(key: str, value: Any) -> str:
+    label = _label_for_key(key)
+    if value in (None, ""):
+        return ""
+    if isinstance(value, dict):
+        if key in {"blood_pressure", "bp"}:
+            systolic = value.get("systolic") or value.get("sbp") or value.get("high")
+            diastolic = value.get("diastolic") or value.get("dbp") or value.get("low")
+            unit = value.get("unit") or "mmHg"
+            if systolic not in (None, "") and diastolic not in (None, ""):
+                return f"{label} {systolic}/{diastolic} {unit}".strip()
+        if {"value", "unit"} & set(value.keys()):
+            raw_value = value.get("value")
+            unit = value.get("unit") or ""
+            if raw_value not in (None, ""):
+                return f"{label} {raw_value} {unit}".strip()
+        return ""
+    if isinstance(value, (list, tuple)):
+        return ""
+    if key in TEXT_KEYS or key in KEY_LABELS:
+        suffix = "岁" if key == "age" and str(value).replace(".", "", 1).isdigit() else ""
+        return f"{label} {value}{suffix}".strip()
+    return ""
+
+
+def _label_for_key(key: str) -> str:
+    return KEY_LABELS.get(key, key.replace("_", " "))
+
+
+def _should_ignore_key(key: str) -> bool:
+    return key.startswith("_") or key in IGNORED_KEYS
 
 
 def _extract_indicator_lines(value: Any) -> List[str]:
