@@ -59,6 +59,19 @@ def main() -> int:
     alias = client.post("/api/v1/reports/from-ocr-json", json={"plain_text": "ALT 85.2 U/L\nGLU 7.2 mmol/L"})
     assert alias.status_code == 200, alias.text
     assert alias.json().get("report_id"), alias.text
+
+    simple = client.post("/api/v1/reports/from-ocr-json/simple", json={"plain_text": "ALT 85.2 U/L\nGLU 7.2 mmol/L"})
+    assert simple.status_code == 200, simple.text
+    simple_body = simple.json()
+    assert set(simple_body).issuperset({"status", "task_id", "report_text", "format"}), simple_body
+    assert simple_body["format"] == "markdown", simple_body
+    assert "report" not in simple_body, simple_body
+    assert "检测" in simple_body["report_text"] or "Diagnosis" in simple_body["report_text"], simple_body
+
+    markdown = client.post("/api/v1/reports/from-ocr-json/markdown", json={"plain_text": "ALT 85.2 U/L\nGLU 7.2 mmol/L"})
+    assert markdown.status_code == 200, markdown.text
+    assert markdown.headers["content-type"].startswith("text/plain"), markdown.headers
+    assert "ALT" in markdown.text or "检测" in markdown.text or "Diagnosis" in markdown.text, markdown.text
     print("[OK] OCR JSON API smoke test passed.")
     print(f"[INFO] normalized_lines={normalized.get('line_count')}")
     print(f"[INFO] entities={len(report.get('entities') or [])}")

@@ -29,6 +29,8 @@ class CaseRecord:
     diagnosis: str
     raw_text: str
     source_path: str = ""
+    diagnosis_original: str = ""
+    diagnosis_zh: str = ""
 
 
 def _natural_sort_key(path: str) -> List[Any]:
@@ -36,20 +38,24 @@ def _natural_sort_key(path: str) -> List[Any]:
     return [int(x) if x.isdigit() else x.lower() for x in re.split(r"(\d+)", name)]
 
 
-def _read_case_text(path: str) -> Tuple[str, str, str]:
+def _read_case_text(path: str) -> Tuple[str, str, str, str, str]:
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     case_id = str(data.get("Participant No.") or os.path.splitext(os.path.basename(path))[0])
-    diagnosis = str(data.get("Diagnosis") or data.get("Processed Diagnosis") or "")
-    if data.get("Text"):
+    diagnosis_original = str(data.get("Diagnosis_original") or data.get("Diagnosis") or data.get("Processed Diagnosis") or "")
+    diagnosis_zh = str(data.get("Diagnosis_zh") or "")
+    diagnosis = diagnosis_zh or diagnosis_original
+    if data.get("Text_zh"):
+        text = str(data["Text_zh"])
+    elif data.get("Text"):
         text = str(data["Text"])
     else:
         parts = []
-        for key in ["Age", "Sex", "Symptoms", "Differential Diagnosis", "Diagnosis"]:
+        for key in ["Age", "Sex", "Symptoms_zh", "Symptoms", "Differential Diagnosis_zh", "Differential Diagnosis", "Diagnosis_zh", "Diagnosis"]:
             if data.get(key):
                 parts.append(f"{key}: {data[key]}")
         text = "\n".join(parts)
-    return case_id, diagnosis, text
+    return case_id, diagnosis, text, diagnosis_original, diagnosis_zh
 
 
 def load_case_records(train_dir: str = "./dataset/df/train") -> List[CaseRecord]:
@@ -70,8 +76,17 @@ def load_case_records(train_dir: str = "./dataset/df/train") -> List[CaseRecord]
     records = []
     for path in paths:
         try:
-            case_id, diagnosis, text = _read_case_text(path)
-            records.append(CaseRecord(case_id=case_id, diagnosis=diagnosis, raw_text=text, source_path=path))
+            case_id, diagnosis, text, diagnosis_original, diagnosis_zh = _read_case_text(path)
+            records.append(
+                CaseRecord(
+                    case_id=case_id,
+                    diagnosis=diagnosis,
+                    raw_text=text,
+                    source_path=path,
+                    diagnosis_original=diagnosis_original,
+                    diagnosis_zh=diagnosis_zh,
+                )
+            )
         except Exception as exc:
             print(f"[WARN] 跳过病例 {path}: {exc}")
     return records
@@ -123,6 +138,8 @@ class FaissCaseRetriever:
                             diagnosis=str(obj.get("diagnosis", "")),
                             raw_text=str(obj.get("raw_text", "")),
                             source_path=str(obj.get("source_path", "")),
+                            diagnosis_original=str(obj.get("diagnosis_original", "")),
+                            diagnosis_zh=str(obj.get("diagnosis_zh", "")),
                         )
                     )
                 except Exception:
@@ -250,6 +267,8 @@ class FaissCaseRetriever:
                 {
                     "case_id": record.case_id,
                     "diagnosis": record.diagnosis,
+                    "diagnosis_original": record.diagnosis_original,
+                    "diagnosis_zh": record.diagnosis_zh,
                     "similarity": float(score),
                     "raw_text": record.raw_text,
                 }
@@ -259,4 +278,3 @@ class FaissCaseRetriever:
 
 def retrieve_similar_cases(query_text: str, top_k: int = 3) -> List[Dict[str, Any]]:
     return FaissCaseRetriever(top_k=top_k).retrieve_similar_cases(query_text, top_k=top_k)
-

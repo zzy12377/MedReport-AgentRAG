@@ -119,8 +119,8 @@ class DiagnosisPipeline:
             critique=critique,
             summary_markdown=summary_markdown,
             followup_questions=[
-                "Confirm symptom onset, duration, and medication history.",
-                "Repeat abnormal lab indicators or consult a qualified clinician when needed.",
+                "确认症状起病时间、持续时间、既往病史和用药史。",
+                "对异常指标建议复查，必要时咨询具备资质的临床医生。",
             ],
             entities=entities,
             raw_baseline_result={
@@ -143,23 +143,23 @@ class DiagnosisPipeline:
         critique: Dict[str, Any],
     ) -> str:
         prompt = (
-            "Patient text:\n"
+            "患者文本：\n"
             f"{text}\n\n"
-            "Extracted features:\n"
+            "已抽取特征：\n"
             f"{json.dumps(features, ensure_ascii=False)[:2500]}\n\n"
-            "Retrieved cases:\n"
+            "相似病例：\n"
             f"{json.dumps(retrieved_cases[:5], ensure_ascii=False)[:3500]}\n\n"
-            "KG evidence:\n"
+            "知识图谱证据：\n"
             f"{json.dumps(kg_evidence[:8], ensure_ascii=False)[:2500]}\n\n"
-            "Agent outputs:\n"
+            "Agent 输出：\n"
             f"{json.dumps(agent_outputs, ensure_ascii=False)[:2000]}\n\n"
-            "Critique:\n"
+            "冲突检测：\n"
             f"{json.dumps(critique, ensure_ascii=False)[:1500]}\n\n"
-            "Give a concise diagnosis-oriented summary for course demonstration."
+            "请只用中文输出一段面向课程演示的诊断摘要，包含：主要风险、关键依据、建议复查或就医方向。"
         )
         return self.llm.generate(
             prompt,
-            system_prompt="You are a cautious medical decision-support assistant.",
+            system_prompt="你是谨慎的医疗辅助诊断助手。必须使用中文回答，不要输出英文段落；医学缩写如 ALT、GLU、LDL-C 可以保留。",
             mode="API",
         )
 
@@ -380,37 +380,37 @@ class DiagnosisPipeline:
         primary = detection_conclusion.get("primary_diagnosis") or "待进一步临床确认"
         conclusion_lines = [
             f"- 初步结论：{primary}",
-            f"- 综合风险等级：{overall_risk}",
+            f"- 综合风险等级：{_zh_label(overall_risk)}",
             f"- 结论置信度：{float(detection_conclusion.get('confidence_percent', 0.0)):.2f}%",
             f"- 判断依据：{detection_conclusion.get('basis', '')}",
         ]
         baseline_lines = []
         for row in baseline_match_rates:
             baseline_lines.append(
-                f"- {row.get('mode')}（{row.get('name')}）：{float(row.get('match_percent', 0.0)):.2f}%；"
-                f"预测：{row.get('prediction') or 'N/A'}；依据：{row.get('basis')}"
+                f"- {row.get('mode')}（{_zh_label(row.get('name'))}）：{float(row.get('match_percent', 0.0)):.2f}%；"
+                f"预测：{_zh_label(row.get('prediction') or 'N/A')}；依据：{_zh_label(row.get('basis'))}"
             )
         kg_symptom_lines = []
         for item in kg_disease_symptoms[:5]:
-            symptoms = "；".join(str(x) for x in (item.get("symptoms") or [])[:6]) or "未检索到明确症状三元组"
+            symptoms = "；".join(_zh_label(x) for x in (item.get("symptoms") or [])[:6]) or "未检索到明确症状三元组"
             kg_symptom_lines.append(
-                f"- {item.get('disease')}：{symptoms}（证据 {item.get('evidence_count', 0)} 条）"
+                f"- {_zh_label(item.get('disease'))}：{symptoms}（证据 {item.get('evidence_count', 0)} 条）"
             )
         case_lines = []
         for idx, case in enumerate(retrieved_cases[:3], start=1):
             label = case.get("diagnosis") or case.get("title") or case.get("case_id")
             score = case.get("similarity", 0.0)
-            case_lines.append(f"{idx}. {label}（相似度={float(score):.4f}，case_id={case.get('case_id', '')}）")
+            case_lines.append(f"{idx}. {_zh_label(label)}（相似度={float(score):.4f}，case_id={case.get('case_id', '')}）")
         kg_lines = []
         for idx, item in enumerate(kg_evidence[:5], start=1):
             kg_lines.append(
-                f"{idx}. {item.get('head', '')} --{item.get('relation', '')}--> {item.get('tail', '')}"
+                f"{idx}. {_zh_label(item.get('head', ''))} --{_zh_label(item.get('relation', ''))}--> {_zh_label(item.get('tail', ''))}"
             )
         agent_lines = []
         for item in agent_outputs:
             agent_lines.append(
-                f"- {item.get('specialty') or item.get('agent_name')}: "
-                f"{item.get('risk_level', 'unknown')} confidence={item.get('confidence', 0)}"
+                f"- {_zh_label(item.get('specialty') or item.get('agent_name'))}: "
+                f"风险等级={_zh_label(item.get('risk_level', 'unknown'))}，置信度={item.get('confidence', 0)}"
             )
         return "\n".join(
             [
@@ -435,12 +435,230 @@ class DiagnosisPipeline:
                 "\n".join(agent_lines) if agent_lines else "未启用多 Agent 或未产生专科意见。",
                 "",
                 "### 七、模型摘要",
-                llm_response,
+                _zh_label(llm_response),
                 "",
                 "### 八、安全提示",
                 "本结果仅用于课程演示和辅助参考，不能替代医生诊断。",
             ]
         )
+
+
+_ZH_EXACT_TERMS = {
+    "unknown": "未知",
+    "low": "低",
+    "medium": "中",
+    "high": "高",
+    "general medical risk": "一般医学风险",
+    "cardiovascular risk": "心血管风险",
+    "cardiovascular": "心血管",
+    "liver": "肝脏",
+    "endocrine": "内分泌",
+    "liver function abnormality": "肝功能指标异常",
+    "endocrine/metabolic risk": "内分泌或代谢风险",
+    "respiratory infection differential": "呼吸道感染相关鉴别",
+    "Direct Prompting": "直接提示诊断",
+    "RAG Similar Case Retrieval": "RAG 相似病例检索",
+    "KG-RAG + Agent Evidence": "知识图谱 RAG 与 Agent 综合证据",
+    "N/A": "无",
+    "Acute COPD exacerbation / infection": "急性慢阻肺加重或感染",
+    "acute_copd_exacerbation_infection": "急性慢阻肺加重或感染",
+    "Acute pulmonary edema": "急性肺水肿",
+    "acute_pulmonary_edema": "急性肺水肿",
+    "Acute rhinosinusitis": "急性鼻窦炎",
+    "acute_rhinosinusitis": "急性鼻窦炎",
+    "Allergic sinusitis": "过敏性鼻窦炎",
+    "allergic_sinusitis": "过敏性鼻窦炎",
+    "Anemia": "贫血",
+    "anemia": "贫血",
+    "Atrial fibrillation": "心房颤动",
+    "atrial_fibrillation": "心房颤动",
+    "Boerhaave": "Boerhaave 综合征",
+    "boerhaave": "Boerhaave 综合征",
+    "Bronchiectasis": "支气管扩张",
+    "bronchiectasis": "支气管扩张",
+    "Bronchitis": "支气管炎",
+    "bronchitis": "支气管炎",
+    "Bronchospasm / acute asthma exacerbation": "支气管痉挛或急性哮喘加重",
+    "bronchospasm_acute_asthma_exacerbation": "支气管痉挛或急性哮喘加重",
+    "Chagas": "恰加斯病",
+    "chagas": "恰加斯病",
+    "Chronic rhinosinusitis": "慢性鼻窦炎",
+    "chronic_rhinosinusitis": "慢性鼻窦炎",
+    "Cluster headache": "丛集性头痛",
+    "cluster_headache": "丛集性头痛",
+    "Croup": "哮吼",
+    "croup": "哮吼",
+    "Ebola": "埃博拉病毒病",
+    "ebola": "埃博拉病毒病",
+    "Epiglottitis": "会厌炎",
+    "epiglottitis": "会厌炎",
+    "GERD": "胃食管反流病",
+    "gerd": "胃食管反流病",
+    "Guillain-Barré syndrome": "吉兰-巴雷综合征",
+    "guillain_barre_syndrome": "吉兰-巴雷综合征",
+    "HIV (initial infection)": "HIV 初次感染",
+    "hiv_initial_infection": "HIV 初次感染",
+    "Influenza": "流行性感冒",
+    "influenza": "流行性感冒",
+    "Inguinal hernia": "腹股沟疝",
+    "inguinal_hernia": "腹股沟疝",
+    "Larygospasm": "喉痉挛",
+    "larygospasm": "喉痉挛",
+    "Localized edema": "局部水肿",
+    "localized_edema": "局部水肿",
+    "Myasthenia gravis": "重症肌无力",
+    "myasthenia_gravis": "重症肌无力",
+    "Myocarditis": "心肌炎",
+    "myocarditis": "心肌炎",
+    "Pancreatic neoplasm": "胰腺肿瘤",
+    "pancreatic_neoplasm": "胰腺肿瘤",
+    "Panic attack": "惊恐发作",
+    "panic_attack": "惊恐发作",
+    "Pericarditis": "心包炎",
+    "pericarditis": "心包炎",
+    "Pneumonia": "肺炎",
+    "pneumonia": "肺炎",
+    "Possible NSTEMI / STEMI": "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死",
+    "possible_nstemi_stemi": "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死",
+    "PSVT": "阵发性室上性心动过速",
+    "psvt": "阵发性室上性心动过速",
+    "Pulmonary embolism": "肺栓塞",
+    "pulmonary_embolism": "肺栓塞",
+    "Pulmonary neoplasm": "肺部肿瘤",
+    "pulmonary_neoplasm": "肺部肿瘤",
+    "Sarcoidosis": "结节病",
+    "sarcoidosis": "结节病",
+    "Scombroid food poisoning": "鲭鱼中毒",
+    "scombroid_food_poisoning": "鲭鱼中毒",
+    "SLE": "系统性红斑狼疮",
+    "sle": "系统性红斑狼疮",
+    "Spontaneous pneumothorax": "自发性气胸",
+    "spontaneous_pneumothorax": "自发性气胸",
+    "Spontaneous rib fracture": "自发性肋骨骨折",
+    "spontaneous_rib_fracture": "自发性肋骨骨折",
+    "Stable angina": "稳定型心绞痛",
+    "stable_angina": "稳定型心绞痛",
+    "Tuberculosis": "结核病",
+    "tuberculosis": "结核病",
+    "URTI": "上呼吸道感染",
+    "urti": "上呼吸道感染",
+    "Unstable angina": "不稳定型心绞痛",
+    "unstable_angina": "不稳定型心绞痛",
+    "Viral pharyngitis": "病毒性咽炎",
+    "viral_pharyngitis": "病毒性咽炎",
+    "Whooping cough": "百日咳",
+    "whooping_cough": "百日咳",
+}
+
+
+_ZH_REPLACE_TERMS = [
+    ("Mock API diagnosis", "模拟 API 诊断"),
+    ("Mock B0 diagnosis", "模拟 B0 诊断"),
+    ("Mock B1 diagnosis", "模拟 B1 诊断"),
+    ("Mock B2 diagnosis", "模拟 B2 诊断"),
+    ("This mock output is used because no available LLM call was completed.", "当前使用本地模拟输出，因为没有完成可用的大模型调用。"),
+    ("cardiovascular risk", "心血管风险"),
+    ("liver function abnormality", "肝功能指标异常"),
+    ("endocrine/metabolic risk", "内分泌或代谢风险"),
+    ("respiratory infection differential", "呼吸道感染相关鉴别"),
+    ("general medical risk", "一般医学风险"),
+    ("Stable angina", "稳定型心绞痛"),
+    ("Unstable angina", "不稳定型心绞痛"),
+    ("Possible NSTEMI / STEMI", "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死"),
+    ("Myocarditis", "心肌炎"),
+    ("Atrial fibrillation", "心房颤动"),
+    ("Panic attack", "惊恐发作"),
+    ("Anemia", "贫血"),
+    ("GERD", "胃食管反流病"),
+    ("Localized edema", "局部水肿"),
+    ("Pulmonary embolism", "肺栓塞"),
+    ("Anaphylaxis", "过敏性休克"),
+    ("Tuberculosis", "结核病"),
+    ("tuberculosis", "结核病"),
+    ("urti", "上呼吸道感染"),
+    ("acute_rhinosinusitis", "急性鼻窦炎"),
+    ("hypertension", "高血压"),
+    ("blood pressure", "血压"),
+    ("heart disease", "心脏疾病"),
+    ("cholesterol", "胆固醇"),
+    ("atherosclerosis", "动脉粥样硬化"),
+    ("diabetes", "糖尿病"),
+    ("glucose", "血糖"),
+    ("hyperglycemia", "高血糖"),
+    ("liver", "肝脏"),
+    ("hepatic", "肝脏相关"),
+    ("hepatitis", "肝炎"),
+    ("has symptomatology", "症状表现为"),
+    ("has anamnesis", "病史提示"),
+    ("has risk factor", "危险因素为"),
+    ("has exposure", "暴露史"),
+    ("has lifestyle", "生活方式相关"),
+    ("has therapy", "治疗方式包括"),
+    ("has treatment", "治疗方式包括"),
+    ("has complication", "并发症包括"),
+    ("has biological", "生物学相关"),
+    ("has differential diagnosis", "鉴别诊断包括"),
+    ("Have you traveled out of the country in the last 4 weeks?: N", "过去 4 周内是否出国旅行：否"),
+    ("Have you traveled out of the country in the last 4 weeks?: Y", "过去 4 周内是否出国旅行：是"),
+    ("Have you traveled out of the country in the last 4 weeks?", "过去 4 周内是否出国旅行"),
+    ("Worsening shortness of breath, chronic cough with sputum production", "气短加重，慢性咳嗽伴咳痰"),
+    ("Increased sputum purulence and volume", "痰液脓性和痰量增加"),
+    ("Common in smokers or individuals exposed to pollutants", "常见于吸烟者或污染物暴露人群"),
+    ("History of chronic obstructive pulmonary disease (COPD)", "慢性阻塞性肺疾病病史（COPD）"),
+    ("Bronchodilators and antibiotics if bacterial infection is present", "如存在细菌感染，可使用支气管扩张剂和抗生素"),
+    ("Persistent cough lasting more than 3 weeks", "持续超过 3 周的咳嗽"),
+    ("night sweats", "夜间盗汗"),
+    ("weight loss", "体重下降"),
+    ("Sore throat", "咽痛"),
+    ("nasal congestion", "鼻塞"),
+    ("cough", "咳嗽"),
+    ("fever", "发热"),
+    ("pain", "疼痛"),
+    ("headache", "头痛"),
+    ("dizziness", "头晕"),
+    ("shortness of breath", "气短"),
+    ("fatigue", "乏力"),
+]
+
+for _src_key, _dst_value in list(_ZH_EXACT_TERMS.items()):
+    _ZH_EXACT_TERMS.setdefault(_src_key.lower(), _dst_value)
+    _ZH_EXACT_TERMS.setdefault(re.sub(r"[^a-z0-9]+", "_", _src_key.lower()).strip("_"), _dst_value)
+
+
+def _zh_label(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    norm_key = _zh_lookup_key(text)
+    exact = (
+        _ZH_EXACT_TERMS.get(text)
+        or _ZH_EXACT_TERMS.get(text.lower())
+        or _ZH_EXACT_TERMS.get(norm_key)
+    )
+    if exact:
+        return exact
+    translated = text
+    for src, dst in _ZH_REPLACE_TERMS:
+        translated = re.sub(re.escape(src), dst, translated, flags=re.IGNORECASE)
+    translated = _translate_underscore_terms(translated)
+    translated = translated.replace("confidence=", "置信度=")
+    translated = translated.replace("Diagnosis:", "诊断：")
+    translated = translated.replace("prediction:", "预测：")
+    translated = translated.replace(": N", "：否").replace(": Y", "：是")
+    return translated
+
+
+def _zh_lookup_key(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", str(text or "").strip().lower()).strip("_")
+
+
+def _translate_underscore_terms(text: str) -> str:
+    result = str(text or "")
+    for token in sorted(re.findall(r"\b[a-z][a-z0-9_]{2,}\b", result), key=len, reverse=True):
+        zh = _ZH_EXACT_TERMS.get(token) or _ZH_EXACT_TERMS.get(_zh_lookup_key(token))
+        if zh:
+            result = re.sub(rf"\b{re.escape(token)}\b", zh, result)
+    return result
 
 
 def _norm_text(value: Any) -> str:

@@ -19,18 +19,18 @@ def mock_generate(prompt: str, mode: str = "B0") -> str:
     text = str(prompt or "").lower()
     labels = []
     if any(k in text for k in ["ldl", "hdl", "tc", "tg", "blood pressure", "血压", "收缩压"]):
-        labels.append("cardiovascular risk")
+        labels.append("心血管代谢风险")
     if any(k in text for k in ["alt", "ast", "ggt", "tbil", "肝"]):
-        labels.append("liver function abnormality")
+        labels.append("肝功能指标异常")
     if any(k in text for k in ["glu", "hba1c", "glucose", "糖"]):
-        labels.append("endocrine/metabolic risk")
+        labels.append("血糖或内分泌代谢风险")
     if any(k in text for k in ["cough", "fever", "night sweats", "咳", "发热"]):
-        labels.append("respiratory infection differential")
+        labels.append("呼吸道感染相关鉴别")
     if not labels:
-        labels.append("general medical risk")
+        labels.append("一般医学风险")
     return (
-        f"Mock {mode} diagnosis: {', '.join(labels)}.\n"
-        "This mock output is used because no available LLM call was completed."
+        f"模拟 {mode} 诊断摘要：{ '、'.join(labels) }。\n"
+        "当前使用本地模拟输出，因为没有完成可用的大模型调用。"
     )
 
 

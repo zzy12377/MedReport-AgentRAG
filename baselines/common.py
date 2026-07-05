@@ -102,9 +102,10 @@ def load_case_file(case_file: str) -> Dict[str, str]:
     with open(case_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     case_id = str(data.get("Participant No.") or data.get("id") or os.path.splitext(os.path.basename(case_file))[0])
-    text = str(data.get("Text") or data.get("Symptoms") or data)
-    truth = str(data.get("Diagnosis") or data.get("Processed Diagnosis") or "")
-    return {"case_id": case_id, "text": text, "ground_truth": truth}
+    text = str(data.get("Text_zh") or data.get("Text") or data.get("Symptoms_zh") or data.get("Symptoms") or data)
+    truth = str(data.get("Diagnosis_original") or data.get("Diagnosis") or data.get("Processed Diagnosis") or "")
+    truth_zh = str(data.get("Diagnosis_zh") or "")
+    return {"case_id": case_id, "text": text, "ground_truth": truth, "ground_truth_zh": truth_zh}
 
 
 def natural_sort_key(path: str) -> List[Any]:

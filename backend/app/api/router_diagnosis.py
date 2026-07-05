@@ -9,6 +9,7 @@ import uuid
 from typing import Any, Dict, Optional
 
 from fastapi import APIRouter, BackgroundTasks, Body, File, Form, HTTPException, UploadFile
+from fastapi.responses import PlainTextResponse
 
 from backend.app.cache.memory_store import MemoryStore
 from backend.app.config.settings import settings
@@ -96,6 +97,34 @@ async def create_report_from_ocr_json(payload: Any = Body(...)) -> dict:
     """Frontend-friendly alias: OCR JSON in, saved diagnosis report out."""
 
     return await _diagnose_ocr_json_sync_impl(payload, input_type="ocr_json")
+
+
+@router.post("/reports/from-ocr-json/simple")
+async def create_simple_report_from_ocr_json(payload: Any = Body(...)) -> dict:
+    """OCR JSON in, page-ready report text out.
+
+    This endpoint keeps the full report saved on disk but returns only the
+    fields a frontend normally needs for direct display.
+    """
+
+    full_response = await _diagnose_ocr_json_sync_impl(payload, input_type="ocr_json")
+    report_text = _extract_display_report_text(full_response)
+    return {
+        "status": full_response.get("status", "done"),
+        "task_id": full_response.get("task_id"),
+        "report_id": full_response.get("report_id"),
+        "report_path": full_response.get("report_path"),
+        "format": "markdown",
+        "report_text": report_text,
+    }
+
+
+@router.post("/reports/from-ocr-json/markdown", response_class=PlainTextResponse)
+async def create_markdown_report_from_ocr_json(payload: Any = Body(...)) -> PlainTextResponse:
+    """OCR JSON in, raw Markdown report body out."""
+
+    full_response = await _diagnose_ocr_json_sync_impl(payload, input_type="ocr_json")
+    return PlainTextResponse(_extract_display_report_text(full_response))
 
 
 async def _diagnose_ocr_json_sync_impl(payload: Any, input_type: str) -> dict:
@@ -213,6 +242,17 @@ def _save_sync_report(
         },
     )
     return {"report_path": report_path}
+
+
+def _extract_display_report_text(response: Dict[str, Any]) -> str:
+    report = response.get("report") or {}
+    text = report.get("summary_markdown")
+    if text:
+        return str(text)
+
+    conclusion = report.get("detection_conclusion") or report.get("primary_diagnosis") or "未生成明确结论"
+    safety_note = report.get("safety_note") or "本结果仅用于课程演示和辅助参考，不能替代医生诊断。"
+    return f"## 检测报告\n\n### 一、检测结论\n{conclusion}\n\n### 二、安全提示\n{safety_note}"
 
 
 def _split_payload(payload: Any) -> tuple[Any, Dict[str, Any]]:

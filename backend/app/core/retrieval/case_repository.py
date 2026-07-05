@@ -33,7 +33,7 @@ class CaseRepository:
         if self._loaded:
             return
         self._loaded = True
-        if settings.use_multi_vector and os.path.isdir(settings.vector_base_dir):
+        if settings.use_multi_vector and not settings.use_zh_data and os.path.isdir(settings.vector_base_dir):
             try:
                 multi = MultiSourceRetriever(base_dir=settings.vector_base_dir, force_local=True)
                 if multi.sources:
@@ -44,6 +44,14 @@ class CaseRepository:
             try:
                 self._faiss = FaissCaseRetriever(
                     train_dir=settings.preferred_train_dir(),
+                    index_path=settings.case_zh_index_path if settings.use_zh_data else settings.case_index_path,
+                    metadata_path=settings.case_zh_index_metadata_path if settings.use_zh_data else settings.case_index_metadata_path,
+                    embeddings_path=settings.case_zh_embeddings_path if settings.use_zh_data else settings.case_embeddings_path,
+                    embedding_metadata_path=(
+                        settings.case_zh_embedding_metadata_path
+                        if settings.use_zh_data
+                        else settings.case_embedding_metadata_path
+                    ),
                     top_k=settings.default_top_k,
                     force_local=True,
                 )

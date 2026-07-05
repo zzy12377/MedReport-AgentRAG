@@ -129,6 +129,47 @@ def get_true_diagnosis(case_data):
     return ""
 
 
+def get_original_diagnosis(case_data, true_diagnosis: str = ""):
+    """Return the raw/source diagnosis field for CSV auditing.
+
+    ``True Diagnosis`` is the normalized target label used for evaluation.
+    ``Original Diagnosis`` should preserve source-side context when available,
+    such as raw pathology text or DDXPlus differential candidates. Falling back
+    to the true label keeps old CSV consumers from seeing an empty column.
+    """
+    if not isinstance(case_data, dict):
+        return true_diagnosis or ""
+
+    for key in [
+        "Original Diagnosis",
+        "original_diagnosis",
+        "RAW_DIAGNOSIS",
+        "raw_diagnosis",
+        "PATHOLOGY",
+        "pathology",
+    ]:
+        value = case_data.get(key)
+        if value:
+            return str(value)
+
+    processed = str(case_data.get("Processed Diagnosis") or "").strip()
+    diagnosis = str(case_data.get("Diagnosis") or "").strip()
+    if processed and diagnosis and processed != diagnosis:
+        return diagnosis
+
+    for key in [
+        "Differential Diagnosis",
+        "DIFFERENTIAL_DIAGNOSIS",
+        "differential_diagnosis",
+        "Pain restriction",
+    ]:
+        value = case_data.get(key)
+        if value:
+            return str(value)
+
+    return true_diagnosis or diagnosis or processed
+
+
 def build_retrieved_documents(indices, documents, load_case_text, max_chars_per_case: int = 1200):
     """FAISS 返回的是 documents 的下标，这里把相似病例正文拼成文本给 LLM。"""
     retrieved = []
@@ -220,10 +261,12 @@ def run_medrag(
         case_data = read_json(test_path)
         participant_no = get_participant_no(test_path, case_data)
         true_diagnosis = get_true_diagnosis(case_data)
+        original_diagnosis = get_original_diagnosis(case_data, true_diagnosis)
         query = load_case_text(test_path)
 
         print(f"Participant No.: {participant_no}")
         print(f"True Diagnosis: {true_diagnosis}")
+        print(f"Original Diagnosis: {original_diagnosis}")
         print("-" * 90)
 
         query_embedding = get_query_embedding(query)
@@ -244,7 +287,7 @@ def run_medrag(
             participant_no,
             generated_report,
             true_diagnosis,
-            true_diagnosis,
+            original_diagnosis,
         ])
 
         print("\nGenerated report:")

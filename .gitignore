@@ -42,6 +42,7 @@ dataset/df/
 dataset/ddxplus_raw/
 dataset/*.csv
 dataset/*.xlsx
+data_zh/
 
 # Embedding 缓存（避免上传几十 MB 的 .npy）
 dataset/document_embeddings_*

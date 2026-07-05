@@ -60,6 +60,38 @@ def load_kg_triples(kg_path: str = DEFAULT_KG_PATH) -> List[Dict[str, str]]:
     if not os.path.exists(kg_path):
         print(f"[WARN] KG 文件不存在：{kg_path}")
         return []
+    if kg_path.lower().endswith(".jsonl"):
+        triples = []
+        try:
+            import json
+
+            with open(kg_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    row = json.loads(line)
+                    subject = str(row.get("head") or row.get("subject") or "").strip()
+                    relation = str(row.get("relation") or "").strip()
+                    obj = str(row.get("tail") or row.get("object") or "").strip()
+                    if not (subject and relation and obj):
+                        continue
+                    text = str(row.get("text") or f"{subject} {relation} {obj}")
+                    triples.append(
+                        {
+                            "head": subject,
+                            "relation": relation,
+                            "tail": obj,
+                            "text": text,
+                            "source": str(row.get("source") or "DDXPlus_KG_JSONL"),
+                            "relation_category": classify_relation(relation, subject, obj),
+                        }
+                    )
+        except Exception as exc:
+            print(f"[WARN] 无法读取 KG JSONL 文件：{exc}")
+            return []
+        print(f"[INFO] Loaded KG triples: {len(triples)} from {kg_path}")
+        return triples
     try:
         import pandas as pd
 

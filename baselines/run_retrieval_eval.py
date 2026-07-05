@@ -31,9 +31,14 @@ def _hit_at(retrieved: List[Dict[str, Any]], truth: str, k: int) -> bool:
     if not truth_n:
         return False
     for row in retrieved[:k]:
-        diagnosis = _norm(row.get("diagnosis"))
-        if diagnosis and (truth_n == diagnosis or truth_n in diagnosis or diagnosis in truth_n):
-            return True
+        candidates = [
+            _norm(row.get("diagnosis")),
+            _norm(row.get("diagnosis_original")),
+            _norm(row.get("diagnosis_zh")),
+        ]
+        for diagnosis in candidates:
+            if diagnosis and (truth_n == diagnosis or truth_n in diagnosis or diagnosis in truth_n):
+                return True
     return False
 
 

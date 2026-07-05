@@ -38,4 +38,4 @@ class FinalReport(BaseModel):
     followup_questions: List[str] = Field(default_factory=list)
     entities: List[Dict[str, Any]] = Field(default_factory=list)
     raw_baseline_result: Dict[str, Any] = Field(default_factory=dict)
-    safety_note: str = "This result is for course demonstration and reference only; it cannot replace a physician diagnosis."
+    safety_note: str = "本结果仅用于课程演示和辅助参考，不能替代医生诊断。"
