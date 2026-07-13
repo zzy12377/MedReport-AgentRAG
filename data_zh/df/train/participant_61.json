@@ -1,0 +1,26 @@
+{
+  "Participant No.": 61,
+  "Age": "61",
+  "Sex": "F",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Habitez-vous avec 4 personnes ou plus?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_46; Avez-vous de la douleur quelque part?: V_195; Avez-vous de la douleur quelque part?: trachea; Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 5; Fumez-vous la cigarette quotidiennement?; Avez-vous eu un rhume, au cours des 2 dernières semaines?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_3",
+  "Diagnosis": "Acute laryngitis",
+  "Differential Diagnosis": "Bronchitis (0.28003897806789063); Acute laryngitis (0.1915378321395781); Viral pharyngitis (0.17204151608832965); Possible NSTEMI / STEMI (0.1565551289471391); Unstable angina (0.1461166497724649); Stable angina (0.053709894984597634)",
+  "Level 2": "Acute laryngitis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：61 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；是否与 4 人或更多人共同居住；疼痛性质：敏感样、烧灼样；疼痛部位：编码 V_33、V_46、V_195、气管；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：4；疼痛出现速度：5；是否每天吸烟；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_3。鉴别诊断候选：支气管炎（0.28003897806789063）；急性喉炎（0.1915378321395781）；病毒性咽炎（0.17204151608832965）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.1565551289471391）；不稳定型心绞痛（0.1461166497724649）；稳定型心绞痛（0.053709894984597634）。最终诊断：急性喉炎。",
+  "Text_original": "Age: 61\nSex: F\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Habitez-vous avec 4 personnes ou plus?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_46; Avez-vous de la douleur quelque part?: V_195; Avez-vous de la douleur quelque part?: trachea; Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 5; Fumez-vous la cigarette quotidiennement?; Avez-vous eu un rhume, au cours des 2 dernières semaines?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_3\nDifferential diagnosis: Bronchitis (0.28003897806789063); Acute laryngitis (0.1915378321395781); Viral pharyngitis (0.17204151608832965); Possible NSTEMI / STEMI (0.1565551289471391); Unstable angina (0.1461166497724649); Stable angina (0.053709894984597634)\nDiagnosis: Acute laryngitis",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Habitez-vous avec 4 personnes ou plus?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_46; Avez-vous de la douleur quelque part?: V_195; Avez-vous de la douleur quelque part?: trachea; Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 5; Fumez-vous la cigarette quotidiennement?; Avez-vous eu un rhume, au cours des 2 dernières semaines?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_3",
+  "Diagnosis_original": "Acute laryngitis",
+  "Differential Diagnosis_original": "Bronchitis (0.28003897806789063); Acute laryngitis (0.1915378321395781); Viral pharyngitis (0.17204151608832965); Possible NSTEMI / STEMI (0.1565551289471391); Unstable angina (0.1461166497724649); Stable angina (0.053709894984597634)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；是否与4人或更多人共同居住；疼痛性质：敏感样、烧灼样；疼痛部位：编码V_33、V_46、V_195、气管；疼痛强度：2；疼痛是否向其他部位放射：编码V_142；疼痛定位是否明确：4；疼痛出现速度：5；是否每天吸烟；症状问诊项；是否咳嗽；过去4周内是否旅行：编码V_3",
+  "Diagnosis_zh": "急性喉炎",
+  "Differential Diagnosis_zh": "支气管炎（0.28003897806789063）；急性喉炎（0.1915378321395781）；病毒性咽炎（0.17204151608832965）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.1565551289471391）；不稳定型心绞痛（0.1461166497724649）；稳定型心绞痛（0.053709894984597634）",
+  "Text_zh": "年龄：61 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；是否与 4 人或更多人共同居住；疼痛性质：敏感样、烧灼样；疼痛部位：编码 V_33、V_46、V_195、气管；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：4；疼痛出现速度：5；是否每天吸烟；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_3。鉴别诊断候选：支气管炎（0.28003897806789063）；急性喉炎（0.1915378321395781）；病毒性咽炎（0.17204151608832965）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.1565551289471391）；不稳定型心绞痛（0.1461166497724649）；稳定型心绞痛（0.053709894984597634）。最终诊断：急性喉炎。",
+  "_qwen_refined_at": "2026-07-07T11:54:54",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

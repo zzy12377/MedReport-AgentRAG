@@ -1,0 +1,20 @@
+{
+  "Participant No.": 402,
+  "Age": "32",
+  "Sex": "F",
+  "Symptoms": "Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?; Prenez-vous régulièrement des substances illicites stimulantes?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Avez-vous été traité à l’hôpital récemment pour de la nausée, de l’agitation, une intoxication ou de l’agressivité et reçu un médicament via une voie intra-veineuse ou intra-musculaire?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_3",
+  "Diagnosis": "Acute dystonic reactions",
+  "Differential Diagnosis": "Pulmonary embolism (0.3617179881727625); Acute dystonic reactions (0.2598196080565992); Myocarditis (0.2405038783369029); Scombroid food poisoning (0.13795852543373538)",
+  "Level 2": "Acute dystonic reactions",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：32 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_3\n鉴别诊断候选：肺栓塞（0.3617179881727625）；急性肌张力障碍反应（0.2598196080565992）；心肌炎（0.2405038783369029）；鲭鱼中毒（0.13795852543373538）\n最终诊断：急性肌张力障碍反应",
+  "Text_original": "Age: 32\nSex: F\nSymptoms: Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?; Prenez-vous régulièrement des substances illicites stimulantes?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Avez-vous été traité à l’hôpital récemment pour de la nausée, de l’agitation, une intoxication ou de l’agressivité et reçu un médicament via une voie intra-veineuse ou intra-musculaire?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_3\nDifferential diagnosis: Pulmonary embolism (0.3617179881727625); Acute dystonic reactions (0.2598196080565992); Myocarditis (0.2405038783369029); Scombroid food poisoning (0.13795852543373538)\nDiagnosis: Acute dystonic reactions",
+  "Symptoms_original": "Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?; Prenez-vous régulièrement des substances illicites stimulantes?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Avez-vous été traité à l’hôpital récemment pour de la nausée, de l’agitation, une intoxication ou de l’agressivité et reçu un médicament via une voie intra-veineuse ou intra-musculaire?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_3",
+  "Diagnosis_original": "Acute dystonic reactions",
+  "Differential Diagnosis_original": "Pulmonary embolism (0.3617179881727625); Acute dystonic reactions (0.2598196080565992); Myocarditis (0.2405038783369029); Scombroid food poisoning (0.13795852543373538)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_3",
+  "Diagnosis_zh": "急性肌张力障碍反应",
+  "Differential Diagnosis_zh": "肺栓塞（0.3617179881727625）；急性肌张力障碍反应（0.2598196080565992）；心肌炎（0.2405038783369029）；鲭鱼中毒（0.13795852543373538）",
+  "Text_zh": "年龄：32 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_3\n鉴别诊断候选：肺栓塞（0.3617179881727625）；急性肌张力障碍反应（0.2598196080565992）；心肌炎（0.2405038783369029）；鲭鱼中毒（0.13795852543373538）\n最终诊断：急性肌张力障碍反应"
+}

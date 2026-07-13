@@ -1,0 +1,20 @@
+{
+  "Participant No.": 818,
+  "Age": "22",
+  "Sex": "F",
+  "Symptoms": "Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Buvez-vous régulièrement du café ou du thé?; Caractérisez votre douleur:: V_191; Avez-vous de la douleur quelque part?: V_142; Quelle est l’intensité de la douleur?: 0; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 0; À quelle vitesse la douleur est-elle apparue ?: 0; Prenez-vous des boissons énergisantes régulièrement?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "PSVT",
+  "Differential Diagnosis": "PSVT (0.37140356274749337); Atrial fibrillation (0.3434021704676091); Anemia (0.1858954650644022); Scombroid food poisoning (0.09929880172049525)",
+  "Level 2": "PSVT",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：22 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；疼痛性质：编码 V_191；疼痛部位：编码 V_142；疼痛强度：0；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：0；疼痛出现速度：0；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：阵发性室上性心动过速（0.37140356274749337）；心房颤动（0.3434021704676091）；贫血（0.1858954650644022）；鲭鱼中毒（0.09929880172049525）\n最终诊断：阵发性室上性心动过速",
+  "Text_original": "Age: 22\nSex: F\nSymptoms: Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Buvez-vous régulièrement du café ou du thé?; Caractérisez votre douleur:: V_191; Avez-vous de la douleur quelque part?: V_142; Quelle est l’intensité de la douleur?: 0; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 0; À quelle vitesse la douleur est-elle apparue ?: 0; Prenez-vous des boissons énergisantes régulièrement?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: PSVT (0.37140356274749337); Atrial fibrillation (0.3434021704676091); Anemia (0.1858954650644022); Scombroid food poisoning (0.09929880172049525)\nDiagnosis: PSVT",
+  "Symptoms_original": "Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Buvez-vous régulièrement du café ou du thé?; Caractérisez votre douleur:: V_191; Avez-vous de la douleur quelque part?: V_142; Quelle est l’intensité de la douleur?: 0; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 0; À quelle vitesse la douleur est-elle apparue ?: 0; Prenez-vous des boissons énergisantes régulièrement?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "PSVT",
+  "Differential Diagnosis_original": "PSVT (0.37140356274749337); Atrial fibrillation (0.3434021704676091); Anemia (0.1858954650644022); Scombroid food poisoning (0.09929880172049525)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；疼痛性质：编码 V_191；疼痛部位：编码 V_142；疼痛强度：0；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：0；疼痛出现速度：0；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "阵发性室上性心动过速",
+  "Differential Diagnosis_zh": "阵发性室上性心动过速（0.37140356274749337）；心房颤动（0.3434021704676091）；贫血（0.1858954650644022）；鲭鱼中毒（0.09929880172049525）",
+  "Text_zh": "年龄：22 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；疼痛性质：编码 V_191；疼痛部位：编码 V_142；疼痛强度：0；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：0；疼痛出现速度：0；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：阵发性室上性心动过速（0.37140356274749337）；心房颤动（0.3434021704676091）；贫血（0.1858954650644022）；鲭鱼中毒（0.09929880172049525）\n最终诊断：阵发性室上性心动过速"
+}

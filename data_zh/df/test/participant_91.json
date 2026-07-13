@@ -1,0 +1,20 @@
+{
+  "Participant No.": 1391,
+  "Age": "39",
+  "Sex": "F",
+  "Symptoms": "Avez-vous objectivé ou ressenti de la fièvre?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Avez-vous visualisé du sang dans vos crachats?; Faites-vous actuellement usage de drogues intraveineuses?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Pulmonary neoplasm (0.12758646125194448); Tuberculosis (0.117102603778945); Bronchitis (0.10874396963293971); Pneumonia (0.10316330051938695); HIV (initial infection) (0.08432167252112545); Bronchiectasis (0.07392894126147881); Acute pulmonary edema (0.07196449434233793); Pulmonary embolism (0.06913304803731482)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：39 岁\n性别：女\n症状与病史：是否出现或感觉发热；症状问诊项；痰中是否见血；症状问诊项；是否明显气短或呼吸困难；是否过量饮酒或存在酒精依赖；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺部肿瘤（0.12758646125194448）；结核病（0.117102603778945）；支气管炎（0.10874396963293971）；肺炎（0.10316330051938695）；HIV 初次感染（0.08432167252112545）；支气管扩张（0.07392894126147881）；急性肺水肿（0.07196449434233793）；肺栓塞（0.06913304803731482）\n最终诊断：结核病",
+  "Text_original": "Age: 39\nSex: F\nSymptoms: Avez-vous objectivé ou ressenti de la fièvre?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Avez-vous visualisé du sang dans vos crachats?; Faites-vous actuellement usage de drogues intraveineuses?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Pulmonary neoplasm (0.12758646125194448); Tuberculosis (0.117102603778945); Bronchitis (0.10874396963293971); Pneumonia (0.10316330051938695); HIV (initial infection) (0.08432167252112545); Bronchiectasis (0.07392894126147881); Acute pulmonary edema (0.07196449434233793); Pulmonary embolism (0.06913304803731482)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous objectivé ou ressenti de la fièvre?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Avez-vous visualisé du sang dans vos crachats?; Faites-vous actuellement usage de drogues intraveineuses?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Pulmonary neoplasm (0.12758646125194448); Tuberculosis (0.117102603778945); Bronchitis (0.10874396963293971); Pneumonia (0.10316330051938695); HIV (initial infection) (0.08432167252112545); Bronchiectasis (0.07392894126147881); Acute pulmonary edema (0.07196449434233793); Pulmonary embolism (0.06913304803731482)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否出现或感觉发热；症状问诊项；痰中是否见血；症状问诊项；是否明显气短或呼吸困难；是否过量饮酒或存在酒精依赖；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "肺部肿瘤（0.12758646125194448）；结核病（0.117102603778945）；支气管炎（0.10874396963293971）；肺炎（0.10316330051938695）；HIV 初次感染（0.08432167252112545）；支气管扩张（0.07392894126147881）；急性肺水肿（0.07196449434233793）；肺栓塞（0.06913304803731482）",
+  "Text_zh": "年龄：39 岁\n性别：女\n症状与病史：是否出现或感觉发热；症状问诊项；痰中是否见血；症状问诊项；是否明显气短或呼吸困难；是否过量饮酒或存在酒精依赖；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺部肿瘤（0.12758646125194448）；结核病（0.117102603778945）；支气管炎（0.10874396963293971）；肺炎（0.10316330051938695）；HIV 初次感染（0.08432167252112545）；支气管扩张（0.07392894126147881）；急性肺水肿（0.07196449434233793）；肺栓塞（0.06913304803731482）\n最终诊断：结核病"
+}

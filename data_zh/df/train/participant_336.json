@@ -1,0 +1,20 @@
+{
+  "Participant No.": 336,
+  "Age": "42",
+  "Sex": "M",
+  "Symptoms": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Êtes-vous atteint par la fibrose kystique?; Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Avez-vous déjà fait une pneumonie?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?",
+  "Diagnosis": "Bronchiectasis",
+  "Differential Diagnosis": "Bronchitis (0.13147486111709758); Pulmonary neoplasm (0.11616990175601652); Tuberculosis (0.10289738651235553); Bronchiectasis (0.09145396451511392); Acute pulmonary edema (0.08902384099691679); Guillain-Barré syndrome (0.08137297627168188); Bronchospasm / acute asthma exacerbation (0.0789665115615154); Atrial fibrillation (0.07772590719053128)",
+  "Level 2": "Bronchiectasis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：42 岁\n性别：男\n症状与病史：是否明显气短或呼吸困难；症状问诊项；痰中是否见血；症状问诊项；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.13147486111709758）；肺部肿瘤（0.11616990175601652）；结核病（0.10289738651235553）；支气管扩张（0.09145396451511392）；急性肺水肿（0.08902384099691679）；吉兰-巴雷综合征（0.08137297627168188）；支气管痉挛或急性哮喘加重（0.0789665115615154）；心房颤动（0.07772590719053128）\n最终诊断：支气管扩张",
+  "Text_original": "Age: 42\nSex: M\nSymptoms: Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Êtes-vous atteint par la fibrose kystique?; Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Avez-vous déjà fait une pneumonie?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?\nDifferential diagnosis: Bronchitis (0.13147486111709758); Pulmonary neoplasm (0.11616990175601652); Tuberculosis (0.10289738651235553); Bronchiectasis (0.09145396451511392); Acute pulmonary edema (0.08902384099691679); Guillain-Barré syndrome (0.08137297627168188); Bronchospasm / acute asthma exacerbation (0.0789665115615154); Atrial fibrillation (0.07772590719053128)\nDiagnosis: Bronchiectasis",
+  "Symptoms_original": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Êtes-vous atteint par la fibrose kystique?; Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Avez-vous déjà fait une pneumonie?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?",
+  "Diagnosis_original": "Bronchiectasis",
+  "Differential Diagnosis_original": "Bronchitis (0.13147486111709758); Pulmonary neoplasm (0.11616990175601652); Tuberculosis (0.10289738651235553); Bronchiectasis (0.09145396451511392); Acute pulmonary edema (0.08902384099691679); Guillain-Barré syndrome (0.08137297627168188); Bronchospasm / acute asthma exacerbation (0.0789665115615154); Atrial fibrillation (0.07772590719053128)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否明显气短或呼吸困难；症状问诊项；痰中是否见血；症状问诊项；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "支气管扩张",
+  "Differential Diagnosis_zh": "支气管炎（0.13147486111709758）；肺部肿瘤（0.11616990175601652）；结核病（0.10289738651235553）；支气管扩张（0.09145396451511392）；急性肺水肿（0.08902384099691679）；吉兰-巴雷综合征（0.08137297627168188）；支气管痉挛或急性哮喘加重（0.0789665115615154）；心房颤动（0.07772590719053128）",
+  "Text_zh": "年龄：42 岁\n性别：男\n症状与病史：是否明显气短或呼吸困难；症状问诊项；痰中是否见血；症状问诊项；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.13147486111709758）；肺部肿瘤（0.11616990175601652）；结核病（0.10289738651235553）；支气管扩张（0.09145396451511392）；急性肺水肿（0.08902384099691679）；吉兰-巴雷综合征（0.08137297627168188）；支气管痉挛或急性哮喘加重（0.0789665115615154）；心房颤动（0.07772590719053128）\n最终诊断：支气管扩张"
+}

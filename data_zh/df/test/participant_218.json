@@ -1,0 +1,26 @@
+{
+  "Participant No.": 1518,
+  "Age": "27",
+  "Sex": "F",
+  "Symptoms": "Vous sentez-vous faible et étourdi ou avez vous l’impression que vous allez perdre conscience?; Ressentez-vous une certaine anxiété, une fébrilité?; Buvez-vous régulièrement du café ou du thé?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 5; Prenez-vous des boissons énergisantes régulièrement?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "PSVT",
+  "Differential Diagnosis": "PSVT (0.22115816674526986); Atrial fibrillation (0.1698272107892243); Anemia (0.1574460802974837); Panic attack (0.13945302146949543); Cluster headache (0.11435628282457817); Anaphylaxis (0.11061490935033484); Scombroid food poisoning (0.06937584397683354); Chagas (0.01776848454678026)",
+  "Level 2": "PSVT",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：27 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的疼痛；疼痛性质：烧灼样；疼痛部位：右太阳穴；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：2；疼痛出现速度：5；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：阵发性室上性心动过速（0.221）；心房颤动（0.17）；贫血（0.16）；惊恐发作（0.14）；丛集性头痛（0.11）；过敏性休克（0.11）；鲭鱼中毒（0.07）；恰加斯病（0.02） 最终诊断：阵发性室上性心动过速",
+  "Text_original": "Age: 27\nSex: F\nSymptoms: Vous sentez-vous faible et étourdi ou avez vous l’impression que vous allez perdre conscience?; Ressentez-vous une certaine anxiété, une fébrilité?; Buvez-vous régulièrement du café ou du thé?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 5; Prenez-vous des boissons énergisantes régulièrement?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: PSVT (0.22115816674526986); Atrial fibrillation (0.1698272107892243); Anemia (0.1574460802974837); Panic attack (0.13945302146949543); Cluster headache (0.11435628282457817); Anaphylaxis (0.11061490935033484); Scombroid food poisoning (0.06937584397683354); Chagas (0.01776848454678026)\nDiagnosis: PSVT",
+  "Symptoms_original": "Vous sentez-vous faible et étourdi ou avez vous l’impression que vous allez perdre conscience?; Ressentez-vous une certaine anxiété, une fébrilité?; Buvez-vous régulièrement du café ou du thé?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 5; Prenez-vous des boissons énergisantes régulièrement?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "PSVT",
+  "Differential Diagnosis_original": "PSVT (0.22115816674526986); Atrial fibrillation (0.1698272107892243); Anemia (0.1574460802974837); Panic attack (0.13945302146949543); Cluster headache (0.11435628282457817); Anaphylaxis (0.11061490935033484); Scombroid food poisoning (0.06937584397683354); Chagas (0.01776848454678026)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：如影随形般；疼痛性质：烧灼样；疼痛部位：太阳穴（右）；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：2；疼痛出现速度：5；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "阵发性室上性心动过速",
+  "Differential Diagnosis_zh": "阵发性室上性心动过速（0.22115816674526986）；心房颤动（0.1698272107892243）；贫血（0.1574460802974837）；惊恐发作（0.13945302146949543）；丛集性头痛（0.11435628282457817）；过敏性休克（0.11061490935033484）；鲭鱼中毒（0.06937584397683354）；恰加斯病（0.01776848454678026）",
+  "Text_zh": "年龄：27 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的疼痛；疼痛性质：烧灼样；疼痛部位：右太阳穴；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：2；疼痛出现速度：5；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：阵发性室上性心动过速（0.221）；心房颤动（0.17）；贫血（0.16）；惊恐发作（0.14）；丛集性头痛（0.11）；过敏性休克（0.11）；鲭鱼中毒（0.07）；恰加斯病（0.02） 最终诊断：阵发性室上性心动过速",
+  "_qwen_refined_at": "2026-07-07T12:42:18",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

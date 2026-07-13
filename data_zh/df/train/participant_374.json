@@ -1,0 +1,20 @@
+{
+  "Participant No.": 374,
+  "Age": "0",
+  "Sex": "F",
+  "Symptoms": "Avez-vous objectivé ou ressenti de la fièvre?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous une toux aboyante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis": "Croup",
+  "Differential Diagnosis": "Croup (0.11768811438174462); Pneumonia (0.11659287571081312); URTI (0.10504644051167726); Bronchiolitis (0.10344389258753786); Bronchitis (0.10107786264235734); Acute otitis media (0.09217512153155323); Tuberculosis (0.08400389935817534); Bronchospasm / acute asthma exacerbation (0.06727985454998023)",
+  "Level 2": "Croup",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：0 岁\n性别：女\n症状与病史：是否出现或感觉发热；症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：哮吼（0.11768811438174462）；肺炎（0.11659287571081312）；上呼吸道感染（0.10504644051167726）；未映射疾病（0.10344389258753786）；支气管炎（0.10107786264235734）；急性中耳炎（0.09217512153155323）；结核病（0.08400389935817534）；支气管痉挛或急性哮喘加重（0.06727985454998023）\n最终诊断：哮吼",
+  "Text_original": "Age: 0\nSex: F\nSymptoms: Avez-vous objectivé ou ressenti de la fièvre?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous une toux aboyante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?\nDifferential diagnosis: Croup (0.11768811438174462); Pneumonia (0.11659287571081312); URTI (0.10504644051167726); Bronchiolitis (0.10344389258753786); Bronchitis (0.10107786264235734); Acute otitis media (0.09217512153155323); Tuberculosis (0.08400389935817534); Bronchospasm / acute asthma exacerbation (0.06727985454998023)\nDiagnosis: Croup",
+  "Symptoms_original": "Avez-vous objectivé ou ressenti de la fièvre?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous une toux aboyante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis_original": "Croup",
+  "Differential Diagnosis_original": "Croup (0.11768811438174462); Pneumonia (0.11659287571081312); URTI (0.10504644051167726); Bronchiolitis (0.10344389258753786); Bronchitis (0.10107786264235734); Acute otitis media (0.09217512153155323); Tuberculosis (0.08400389935817534); Bronchospasm / acute asthma exacerbation (0.06727985454998023)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否出现或感觉发热；症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "哮吼",
+  "Differential Diagnosis_zh": "哮吼（0.11768811438174462）；肺炎（0.11659287571081312）；上呼吸道感染（0.10504644051167726）；未映射疾病（0.10344389258753786）；支气管炎（0.10107786264235734）；急性中耳炎（0.09217512153155323）；结核病（0.08400389935817534）；支气管痉挛或急性哮喘加重（0.06727985454998023）",
+  "Text_zh": "年龄：0 岁\n性别：女\n症状与病史：是否出现或感觉发热；症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：哮吼（0.11768811438174462）；肺炎（0.11659287571081312）；上呼吸道感染（0.10504644051167726）；未映射疾病（0.10344389258753786）；支气管炎（0.10107786264235734）；急性中耳炎（0.09217512153155323）；结核病（0.08400389935817534）；支气管痉挛或急性哮喘加重（0.06727985454998023）\n最终诊断：哮吼"
+}

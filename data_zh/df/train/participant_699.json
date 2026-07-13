@@ -1,0 +1,26 @@
+{
+  "Participant No.": 699,
+  "Age": "37",
+  "Sex": "M",
+  "Symptoms": "Vos symptômes sont-ils pire en position couchée et améliorés en position assise?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: sickening; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 5; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "GERD",
+  "Differential Diagnosis": "GERD (1.0)",
+  "Level 2": "GERD",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：37岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的、敏感的、牵拉感的、不适的、恐惧的；疼痛部位：腹部；疼痛强度：8；疼痛是否向其他部位放射：否；疼痛定位是否明确：不确定；疼痛出现速度：不确定；是否每天吸烟：未询问；过去4周内是否旅行：否。鉴别诊断候选：胃食管反流病（GERD，1.0）。最终诊断：胃食管反流病。",
+  "Text_original": "Age: 37\nSex: M\nSymptoms: Vos symptômes sont-ils pire en position couchée et améliorés en position assise?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: sickening; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 5; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: GERD (1.0)\nDiagnosis: GERD",
+  "Symptoms_original": "Vos symptômes sont-ils pire en position couchée et améliorés en position assise?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: sickening; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 5; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "GERD",
+  "Differential Diagnosis_original": "GERD (1.0)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：令人不安的；疼痛性质：敏感的；疼痛性质：牵拉感的；疼痛性质：恶心的；疼痛性质：恐怖的；疼痛部位：编码 V_120；疼痛部位：编码 V_121；疼痛部位：腹部；疼痛强度：8；疼痛是否向其他部位放射：编码 V_42；疼痛是否向其他部位放射：编码 V_118；疼痛定位是否明确：5；疼痛出现速度：5；是否有每天吸烟的习惯；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "胃食管反流病",
+  "Differential Diagnosis_zh": "胃食管反流病（1.0）",
+  "Text_zh": "年龄：37岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的、敏感的、牵拉感的、不适的、恐惧的；疼痛部位：腹部；疼痛强度：8；疼痛是否向其他部位放射：否；疼痛定位是否明确：不确定；疼痛出现速度：不确定；是否每天吸烟：未询问；过去4周内是否旅行：否。鉴别诊断候选：胃食管反流病（GERD，1.0）。最终诊断：胃食管反流病。",
+  "_qwen_refined_at": "2026-07-07T12:02:42",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

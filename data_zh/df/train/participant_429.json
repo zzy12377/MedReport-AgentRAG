@@ -1,0 +1,20 @@
+{
+  "Participant No.": 429,
+  "Age": "27",
+  "Sex": "M",
+  "Symptoms": "Avez-vous visualisé du sang dans vos crachats?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Prenez-vous des corticostéroïdes?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Tuberculosis (0.28497081439762406); Bronchitis (0.26792980825054796); Influenza (0.19039203104242572); HIV (initial infection) (0.1336413174003337); Pneumonia (0.12306602890906854)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：27 岁\n性别：男\n症状与病史：痰中是否见血；症状问诊项；症状问诊项；是否患有糖尿病；是否过量饮酒或存在酒精依赖；是否出现或感觉发热；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：结核病（0.28497081439762406）；支气管炎（0.26792980825054796）；流行性感冒（0.19039203104242572）；HIV 初次感染（0.1336413174003337）；肺炎（0.12306602890906854）\n最终诊断：结核病",
+  "Text_original": "Age: 27\nSex: M\nSymptoms: Avez-vous visualisé du sang dans vos crachats?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Prenez-vous des corticostéroïdes?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Tuberculosis (0.28497081439762406); Bronchitis (0.26792980825054796); Influenza (0.19039203104242572); HIV (initial infection) (0.1336413174003337); Pneumonia (0.12306602890906854)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous visualisé du sang dans vos crachats?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Prenez-vous des corticostéroïdes?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Tuberculosis (0.28497081439762406); Bronchitis (0.26792980825054796); Influenza (0.19039203104242572); HIV (initial infection) (0.1336413174003337); Pneumonia (0.12306602890906854)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "痰中是否见血；症状问诊项；症状问诊项；是否患有糖尿病；是否过量饮酒或存在酒精依赖；是否出现或感觉发热；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "结核病（0.28497081439762406）；支气管炎（0.26792980825054796）；流行性感冒（0.19039203104242572）；HIV 初次感染（0.1336413174003337）；肺炎（0.12306602890906854）",
+  "Text_zh": "年龄：27 岁\n性别：男\n症状与病史：痰中是否见血；症状问诊项；症状问诊项；是否患有糖尿病；是否过量饮酒或存在酒精依赖；是否出现或感觉发热；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：结核病（0.28497081439762406）；支气管炎（0.26792980825054796）；流行性感冒（0.19039203104242572）；HIV 初次感染（0.1336413174003337）；肺炎（0.12306602890906854）\n最终诊断：结核病"
+}

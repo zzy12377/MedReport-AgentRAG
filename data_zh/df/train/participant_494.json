@@ -1,0 +1,20 @@
+{
+  "Participant No.": 494,
+  "Age": "79",
+  "Sex": "M",
+  "Symptoms": "Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?; Avez-vous l’impression de voir double ou de voir simultanément 2 images semblables?; Avez-vous des de la difficulté à avaler ou une sensation de gêne ou de blocage lors de la déglutition?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Myasthenia gravis",
+  "Differential Diagnosis": "Myasthenia gravis (0.6896042837339919); Guillain-Barré syndrome (0.3103957162660082)",
+  "Level 2": "Myasthenia gravis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：79 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：重症肌无力（0.6896042837339919）；吉兰-巴雷综合征（0.3103957162660082）\n最终诊断：重症肌无力",
+  "Text_original": "Age: 79\nSex: M\nSymptoms: Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?; Avez-vous l’impression de voir double ou de voir simultanément 2 images semblables?; Avez-vous des de la difficulté à avaler ou une sensation de gêne ou de blocage lors de la déglutition?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Myasthenia gravis (0.6896042837339919); Guillain-Barré syndrome (0.3103957162660082)\nDiagnosis: Myasthenia gravis",
+  "Symptoms_original": "Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?; Avez-vous l’impression de voir double ou de voir simultanément 2 images semblables?; Avez-vous des de la difficulté à avaler ou une sensation de gêne ou de blocage lors de la déglutition?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Myasthenia gravis",
+  "Differential Diagnosis_original": "Myasthenia gravis (0.6896042837339919); Guillain-Barré syndrome (0.3103957162660082)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "重症肌无力",
+  "Differential Diagnosis_zh": "重症肌无力（0.6896042837339919）；吉兰-巴雷综合征（0.3103957162660082）",
+  "Text_zh": "年龄：79 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：重症肌无力（0.6896042837339919）；吉兰-巴雷综合征（0.3103957162660082）\n最终诊断：重症肌无力"
+}

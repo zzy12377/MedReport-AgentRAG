@@ -1,0 +1,26 @@
+{
+  "Participant No.": 194,
+  "Age": "27",
+  "Sex": "F",
+  "Symptoms": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous déjà eu une péricardite?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_188; Avez-vous de la douleur quelque part?: V_189; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Pericarditis",
+  "Differential Diagnosis": "Possible NSTEMI / STEMI (0.43993061120021704); Pulmonary embolism (0.4237557479647421); Spontaneous pneumothorax (0.13424730170578336); Pericarditis (0.002066339129257526)",
+  "Level 2": "Pericarditis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：27 岁 性别：女 症状与病史：有与本次就诊原因相关的疼痛；疼痛性质：锐痛；疼痛部位：编码 V_42、V_118、V_188、V_189；疼痛强度：4；疼痛是否向其他部位放射：右后胸壁；疼痛定位是否明确：是，评分 8；疼痛出现速度：3 天内；过去 4 周内是否旅行：否；鉴别诊断候选：疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.43993061120021704）；肺栓塞（0.4237557479647421）；自发性气胸（0.13424730170578336）；心包炎（0.002066339129257526） 最终诊断：心包炎",
+  "Text_original": "Age: 27\nSex: F\nSymptoms: Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous déjà eu une péricardite?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_188; Avez-vous de la douleur quelque part?: V_189; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Possible NSTEMI / STEMI (0.43993061120021704); Pulmonary embolism (0.4237557479647421); Spontaneous pneumothorax (0.13424730170578336); Pericarditis (0.002066339129257526)\nDiagnosis: Pericarditis",
+  "Symptoms_original": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous déjà eu une péricardite?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_188; Avez-vous de la douleur quelque part?: V_189; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Pericarditis",
+  "Differential Diagnosis_original": "Possible NSTEMI / STEMI (0.43993061120021704); Pulmonary embolism (0.4237557479647421); Spontaneous pneumothorax (0.13424730170578336); Pericarditis (0.002066339129257526)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割样痛；疼痛性质：锐痛；疼痛部位：编码 V_42；疼痛部位：编码 V_118；疼痛部位：编码 V_188；疼痛部位：编码 V_189；疼痛强度：4；疼痛是否向其他部位放射：后胸壁（右侧）；疼痛定位是否明确：8；疼痛出现速度：3；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "心包炎",
+  "Differential Diagnosis_zh": "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.43993061120021704）；肺栓塞（0.4237557479647421）；自发性气胸（0.13424730170578336）；心包炎（0.002066339129257526）",
+  "Text_zh": "年龄：27 岁 性别：女 症状与病史：有与本次就诊原因相关的疼痛；疼痛性质：锐痛；疼痛部位：编码 V_42、V_118、V_188、V_189；疼痛强度：4；疼痛是否向其他部位放射：右后胸壁；疼痛定位是否明确：是，评分 8；疼痛出现速度：3 天内；过去 4 周内是否旅行：否；鉴别诊断候选：疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.43993061120021704）；肺栓塞（0.4237557479647421）；自发性气胸（0.13424730170578336）；心包炎（0.002066339129257526） 最终诊断：心包炎",
+  "_qwen_refined_at": "2026-07-07T11:12:46",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

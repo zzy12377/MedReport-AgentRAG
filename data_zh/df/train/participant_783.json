@@ -1,0 +1,20 @@
+{
+  "Participant No.": 783,
+  "Age": "59",
+  "Sex": "M",
+  "Symptoms": "Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous d’arthrite rhumatoïde?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?; Avez-vous déjà fait une pneumonie?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Bronchiectasis",
+  "Differential Diagnosis": "Bronchitis (0.1068652429670829); Bronchiectasis (0.10401188385767507); Pneumonia (0.09837080441233124); Pulmonary neoplasm (0.09030991920504823); Pulmonary embolism (0.08291536128570806); Acute COPD exacerbation / infection (0.08016992341675344); Tuberculosis (0.07255682477373335); Guillain-Barré syndrome (0.057379151995785964)",
+  "Level 2": "Bronchiectasis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：59 岁\n性别：男\n症状与病史：痰中是否见血；症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否有咳嗽并伴有有色或较平时更多的痰；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：支气管炎（0.1068652429670829）；支气管扩张（0.10401188385767507）；肺炎（0.09837080441233124）；肺部肿瘤（0.09030991920504823）；肺栓塞（0.08291536128570806）；急性慢阻肺加重或感染（0.08016992341675344）；结核病（0.07255682477373335）；吉兰-巴雷综合征（0.057379151995785964）\n最终诊断：支气管扩张",
+  "Text_original": "Age: 59\nSex: M\nSymptoms: Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous d’arthrite rhumatoïde?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?; Avez-vous déjà fait une pneumonie?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Bronchitis (0.1068652429670829); Bronchiectasis (0.10401188385767507); Pneumonia (0.09837080441233124); Pulmonary neoplasm (0.09030991920504823); Pulmonary embolism (0.08291536128570806); Acute COPD exacerbation / infection (0.08016992341675344); Tuberculosis (0.07255682477373335); Guillain-Barré syndrome (0.057379151995785964)\nDiagnosis: Bronchiectasis",
+  "Symptoms_original": "Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous d’arthrite rhumatoïde?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?; Avez-vous déjà fait une pneumonie?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Bronchiectasis",
+  "Differential Diagnosis_original": "Bronchitis (0.1068652429670829); Bronchiectasis (0.10401188385767507); Pneumonia (0.09837080441233124); Pulmonary neoplasm (0.09030991920504823); Pulmonary embolism (0.08291536128570806); Acute COPD exacerbation / infection (0.08016992341675344); Tuberculosis (0.07255682477373335); Guillain-Barré syndrome (0.057379151995785964)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "痰中是否见血；症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否有咳嗽并伴有有色或较平时更多的痰；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "支气管扩张",
+  "Differential Diagnosis_zh": "支气管炎（0.1068652429670829）；支气管扩张（0.10401188385767507）；肺炎（0.09837080441233124）；肺部肿瘤（0.09030991920504823）；肺栓塞（0.08291536128570806）；急性慢阻肺加重或感染（0.08016992341675344）；结核病（0.07255682477373335）；吉兰-巴雷综合征（0.057379151995785964）",
+  "Text_zh": "年龄：59 岁\n性别：男\n症状与病史：痰中是否见血；症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否有咳嗽并伴有有色或较平时更多的痰；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：支气管炎（0.1068652429670829）；支气管扩张（0.10401188385767507）；肺炎（0.09837080441233124）；肺部肿瘤（0.09030991920504823）；肺栓塞（0.08291536128570806）；急性慢阻肺加重或感染（0.08016992341675344）；结核病（0.07255682477373335）；吉兰-巴雷综合征（0.057379151995785964）\n最终诊断：支气管扩张"
+}

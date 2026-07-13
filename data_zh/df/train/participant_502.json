@@ -1,0 +1,20 @@
+{
+  "Participant No.": 502,
+  "Age": "40",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la toux?; Avez-vous des membres de votre famille proche qui souffre d’allergies (tout type), de rhume des foins ou d'eczéma?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous le nez et/ou le palais qui pique?; Avez-vous des démangeaisons importantes au niveau d’un oeil ou des 2 yeux simultanément?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Habitez-vous en dans une grande ville?; Êtes-vous susceptible de développer plus facilement que la population générale des allergies courantes?",
+  "Diagnosis": "Allergic sinusitis",
+  "Differential Diagnosis": "Allergic sinusitis (0.34773403514099593); Bronchitis (0.25111465870017935); URTI (0.20109384771167343); Influenza (0.2000574584471513)",
+  "Level 2": "Allergic sinusitis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：40 岁\n性别：男\n症状与病史：是否咳嗽；症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状问诊项\n鉴别诊断候选：过敏性鼻窦炎（0.34773403514099593）；支气管炎（0.25111465870017935）；上呼吸道感染（0.20109384771167343）；流行性感冒（0.2000574584471513）\n最终诊断：过敏性鼻窦炎",
+  "Text_original": "Age: 40\nSex: M\nSymptoms: Avez-vous de la toux?; Avez-vous des membres de votre famille proche qui souffre d’allergies (tout type), de rhume des foins ou d'eczéma?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous le nez et/ou le palais qui pique?; Avez-vous des démangeaisons importantes au niveau d’un oeil ou des 2 yeux simultanément?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Habitez-vous en dans une grande ville?; Êtes-vous susceptible de développer plus facilement que la population générale des allergies courantes?\nDifferential diagnosis: Allergic sinusitis (0.34773403514099593); Bronchitis (0.25111465870017935); URTI (0.20109384771167343); Influenza (0.2000574584471513)\nDiagnosis: Allergic sinusitis",
+  "Symptoms_original": "Avez-vous de la toux?; Avez-vous des membres de votre famille proche qui souffre d’allergies (tout type), de rhume des foins ou d'eczéma?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous le nez et/ou le palais qui pique?; Avez-vous des démangeaisons importantes au niveau d’un oeil ou des 2 yeux simultanément?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Habitez-vous en dans une grande ville?; Êtes-vous susceptible de développer plus facilement que la population générale des allergies courantes?",
+  "Diagnosis_original": "Allergic sinusitis",
+  "Differential Diagnosis_original": "Allergic sinusitis (0.34773403514099593); Bronchitis (0.25111465870017935); URTI (0.20109384771167343); Influenza (0.2000574584471513)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否咳嗽；症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状问诊项",
+  "Diagnosis_zh": "过敏性鼻窦炎",
+  "Differential Diagnosis_zh": "过敏性鼻窦炎（0.34773403514099593）；支气管炎（0.25111465870017935）；上呼吸道感染（0.20109384771167343）；流行性感冒（0.2000574584471513）",
+  "Text_zh": "年龄：40 岁\n性别：男\n症状与病史：是否咳嗽；症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状问诊项\n鉴别诊断候选：过敏性鼻窦炎（0.34773403514099593）；支气管炎（0.25111465870017935）；上呼吸道感染（0.20109384771167343）；流行性感冒（0.2000574584471513）\n最终诊断：过敏性鼻窦炎"
+}

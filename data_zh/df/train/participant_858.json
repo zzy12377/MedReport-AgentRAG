@@ -1,0 +1,20 @@
+{
+  "Participant No.": 858,
+  "Age": "42",
+  "Sex": "M",
+  "Symptoms": "Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, n’importe où sur votre le corps?; Avez-vous été infecté par un virus récemment?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous une faiblesse ou une paralysie d’un côté du visage, qui peut être encore présente ou complètement résolue?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Guillain-Barré syndrome",
+  "Differential Diagnosis": "Guillain-Barré syndrome (1.0)",
+  "Level 2": "Guillain-Barré syndrome",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：42 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：吉兰-巴雷综合征（1.0）\n最终诊断：吉兰-巴雷综合征",
+  "Text_original": "Age: 42\nSex: M\nSymptoms: Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, n’importe où sur votre le corps?; Avez-vous été infecté par un virus récemment?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous une faiblesse ou une paralysie d’un côté du visage, qui peut être encore présente ou complètement résolue?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Guillain-Barré syndrome (1.0)\nDiagnosis: Guillain-Barré syndrome",
+  "Symptoms_original": "Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, n’importe où sur votre le corps?; Avez-vous été infecté par un virus récemment?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous une faiblesse ou une paralysie d’un côté du visage, qui peut être encore présente ou complètement résolue?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Guillain-Barré syndrome",
+  "Differential Diagnosis_original": "Guillain-Barré syndrome (1.0)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "吉兰-巴雷综合征",
+  "Differential Diagnosis_zh": "吉兰-巴雷综合征（1.0）",
+  "Text_zh": "年龄：42 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：吉兰-巴雷综合征（1.0）\n最终诊断：吉兰-巴雷综合征"
+}

@@ -1,0 +1,26 @@
+{
+  "Participant No.": 890,
+  "Age": "2",
+  "Sex": "M",
+  "Symptoms": "Avez-vous des symptômes qui sont pires après les repas?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 3; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?",
+  "Diagnosis": "GERD",
+  "Differential Diagnosis": "GERD (1.0)",
+  "Level 2": "GERD",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：2岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛：敏感样、刀割样、牵拉样、烧灼样、恶心；疼痛部位：上腹部；疼痛强度：3；疼痛是否向其他部位放射：否；疼痛定位是否明确：2；疼痛出现速度：3；是否过量饮酒或存在酒精依赖：否；是否每天吸烟：否；过去4周内是否旅行：否。鉴别诊断候选：胃食管反流病（GERD，1.0）。最终诊断：胃食管反流病。",
+  "Text_original": "Age: 2\nSex: M\nSymptoms: Avez-vous des symptômes qui sont pires après les repas?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 3; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?\nDifferential diagnosis: GERD (1.0)\nDiagnosis: GERD",
+  "Symptoms_original": "Avez-vous des symptômes qui sont pires après les repas?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 3; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?",
+  "Diagnosis_original": "GERD",
+  "Differential Diagnosis_original": "GERD (1.0)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样、刀割样、牵拉样、烧灼样、恶心样；疼痛部位：腹部（belly）、上腹部；疼痛强度：3；疼痛是否向其他部位放射：否（编码 V_42、V_118）；疼痛定位是否明确：不确定（2）；疼痛出现速度：较快；是否过量饮酒或存在酒精依赖；是否每天吸烟；是否有过去 4 周内旅行史（编码 V_9）；症状问诊项",
+  "Diagnosis_zh": "胃食管反流病",
+  "Differential Diagnosis_zh": "胃食管反流病（1.0）",
+  "Text_zh": "年龄：2岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛：敏感样、刀割样、牵拉样、烧灼样、恶心；疼痛部位：上腹部；疼痛强度：3；疼痛是否向其他部位放射：否；疼痛定位是否明确：2；疼痛出现速度：3；是否过量饮酒或存在酒精依赖：否；是否每天吸烟：否；过去4周内是否旅行：否。鉴别诊断候选：胃食管反流病（GERD，1.0）。最终诊断：胃食管反流病。",
+  "_qwen_refined_at": "2026-07-07T12:19:41",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

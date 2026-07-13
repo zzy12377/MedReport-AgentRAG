@@ -1,0 +1,20 @@
+{
+  "Participant No.": 992,
+  "Age": "46",
+  "Sex": "F",
+  "Symptoms": "Avez-vous des engourdissements, une perte de sensibilité ou des fourmillements dans les pieds?; Avez-vous été infecté par un virus récemment?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, n’importe où sur votre le corps?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Guillain-Barré syndrome",
+  "Differential Diagnosis": "Atrial fibrillation (0.28857070179782224); Guillain-Barré syndrome (0.2349509076403571); Anemia (0.21274975044907457); PSVT (0.11364341394024119); Panic attack (0.10180107258610467); Pulmonary neoplasm (0.048284153586400105); Pulmonary embolism (0.0)",
+  "Level 2": "Guillain-Barré syndrome",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：46 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：心房颤动（0.28857070179782224）；吉兰-巴雷综合征（0.2349509076403571）；贫血（0.21274975044907457）；阵发性室上性心动过速（0.11364341394024119）；惊恐发作（0.10180107258610467）；肺部肿瘤（0.048284153586400105）；肺栓塞（0.0）\n最终诊断：吉兰-巴雷综合征",
+  "Text_original": "Age: 46\nSex: F\nSymptoms: Avez-vous des engourdissements, une perte de sensibilité ou des fourmillements dans les pieds?; Avez-vous été infecté par un virus récemment?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, n’importe où sur votre le corps?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Atrial fibrillation (0.28857070179782224); Guillain-Barré syndrome (0.2349509076403571); Anemia (0.21274975044907457); PSVT (0.11364341394024119); Panic attack (0.10180107258610467); Pulmonary neoplasm (0.048284153586400105); Pulmonary embolism (0.0)\nDiagnosis: Guillain-Barré syndrome",
+  "Symptoms_original": "Avez-vous des engourdissements, une perte de sensibilité ou des fourmillements dans les pieds?; Avez-vous été infecté par un virus récemment?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, n’importe où sur votre le corps?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Guillain-Barré syndrome",
+  "Differential Diagnosis_original": "Atrial fibrillation (0.28857070179782224); Guillain-Barré syndrome (0.2349509076403571); Anemia (0.21274975044907457); PSVT (0.11364341394024119); Panic attack (0.10180107258610467); Pulmonary neoplasm (0.048284153586400105); Pulmonary embolism (0.0)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "吉兰-巴雷综合征",
+  "Differential Diagnosis_zh": "心房颤动（0.28857070179782224）；吉兰-巴雷综合征（0.2349509076403571）；贫血（0.21274975044907457）；阵发性室上性心动过速（0.11364341394024119）；惊恐发作（0.10180107258610467）；肺部肿瘤（0.048284153586400105）；肺栓塞（0.0）",
+  "Text_zh": "年龄：46 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：心房颤动（0.28857070179782224）；吉兰-巴雷综合征（0.2349509076403571）；贫血（0.21274975044907457）；阵发性室上性心动过速（0.11364341394024119）；惊恐发作（0.10180107258610467）；肺部肿瘤（0.048284153586400105）；肺栓塞（0.0）\n最终诊断：吉兰-巴雷综合征"
+}

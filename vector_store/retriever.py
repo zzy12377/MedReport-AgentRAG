@@ -13,11 +13,15 @@ import json
 import os
 from typing import Callable, List, Tuple
 
-import faiss
 import numpy as np
 
+try:
+    import faiss  # type: ignore
+except Exception:  # pragma: no cover - optional dependency
+    faiss = None
 
-def load_store(store_dir: str) -> Tuple[faiss.Index, List[dict]]:
+
+def load_store(store_dir: str) -> Tuple[object, List[dict]]:
     """
     加载一个向量库。
 
@@ -30,6 +34,12 @@ def load_store(store_dir: str) -> Tuple[faiss.Index, List[dict]]:
     Raises:
         FileNotFoundError: store_dir 不存在或缺少必要文件。
     """
+    if faiss is None:
+        raise ImportError(
+            "faiss is not installed. Install faiss-cpu in the active conda "
+            "environment to use multi-vector retrieval."
+        )
+
     store_dir = os.path.normpath(store_dir)
 
     if not os.path.isdir(store_dir):

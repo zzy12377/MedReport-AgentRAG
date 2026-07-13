@@ -1,0 +1,26 @@
+{
+  "Participant No.": 1335,
+  "Age": "4",
+  "Sex": "M",
+  "Symptoms": "Avez-vous des symptômes qui sont pires après les repas?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 5; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Avez-vous une hernie hiatale?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?",
+  "Diagnosis": "GERD",
+  "Differential Diagnosis": "GERD (0.8498288146140346); Anaphylaxis (0.15017118538596536)",
+  "Level 2": "GERD",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：4 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如鬼魅般；疼痛性质：敏感样；疼痛性质：如刀割般；疼痛性质：烧灼样；疼痛性质：令人恐惧；疼痛部位：上腹部（编码 V_120）；疼痛强度：8/10；疼痛是否向其他部位放射：否（编码 V_42、V_118）；疼痛定位是否明确：不确定；疼痛出现速度：较快；是否过量饮酒或存在酒精依赖：否；是否每天吸烟：否；过去 4 周内是否旅行：否（编码 V_9）；鉴别诊断候选：胃食管反流病（0.8498288146140346）、过敏性休克（0.15017118538596536）；最终诊断：胃食管反流病",
+  "Text_original": "Age: 4\nSex: M\nSymptoms: Avez-vous des symptômes qui sont pires après les repas?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 5; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Avez-vous une hernie hiatale?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?\nDifferential diagnosis: GERD (0.8498288146140346); Anaphylaxis (0.15017118538596536)\nDiagnosis: GERD",
+  "Symptoms_original": "Avez-vous des symptômes qui sont pires après les repas?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 5; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Avez-vous une hernie hiatale?; Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?",
+  "Diagnosis_original": "GERD",
+  "Differential Diagnosis_original": "GERD (0.8498288146140346); Anaphylaxis (0.15017118538596536)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：令人不安的；疼痛性质：敏感样；疼痛性质：如刀割；疼痛性质：烧灼样；疼痛性质：吓人的；疼痛部位：上腹部（V_120）；疼痛强度：8/10；疼痛是否向其他部位放射：否（V_42）；疼痛是否向其他部位放射：是（V_118）；疼痛定位是否明确：不确定（2）；疼痛出现速度：较快（5）；是否有过量饮酒或存在酒精依赖；是否每天吸烟；过去 4 周内是否旅行：否（V_9）。",
+  "Diagnosis_zh": "胃食管反流病",
+  "Differential Diagnosis_zh": "胃食管反流病（0.8498288146140346）；过敏性休克（0.15017118538596536）",
+  "Text_zh": "年龄：4 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如鬼魅般；疼痛性质：敏感样；疼痛性质：如刀割般；疼痛性质：烧灼样；疼痛性质：令人恐惧；疼痛部位：上腹部（编码 V_120）；疼痛强度：8/10；疼痛是否向其他部位放射：否（编码 V_42、V_118）；疼痛定位是否明确：不确定；疼痛出现速度：较快；是否过量饮酒或存在酒精依赖：否；是否每天吸烟：否；过去 4 周内是否旅行：否（编码 V_9）；鉴别诊断候选：胃食管反流病（0.8498288146140346）、过敏性休克（0.15017118538596536）；最终诊断：胃食管反流病",
+  "_qwen_refined_at": "2026-07-07T12:51:11",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

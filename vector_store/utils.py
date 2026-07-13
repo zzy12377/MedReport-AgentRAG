@@ -12,7 +12,12 @@ from __future__ import annotations
 from typing import Callable, List
 
 import numpy as np
-from tqdm import tqdm
+
+try:
+    from tqdm import tqdm
+except Exception:  # pragma: no cover - optional progress dependency
+    def tqdm(iterable, **_: object):
+        return iterable
 
 from embedding_backend import (
     get_embedding_state,
@@ -44,7 +49,10 @@ def create_embedding_fn(force_local: bool = False) -> Callable[[List[str]], np.n
     try:
         from authentication import api_key, base_url, embedding_model
         import openai
-        import faiss
+        try:
+            import faiss  # type: ignore
+        except Exception:
+            faiss = None
 
         client = openai.OpenAI(api_key=api_key, base_url=base_url)
 
@@ -66,7 +74,11 @@ def create_embedding_fn(force_local: bool = False) -> Callable[[List[str]], np.n
                     embeddings.append(response.data[0].embedding)
 
                 vectors = np.asarray(embeddings, dtype="float32")
-                faiss.normalize_L2(vectors)
+                if faiss is not None:
+                    faiss.normalize_L2(vectors)
+                else:
+                    norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+                    vectors = vectors / np.maximum(norms, 1e-12)
                 set_embedding_state(
                     backend="remote",
                     model=embedding_model,

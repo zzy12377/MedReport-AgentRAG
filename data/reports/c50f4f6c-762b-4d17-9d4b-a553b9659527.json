@@ -1,0 +1,812 @@
+{
+  "task_id": "c50f4f6c-762b-4d17-9d4b-a553b9659527",
+  "overall_risk": "low",
+  "possible_diagnoses": [
+    "急性单核细胞白血病",
+    "多发性骨髓瘤",
+    "急性肺水肿",
+    "根据血常规结果，患者主要风险为**血液系统疾病待查**，可能涉及骨髓增生异常综合征、急性白血病前期或巨幼细胞性贫血等。关键依据包括：血红蛋白92.0 g/L（低于参考值115-150），存在明显贫血；中性粒细胞比率83.0%及绝对计数7.9",
+    "cardiovascular risk"
+  ],
+  "detection_conclusion": {
+    "primary_diagnosis": "体检指标异常，需进一步评估",
+    "conclusion_type": "general_abnormality",
+    "overall_risk": "low",
+    "confidence": 0.68,
+    "confidence_percent": 68.0,
+    "basis": "发现异常指标：WBC、RBC、PLT、HGB"
+  },
+  "kg_disease_symptoms": [
+    {
+      "disease": "尿路上皮癌的肉瘤样变variant",
+      "matched_to_primary": false,
+      "symptoms": [],
+      "evidence": [
+        {
+          "head": "尿路上皮癌的肉瘤样变variant",
+          "relation": "外部病例弱证据",
+          "tail": "一名70岁男性，表现为尿急、尿失禁和夜间多尿症状持续5天。他有良性前列腺增生史，接受过坦索罗辛治疗，并伴有长期贫血。体格检查未触及腹部肿块。实验室检查显示贫血（血红蛋白8.5 mg/dL；MCV 80 fL；MCHC 30.9 g/dL），白细胞增多（WBC 14×10^3/µL）， creatini",
+          "score": 20.0,
+          "relation_category": "case_evidence",
+          "source": "external_case_evidence"
+        }
+      ],
+      "external_evidence_count": 1,
+      "symptom_count": 0,
+      "evidence_count": 1
+    },
+    {
+      "disease": "大型钙化支持细胞肿瘤",
+      "matched_to_primary": false,
+      "symptoms": [],
+      "evidence": [
+        {
+          "head": "大型钙化支持细胞肿瘤",
+          "relation": "外部病例弱证据",
+          "tail": "一名28岁男性表现为左侧睾丸疼痛。查体时，双侧睾丸大小正常，未触及肿块。实验室检查结果显示血红蛋白157 g/L，白细胞计数7.54 ×10^9/L，血小板计数314 ×10^9/L，INR 1.1，尿素5.7 mmol/L，肌酐91 µmol/L，钠离子140 mmol/L，钾离子4.6 mmol/L；肿瘤标志物在正常范围内（AFP 1）。",
+          "score": 18.0,
+          "relation_category": "case_evidence",
+          "source": "external_case_evidence"
+        }
+      ],
+      "external_evidence_count": 1,
+      "symptom_count": 0,
+      "evidence_count": 1
+    },
+    {
+      "disease": "维生素B12缺乏",
+      "matched_to_primary": false,
+      "symptoms": [],
+      "evidence": [
+        {
+          "head": "维生素B12缺乏",
+          "relation": "外部病例弱证据",
+          "tail": "一名77岁女性在家被发现意识丧失，伴有失禁和血便，病程为两周。既往有进行性恶心、呕吐和腹泻。初次就诊时体温正常，神志模糊，血压偏低。初步实验室检查结果显示：血红蛋白55 g/L；MCV 120 fL；血小板计数40×10^9/L；白细胞计数5.9×10^9/L；网织红细胞",
+          "score": 18.0,
+          "relation_category": "case_evidence",
+          "source": "external_case_evidence"
+        }
+      ],
+      "external_evidence_count": 1,
+      "symptom_count": 0,
+      "evidence_count": 1
+    }
+  ],
+  "baseline_match_rates": [
+    {
+      "mode": "B2",
+      "name": "KG-RAG + Agent Evidence",
+      "prediction": "体检指标异常，需进一步评估",
+      "match_rate": 0.479,
+      "match_percent": 47.9,
+      "basis": "综合相似病例匹配、KG 疾病证据命中和专科 Agent 置信度。",
+      "kg_matched_evidence_count": 0,
+      "agent_max_confidence": 0.65
+    }
+  ],
+  "retrieved_cases": [
+    {
+      "case_id": "medcase_reasoning:1190",
+      "source": "medcase_reasoning",
+      "title": "非急性早幼粒细胞白血病变异型，伴t(11;17)的急性髓系白血病",
+      "diagnosis": "急性单核细胞白血病",
+      "similarity": 0.7754769325256348,
+      "raw_text": "病例标题：非急性早幼粒细胞白血病变异型，伴t(11;17)的急性髓系白血病\n主要诊断：急性单核细胞白血病\n病例摘要：一名21岁女性因乏力、高热和全身皮疹1个月就诊。此前门诊评估发现全血细胞减少，但外周血无循环异型细胞，经验性抗生素和外用激素治疗无改善。入院时生命体征以持续发热为显著。实验室检查显示：WBC 0.49×10^9/L，RBC 2.98×10^12/L，血红蛋白87 g/L，红细胞压积25.8%，MCV 86.6 fL，血小板13×10^9/L；钙2.09 mmol/L，尿素3 mmol/L，肌酐106 μmol/L；D-二聚体14.91 mg/L，纤维蛋白原3.91 g/L；PT 17.9 sec（INR 1.4），PTT 39.5 sec（比值1.2）。外周血涂片确认明显全血细胞减少，并见偶发原始细胞和罕见异常早幼粒细胞。鉴于凝血功能异常背景下发现异常早幼粒细胞，等待紧急PML-RARA易位荧光原位杂交期间启动全反式维甲酸（ATRA）治疗。",
+      "metadata": {
+        "pmcid": "PMC6406162",
+        "journal": "Clinical Case Reports",
+        "publication_date": "2019-02-10",
+        "split": "train",
+        "source_file": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "source_line_no": 1191,
+        "original_id": "medcase_reasoning:1190",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\medcase_reasoning_part_0024.jsonl",
+        "original_title": "Non‐acute promyelocytic leukemia variant, acute myeloid leukemia with translocation (11;17)",
+        "original_text": "A 21-year-old woman presented with a one-month history of fatigue, high-grade fevers, and a generalized skin rash. Prior outpatient evaluation revealed pancytopenia without circulating atypical cells, and empirical antibiotics and topical steroids yielded no improvement. On admission, vital signs were notable for persistent fever. Laboratory studies showed: • WBC 0.49×10^9/L, RBC 2.98×10^12/L, hemoglobin 87 g/L, hematocrit 25.8%, MCV 86.6 fL, platelets 13×10^9/L • Calcium 2.09 mmol/L, urea 3 mmol/L, creatinine 106 μmol/L • D-dimer 14.91 mg/L, fibrinogen 3.91 g/L • PT 17.9 sec (INR 1.4), PTT 39.5 sec (ratio 1.2) Peripheral-blood smear confirmed marked pancytopenia and showed occasional blasts and rare abnormal promyelocytes. Given the finding of abnormal promyelocytes in the context of coagulopathy, all-trans retinoic acid (ATRA) was initiated pending urgent fluorescence in situ hybridization for PML-RARA translocation.",
+        "original_diagnosis": "acute monoblastic leukemia",
+        "source_jsonl": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "diagnosis_original": "acute monoblastic leukemia",
+        "diagnosis_zh": "急性单核细胞白血病"
+      }
+    },
+    {
+      "case_id": "medcase_reasoning:341",
+      "source": "medcase_reasoning",
+      "title": "肺尖肿块——多发性骨髓瘤的罕见表现☆",
+      "diagnosis": "多发性骨髓瘤",
+      "similarity": 0.755181610584259,
+      "raw_text": "病例标题：肺尖肿块——多发性骨髓瘤的罕见表现☆\n主要诊断：多发性骨髓瘤\n病例摘要：一名50岁女性，有高血压、高脂血症和物质滥用史，因右胸痛和不适数周就诊。其父亲患有肺癌。查体生命体征正常，体格检查无异常。实验室检查显示：血红蛋白9.0 g/dL（贫血），RDW 19.2%，WBC 4.1 k/µL（白细胞减少），血红蛋白A2 1.6%，总钙9.8 mg/dL，白蛋白4.4 g/dL，总蛋白9.2 g/dL，LDH 263 units/L，肾功能正常。胸腹盆部增强CT显示右侧胸膜基底肿块侵蚀第二肋骨，右胸廓邻近6个淋巴结增大，并在右肩胛骨、第八和第九肋、髂骨、左坐骨、骶骨、尾骨以及胸腰椎广泛存在多发溶骨性病变。患者因疑似Pancoast肿瘤被转诊评估，并安排右腋窝淋巴结活检；但随后失访。一个月后，她因左大腿上部疼痛2周和右肩疼痛2天复诊，右肩疼痛因活动加重。无外伤、无力或麻木。– 胸片：右上叶肿块样阴影。– 右肩X线：近端和中段肱骨骨干溶骨性、虫蚀样病灶，伴病理性压缩骨折和肺部阴影。– 右肘X线：远端肱骨骨干溶骨性病灶。– 复查胸部CT：右上叶一个5.5 cm胸膜基底肿块侵蚀第二肋骨，右腋窝淋巴结肿大，所见骨骼广泛弥漫性溶骨性病变，并有右侧多根肋骨、右肱骨近端和T4–T5椎体多发病理性骨折。– 腹盆部CT：左髂骨大型破坏性病灶以及骨盆和脊柱多发溶骨性病变。",
+      "metadata": {
+        "pmcid": "PMC9218296",
+        "journal": "Radiology Case Reports",
+        "publication_date": "2022-06-17",
+        "split": "train",
+        "source_file": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "source_line_no": 342,
+        "original_id": "medcase_reasoning:341",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\medcase_reasoning_part_0007.jsonl",
+        "original_title": "Apical lung mass—A rare presentation of multiple myeloma☆",
+        "original_text": "A 50-year-old woman with hypertension, hyperlipidemia, and substance abuse presented with several weeks of right chest pain and discomfort. Her father had lung cancer. On examination, vital signs were normal and physical findings were unremarkable. Laboratory studies showed: hemoglobin 9.0 g/dL (anemia), RDW 19.2%, WBC 4.1 k/µL (leucopenia), hemoglobin A2 1.6%, total calcium 9.8 mg/dL, albumin 4.4 g/dL, total protein 9.2 g/dL, LDH 263 units/L, and normal renal function. Contrast-enhanced CT of the chest, abdomen, and pelvis revealed a right pleural-based mass eroding the second rib, six enlarged lymph nodes adjacent to the right rib cage, and multiple lytic lesions in the right scapula, the eighth and ninth ribs, the iliac bones, left ischium, sacrum, coccyx, and throughout the thoracic and lumbar vertebrae. She was referred for evaluation of a suspected Pancoast tumor and a right axillary lymph-node biopsy was scheduled; however, she was lost to follow-up. One month later, she returned with two weeks of left upper-thigh pain and two days of right shoulder pain worsened by movement. There was no trauma, weakness, or numbness. – Chest X-ray: right upper-lobe mass-like opacity. – Right shoulder X-ray: lytic, permeative lesion of the proximal and mid humeral diaphysis with a pathologic compression fracture and lung opacities. – Right elbow X-ray: lytic lesions in the distal humeral diaphysis. – Repeat chest CT: a 5.5 cm pleural-based mass in the right upper lobe eroding the second rib, right axillary lymphadenopathy, extensive diffuse lytic lesions in the visualized bones, and multiple pathologic fractures of right ribs, proximal right humerus, and T4–T5 vertebral bodies. – CT of the abdomen and pelvis: a large destructive lesion in the left ilium and multiple lytic lesions throughout the pelvis and spine.",
+        "original_diagnosis": "MultipleMyeloma",
+        "source_jsonl": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "diagnosis_original": "MultipleMyeloma",
+        "diagnosis_zh": "多发性骨髓瘤"
+      }
+    },
+    {
+      "case_id": "open_patients:pmc-8647806-1",
+      "source": "open_patients",
+      "title": "pmc-8647806-1",
+      "diagnosis": "",
+      "similarity": 0.7346001863479614,
+      "raw_text": "病例标题：pmc-8647806-1\n病例摘要：一位70岁的白种女性，有III期慢性肾病、左侧输尿管癌（术后）和三年Waldenstrom's macroglobulinemia (WM)的病史。她因右侧肢体无力伴感觉异常、言语不清及视力模糊等症状持续三周前来就诊。头部磁共振成像(MRI)显示左丘脑中心有一个增强且细胞丰富的肿块，同时在左侧额叶皮质和次级白质中还发现了信号异常和增强的区域（图示）。这些发现提示可能存在颅内肿瘤性疾病，尤其是考虑到她有WM的历史。关于她的肿瘤病史，她在67岁时因慢性疲劳就诊并被诊断为WM，检查发现IgM水平升高（3370 mg/dl），同时伴有血浆高黏度症。骨髓活检显示低级别B细胞淋巴瘤伴浆细胞分化，骨髓受累程度为60%-70%。流式细胞术检测到的肿瘤细胞仅限于λ链，并且CD5、CD10和CD23均为阴性。通过流式细胞术和CD138免疫染色确认了λ链优势细胞的存在。患者最初接受了布鲁顿酪氨酸激酶抑制剂伊布替尼的一线治疗，但由于6个月后不良反应加剧，她转而使用利妥昔单抗（针对CD20的单克隆抗体）。不幸的是，在接下来的6个月内，她的IgM水平和血浆黏度在单独使用利妥昔单抗时有所恶化。因此，她在继续每3个月一次的利妥昔单抗治疗的同时重新开始伊布替尼治疗，并且这种联合疗法使她有了显著改善。在出现上述神经系统症状之前，她完成了两年的维持利妥昔单抗和减量伊布替尼（140 mg）治疗，最近的IgM水平为299 mg/dl。鉴于她的MRI结果，进行了头部、胸部、腹部和骨盆的计算机断层扫描(CT)，结果显示多个颅内病灶但没有发现淋巴结肿大或其他部位的肿瘤性疾病。她还接受了腰椎穿刺以分析脑脊液(CSF)并进行流式细胞术检查，结果显示主要是T细胞而无B细胞非霍奇金淋巴瘤证据。鉴于对中枢神经系统(CNS)淋巴瘤的高度怀疑，最终进行了左侧顶叶立体定向脑活检，病理结果为弥漫性侵袭性B细胞非霍奇金淋巴瘤（图示）。免疫组化研究显示CD20、CD23、BCL-6、MUM1和LE1阳性，约80%的细胞表达Ki-67增殖抗原（图示）。荧光原位杂交(FISH)分析未发现c-MYC、BCL-6或BCL2基因重排。最后，二代测序检测到MYD88 L265P突变阳性。患者接受了口服地塞米松4 mg每日四次治疗，症状有所改善。由于她的肾功能较差，她不符合甲氨蝶呤诱导治疗的条件。因此，她开始接受全脑放射治疗(WBRT)至30.6 Gy，并继续全身使用伊布替尼治疗。两个月后再次进行头部MRI检查显示患者淋巴瘤几乎完全消退，仅在左丘脑附近发现少量非特异性增强的小病灶（图示）。没有证据表明颅内占位效应、中线移位或异常的硬膜外积液。",
+      "metadata": {
+        "source_file": "data_zh\\external\\open_patients_zh.jsonl",
+        "source_line_no": 374,
+        "original_id": "open_patients:pmc-8647806-1",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "translation_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_translated_at": "2026-07-09T17:43:47",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\open_patients_part_0008.jsonl",
+        "original_title": "pmc-8647806-1",
+        "original_text": "A 70-year-old Caucasian woman with medical history significant for stage III chronic kidney disease, transitional cell ureteral cancer status post-left-sided nephroureterectomy, and three-year history of Waldenstrom's macroglobulinemia (WM) presented with complaints of right-sided weakness associated with paresthesias, dysarthria, and blurry vision of three weeks duration. Magnetic resonance (MRI) imaging of the brain demonstrated an enhancing, hypercellular mass centered in the left thalamus with additional foci of signal abnormality and enhancement in the cortex of the left frontal lobe and subcortical white matter (Figure ). These findings were concerning for an intracranial neoplastic process, especially given her history of WM. Regarding her oncological history, she was initially diagnosed with WM at the age of 67 after workup for complaints of chronic fatigue revealed elevated IgM levels (3370 mg/dl) as well as serum hyperviscosity. Bone marrow biopsy showed a low-grade B-cell lymphoma with plasmacytic differentiation and 60%–70% bone marrow involvement. Neoplastic cells were found to be lambda restricted and negative for CD5, CD10, and CD23 by flow cytometry. An increased number of lambda predominant cells were confirmed by flow cytometry and CD138 immunostaining. The patient was started on first-line therapy with the Bruton tyrosine kinase inhibitor ibrutinib; however, due to worsening adverse effects after 6 months of therapy she transitioned to rituximab, an anti-CD20 monoclonal antibody. Unfortunately, the patient was found to have worsening IgM levels and serum viscosity while on rituximab monotherapy over the next 6 months. Thus, she was restarted on ibrutinib while continuing rituximab every 3 months and had significant improvement on this combination of therapy. She completed two years of maintenance rituximab and reduced-dose ibrutinib (140 mg) at time of presentation with the most recent IgM levels of 299 mg/dl prior to the onset of her previously mentioned neurological symptoms. Given her MRI findings, computed tomography (CT) imaging of the head, chest, abdomen, and pelvis was completed, which revealed multiple intracranial lesions but no evidence of lymphadenopathy or neoplastic process elsewhere. She further underwent lumbar puncture for cerebral spinal fluid (CSF) analysis with flow cytometry showing mostly T cells without evidence of B-cell non-Hodgkin lymphoma. As there remained high suspicion for central nervous system (CNS) lymphoma, the patient ultimately had a left parietal stereotactic brain biopsy with pathology findings of diffuse aggressive B-cell non-Hodgkin lymphoma (Figure ). Immunohistochemical studies were positive for CD20, CD23, BCL-6, MUM1, and LE1 (Figure ) with approximately 80% of cells expressing Ki-67 proliferation antigen (Figure ). Fluorescent in situ hybridization (FISH) analysis was negative for c-MYC, BCL-6, or BCL2 gene rearrangements. Lastly, mutation testing using next-generation sequencing returned positive for MYD88 L265P mutation. The patient was placed on oral dexamethasone 4 mg four times daily with noticeable improvement in her speech and mobility. Due to the patient's poor renal function, she was not a candidate for induction therapy with methotrexate. Thus, she began treatment with whole brain radiation therapy (WBRT) to 30.6 Gy while continuing systemic treatment with ibrutinib. A repeat MRI of the brain two months later demonstrated near resolution of the patient's lymphoma with findings of only a few small foci of nonspecific enhancement adjacent to the biopsy cavity within the left thalamus (Figure ). There was no evidence of intracranial mass effect, midline shift, or abnormal extra-axial collection.",
+        "original_diagnosis": "",
+        "source_jsonl": "data_zh\\external\\open_patients_zh.jsonl",
+        "diagnosis_original": "",
+        "diagnosis_zh": ""
+      }
+    },
+    {
+      "case_id": "open_patients:pmc-8686241-1",
+      "source": "open_patients",
+      "title": "pmc-8686241-1",
+      "diagnosis": "",
+      "similarity": 0.72425776720047,
+      "raw_text": "病例标题：pmc-8686241-1\n病例摘要：一名女孩在3岁时通过日本的尿液筛查测试发现无症状蛋白尿。她没有肾脏或神经系统疾病的家族史。当时，她的尿蛋白与肌酐比值（UPCR）为1.0–1.5 g/gCr（参考范围<0.2 g/gCr）。超声检查显示双侧肾脏回声正常。8岁时，女孩发展为肾病综合征，但没有全身性水肿。她还记录了多尿和多饮的症状，每天尿量达到3升。UPCR为11.5 g/gCr，血清白蛋白水平为2.1 g/dL（参考范围3.7–5.5 g/dL）。血清肌酐水平为0.97 mg/dL（eGFR为46.8 mL/min/1.73m²）。尿比重为1.008，尿β2-微球蛋白增加至9,269 µg/L（参考范围≤150 μg/L）。肾活检显示25个肾小球中有13个（52%）出现节段性或全局性硬化。此外，两个肾小球显示出细胞病变，特征为肿胀、空泡化和增生的肾小囊上皮细胞遍布整个Bowman空间。基底膜下的毛细血管部分塌陷并被肿胀的内皮细胞和核固缩阻塞，这与FSGS（局灶性节段性肾小球硬化）的病理诊断一致（图A）。未观察到因塌陷而伴有系膜上皮细胞增生和肥大的肾小球。还观察到了肾小管囊状扩张和间质纤维化（图B）。患者没有神经系统表现，如癫痫或发育迟缓。脑部磁共振成像（MRI）和脑电图均未发现异常。她4个月时能抬头，8个月时能坐立，9个月时能拉起站立，并在1岁半时可以说单个单词。她不需要特殊支持就能上学。她的肾功能持续恶化，最终发展为终末期肾病（ESRD），尽管使用了血管紧张素受体拮抗剂治疗。9岁时进行了预防性肾脏移植手术，由其母亲捐赠了一个肾脏。移植后1年9个月未观察到蛋白尿复发。我们采用先前描述的方法进行全外显子测序分析，重点是FSGS或先天性肾病（如近端肾小管性酸中毒）已知致病基因的变异（表S和S），并鉴定出TRIM8基因最后一个外显子中一个新发杂合C到A转换（c.1461C > A），导致提前终止密码子（p.Tyr487*）。等位基因计数分别为68（46%）和80（54%）。Sanger测序显示该个体携带变异，而其父母未携带。此变异不在包括Exome Aggregation Consortium数据库、Genome Aggregation Database数据库、1000 Genomes项目和ESP6500项目的群体数据库中。未发现其他已知导致FSGS或先天性肾病的基因中的致病变异（表S和S）。根据美国医学遗传学与基因组学学院制定的标准，此变异被分类为致病变异（PVS1, PM1, PM2, PM6, 和 PP4）[]。我们按照先前报道的方法进行了mRNA序列分析[]。从外周血单核细胞中提取RNA，使用QIAGEN RNeasy Mini Kit，并根据制造商的说明操作。用DNase处理RNA以避免DNA污染，然后使用Thermo Fisher Scientific SuperScript VILO cDNA合成试剂盒逆转录200 ng总RNA进行mRNA分析。用于从cDNA扩增和测序TRIM8基因第6外显子的引物为：5’-GAGTGTCCCCCTGTACCCTT -3’（正向）和5’-CTACAGGGTGTATGGGCAGC-3’（反向）。使用Invitrogen Platinum II Taq Hot-Start DNA聚合酶（Thermo Fisher Scientific）和Bio-Rad Laboratories T100TM热循环仪进行聚合酶链反应实验，确认了从TRIM8突变等位基因转录的mRNA序列（图），这证实了上述结果。",
+      "metadata": {
+        "source_file": "data_zh\\external\\open_patients_zh.jsonl",
+        "source_line_no": 575,
+        "original_id": "open_patients:pmc-8686241-1",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "translation_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_translated_at": "2026-07-09T18:35:26",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\open_patients_part_0012.jsonl",
+        "original_title": "pmc-8686241-1",
+        "original_text": "A girl presented with asymptomatic proteinuria, which was revealed by a urinary screening test performed in Japan when she was 3 years old. She had no family history of renal or neurological disorders. The urine protein to creatinine ratio (UPCR) was 1.0–1.5 g/gCr (reference range < 0.2 g/gCr) at that time. Ultrasonography revealed normal echogenicity in both kidneys. She developed nephrotic syndrome, without systemic edema, at the age of 8 years. Polyuria and polydipsia with a urine output of 3L in a day were also documented. UPCR was 11.5 g/gCr, and the serum albumin level was 2.1 g/dL (reference range 3.7–5.5 g/dL). The serum creatinine level was 0.97 mg/dL (eGFR was 46.8 mL/min/1.73m2). The urine specific gravity was 1.008, and urinary beta 2-microglobulin increased to 9,269 µg/L (reference range ≤ 150 μg/L). A kidney biopsy revealed that 13 (52%) of 25 glomeruli showed segmental or global sclerosis. Furthermore, two glomeruli showed cellular lesions, which were characterized by swollen, vacuolated, and proliferative glomerular epithelial cells, throughout Bowman’s space. The underlying glomerular capillaries were partially collapsed and occluded by swollen endothelial cells and karyorrhexis, which was consistent with a pathological diagnosis of FSGS (Fig. A) []. No glomeruli with collapse and overlying podocyte hypertrophy and hyperplasia were not observed. Cystic dilatations of the tubules and interstitial fibrosis were also observed (Fig. B). The patient presented with no neurological manifestations, such as seizures or developmental delays. Brain magnetic resonance imaging (MRI) and electroencephalogram detected no abnormalities. She could hold her head up at 4 months old, sit at 8 months old, pull up to stand at 9 moths and speak single words at 1 year and 6 months old. She did not need special support to attend school. Her renal function continued to deteriorate, and she eventually developed ESRD, despite the administration of angiotensin receptor blockers. At 9 years of age, pre-emptive kidney transplantation was performed, with a kidney donated by her mother. No recurrence of proteinuria has been observed for 1 year and 9 months after transplantation. We performed whole-exome analysis using a previously described method [], focusing on variants in the genes that are currently known to cause FSGS or nephronophthisis (Tables S and S), and identified a de novo novel heterozygous C to A transition (c.1461C > A) in the last exon of TRIM8, resulting in a premature stop codon (p.Tyr487*). The alternative and reference allele counts were 68 (46%) and 80 (54%), respectively. Sanger sequencing showed that the individual had the variant but that her parents did not. This variant was absent in population databases including the Exome Aggregation Consortium database (ExAC, ), Genome Aggregation Database (gnomAD, ), 1000 Genomes (1000G, ), ESP6500 (). No additional pathogenic variants in the genes that are currently known to cause FSGS or nephronophthisis were identified (Tables S and S). This variant was classified as pathogenic (PVS1, PM1, PM2, PM6, and PP4) based on the criteria developed by the American College of Medical Genetics and Genomics []. The sequence analysis of mRNA was performed as previouly reported methods []. RNA was extracted from peripheral blood mononuclear cells with the RNeasy Mini Kit (QIAGEN), according to the manufacturer’s instructions. The RNA was treated with DNase (QIAGEN) to avoid genomic DNA contamination, and 200 ng of total RNA was reverse transcribed, using the SuperScript VILO cDNA Synthesis Kit (Thermo Fisher Scientific) for the mRNA analysis. The following primers were used to amplify and sequence exon 6 of TRIM8 from cDNA: 5’-GAGTGTCCCCCTGTACCCTT -3’ (forward) and 5’-CTACAGGGTGTATGGGCAGC-3’ (reverse). Polymerase chain reaction experiments were performed, using Invitrogen Platinum II Taq Hot-Start DNA Polymerase (Thermo Fisher Scientific) and T100TM Thermal Cycler (Bio-Rad Laboratories) identifing mRNA sequences transcribed from the TRIM8 mutant allele (Fig. ), which confirmed the esc",
+        "original_diagnosis": "",
+        "source_jsonl": "data_zh\\external\\open_patients_zh.jsonl",
+        "diagnosis_original": "",
+        "diagnosis_zh": ""
+      }
+    },
+    {
+      "case_id": "991",
+      "diagnosis": "急性肺水肿",
+      "diagnosis_original": "Acute pulmonary edema",
+      "diagnosis_zh": "急性肺水肿",
+      "similarity": 0.6769829988479614,
+      "raw_text": "年龄：63 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；症状问诊项；是否出现明显出汗；是否有与本次就诊原因相关的疼痛；疼痛性质：钝痛；疼痛性质：敏感样；疼痛部位：编码 V_42；疼痛部位：编码 V_47；疼痛部位：编码 V_68；疼痛部位：编码 V_188；疼痛部位：posterior chest wall（右）；疼痛强度：4；疼痛是否向其他部位放射：编码 V_140；疼痛是否向其他部位放射：编码 V_146；疼痛是否向其他部位放射：triceps（右）；疼痛定位是否明确：8；疼痛出现速度：0；是否明显气短或呼吸困难；症状问诊项；是否患有高血压或服用降压药；是否曾发生心脏病发作或心绞痛；是否患有心力衰竭；身体一个或多个部位是否肿胀；肿胀部位：编码 V_47；肿胀部位：编码 V_137；肿胀部位：tibia（左）；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状是否在体力活动时加重并在休息后缓解\n鉴别诊断候选：急性肺水肿（0.07661321414177563）；不稳定型心绞痛（0.06242561522739838）；肺栓塞（0.059852424923128394）；心包炎（0.05907661777604829）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.05849282425512586）；心肌炎（0.05827096656544791）；惊恐发作（0.05779473427578087）；稳定型心绞痛（0.053898074999244185）\n最终诊断：急性肺水肿"
+    }
+  ],
+  "kg_evidence": [
+    {
+      "head": "尿路上皮癌的肉瘤样变variant",
+      "relation": "外部病例弱证据",
+      "tail": "一名70岁男性，表现为尿急、尿失禁和夜间多尿症状持续5天。他有良性前列腺增生史，接受过坦索罗辛治疗，并伴有长期贫血。体格检查未触及腹部肿块。实验室检查显示贫血（血红蛋白8.5 mg/dL；MCV 80 fL；MCHC 30.9 g/dL），白细胞增多（WBC 14×10^3/µL）， creatini",
+      "text": "尿路上皮癌的肉瘤样变variant 外部病例弱证据 一名70岁男性，表现为尿急、尿失禁和夜间多尿症状持续5天。他有良性前列腺增生史，接受过坦索罗辛治疗，并伴有长期贫血。体格检查未触及腹部肿块。实验室检查显示贫血（血红蛋白8.5 mg/dL；MCV 80 fL；MCHC 30.9 g/dL），白细胞增多（WBC 14×10^3/µL）， creatini",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:3926",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-07T21:31:59"
+      },
+      "relation_category": "case_evidence",
+      "score": 20.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    },
+    {
+      "head": "大型钙化支持细胞肿瘤",
+      "relation": "外部病例弱证据",
+      "tail": "一名28岁男性表现为左侧睾丸疼痛。查体时，双侧睾丸大小正常，未触及肿块。实验室检查结果显示血红蛋白157 g/L，白细胞计数7.54 ×10^9/L，血小板计数314 ×10^9/L，INR 1.1，尿素5.7 mmol/L，肌酐91 µmol/L，钠离子140 mmol/L，钾离子4.6 mmol/L；肿瘤标志物在正常范围内（AFP 1）。",
+      "text": "大型钙化支持细胞肿瘤 外部病例弱证据 一名28岁男性表现为左侧睾丸疼痛。查体时，双侧睾丸大小正常，未触及肿块。实验室检查结果显示血红蛋白157 g/L，白细胞计数7.54 ×10^9/L，血小板计数314 ×10^9/L，INR 1.1，尿素5.7 mmol/L，肌酐91 µmol/L，钠离子140 mmol/L，钾离子4.6 mmol/L；肿瘤标志物在正常范围内（AFP 1）。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:592",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-07T17:02:55"
+      },
+      "relation_category": "case_evidence",
+      "score": 18.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    },
+    {
+      "head": "维生素B12缺乏",
+      "relation": "外部病例弱证据",
+      "tail": "一名77岁女性在家被发现意识丧失，伴有失禁和血便，病程为两周。既往有进行性恶心、呕吐和腹泻。初次就诊时体温正常，神志模糊，血压偏低。初步实验室检查结果显示：血红蛋白55 g/L；MCV 120 fL；血小板计数40×10^9/L；白细胞计数5.9×10^9/L；网织红细胞",
+      "text": "维生素B12缺乏 外部病例弱证据 一名77岁女性在家被发现意识丧失，伴有失禁和血便，病程为两周。既往有进行性恶心、呕吐和腹泻。初次就诊时体温正常，神志模糊，血压偏低。初步实验室检查结果显示：血红蛋白55 g/L；MCV 120 fL；血小板计数40×10^9/L；白细胞计数5.9×10^9/L；网织红细胞",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:5578",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T09:35:55"
+      },
+      "relation_category": "case_evidence",
+      "score": 18.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "维生素B12缺乏",
+          "relation": "外部病例弱证据",
+          "tail": "一名52岁男性，西班牙裔，伴有高血压和胃食管反流病（GERD），过去3周出现严重、持续性的左侧腰部疼痛，且在空腹或餐后疼痛加重。他还出现了2周渐进性乏力和10磅体重下降。他否认有出血、排便习惯改变、饮酒或吸烟史，也没有个人或家族恶性肿瘤或血栓事件史。他正在服用：",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "维生素B12缺乏",
+          "relation": "外部病例弱证据",
+          "tail": "一个17岁的女孩，过去一个月有低热、间歇性发热、乏力、食欲不振和全身无力。她没有咳嗽、腹痛、腹泻、头痛或尿痛。两周前口服抗生素治疗未改善症状。她的月经正常，无药物使用史，并且从出生起就是严格的素食者。体检时体温正常。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "维生素B12缺乏",
+          "relation": "外部病例弱证据",
+          "tail": "一名15岁的苏丹女孩，父母是堂表亲，她是四个健康兄弟姐妹中的第二个。她因逐渐出现的皮肤变化而被转诊进行评估。她的病史包括发育和语言迟缓（智力测试得分为70）、身材矮小、小耳畸形、头小畸形、吞咽困难以及异常牙齿。一名血液科医生曾对她进行了随访。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 3
+    },
+    {
+      "head": "人工主动脉瓣心内膜炎",
+      "relation": "外部病例弱证据",
+      "tail": "一名54岁男性患者表现为2个半小时的急性胸痛。心电图显示窦性心动过速、一度房室传导阻滞、窄QRS波群以及V3-V6和I导联显著ST段抬高。血液检查结果显示血红蛋白6.4 g/dL，平均红细胞体积68 fl，平均红细胞血红蛋白20 pg，血小板计数530×10^9/L，和C-反应蛋白水平升高。",
+      "text": "人工主动脉瓣心内膜炎 外部病例弱证据 一名54岁男性患者表现为2个半小时的急性胸痛。心电图显示窦性心动过速、一度房室传导阻滞、窄QRS波群以及V3-V6和I导联显著ST段抬高。血液检查结果显示血红蛋白6.4 g/dL，平均红细胞体积68 fl，平均红细胞血红蛋白20 pg，血小板计数530×10^9/L，和C-反应蛋白水平升高。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:5724",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T09:41:08"
+      },
+      "relation_category": "case_evidence",
+      "score": 18.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    },
+    {
+      "head": "不典型慢性粒细胞白血病",
+      "relation": "外部病例弱证据",
+      "tail": "一名53岁女性，表现为数月反复发热、咳嗽、夜间盗汗和全身乏力。初步实验室检查结果显示：白细胞计数为37.85×10^3/µL（正常值4.1–10.8×10^3/µL），中性粒细胞占85.1%，淋巴细胞占8.5%；血小板计数为127×10^3/µL（正常值150–350×10^3/µL）；血液涂片显示中性粒细胞增多伴左移，红细胞和血小板正常；ANA阴性；腹",
+      "text": "不典型慢性粒细胞白血病 外部病例弱证据 一名53岁女性，表现为数月反复发热、咳嗽、夜间盗汗和全身乏力。初步实验室检查结果显示：白细胞计数为37.85×10^3/µL（正常值4.1–10.8×10^3/µL），中性粒细胞占85.1%，淋巴细胞占8.5%；血小板计数为127×10^3/µL（正常值150–350×10^3/µL）；血液涂片显示中性粒细胞增多伴左移，红细胞和血小板正常；ANA阴性；腹",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:9304",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T14:37:11"
+      },
+      "relation_category": "case_evidence",
+      "score": 17.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "不典型慢性粒细胞白血病",
+          "relation": "外部病例弱证据",
+          "tail": "一名75岁女性因异常全血细胞计数转院检查。她报告有食欲减退、夜间盗汗和体重下降的症状。体格检查发现轻度脾脏肿大并伴有右上腹不适。实验室检查结果显示血红蛋白9.2 g/dL，白细胞计数72×10^9/L伴2%原始粒细胞和29%粒系前体细胞，以及血小板计数未提及。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "不典型慢性粒细胞白血病",
+          "relation": "外部病例弱证据",
+          "tail": "一名55岁男性，表现为双下肢无力和全身不适超过6个月。他报告过去2个月逐渐出现乏力和口渴，夜间盗汗，体重下降约5公斤，以及间歇性发热。体格检查发现脾脏肿大。实验室检测结果显示白细胞计数为38.22×10^9/L，血小板计数为390×10^9/L，乳酸脱氢酶水平为1122 U/L。骨髓穿刺和活检结果待出。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 2
+    },
+    {
+      "head": "急性纤维素性及组织性肺炎",
+      "relation": "外部病例弱证据",
+      "tail": "一名70岁男性，过去两天出现咳嗽和发热。他的血压为120/74 mmHg，心率为72次/min，呼吸频率为20次/min，体温38.2 °C，在鼻导管吸氧2 L/min的情况下血氧饱和度为98%。实验室检查结果显示：白细胞计数7.41 × 10^9/L，血红蛋白132 g/L，血小板计数387 × 10^9/L，红细胞沉降率72 mm/h，CRP大于150 mg/L。",
+      "text": "急性纤维素性及组织性肺炎 外部病例弱证据 一名70岁男性，过去两天出现咳嗽和发热。他的血压为120/74 mmHg，心率为72次/min，呼吸频率为20次/min，体温38.2 °C，在鼻导管吸氧2 L/min的情况下血氧饱和度为98%。实验室检查结果显示：白细胞计数7.41 × 10^9/L，血红蛋白132 g/L，血小板计数387 × 10^9/L，红细胞沉降率72 mm/h，CRP大于150 mg/L。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:7873",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T11:55:08"
+      },
+      "relation_category": "case_evidence",
+      "score": 16.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一名39岁男性，伴有急性B细胞淋巴母细胞白血病，6周前接受了异基因造血干细胞移植。他表现为1周的无痰咳嗽和发热。生命体征稳定，吸氧饱和度为96%（在常压空气中）。肺部检查发现右肺尖部有轻微湿啰音。实验室",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一位39岁白种女性，主诉持续8个月的非productive咳嗽和进行性呼吸困难。初始胸部X线检查提示肺炎并接受cefuroxime治疗但未见好转。高分辨率胸部CT显示外周分布为主的局灶性间质浸润伴磨玻璃样阴影和间隔增厚。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一名78岁男性，伴有2型糖尿病和类风湿关节炎，表现为1周的双侧眼睑水肿、3天的发热及呼吸困难。他因类风湿关节炎服用甲氨蝶呤、伊格拉提莫德和泼尼松。入院时体温为40.3°C，需鼻导管吸氧3L/min。体格检查显示双侧眼睑明显肿胀。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 3
+    },
+    {
+      "head": "慢性髓系白血病的淋巴样blast危机",
+      "relation": "外部病例弱证据",
+      "tail": "一名36岁亚洲男性，过去一个月表现为进行性乏力和视力下降。两个月前，他因伴有输血的贫血治疗但无持久改善。入院时体检发现肝脾肿大。实验室检查结果显示：红细胞计数1.81×10^12/L，血红蛋白54 g/L；血小板计数214×10^9/L；白细胞计数未给出。",
+      "text": "慢性髓系白血病的淋巴样blast危机 外部病例弱证据 一名36岁亚洲男性，过去一个月表现为进行性乏力和视力下降。两个月前，他因伴有输血的贫血治疗但无持久改善。入院时体检发现肝脾肿大。实验室检查结果显示：红细胞计数1.81×10^12/L，血红蛋白54 g/L；血小板计数214×10^9/L；白细胞计数未给出。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:5776",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T09:43:07"
+      },
+      "relation_category": "case_evidence",
+      "score": 15.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    },
+    {
+      "head": "骨盆疝",
+      "relation": "外部病例弱证据",
+      "tail": "一名53岁男性，伴有严重周围血管疾病，在3周前接受了左髋离断手术。他表现为发热、恶心、呕吐和腹泻。体检结果显示体温37.8°C，血压98/67 mmHg，心率140次/分，呼吸率20次/分。实验室检查显示白细胞计数为16.7×10^9/L，血红蛋白11.7 g/dL，和",
+      "text": "骨盆疝 外部病例弱证据 一名53岁男性，伴有严重周围血管疾病，在3周前接受了左髋离断手术。他表现为发热、恶心、呕吐和腹泻。体检结果显示体温37.8°C，血压98/67 mmHg，心率140次/分，呼吸率20次/分。实验室检查显示白细胞计数为16.7×10^9/L，血红蛋白11.7 g/dL，和",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:9641",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T14:49:08"
+      },
+      "relation_category": "case_evidence",
+      "score": 15.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "骨盆疝",
+          "relation": "外部病例弱证据",
+          "tail": "一位89岁女性，过去24小时内出现严重、锐痛、间歇性下腹痛并向背部放射。她呕吐了一次（非胆汁性，无血），且已有24小时未排便。无发热或尿频。既往病史包括腹主动脉瘤（AAA）、慢性阻塞性肺疾病和类风湿关节炎。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "骨盆疝",
+          "relation": "外部病例弱证据",
+          "tail": "一位84岁欧洲女性（体重39.5 kg，BMI<18.5 kg/m²），患有慢性阻塞性肺疾病并长期在家吸氧、心房颤动和充血性心脏衰竭。她表现为2天的右 groin疼痛，伴有便秘和活动能力下降。她的药物包括华法林、吸入剂、利尿剂和抗高血压药。她曾接受过开放式阑尾切除术。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 2
+    }
+  ],
+  "agent_opinions": [
+    {
+      "source": "llm_mdt",
+      "specialty": "cardiovascular",
+      "agent_name": "血液内科",
+      "risk_level": "high",
+      "confidence": 0.65,
+      "diagnosis": [
+        "血液系统疾病待查（可能为骨髓增生异常综合征/急性白血病前期/巨幼细胞性贫血）"
+      ],
+      "evidence": [
+        "血红蛋白92.0 g/L（低于115-150），存在正细胞性贫血",
+        "中性粒细胞比率83.0%（高于40-75），绝对计数7.94×10^9/L（高于1.8-6.3）",
+        "淋巴细胞比率9.5%（低于20-50），绝对计数0.91×10^9/L（低于1.1-3.2）",
+        "红细胞分布宽度% 20.7%（高于12.2-15.0），提示红细胞大小不均",
+        "平均红细胞体积100.3 fL（临界高值），平均血红蛋白浓度307.0 g/L（低于316-350）",
+        "红细胞计数2.99×10^12/L（低于3.8-5.1），红细胞压积30.0%（低于35-45）"
+      ],
+      "suggestion": "初步评估将专科定为心血管内科，但患者血常规异常主要集中在红细胞系、白细胞系分类和分布宽度，无任何心血管相关症状或指标（如血压、心率、心电图、胸痛等）。相似病例检索结果均为血液系统疾病（急性单核细胞白血病、多发性骨髓瘤、Waldenstrom巨球蛋白血症），知识图谱证据亦包含不典型慢性粒细胞白血病、维生素B12缺乏等血液相关疾病。因此，删除原推断中关于‘贫血加重心脏负荷’等无直接证据的推测，并将专科修正为血液内科。风险等级从low提升为high，因为贫血伴白细胞分类异常和红细胞分布宽度显著升高需紧急排查血液系统恶性疾病。置信度从0.6调整为0.65，基于有限数据但高度提示血液系统异常。",
+      "raw": {
+        "specialty": "血液内科",
+        "revised_suspected_disease": "血液系统疾病待查（可能为骨髓增生异常综合征/急性白血病前期/巨幼细胞性贫血）",
+        "revised_risk_level": "high",
+        "revised_confidence": 0.65,
+        "revised_supporting_evidence": [
+          "血红蛋白92.0 g/L（低于115-150），存在正细胞性贫血",
+          "中性粒细胞比率83.0%（高于40-75），绝对计数7.94×10^9/L（高于1.8-6.3）",
+          "淋巴细胞比率9.5%（低于20-50），绝对计数0.91×10^9/L（低于1.1-3.2）",
+          "红细胞分布宽度% 20.7%（高于12.2-15.0），提示红细胞大小不均",
+          "平均红细胞体积100.3 fL（临界高值），平均血红蛋白浓度307.0 g/L（低于316-350）",
+          "红细胞计数2.99×10^12/L（低于3.8-5.1），红细胞压积30.0%（低于35-45）"
+        ],
+        "revised_exclusion_evidence": [
+          "血小板计数140×10^9/L（正常范围135-350），无血小板减少",
+          "外周血未报告原始细胞或异常细胞，缺乏典型白血病细胞证据",
+          "患者文本未提供发热、骨痛、出血等急性白血病典型临床表现"
+        ],
+        "self_critique_log": "初步评估将专科定为心血管内科，但患者血常规异常主要集中在红细胞系、白细胞系分类和分布宽度，无任何心血管相关症状或指标（如血压、心率、心电图、胸痛等）。相似病例检索结果均为血液系统疾病（急性单核细胞白血病、多发性骨髓瘤、Waldenstrom巨球蛋白血症），知识图谱证据亦包含不典型慢性粒细胞白血病、维生素B12缺乏等血液相关疾病。因此，删除原推断中关于‘贫血加重心脏负荷’等无直接证据的推测，并将专科修正为血液内科。风险等级从low提升为high，因为贫血伴白细胞分类异常和红细胞分布宽度显著升高需紧急排查血液系统恶性疾病。置信度从0.6调整为0.65，基于有限数据但高度提示血液系统异常。"
+      }
+    },
+    {
+      "source": "llm_mdt",
+      "specialty": "digestive_liver",
+      "agent_name": "血液内科",
+      "risk_level": "medium",
+      "confidence": 0.6,
+      "diagnosis": [
+        "大细胞性贫血（可能为巨幼细胞性贫血或骨髓增生异常综合征）待查"
+      ],
+      "evidence": [
+        "血红蛋白92 g/L（低于参考值115-150），提示贫血",
+        "红细胞2.99×10^12/L（低于参考值3.8-5.1），红细胞压积30%（低于参考值35-45），支持贫血表现",
+        "MCV 100.3 fL（高于参考上限82-100），符合大细胞性改变",
+        "MCHC 307 g/L（低于参考值316-350），提示低色素性？但MCV高，可能为混合性",
+        "RDW-CV 20.7%（高于参考值12.2-15.0）和RDW-SD 75.2 fL（高于参考值43-53），红细胞大小不均，常见于巨幼细胞性贫血或MDS",
+        "中性粒细胞比率83%（高于40-75）和中性粒细胞计数7.94×10^9/L（高于1.8-6.3），淋巴细胞比率9.5%（低于20-50）和淋巴细胞计数0.91×10^9/L（低于1.1-3.2），提示可能存在感染或炎症反应，需进一步鉴别",
+        "相似病例中包括多发性骨髓瘤（贫血、RDW升高）、急性单核细胞白血病（全血细胞减少）、不典型慢性粒细胞白血病（白细胞增高），均提示血液系统疾病，需排查"
+      ],
+      "suggestion": "原初步评估将专科定为消化与肝胆内科，但患者血常规中无任何肝功能指标，且无腹痛、消化道症状等肝胆主诉，该专科方向缺乏证据。相似病例和知识图谱证据均指向血液系统疾病（如白血病、多发性骨髓瘤、巨球蛋白血症、不典型慢性粒细胞白血病），患者贫血、大细胞性、RDW升高、白细胞分类异常等也支持血液系统异常。因此修正专科为血液内科，疑似疾病方向为大细胞性贫血（巨幼细胞性贫血或MDS）待查。修正风险等级为中等，因贫血和白细胞异常需进一步明确病因。置信度调整为0.6，因为缺乏骨髓检查、维生素B12/叶酸水平等关键信息。",
+      "raw": {
+        "specialty": "血液内科",
+        "revised_suspected_disease": "大细胞性贫血（可能为巨幼细胞性贫血或骨髓增生异常综合征）待查",
+        "revised_risk_level": "medium",
+        "revised_confidence": 0.6,
+        "revised_supporting_evidence": [
+          "血红蛋白92 g/L（低于参考值115-150），提示贫血",
+          "红细胞2.99×10^12/L（低于参考值3.8-5.1），红细胞压积30%（低于参考值35-45），支持贫血表现",
+          "MCV 100.3 fL（高于参考上限82-100），符合大细胞性改变",
+          "MCHC 307 g/L（低于参考值316-350），提示低色素性？但MCV高，可能为混合性",
+          "RDW-CV 20.7%（高于参考值12.2-15.0）和RDW-SD 75.2 fL（高于参考值43-53），红细胞大小不均，常见于巨幼细胞性贫血或MDS",
+          "中性粒细胞比率83%（高于40-75）和中性粒细胞计数7.94×10^9/L（高于1.8-6.3），淋巴细胞比率9.5%（低于20-50）和淋巴细胞计数0.91×10^9/L（低于1.1-3.2），提示可能存在感染或炎症反应，需进一步鉴别",
+          "相似病例中包括多发性骨髓瘤（贫血、RDW升高）、急性单核细胞白血病（全血细胞减少）、不典型慢性粒细胞白血病（白细胞增高），均提示血液系统疾病，需排查"
+        ],
+        "revised_exclusion_evidence": [
+          "患者文本未提供肝功能（ALT、AST、GGT、胆红素）及腹部症状，无肝胆胰相关直接证据，排除消化与肝胆内科方向",
+          "血小板计数140×10^9/L在正常范围（135-350），不支持典型急性白血病伴血小板减少",
+          "知识图谱证据中维生素B12缺乏病例（MCV 120 fL、严重贫血）与本例大细胞性贫血有一定关联，但无相关病史或临床表现支持直接诊断"
+        ],
+        "self_critique_log": "原初步评估将专科定为消化与肝胆内科，但患者血常规中无任何肝功能指标，且无腹痛、消化道症状等肝胆主诉，该专科方向缺乏证据。相似病例和知识图谱证据均指向血液系统疾病（如白血病、多发性骨髓瘤、巨球蛋白血症、不典型慢性粒细胞白血病），患者贫血、大细胞性、RDW升高、白细胞分类异常等也支持血液系统异常。因此修正专科为血液内科，疑似疾病方向为大细胞性贫血（巨幼细胞性贫血或MDS）待查。修正风险等级为中等，因贫血和白细胞异常需进一步明确病因。置信度调整为0.6，因为缺乏骨髓检查、维生素B12/叶酸水平等关键信息。"
+      }
+    },
+    {
+      "source": "llm_mdt",
+      "specialty": "endocrine_metabolic",
+      "agent_name": "血液科",
+      "risk_level": "medium",
+      "confidence": 0.6,
+      "diagnosis": [
+        "正细胞性贫血伴中性粒细胞增多，需排除血液系统疾病及感染性/炎症性疾病"
+      ],
+      "evidence": [
+        "血红蛋白92 g/L（低于参考115-150），红细胞2.99×10^12/L（低于参考3.8-5.1），红细胞压积30%（低于参考35-45），确认贫血；",
+        "平均红细胞体积MCV 100.3 fL（临界高值，参考82-100），平均血红蛋白浓度MCHC 307 g/L（低于参考316-350），红细胞分布宽度% RDW-CV 20.7%（高于参考12.2-15.0）及RDW-SD 75.2 fL（高于参考43-53），提示红细胞大小不均，可能存在缺铁或慢性病性贫血；",
+        "中性粒细胞比率83%（高于参考40-75）及中性粒细胞计数7.94×10^9/L（高于参考1.8-6.3），淋巴细胞比率9.5%（低于参考20-50）及计数0.91×10^9/L（低于参考1.1-3.2），符合中性粒细胞增多伴淋巴细胞相对减少，常见于感染或炎症反应；",
+        "白细胞计数WBC 9.57×10^9/L（略高于参考3.5-9.5），进一步支持炎症或应激状态。"
+      ],
+      "suggestion": "原初步评估错误地选择了‘内分泌与代谢科’作为专科，且风险等级设为‘low’，置信度仅0.3，这明显不合理。血常规多项异常（贫血、中性粒细胞增多、淋巴细胞减少、RDW升高）提示血液系统疾病或感染/炎症，应属血液科范畴；缺乏任何内分泌代谢指标（如血糖、HbA1c、甲状腺功能等），故原内分泌科推断无证据支持。现修正专科为‘血液科’，修正疾病方向为‘正细胞性贫血伴中性粒细胞增多，需进一步明确原因’，风险等级上调至‘medium’，置信度0.6。支持证据均来自结构化异常指标，排除证据基于无相关临床信息。此外，原排除证据中提到的‘无血糖等指标’虽正确，但已不适用，故删除。",
+      "raw": {
+        "specialty": "血液科",
+        "revised_suspected_disease": "正细胞性贫血伴中性粒细胞增多，需排除血液系统疾病及感染性/炎症性疾病",
+        "revised_risk_level": "medium",
+        "revised_confidence": 0.6,
+        "revised_supporting_evidence": [
+          "血红蛋白92 g/L（低于参考115-150），红细胞2.99×10^12/L（低于参考3.8-5.1），红细胞压积30%（低于参考35-45），确认贫血；",
+          "平均红细胞体积MCV 100.3 fL（临界高值，参考82-100），平均血红蛋白浓度MCHC 307 g/L（低于参考316-350），红细胞分布宽度% RDW-CV 20.7%（高于参考12.2-15.0）及RDW-SD 75.2 fL（高于参考43-53），提示红细胞大小不均，可能存在缺铁或慢性病性贫血；",
+          "中性粒细胞比率83%（高于参考40-75）及中性粒细胞计数7.94×10^9/L（高于参考1.8-6.3），淋巴细胞比率9.5%（低于参考20-50）及计数0.91×10^9/L（低于参考1.1-3.2），符合中性粒细胞增多伴淋巴细胞相对减少，常见于感染或炎症反应；",
+          "白细胞计数WBC 9.57×10^9/L（略高于参考3.5-9.5），进一步支持炎症或应激状态。"
+        ],
+        "revised_exclusion_evidence": [
+          "患者文本中无发热、感染灶、出血、骨痛等临床症状描述，无法确认感染或血液肿瘤的直接证据；",
+          "血小板计数正常（140×10^9/L，参考135-350），无血小板减少或增多；",
+          "无既往病史、用药史及其他系统异常指标，无法排除慢性病或药物影响。"
+        ],
+        "self_critique_log": "原初步评估错误地选择了‘内分泌与代谢科’作为专科，且风险等级设为‘low’，置信度仅0.3，这明显不合理。血常规多项异常（贫血、中性粒细胞增多、淋巴细胞减少、RDW升高）提示血液系统疾病或感染/炎症，应属血液科范畴；缺乏任何内分泌代谢指标（如血糖、HbA1c、甲状腺功能等），故原内分泌科推断无证据支持。现修正专科为‘血液科’，修正疾病方向为‘正细胞性贫血伴中性粒细胞增多，需进一步明确原因’，风险等级上调至‘medium’，置信度0.6。支持证据均来自结构化异常指标，排除证据基于无相关临床信息。此外，原排除证据中提到的‘无血糖等指标’虽正确，但已不适用，故删除。"
+      }
+    }
+  ],
+  "critique": {
+    "conflicts": [],
+    "low_confidence_agents": [
+      "cardiovascular",
+      "liver",
+      "endocrine"
+    ],
+    "calibration_note": "Phase-1 rule critique; KG consistency checks are planned for phase 2.",
+    "llm_mdt": {
+      "source": "llm_mdt",
+      "raw_specialist_opinions": {
+        "cardiovascular": {
+          "specialty": "心血管内科",
+          "suspected_disease": "无明确专科风险",
+          "risk_level": "low",
+          "confidence_score": 0.6,
+          "supporting_evidence": [
+            "血红蛋白92.0 g/L（低于参考值115-150），存在贫血，可能加重心脏负荷"
+          ],
+          "exclusion_evidence": [
+            "患者文本未提供血压、心率、血脂、胸痛、呼吸困难、心衰、冠心病、心律失常等心血管相关症状或指标",
+            "血常规异常主要指向血液系统问题，无直接心血管异常证据"
+          ],
+          "suggestion": "建议完善贫血相关检查（如铁蛋白、维生素B12、叶酸等），同时评估心血管状况（心电图、心脏超声），并转诊血液科明确贫血原因。"
+        },
+        "digestive_liver": {
+          "specialty": "消化与肝胆内科",
+          "suspected_disease": "无明确专科风险",
+          "risk_level": "low",
+          "confidence_score": 0.1,
+          "supporting_evidence": [
+            "患者血常规结果中无ALT、AST、GGT、胆红素等肝功能指标",
+            "患者文本中无腹痛、消化道症状等肝胆胰相关主诉"
+          ],
+          "exclusion_evidence": [
+            "患者血常规提示贫血（HGB 92.0 g/L）、大细胞性改变（MCV 100.3 fL）及RDW升高，可能指向血液系统疾病，但非肝胆专科直接证据",
+            "相似病例和知识图谱证据主要涉及血液系统疾病（如白血病、多发性骨髓瘤）或感染性疾病，未提供肝胆胰相关风险"
+          ],
+          "suggestion": "建议完善肝功能、腹部超声或肝胆胰CT检查，以排除肝胆系统隐匿性病变；同时针对贫血和白细胞异常，建议进一步血液科就诊明确原因。"
+        },
+        "endocrine_metabolic": {
+          "specialty": "内分泌与代谢科",
+          "suspected_disease": "无明确专科风险",
+          "risk_level": "low",
+          "confidence_score": 0.3,
+          "supporting_evidence": [
+            "血红蛋白92 g/L（低于参考115-150），提示贫血；红细胞2.99×10^12/L（低于参考3.8-5.1），红细胞压积30%（低于参考35-45），进一步确认贫血；红细胞分布宽度% 20.7（高于参考12.2-15.0），提示红细胞大小不等；中性粒细胞比率83%（升高，参考40-75）及计数7.94×10^9/L（升高，参考1.8-6.3），提示可能存在炎症或应激反应；淋巴细胞比率9.5%（降低，参考20-50）及计数0.91×10^9/L（降低，参考1.1-3.2），与中性粒细胞增多一致。"
+          ],
+          "exclusion_evidence": [
+            "无血糖、HbA1c、血脂、尿酸、甲状腺功能或BMI等内分泌代谢相关指标异常或数据，无法评估代谢综合征或糖尿病等常见内分泌疾病风险。"
+          ],
+          "suggestion": "建议补充血糖、糖化血红蛋白、血脂、尿酸、甲状腺功能（TSH、FT4）及肾功能等检查，以排除内分泌疾病导致的继发性贫血；同时建议转血液科进一步评估贫血及白细胞异常的原因。"
+        }
+      },
+      "revised_specialist_opinions": {
+        "cardiovascular": {
+          "specialty": "血液内科",
+          "revised_suspected_disease": "血液系统疾病待查（可能为骨髓增生异常综合征/急性白血病前期/巨幼细胞性贫血）",
+          "revised_risk_level": "high",
+          "revised_confidence": 0.65,
+          "revised_supporting_evidence": [
+            "血红蛋白92.0 g/L（低于115-150），存在正细胞性贫血",
+            "中性粒细胞比率83.0%（高于40-75），绝对计数7.94×10^9/L（高于1.8-6.3）",
+            "淋巴细胞比率9.5%（低于20-50），绝对计数0.91×10^9/L（低于1.1-3.2）",
+            "红细胞分布宽度% 20.7%（高于12.2-15.0），提示红细胞大小不均",
+            "平均红细胞体积100.3 fL（临界高值），平均血红蛋白浓度307.0 g/L（低于316-350）",
+            "红细胞计数2.99×10^12/L（低于3.8-5.1），红细胞压积30.0%（低于35-45）"
+          ],
+          "revised_exclusion_evidence": [
+            "血小板计数140×10^9/L（正常范围135-350），无血小板减少",
+            "外周血未报告原始细胞或异常细胞，缺乏典型白血病细胞证据",
+            "患者文本未提供发热、骨痛、出血等急性白血病典型临床表现"
+          ],
+          "self_critique_log": "初步评估将专科定为心血管内科，但患者血常规异常主要集中在红细胞系、白细胞系分类和分布宽度，无任何心血管相关症状或指标（如血压、心率、心电图、胸痛等）。相似病例检索结果均为血液系统疾病（急性单核细胞白血病、多发性骨髓瘤、Waldenstrom巨球蛋白血症），知识图谱证据亦包含不典型慢性粒细胞白血病、维生素B12缺乏等血液相关疾病。因此，删除原推断中关于‘贫血加重心脏负荷’等无直接证据的推测，并将专科修正为血液内科。风险等级从low提升为high，因为贫血伴白细胞分类异常和红细胞分布宽度显著升高需紧急排查血液系统恶性疾病。置信度从0.6调整为0.65，基于有限数据但高度提示血液系统异常。"
+        },
+        "digestive_liver": {
+          "specialty": "血液内科",
+          "revised_suspected_disease": "大细胞性贫血（可能为巨幼细胞性贫血或骨髓增生异常综合征）待查",
+          "revised_risk_level": "medium",
+          "revised_confidence": 0.6,
+          "revised_supporting_evidence": [
+            "血红蛋白92 g/L（低于参考值115-150），提示贫血",
+            "红细胞2.99×10^12/L（低于参考值3.8-5.1），红细胞压积30%（低于参考值35-45），支持贫血表现",
+            "MCV 100.3 fL（高于参考上限82-100），符合大细胞性改变",
+            "MCHC 307 g/L（低于参考值316-350），提示低色素性？但MCV高，可能为混合性",
+            "RDW-CV 20.7%（高于参考值12.2-15.0）和RDW-SD 75.2 fL（高于参考值43-53），红细胞大小不均，常见于巨幼细胞性贫血或MDS",
+            "中性粒细胞比率83%（高于40-75）和中性粒细胞计数7.94×10^9/L（高于1.8-6.3），淋巴细胞比率9.5%（低于20-50）和淋巴细胞计数0.91×10^9/L（低于1.1-3.2），提示可能存在感染或炎症反应，需进一步鉴别",
+            "相似病例中包括多发性骨髓瘤（贫血、RDW升高）、急性单核细胞白血病（全血细胞减少）、不典型慢性粒细胞白血病（白细胞增高），均提示血液系统疾病，需排查"
+          ],
+          "revised_exclusion_evidence": [
+            "患者文本未提供肝功能（ALT、AST、GGT、胆红素）及腹部症状，无肝胆胰相关直接证据，排除消化与肝胆内科方向",
+            "血小板计数140×10^9/L在正常范围（135-350），不支持典型急性白血病伴血小板减少",
+            "知识图谱证据中维生素B12缺乏病例（MCV 120 fL、严重贫血）与本例大细胞性贫血有一定关联，但无相关病史或临床表现支持直接诊断"
+          ],
+          "self_critique_log": "原初步评估将专科定为消化与肝胆内科，但患者血常规中无任何肝功能指标，且无腹痛、消化道症状等肝胆主诉，该专科方向缺乏证据。相似病例和知识图谱证据均指向血液系统疾病（如白血病、多发性骨髓瘤、巨球蛋白血症、不典型慢性粒细胞白血病），患者贫血、大细胞性、RDW升高、白细胞分类异常等也支持血液系统异常。因此修正专科为血液内科，疑似疾病方向为大细胞性贫血（巨幼细胞性贫血或MDS）待查。修正风险等级为中等，因贫血和白细胞异常需进一步明确病因。置信度调整为0.6，因为缺乏骨髓检查、维生素B12/叶酸水平等关键信息。"
+        },
+        "endocrine_metabolic": {
+          "specialty": "血液科",
+          "revised_suspected_disease": "正细胞性贫血伴中性粒细胞增多，需排除血液系统疾病及感染性/炎症性疾病",
+          "revised_risk_level": "medium",
+          "revised_confidence": 0.6,
+          "revised_supporting_evidence": [
+            "血红蛋白92 g/L（低于参考115-150），红细胞2.99×10^12/L（低于参考3.8-5.1），红细胞压积30%（低于参考35-45），确认贫血；",
+            "平均红细胞体积MCV 100.3 fL（临界高值，参考82-100），平均血红蛋白浓度MCHC 307 g/L（低于参考316-350），红细胞分布宽度% RDW-CV 20.7%（高于参考12.2-15.0）及RDW-SD 75.2 fL（高于参考43-53），提示红细胞大小不均，可能存在缺铁或慢性病性贫血；",
+            "中性粒细胞比率83%（高于参考40-75）及中性粒细胞计数7.94×10^9/L（高于参考1.8-6.3），淋巴细胞比率9.5%（低于参考20-50）及计数0.91×10^9/L（低于参考1.1-3.2），符合中性粒细胞增多伴淋巴细胞相对减少，常见于感染或炎症反应；",
+            "白细胞计数WBC 9.57×10^9/L（略高于参考3.5-9.5），进一步支持炎症或应激状态。"
+          ],
+          "revised_exclusion_evidence": [
+            "患者文本中无发热、感染灶、出血、骨痛等临床症状描述，无法确认感染或血液肿瘤的直接证据；",
+            "血小板计数正常（140×10^9/L，参考135-350），无血小板减少或增多；",
+            "无既往病史、用药史及其他系统异常指标，无法排除慢性病或药物影响。"
+          ],
+          "self_critique_log": "原初步评估错误地选择了‘内分泌与代谢科’作为专科，且风险等级设为‘low’，置信度仅0.3，这明显不合理。血常规多项异常（贫血、中性粒细胞增多、淋巴细胞减少、RDW升高）提示血液系统疾病或感染/炎症，应属血液科范畴；缺乏任何内分泌代谢指标（如血糖、HbA1c、甲状腺功能等），故原内分泌科推断无证据支持。现修正专科为‘血液科’，修正疾病方向为‘正细胞性贫血伴中性粒细胞增多，需进一步明确原因’，风险等级上调至‘medium’，置信度0.6。支持证据均来自结构化异常指标，排除证据基于无相关临床信息。此外，原排除证据中提到的‘无血糖等指标’虽正确，但已不适用，故删除。"
+        }
+      },
+      "critique_calibration": {
+        "evidence_verification": {
+          "cardiovascular": {
+            "validity": "所有supporting evidence均取自患者血常规指标，真实有效。",
+            "missing_negative_evidence": "已提及血小板正常、无原始细胞报告、无典型临床表现等关键阴性证据，未遗漏重要阴性指标。",
+            "kg_alignment": "知识图谱证据包括不典型慢性粒细胞白血病、维生素B12缺乏等血液疾病，本例贫血伴中性粒细胞增多与部分病例一致，但缺乏全血细胞减少或明确巨幼变等典型特征，需进一步鉴别。"
+          },
+          "digestive_liver": {
+            "validity": "支持证据均来自输入血常规，真实可靠。",
+            "missing_negative_evidence": "已指出无肝功能指标及腹部症状，排除了消化肝胆方向，未遗漏其他重要阴性证据。",
+            "kg_alignment": "知识图谱中维生素B12缺乏病例（MCV 120 fL）与本例轻度大细胞性贫血部分相似，但本例MCV仅临界高值；其他血液病例（如多发性骨髓瘤）提示需排查MDS等，一致性中等。"
+          },
+          "endocrine_metabolic": {
+            "validity": "支持证据如Hb、RBC、MCV、RDW、NEU%等均来自输入，真实无误。",
+            "missing_negative_evidence": "已提到无发热、感染灶、出血、骨痛等临床表现，且无内分泌代谢相关指标，阴性证据覆盖充分。",
+            "kg_alignment": "知识图谱证据以血液肿瘤为主（如不典型CML），感染/炎症方向缺乏直接支持，但中性粒细胞增多也可由感染引起，需进一步区分；总体指向血液系统而非内分泌代谢。"
+          }
+        },
+        "conflict_resolution": "三位专家均将专科修正为血液科，诊断方向略有差异：第一位倾向MDS/急性白血病前期/巨幼贫，第二位倾向大细胞性贫血（巨幼贫/MDS），第三位倾向感染/炎症或血液病。主要冲突在于具体病因判断及风险级别（high vs medium）。协调建议：鉴于贫血、中性粒细胞增多、RDW升高同时出现，MDS、巨幼细胞性贫血和感染/炎症均需纳入鉴别，立即完善骨髓检查、外周血涂片、维生素B12/叶酸、铁蛋白及炎症标志物。风险等级统一为medium，因无急性危及生命征象，但需及时排查。",
+        "calibrated_confidences": {
+          "血液系统疾病待查（贫血伴中性粒细胞增多）": {
+            "raw_score": 0.65,
+            "calibrated_score": 0.55,
+            "calibration_reason": "血常规异常显著，但缺乏骨髓、外周血涂片、维生素水平及炎症指标等关键证据，具体诊断不确定性高，因此将原始最高置信度0.65校准至0.55。"
+          }
+        },
+        "overall_risk": "medium"
+      }
+    }
+  },
+  "mdt_report": {
+    "enabled": true,
+    "source": "llm_mdt",
+    "final_report": {
+      "final_diagnosis": "血液系统疾病待查（可能性：骨髓增生异常综合征/巨幼细胞性贫血/感染或炎症相关贫血）",
+      "final_risk_level": "medium",
+      "final_confidence": 0.55,
+      "diagnostic_consensual_reasons": [
+        "三位专科专家均将专科修正为血液内科，方向一致",
+        "患者血常规显示贫血（Hb 92 g/L）、中性粒细胞增多（NEUT% 83%）、淋巴细胞减少（LYMPH% 9.5%）、红细胞分布宽度显著升高（RDW-CV 20.7%），支持血液系统异常",
+        "知识图谱证据涵盖不典型慢性粒细胞白血病、维生素B12缺乏、多发性骨髓瘤等，需与感染/炎症鉴别"
+      ],
+      "mdt_consultation_summary": "三位专科专家分别从心血管内科、消化肝胆内科、内分泌代谢科修正为血液科，共同指向血液系统疾病。诊断方向略有差异：第一位倾向MDS/急性白血病前期/巨幼贫，第二位倾向大细胞性贫血（巨幼贫/MDS），第三位倾向感染/炎症或血液病。主要冲突在于具体病因判断及风险级别（high vs medium）。经审计校准，当前无急性危重征象，但血常规多项异常需紧急排查，故统一风险为medium，置信度0.55。",
+      "clinical_intervention_plan": "1. 立即至血液科就诊，完善骨髓穿刺+活检、外周血涂片分类；2. 检测维生素B12、叶酸、铁蛋白、血清铁、总铁结合力；3. 炎症标志物如CRP、ESR、降钙素原；4. 排除感染灶（血培养、胸片等）；5. 建议复查血常规+血涂片，动态观察细胞形态及变化。"
+    }
+  },
+  "summary_markdown": "## 医疗检测报告\n\n### 一、检测结论\n- 初步结论：体检指标异常，需进一步评估\n- 综合风险等级：低\n- 结论置信度：68.00%\n- 判断依据：发现异常指标：WBC、RBC、PLT、HGB\n\n### 二、知识图谱对应疾病症状\n- 尿路上皮癌的肉瘤样变variant：命中 1 条外部病例弱证据；这类证据只作为相似病例补充，不作为知识图谱强症状规则。\n- 大型钙化支持细胞肿瘤：命中 1 条外部病例弱证据；这类证据只作为相似病例补充，不作为知识图谱强症状规则。\n- 维生素B12缺乏：命中 1 条外部病例弱证据；这类证据只作为相似病例补充，不作为知识图谱强症状规则。\n\n### 三、B2 匹配率\n- B2（知识图谱 RAG 与 Agent 综合证据）：47.90%；预测：体检指标异常，需进一步评估；依据：综合相似病例匹配、KG 疾病证据命中和专科 Agent 置信度。\n\n### 四、相似病例证据\n1. 急性单核细胞白血病（相似度=0.7755，case_id=medcase_reasoning:1190）\n2. 多发性骨髓瘤（相似度=0.7552，case_id=medcase_reasoning:341）\n3. 外部相似病例（来源：开放患者病例库）（相似度=0.7346，case_id=open_patients:pmc-8647806-1）\n\n### 五、知识图谱证据明细\n1. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:3926）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n2. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:592）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n3. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:5578）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n4. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:5724）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n5. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:9304）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n\n### 六、专科 Agent 意见\n- 心血管: 风险等级=高，置信度=0.65\n- digestive_肝脏: 风险等级=中，置信度=0.6\n- endocrine_metabolic: 风险等级=中，置信度=0.6\n\n### 七、模型摘要\n根据血常规结果，患者主要风险为**血液系统疾病待查**，可能涉及骨髓增生异常综合征、急性白血病前期或巨幼细胞性贫血等。关键依据包括：血红蛋白92.0 g/L（低于参考值115-150），存在明显贫血；中性粒细胞比率83.0%及绝对计数7.94×10^9/L均升高，淋巴细胞比率9.5%及绝对计数0.91×10^9/L降低，提示白细胞分类异常；红细胞分布宽度% 20.7%（参考值12.2-15.0）显著升高，反映红细胞大小不均；同时平均红细胞体积100.3 fL处于临界高值，平均血红蛋白浓度307.0 g/L偏低。血小板计数正常。建议尽快复查外周血涂片、网织红细胞计数，并完善维生素B12、叶酸、铁蛋白等营养性贫血相关检查；必要时行骨髓穿刺及细胞遗传学检查以排除血液系统恶性疾病。就诊方向优先选择**血液内科**。\n\n### LLM-MDT 会诊报告\n- MDT 结论：血液系统疾病待查（可能性：骨髓增生异常综合征/巨幼细胞性贫血/感染或炎症相关贫血）\n- MDT 风险等级：中\n- MDT 置信度：0.55\n- 共识依据：三位专科专家均将专科修正为血液内科，方向一致；患者血常规显示贫血（Hb 92 g/L）、中性粒细胞增多（NEUT% 83%）、淋巴细胞减少（LYMPH% 9.5%）、红细胞分布宽度显著升高（RDW-CV 20.7%），支持血液系统异常；知识图谱证据涵盖不典型慢性粒细胞白血病、维生素B12缺乏、多发性骨髓瘤等，需与感染/炎症鉴别\n- 会诊摘要：三位专科专家分别从心血管内科、消化肝胆内科、内分泌代谢科修正为血液科，共同指向血液系统疾病。诊断方向略有差异：第一位倾向MDS/急性白血病前期/巨幼贫，第二位倾向大细胞性贫血（巨幼贫/MDS），第三位倾向感染/炎症或血液病。主要冲突在于具体病因判断及风险级别（高 vs 中）。经审计校准，当前无急性危重征象，但血常规多项异常需紧急排查，故统一风险为medium，置信度0.55。\n- 建议方向：1. 立即至血液科就诊，完善骨髓穿刺+活检、外周血涂片分类；2. 检测维生素B12、叶酸、铁蛋白、血清铁、总铁结合力；3. 炎症标志物如CRP、ESR、降钙素原；4. 排除感染灶（血培养、胸片等）；5. 建议复查血常规+血涂片，动态观察细胞形态及变化。\n\n### 八、安全提示\n本结果仅用于课程演示和辅助参考，不能替代医生诊断。",
+  "followup_questions": [
+    "确认症状起病时间、持续时间、既往病史和用药史。",
+    "对异常指标建议复查，必要时咨询具备资质的临床医生。"
+  ],
+  "entities": [
+    {
+      "name": "WBC",
+      "value": 9.57,
+      "unit": "%",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+    },
+    {
+      "name": "RBC",
+      "value": 2.99,
+      "unit": "%",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+    },
+    {
+      "name": "PLT",
+      "value": 140.0,
+      "unit": "10^9/L",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+    },
+    {
+      "name": "HGB",
+      "value": 92.0,
+      "unit": "%",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+    }
+  ],
+  "raw_baseline_result": {
+    "prediction": "根据血常规结果，患者主要风险为**血液系统疾病待查**，可能涉及骨髓增生异常综合征、急性白血病前期或巨幼细胞性贫血等。关键依据包括：血红蛋白92.0 g/L（低于参考值115-150），存在明显贫血；中性粒细胞比率83.0%及绝对计数7.9",
+    "llm_response": "根据血常规结果，患者主要风险为**血液系统疾病待查**，可能涉及骨髓增生异常综合征、急性白血病前期或巨幼细胞性贫血等。关键依据包括：血红蛋白92.0 g/L（低于参考值115-150），存在明显贫血；中性粒细胞比率83.0%及绝对计数7.94×10^9/L均升高，淋巴细胞比率9.5%及绝对计数0.91×10^9/L降低，提示白细胞分类异常；红细胞分布宽度% 20.7%（参考值12.2-15.0）显著升高，反映红细胞大小不均；同时平均红细胞体积100.3 fL处于临界高值，平均血红蛋白浓度307.0 g/L偏低。血小板计数正常。建议尽快复查外周血涂片、网织红细胞计数，并完善维生素B12、叶酸、铁蛋白等营养性贫血相关检查；必要时行骨髓穿刺及细胞遗传学检查以排除血液系统恶性疾病。就诊方向优先选择**血液内科**。",
+    "features": {
+      "age": null,
+      "sex": "F",
+      "symptoms": "姓名 白细胞\n姓名 中性粒细胞比率\n姓名 淋巴细胞比率\n姓名 单核细胞比率\n姓名 嗜酸性粒细胞比率\n姓名 嗜碱性粒细胞比率\n姓名 中性粒细胞计数\n姓名 淋巴细胞计数\n姓名 单核细胞计数\n姓名 嗜酸性粒细胞计数\n姓名 嗜碱性粒细胞计数\n姓名 血红蛋白\n姓名 红细胞\n姓名 红细胞压积\n姓名 平均红细胞体积\n姓名 平均血红蛋白量\n姓名 平均血红蛋白浓度\n姓名 血小板压积\n姓名 平均血小板体积\n姓名 血小板计数\n姓名 血小板分布宽度\n姓名 红细胞分布宽度%\n姓名 红细胞分布宽度#\n姓名 大型血小板比率\n姓名 白细胞数目\n姓名 红细胞数目\n姓名 平均红细胞血红蛋白量\n姓名 平均红细胞血红蛋白浓度\n姓名 血小板\nraw text 项目 缩写 结果 单位 参考值\n白纡胞 WBC 9.57 110^9儿 3.5-9.5\n中性粒细胞比率 NEUO 83.00 1 % 40-75\n淋巴纸胞比率 LYMO 9.50 1 % 20-50\n单核细胞比率 MONO 6.00 9 3-10\n嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80\n嗜碱性粒细胞比率 BASO 0.50 % 0-1\n中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3\n淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2\n单核细胞计数 MON# 0.57 10^9儿 0.1-0.6\n嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52\n嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06\n血红蛋白 HGB 92.0 1 9儿 115-150\n璩闲辰\n红细胞 RBC 2.99 110^12儿 3.8-5.1\n红细胞积压 HCT 30.00 1 % 35-45\n平均红细胞体积 MCV 100.3 1儿 82-100\n平均血红蛋白令星 NCH 30.8 pg 27-34\n平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350\n血小板积压 PCT 0.140 9 0.114-0.27C\n平均血小板体积 MPV 9.70 孔 6-14\n血小板计数 PLT 140 10^9/L 135-350\n血小板平均宽度 PDW 10.30 孔 9-17\n红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0\n红细胞分布宽度# RDW-SD 75.2 1儿 43-53\n大型血小板比率 PLCR 21.6 19.6-47.0\n项目 缩写 结果 单位 参考值\n白纡胞 WBC 9.57 110^9儿 3.5-9.5\n中性粒细胞比率 NEUO 83.00 1 % 40-75\n淋巴纸胞比率 LYMO 9.50 1 % 20-50\n单核细胞比率 MONO 6.00 9 3-10\n嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80\n嗜碱性粒细胞比率 BASO 0.50 % 0-1\n中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3\n淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2\n单核细胞计数 MON# 0.57 10^9儿 0.1-0.6\n嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52\n嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06\n血红蛋白 HGB 92.0 1 9儿 115-150\n璩闲辰\n红细胞 RBC 2.99 110^12儿 3.8-5.1\n红细胞积压 HCT 30.00 1 % 35-45\n平均红细胞体积 MCV 100.3 1儿 82-100\n平均血红蛋白令星 NCH 30.8 pg 27-34\n平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350\n血小板积压 PCT 0.140 9 0.114-0.27C\n平均血小板体积 MPV 9.70 孔 6-14\n血小板计数 PLT 140 10^9/L 135-350\n血小板平均宽度 PDW 10.30 孔 9-17\n红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0\n红细胞分布宽度# RDW-SD 75.2 1儿 43-53\n大型血小板比率 PLCR 21.6 19.6-47.0",
+      "location": "",
+      "restriction": "",
+      "indicators": [
+        {
+          "name": "WBC",
+          "value": 9.57,
+          "unit": "%",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+        },
+        {
+          "name": "RBC",
+          "value": 2.99,
+          "unit": "%",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+        },
+        {
+          "name": "PLT",
+          "value": 140.0,
+          "unit": "10^9/L",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+        },
+        {
+          "name": "HGB",
+          "value": 92.0,
+          "unit": "%",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "姓名白细胞姓名中性粒细胞比率姓名淋巴细胞比率姓名单核细胞比率姓名嗜酸性粒细胞比率姓名嗜碱性粒细胞比率姓名中性粒细胞计数姓名淋巴细胞计数姓名单核细胞计数姓名嗜酸性粒细胞计数姓名嗜碱性粒细胞计数姓名血红蛋白姓名红细胞姓名红细胞压积姓名平均红细胞体积姓名平均血红蛋白量姓名平均血红蛋白浓度姓名血小板压积姓名平均血小板体积姓名血小板计数姓名血小板分布宽度姓名红细胞分布宽度% 姓名红细胞分布宽度# 姓名大型血小板比率姓名白细胞数目姓名红细胞数目姓名平均红细胞血红蛋白量姓名平均红细胞血红蛋白浓度姓名血小板 raw text 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0 项目缩写结果单位参考值白纡胞 WBC 9.57 110^9儿 3.5-9.5 中性粒细胞比率 NEUO 83.00 1 % 40-75 淋巴纸胞比率 LYMO 9.50 1 % 20-50 单核细胞比率 MONO 6.00 9 3-10 嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80 嗜碱性粒细胞比率 BASO 0.50 % 0-1 中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3 淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2 单核细胞计数 MON# 0.57 10^9儿 0.1-0.6 嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52 嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06 血红蛋白 HGB 92.0 1 9儿 115-150 璩闲辰红细胞 RBC 2.99 110^12儿 3.8-5.1 红细胞积压 HCT 30.00 1 % 35-45 平均红细胞体积 MCV 100.3 1儿 82-100 平均血红蛋白令星 NCH 30.8 pg 27-34 平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350 血小板积压 PCT 0.140 9 0.114-0.27C 平均血小板体积 MPV 9.70 孔 6-14 血小板计数 PLT 140 10^9/L 135-350 血小板平均宽度 PDW 10.30 孔 9-17 红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0 红细胞分布宽度# RDW-SD 75.2 1儿 43-53 大型血小板比率 PLCR 21.6 19.6-47.0"
+        }
+      ]
+    },
+    "retrieval_mode": "multi_vector_or_faiss",
+    "selected_baseline_modes": [
+      "B2"
+    ],
+    "detection_report_version": "detailed_v1"
+  },
+  "safety_note": "本结果仅用于课程演示和辅助参考，不能替代医生诊断。",
+  "input_type": "ocr_json",
+  "normalized_input": {
+    "case_id": null,
+    "source_format": "generic_json",
+    "line_count": 31,
+    "text": "姓名 白细胞\n姓名 中性粒细胞比率\n姓名 淋巴细胞比率\n姓名 单核细胞比率\n姓名 嗜酸性粒细胞比率\n姓名 嗜碱性粒细胞比率\n姓名 中性粒细胞计数\n姓名 淋巴细胞计数\n姓名 单核细胞计数\n姓名 嗜酸性粒细胞计数\n姓名 嗜碱性粒细胞计数\n姓名 血红蛋白\n姓名 红细胞\n姓名 红细胞压积\n姓名 平均红细胞体积\n姓名 平均血红蛋白量\n姓名 平均血红蛋白浓度\n姓名 血小板压积\n姓名 平均血小板体积\n姓名 血小板计数\n姓名 血小板分布宽度\n姓名 红细胞分布宽度%\n姓名 红细胞分布宽度#\n姓名 大型血小板比率\n姓名 白细胞数目\n姓名 红细胞数目\n姓名 平均红细胞血红蛋白量\n姓名 平均红细胞血红蛋白浓度\n姓名 血小板\nraw text 项目 缩写 结果 单位 参考值\n白纡胞 WBC 9.57 110^9儿 3.5-9.5\n中性粒细胞比率 NEUO 83.00 1 % 40-75\n淋巴纸胞比率 LYMO 9.50 1 % 20-50\n单核细胞比率 MONO 6.00 9 3-10\n嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80\n嗜碱性粒细胞比率 BASO 0.50 % 0-1\n中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3\n淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2\n单核细胞计数 MON# 0.57 10^9儿 0.1-0.6\n嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52\n嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06\n血红蛋白 HGB 92.0 1 9儿 115-150\n璩闲辰\n红细胞 RBC 2.99 110^12儿 3.8-5.1\n红细胞积压 HCT 30.00 1 % 35-45\n平均红细胞体积 MCV 100.3 1儿 82-100\n平均血红蛋白令星 NCH 30.8 pg 27-34\n平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350\n血小板积压 PCT 0.140 9 0.114-0.27C\n平均血小板体积 MPV 9.70 孔 6-14\n血小板计数 PLT 140 10^9/L 135-350\n血小板平均宽度 PDW 10.30 孔 9-17\n红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0\n红细胞分布宽度# RDW-SD 75.2 1儿 43-53\n大型血小板比率 PLCR 21.6 19.6-47.0\n项目 缩写 结果 单位 参考值\n白纡胞 WBC 9.57 110^9儿 3.5-9.5\n中性粒细胞比率 NEUO 83.00 1 % 40-75\n淋巴纸胞比率 LYMO 9.50 1 % 20-50\n单核细胞比率 MONO 6.00 9 3-10\n嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80\n嗜碱性粒细胞比率 BASO 0.50 % 0-1\n中性粒细胞计数 NEU# 7.94 110^9儿 1.8-6.3\n淋巴细胞计数 LYM#f 0.91 110^9/ 1.1-3.2\n单核细胞计数 MON# 0.57 10^9儿 0.1-0.6\n嗜酸性粒纽胞计数 EOS# 0.10 10^9/ 0.02-0.52\n嗜碱性粒纽胞计数 BAS# 0.05 10^9儿 0-0.06\n血红蛋白 HGB 92.0 1 9儿 115-150\n璩闲辰\n红细胞 RBC 2.99 110^12儿 3.8-5.1\n红细胞积压 HCT 30.00 1 % 35-45\n平均红细胞体积 MCV 100.3 1儿 82-100\n平均血红蛋白令星 NCH 30.8 pg 27-34\n平均血红蛋白浓度 MCHC 307.0 1 9儿 316-350\n血小板积压 PCT 0.140 9 0.114-0.27C\n平均血小板体积 MPV 9.70 孔 6-14\n血小板计数 PLT 140 10^9/L 135-350\n血小板平均宽度 PDW 10.30 孔 9-17\n红细胞分布宽度% PDW-CY 20.7 1 % 12.2-15.0\n红细胞分布宽度# RDW-SD 75.2 1儿 43-53\n大型血小板比率 PLCR 21.6 19.6-47.0",
+    "text_preview": "姓名 白细胞\n姓名 中性粒细胞比率\n姓名 淋巴细胞比率\n姓名 单核细胞比率\n姓名 嗜酸性粒细胞比率\n姓名 嗜碱性粒细胞比率\n姓名 中性粒细胞计数\n姓名 淋巴细胞计数\n姓名 单核细胞计数\n姓名 嗜酸性粒细胞计数\n姓名 嗜碱性粒细胞计数\n姓名 血红蛋白\n姓名 红细胞\n姓名 红细胞压积\n姓名 平均红细胞体积\n姓名 平均血红蛋白量\n姓名 平均血红蛋白浓度\n姓名 血小板压积\n姓名 平均血小板体积\n姓名 血小板计数\n姓名 血小板分布宽度\n姓名 红细胞分布宽度%\n姓名 红细胞分布宽度#\n姓名 大型血小板比率\n姓名 白细胞数目\n姓名 红细胞数目\n姓名 平均红细胞血红蛋白量\n姓名 平均红细胞血红蛋白浓度\n姓名 血小板\nraw text 项目 缩写 结果 单位 参考值\n白纡胞 WBC 9.57 110^9儿 3.5-9.5\n中性粒细胞比率 NEUO 83.00 1 % 40-75\n淋巴纸胞比率 LYMO 9.50 1 % 20-50\n单核细胞比率 MONO 6.00 9 3-10\n嗜酸性粒细胞比率 EOS% 1.00 96 0.4-80\n嗜碱性粒细胞比率 BASO 0.50 % 0-1\n中性粒细胞计数 N",
+    "interpretive_notes": []
+  }
+}

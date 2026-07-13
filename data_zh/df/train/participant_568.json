@@ -1,0 +1,26 @@
+{
+  "Participant No.": 568,
+  "Age": "58",
+  "Sex": "F",
+  "Symptoms": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous des douleurs au thorax même au repos?; Avez vous déjà fait un pneumothorax spontané?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_68; Avez-vous de la douleur quelque part?: V_189; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 6; Fumez-vous la cigarette quotidiennement?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous des symptômes qui sont pires lors de l’effort physique et soulagés par le repos?",
+  "Diagnosis": "Spontaneous pneumothorax",
+  "Differential Diagnosis": "Unstable angina (0.2994301840569534); Stable angina (0.22933722207840154); Possible NSTEMI / STEMI (0.18300796338834874); Spontaneous pneumothorax (0.18220790339350582); Pulmonary embolism (0.10601672708279036)",
+  "Level 2": "Spontaneous pneumothorax",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：58 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般；疼痛性质：如心碎般；疼痛部位：编码 V_68、V_189；疼痛强度：8；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：7；疼痛出现速度：6；是否每天吸烟：否；过去 4 周内是否旅行：编码 V_9；症状是否在体力活动时加重并在休息后缓解。鉴别诊断候选：不稳定型心绞痛（0.2994301840569534）；稳定型心绞痛（0.22933722207840154）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.18300796338834874）；自发性气胸（0.18220790339350582）；肺栓塞（0.10601672708279036）。最终诊断：自发性气胸。",
+  "Text_original": "Age: 58\nSex: F\nSymptoms: Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous des douleurs au thorax même au repos?; Avez vous déjà fait un pneumothorax spontané?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_68; Avez-vous de la douleur quelque part?: V_189; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 6; Fumez-vous la cigarette quotidiennement?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous des symptômes qui sont pires lors de l’effort physique et soulagés par le repos?\nDifferential diagnosis: Unstable angina (0.2994301840569534); Stable angina (0.22933722207840154); Possible NSTEMI / STEMI (0.18300796338834874); Spontaneous pneumothorax (0.18220790339350582); Pulmonary embolism (0.10601672708279036)\nDiagnosis: Spontaneous pneumothorax",
+  "Symptoms_original": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous des douleurs au thorax même au repos?; Avez vous déjà fait un pneumothorax spontané?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_68; Avez-vous de la douleur quelque part?: V_189; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 6; Fumez-vous la cigarette quotidiennement?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous des symptômes qui sont pires lors de l’effort physique et soulagés par le repos?",
+  "Diagnosis_original": "Spontaneous pneumothorax",
+  "Differential Diagnosis_original": "Unstable angina (0.2994301840569534); Stable angina (0.22933722207840154); Possible NSTEMI / STEMI (0.18300796338834874); Spontaneous pneumothorax (0.18220790339350582); Pulmonary embolism (0.10601672708279036)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般；疼痛性质：如心碎般；疼痛部位：编码 V_68；疼痛部位：编码 V_189；疼痛强度：8；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：7；疼痛出现速度：6；是否每天吸烟；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状是否在体力活动时加重并在休息后缓解",
+  "Diagnosis_zh": "自发性气胸",
+  "Differential Diagnosis_zh": "不稳定型心绞痛（0.2994301840569534）；稳定型心绞痛（0.22933722207840154）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.18300796338834874）；自发性气胸（0.18220790339350582）；肺栓塞（0.10601672708279036）",
+  "Text_zh": "年龄：58 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般；疼痛性质：如心碎般；疼痛部位：编码 V_68、V_189；疼痛强度：8；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：7；疼痛出现速度：6；是否每天吸烟：否；过去 4 周内是否旅行：编码 V_9；症状是否在体力活动时加重并在休息后缓解。鉴别诊断候选：不稳定型心绞痛（0.2994301840569534）；稳定型心绞痛（0.22933722207840154）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.18300796338834874）；自发性气胸（0.18220790339350582）；肺栓塞（0.10601672708279036）。最终诊断：自发性气胸。",
+  "_qwen_refined_at": "2026-07-07T11:50:58",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

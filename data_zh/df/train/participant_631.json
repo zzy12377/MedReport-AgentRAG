@@ -1,0 +1,26 @@
+{
+  "Participant No.": 631,
+  "Age": "27",
+  "Sex": "F",
+  "Symptoms": "Avez-vous des nausées ou envie de vomir?; Avez-vous eu des diarrhées ou une augmentation de la fréquence de vos selles?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: a pulse; Caractérisez votre douleur:: sharp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_51; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_143; Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 5; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 9; À quelle vitesse la douleur est-elle apparue ?: 2; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; À quel endroit est situé l’enflure?: V_142; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Chagas",
+  "Differential Diagnosis": "Anemia (0.4608830664688126); Cluster headache (0.4054529349980606); Anaphylaxis (0.08084436938220724); Chagas (0.05281962915091953)",
+  "Level 2": "Chagas",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：27 岁，性别：女。症状与病史：有与本次就诊原因相关的疼痛，包括间歇性痉挛痛、脉动感、锐痛和疲劳感；疼痛部位主要在太阳穴（左），疼痛强度为 5 级，未向其他部位放射，疼痛定位明确，出现速度较快；无明显气短或呼吸困难；肿胀部位不详。过去 4 周内无旅行史。 鉴别诊断候选：贫血（0.4608830664688126）；丛集性头痛（0.4054529349980606）；过敏性休克（0.08084436938220724）；恰加斯病（0.05281962915091953）。 最终诊断：恰加斯病。",
+  "Text_original": "Age: 27\nSex: F\nSymptoms: Avez-vous des nausées ou envie de vomir?; Avez-vous eu des diarrhées ou une augmentation de la fréquence de vos selles?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: a pulse; Caractérisez votre douleur:: sharp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_51; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_143; Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 5; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 9; À quelle vitesse la douleur est-elle apparue ?: 2; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; À quel endroit est situé l’enflure?: V_142; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Anemia (0.4608830664688126); Cluster headache (0.4054529349980606); Anaphylaxis (0.08084436938220724); Chagas (0.05281962915091953)\nDiagnosis: Chagas",
+  "Symptoms_original": "Avez-vous des nausées ou envie de vomir?; Avez-vous eu des diarrhées ou une augmentation de la fréquence de vos selles?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: a pulse; Caractérisez votre douleur:: sharp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_51; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_143; Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 5; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 9; À quelle vitesse la douleur est-elle apparue ?: 2; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; À quel endroit est situé l’enflure?: V_142; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Chagas",
+  "Differential Diagnosis_original": "Anemia (0.4608830664688126); Cluster headache (0.4054529349980606); Anaphylaxis (0.08084436938220724); Chagas (0.05281962915091953)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：痉挛性疼痛；疼痛性质：脉动性疼痛；疼痛性质：锐痛；疼痛性质：耗竭性疼痛；疼痛部位：编码 V_38；疼痛部位：编码 V_51；疼痛部位：编码 V_76；疼痛部位：编码 V_143；疼痛部位：左太阳穴；疼痛强度：5；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：9；疼痛出现速度：2；是否明显气短或呼吸困难；肿胀部位：编码 V_142；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "恰加斯病",
+  "Differential Diagnosis_zh": "贫血（0.4608830664688126）；丛集性头痛（0.4054529349980606）；过敏性休克（0.08084436938220724）；恰加斯病（0.05281962915091953）",
+  "Text_zh": "年龄：27 岁，性别：女。症状与病史：有与本次就诊原因相关的疼痛，包括间歇性痉挛痛、脉动感、锐痛和疲劳感；疼痛部位主要在太阳穴（左），疼痛强度为 5 级，未向其他部位放射，疼痛定位明确，出现速度较快；无明显气短或呼吸困难；肿胀部位不详。过去 4 周内无旅行史。 鉴别诊断候选：贫血（0.4608830664688126）；丛集性头痛（0.4054529349980606）；过敏性休克（0.08084436938220724）；恰加斯病（0.05281962915091953）。 最终诊断：恰加斯病。",
+  "_qwen_refined_at": "2026-07-07T11:56:36",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

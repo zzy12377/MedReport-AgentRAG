@@ -1,0 +1,20 @@
+{
+  "Participant No.": 895,
+  "Age": "48",
+  "Sex": "M",
+  "Symptoms": "Avez-vous noté un un son aigu lorsque vous sortez l’air de vos poumons?; Avez-vous eu une ou des épisodes d’aggravation ou de détérioration de votre maladie pulmonaire obstructive chronique dans la dernière année?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous déjà reçu un diagnostic de reflux gastro-oesophagien?; Travaillez-vous dans le domaine de l’agriculture?; Travaillez-vous dans le domaine de la construction?; Travaillez-vous dans le domaine minier?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Acute COPD exacerbation / infection",
+  "Differential Diagnosis": "Bronchitis (0.4055977749341997); Acute COPD exacerbation / infection (0.3372112440871281); Anaphylaxis (0.18035400352043282); Scombroid food poisoning (0.0768369774582394)",
+  "Level 2": "Acute COPD exacerbation / infection",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：48 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；是否每天吸烟；症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：支气管炎（0.4055977749341997）；急性慢阻肺加重或感染（0.3372112440871281）；过敏性休克（0.18035400352043282）；鲭鱼中毒（0.0768369774582394）\n最终诊断：急性慢阻肺加重或感染",
+  "Text_original": "Age: 48\nSex: M\nSymptoms: Avez-vous noté un un son aigu lorsque vous sortez l’air de vos poumons?; Avez-vous eu une ou des épisodes d’aggravation ou de détérioration de votre maladie pulmonaire obstructive chronique dans la dernière année?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous déjà reçu un diagnostic de reflux gastro-oesophagien?; Travaillez-vous dans le domaine de l’agriculture?; Travaillez-vous dans le domaine de la construction?; Travaillez-vous dans le domaine minier?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Bronchitis (0.4055977749341997); Acute COPD exacerbation / infection (0.3372112440871281); Anaphylaxis (0.18035400352043282); Scombroid food poisoning (0.0768369774582394)\nDiagnosis: Acute COPD exacerbation / infection",
+  "Symptoms_original": "Avez-vous noté un un son aigu lorsque vous sortez l’air de vos poumons?; Avez-vous eu une ou des épisodes d’aggravation ou de détérioration de votre maladie pulmonaire obstructive chronique dans la dernière année?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous déjà reçu un diagnostic de reflux gastro-oesophagien?; Travaillez-vous dans le domaine de l’agriculture?; Travaillez-vous dans le domaine de la construction?; Travaillez-vous dans le domaine minier?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Acute COPD exacerbation / infection",
+  "Differential Diagnosis_original": "Bronchitis (0.4055977749341997); Acute COPD exacerbation / infection (0.3372112440871281); Anaphylaxis (0.18035400352043282); Scombroid food poisoning (0.0768369774582394)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否每天吸烟；症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "急性慢阻肺加重或感染",
+  "Differential Diagnosis_zh": "支气管炎（0.4055977749341997）；急性慢阻肺加重或感染（0.3372112440871281）；过敏性休克（0.18035400352043282）；鲭鱼中毒（0.0768369774582394）",
+  "Text_zh": "年龄：48 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；是否每天吸烟；症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：支气管炎（0.4055977749341997）；急性慢阻肺加重或感染（0.3372112440871281）；过敏性休克（0.18035400352043282）；鲭鱼中毒（0.0768369774582394）\n最终诊断：急性慢阻肺加重或感染"
+}

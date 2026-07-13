@@ -1,0 +1,20 @@
+{
+  "Participant No.": 312,
+  "Age": "43",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Êtes-vous actuellement traité ou avez-vous été récemment traité avec un antibiotique pris par la bouche pour une infection de l’oreille ou une otite?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_148; Avez-vous de la douleur quelque part?: V_149; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 9; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Acute otitis media",
+  "Differential Diagnosis": "Bronchitis (0.5744711710103535); Acute otitis media (0.4255288289896466)",
+  "Level 2": "Acute otitis media",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：43 岁\n性别：男\n症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：敏感样；疼痛性质：锐痛；疼痛部位：编码 V_148；疼痛部位：编码 V_149；疼痛强度：4；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：9；疼痛出现速度：3；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：支气管炎（0.5744711710103535）；急性中耳炎（0.4255288289896466）\n最终诊断：急性中耳炎",
+  "Text_original": "Age: 43\nSex: M\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Êtes-vous actuellement traité ou avez-vous été récemment traité avec un antibiotique pris par la bouche pour une infection de l’oreille ou une otite?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_148; Avez-vous de la douleur quelque part?: V_149; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 9; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Bronchitis (0.5744711710103535); Acute otitis media (0.4255288289896466)\nDiagnosis: Acute otitis media",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Êtes-vous actuellement traité ou avez-vous été récemment traité avec un antibiotique pris par la bouche pour une infection de l’oreille ou une otite?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_148; Avez-vous de la douleur quelque part?: V_149; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 9; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Acute otitis media",
+  "Differential Diagnosis_original": "Bronchitis (0.5744711710103535); Acute otitis media (0.4255288289896466)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：敏感样；疼痛性质：锐痛；疼痛部位：编码 V_148；疼痛部位：编码 V_149；疼痛强度：4；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：9；疼痛出现速度：3；是否咳嗽；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "急性中耳炎",
+  "Differential Diagnosis_zh": "支气管炎（0.5744711710103535）；急性中耳炎（0.4255288289896466）",
+  "Text_zh": "年龄：43 岁\n性别：男\n症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：敏感样；疼痛性质：锐痛；疼痛部位：编码 V_148；疼痛部位：编码 V_149；疼痛强度：4；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：9；疼痛出现速度：3；是否咳嗽；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：支气管炎（0.5744711710103535）；急性中耳炎（0.4255288289896466）\n最终诊断：急性中耳炎"
+}

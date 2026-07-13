@@ -1,0 +1,20 @@
+{
+  "Participant No.": 775,
+  "Age": "37",
+  "Sex": "M",
+  "Symptoms": "Est-ce que vos symptômes de faiblesse musculaire augmente avec la fatigue et/ou le stress?; Avez-vous des membres de votre famille qui ont la myasthénie grave?; Avez-vous de la difficulté à articuler les mots?; Avez-vous des de la difficulté à avaler ou une sensation de gêne ou de blocage lors de la déglutition?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Myasthenia gravis",
+  "Differential Diagnosis": "Guillain-Barré syndrome (0.1483830888717998); Myasthenia gravis (0.1462928485715851); Pulmonary embolism (0.13548746670648945); Myocarditis (0.130376034082479); Acute pulmonary edema (0.1269116695979766); Atrial fibrillation (0.11080542630045961); Anemia (0.08169168473084405); Chagas (0.06837712924725793)",
+  "Level 2": "Myasthenia gravis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：37 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：吉兰-巴雷综合征（0.1483830888717998）；重症肌无力（0.1462928485715851）；肺栓塞（0.13548746670648945）；心肌炎（0.130376034082479）；急性肺水肿（0.1269116695979766）；心房颤动（0.11080542630045961）；贫血（0.08169168473084405）；恰加斯病（0.06837712924725793）\n最终诊断：重症肌无力",
+  "Text_original": "Age: 37\nSex: M\nSymptoms: Est-ce que vos symptômes de faiblesse musculaire augmente avec la fatigue et/ou le stress?; Avez-vous des membres de votre famille qui ont la myasthénie grave?; Avez-vous de la difficulté à articuler les mots?; Avez-vous des de la difficulté à avaler ou une sensation de gêne ou de blocage lors de la déglutition?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Guillain-Barré syndrome (0.1483830888717998); Myasthenia gravis (0.1462928485715851); Pulmonary embolism (0.13548746670648945); Myocarditis (0.130376034082479); Acute pulmonary edema (0.1269116695979766); Atrial fibrillation (0.11080542630045961); Anemia (0.08169168473084405); Chagas (0.06837712924725793)\nDiagnosis: Myasthenia gravis",
+  "Symptoms_original": "Est-ce que vos symptômes de faiblesse musculaire augmente avec la fatigue et/ou le stress?; Avez-vous des membres de votre famille qui ont la myasthénie grave?; Avez-vous de la difficulté à articuler les mots?; Avez-vous des de la difficulté à avaler ou une sensation de gêne ou de blocage lors de la déglutition?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous présentement une faiblesse des 2 bras et/ou des 2 jambes?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Myasthenia gravis",
+  "Differential Diagnosis_original": "Guillain-Barré syndrome (0.1483830888717998); Myasthenia gravis (0.1462928485715851); Pulmonary embolism (0.13548746670648945); Myocarditis (0.130376034082479); Acute pulmonary edema (0.1269116695979766); Atrial fibrillation (0.11080542630045961); Anemia (0.08169168473084405); Chagas (0.06837712924725793)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "重症肌无力",
+  "Differential Diagnosis_zh": "吉兰-巴雷综合征（0.1483830888717998）；重症肌无力（0.1462928485715851）；肺栓塞（0.13548746670648945）；心肌炎（0.130376034082479）；急性肺水肿（0.1269116695979766）；心房颤动（0.11080542630045961）；贫血（0.08169168473084405）；恰加斯病（0.06837712924725793）",
+  "Text_zh": "年龄：37 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：吉兰-巴雷综合征（0.1483830888717998）；重症肌无力（0.1462928485715851）；肺栓塞（0.13548746670648945）；心肌炎（0.130376034082479）；急性肺水肿（0.1269116695979766）；心房颤动（0.11080542630045961）；贫血（0.08169168473084405）；恰加斯病（0.06837712924725793）\n最终诊断：重症肌无力"
+}

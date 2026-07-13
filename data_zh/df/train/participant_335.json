@@ -1,0 +1,26 @@
+{
+  "Participant No.": 335,
+  "Age": "24",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous des membres de votre famille qui ont déjà été diagnostiqué avec des céphalée en grappes?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: V_126; Avez-vous de la douleur quelque part?: V_127; Avez-vous de la douleur quelque part?: V_144; Avez-vous de la douleur quelque part?: V_145; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 10; Avez-vous l’impression que votre oeil produit des larmes de façon excessive?; Prenez-vous un médicament qui vasodilate vos vaisseaux sanguins?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Cluster headache",
+  "Differential Diagnosis": "Cluster headache (1.0)",
+  "Level 2": "Cluster headache",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：24岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：如鬼魅般；疼痛性质：如刀割；疼痛性质：锐痛；疼痛部位：编码 V_104、V_126、V_127、V_144、V_145；疼痛强度：8/10；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：8/10；疼痛出现速度：10秒内；症状问诊项；症状问诊项；过去4周内是否旅行：编码V_9。鉴别诊断候选：丛集性头痛（Cluster headache，1.0） 最终诊断：丛集性头痛",
+  "Text_original": "Age: 24\nSex: M\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous des membres de votre famille qui ont déjà été diagnostiqué avec des céphalée en grappes?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: V_126; Avez-vous de la douleur quelque part?: V_127; Avez-vous de la douleur quelque part?: V_144; Avez-vous de la douleur quelque part?: V_145; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 10; Avez-vous l’impression que votre oeil produit des larmes de façon excessive?; Prenez-vous un médicament qui vasodilate vos vaisseaux sanguins?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Cluster headache (1.0)\nDiagnosis: Cluster headache",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous des membres de votre famille qui ont déjà été diagnostiqué avec des céphalée en grappes?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: V_126; Avez-vous de la douleur quelque part?: V_127; Avez-vous de la douleur quelque part?: V_144; Avez-vous de la douleur quelque part?: V_145; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 10; Avez-vous l’impression que votre oeil produit des larmes de façon excessive?; Prenez-vous un médicament qui vasodilate vos vaisseaux sanguins?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Cluster headache",
+  "Differential Diagnosis_original": "Cluster headache (1.0)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：令人困扰的疼痛；疼痛性质：刀割样痛；疼痛性质：锐痛；疼痛部位：编码 V_104；疼痛部位：编码 V_126；疼痛部位：编码 V_127；疼痛部位：编码 V_144；疼痛部位：编码 V_145；疼痛强度：8；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：8；疼痛出现速度：10；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "丛集性头痛",
+  "Differential Diagnosis_zh": "丛集性头痛（1.0）",
+  "Text_zh": "年龄：24岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：如鬼魅般；疼痛性质：如刀割；疼痛性质：锐痛；疼痛部位：编码 V_104、V_126、V_127、V_144、V_145；疼痛强度：8/10；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：8/10；疼痛出现速度：10秒内；症状问诊项；症状问诊项；过去4周内是否旅行：编码V_9。鉴别诊断候选：丛集性头痛（Cluster headache，1.0） 最终诊断：丛集性头痛",
+  "_qwen_refined_at": "2026-07-07T11:26:41",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

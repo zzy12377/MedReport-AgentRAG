@@ -1,0 +1,965 @@
+{
+  "task_id": "447bc7ab-5f4c-433a-a7b6-9c84db37d1a9",
+  "overall_risk": "low",
+  "possible_diagnoses": [
+    "多发性骨髓瘤",
+    "急性单核细胞白血病",
+    "急性肺水肿",
+    "**诊断摘要** - **主要风险**：急性支气管炎（细菌性感染可能），风险等级为低-中。目前无重症肺炎、流感或心、肝、内分泌等专科风险的证据。 - **关键依据**： 1. 发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，伴鼻塞、流涕、全身肌肉酸痛",
+    "digestive_liver risk"
+  ],
+  "detection_conclusion": {
+    "primary_diagnosis": "体检指标异常，需进一步评估",
+    "conclusion_type": "general_abnormality",
+    "overall_risk": "low",
+    "confidence": 0.68,
+    "confidence_percent": 68.0,
+    "basis": "发现异常指标：WBC、PLT、HGB、PLT、HGB"
+  },
+  "kg_disease_symptoms": [
+    {
+      "disease": "结核病",
+      "matched_to_primary": false,
+      "symptoms": [
+        "持续超过 3 周的咳嗽, 夜间盗汗, 体重下降"
+      ],
+      "evidence": [
+        {
+          "head": "结核病",
+          "relation": "外部病例弱证据",
+          "tail": "一名30多岁的男性患者来自摩洛哥，既往有肝包虫囊肿手术史，并伴有进行性体重下降。主诉急性腹痛、恶心和完全性便秘，持续3天。查体心率127次/分，血压正常，腹部膨隆并弥漫性压痛；直肠检查发现粪便滞留于结肠壶腹处。实验室检查结果显示白细胞计数升高（WBC 15.6×10^9/L），C反应蛋白水平升高（CRP 128 mg/L）。",
+          "score": 17.0,
+          "relation_category": "case_evidence",
+          "source": "external_case_evidence"
+        }
+      ],
+      "external_evidence_count": 1,
+      "symptom_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "disease": "急性纤维素性及组织性肺炎",
+      "matched_to_primary": false,
+      "symptoms": [],
+      "evidence": [
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一名70岁男性，过去两天出现咳嗽和发热。他的血压为120/74 mmHg，心率为72次/min，呼吸频率为20次/min，体温38.2 °C，在鼻导管吸氧2 L/min的情况下血氧饱和度为98%。实验室检查结果显示：白细胞计数7.41 × 10^9/L，血红蛋白132 g/L，血小板计数387 × 10^9/L，红细胞沉降率72 mm/h，CRP大于150 mg/L。",
+          "score": 26.0,
+          "relation_category": "case_evidence",
+          "source": "external_case_evidence"
+        }
+      ],
+      "external_evidence_count": 1,
+      "symptom_count": 0,
+      "evidence_count": 1
+    },
+    {
+      "disease": "布鲁氏菌病(Bruceellosis)",
+      "matched_to_primary": false,
+      "symptoms": [],
+      "evidence": [
+        {
+          "head": "布鲁氏菌病(Bruceellosis)",
+          "relation": "外部病例弱证据",
+          "tail": "一名57岁男性，一个月前有高热、夜间盗汗及渐进性背部疼痛。他报告称约一个月前用手触摸了一个受伤的手指并接触了未巴氏杀菌的羊胃。初始门诊治疗使用口服cefprozil未能提供持久疗效。入院时无发热，但抱怨背部疼痛加重和全身不适。实验室检查结果显示血沉（ESR）升高至105 mm/h，C反应蛋白（CRP）为23 mg/L，白细胞计数为14.5×10^9/L，中性粒细胞比例为85%。腰椎MRI显示L4-L5椎间盘突出并伴有右侧神经根受压。初步诊断考虑感染性脊柱炎，拟行进一步检查和治疗。",
+          "score": 19.0,
+          "relation_category": "case_evidence",
+          "source": "external_case_evidence"
+        }
+      ],
+      "external_evidence_count": 1,
+      "symptom_count": 0,
+      "evidence_count": 1
+    }
+  ],
+  "baseline_match_rates": [
+    {
+      "mode": "B2",
+      "name": "KG-RAG + Agent Evidence",
+      "prediction": "体检指标异常，需进一步评估",
+      "match_rate": 0.5607,
+      "match_percent": 56.07,
+      "basis": "综合相似病例匹配、KG 疾病证据命中和专科 Agent 置信度。",
+      "kg_matched_evidence_count": 0,
+      "agent_max_confidence": 0.85
+    }
+  ],
+  "retrieved_cases": [
+    {
+      "case_id": "medcase_reasoning:341",
+      "source": "medcase_reasoning",
+      "title": "肺尖肿块——多发性骨髓瘤的罕见表现☆",
+      "diagnosis": "多发性骨髓瘤",
+      "similarity": 0.8682105541229248,
+      "raw_text": "病例标题：肺尖肿块——多发性骨髓瘤的罕见表现☆\n主要诊断：多发性骨髓瘤\n病例摘要：一名50岁女性，有高血压、高脂血症和物质滥用史，因右胸痛和不适数周就诊。其父亲患有肺癌。查体生命体征正常，体格检查无异常。实验室检查显示：血红蛋白9.0 g/dL（贫血），RDW 19.2%，WBC 4.1 k/µL（白细胞减少），血红蛋白A2 1.6%，总钙9.8 mg/dL，白蛋白4.4 g/dL，总蛋白9.2 g/dL，LDH 263 units/L，肾功能正常。胸腹盆部增强CT显示右侧胸膜基底肿块侵蚀第二肋骨，右胸廓邻近6个淋巴结增大，并在右肩胛骨、第八和第九肋、髂骨、左坐骨、骶骨、尾骨以及胸腰椎广泛存在多发溶骨性病变。患者因疑似Pancoast肿瘤被转诊评估，并安排右腋窝淋巴结活检；但随后失访。一个月后，她因左大腿上部疼痛2周和右肩疼痛2天复诊，右肩疼痛因活动加重。无外伤、无力或麻木。– 胸片：右上叶肿块样阴影。– 右肩X线：近端和中段肱骨骨干溶骨性、虫蚀样病灶，伴病理性压缩骨折和肺部阴影。– 右肘X线：远端肱骨骨干溶骨性病灶。– 复查胸部CT：右上叶一个5.5 cm胸膜基底肿块侵蚀第二肋骨，右腋窝淋巴结肿大，所见骨骼广泛弥漫性溶骨性病变，并有右侧多根肋骨、右肱骨近端和T4–T5椎体多发病理性骨折。– 腹盆部CT：左髂骨大型破坏性病灶以及骨盆和脊柱多发溶骨性病变。",
+      "metadata": {
+        "pmcid": "PMC9218296",
+        "journal": "Radiology Case Reports",
+        "publication_date": "2022-06-17",
+        "split": "train",
+        "source_file": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "source_line_no": 342,
+        "original_id": "medcase_reasoning:341",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\medcase_reasoning_part_0007.jsonl",
+        "original_title": "Apical lung mass—A rare presentation of multiple myeloma☆",
+        "original_text": "A 50-year-old woman with hypertension, hyperlipidemia, and substance abuse presented with several weeks of right chest pain and discomfort. Her father had lung cancer. On examination, vital signs were normal and physical findings were unremarkable. Laboratory studies showed: hemoglobin 9.0 g/dL (anemia), RDW 19.2%, WBC 4.1 k/µL (leucopenia), hemoglobin A2 1.6%, total calcium 9.8 mg/dL, albumin 4.4 g/dL, total protein 9.2 g/dL, LDH 263 units/L, and normal renal function. Contrast-enhanced CT of the chest, abdomen, and pelvis revealed a right pleural-based mass eroding the second rib, six enlarged lymph nodes adjacent to the right rib cage, and multiple lytic lesions in the right scapula, the eighth and ninth ribs, the iliac bones, left ischium, sacrum, coccyx, and throughout the thoracic and lumbar vertebrae. She was referred for evaluation of a suspected Pancoast tumor and a right axillary lymph-node biopsy was scheduled; however, she was lost to follow-up. One month later, she returned with two weeks of left upper-thigh pain and two days of right shoulder pain worsened by movement. There was no trauma, weakness, or numbness. – Chest X-ray: right upper-lobe mass-like opacity. – Right shoulder X-ray: lytic, permeative lesion of the proximal and mid humeral diaphysis with a pathologic compression fracture and lung opacities. – Right elbow X-ray: lytic lesions in the distal humeral diaphysis. – Repeat chest CT: a 5.5 cm pleural-based mass in the right upper lobe eroding the second rib, right axillary lymphadenopathy, extensive diffuse lytic lesions in the visualized bones, and multiple pathologic fractures of right ribs, proximal right humerus, and T4–T5 vertebral bodies. – CT of the abdomen and pelvis: a large destructive lesion in the left ilium and multiple lytic lesions throughout the pelvis and spine.",
+        "original_diagnosis": "MultipleMyeloma",
+        "source_jsonl": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "diagnosis_original": "MultipleMyeloma",
+        "diagnosis_zh": "多发性骨髓瘤"
+      }
+    },
+    {
+      "case_id": "medcase_reasoning:1190",
+      "source": "medcase_reasoning",
+      "title": "非急性早幼粒细胞白血病变异型，伴t(11;17)的急性髓系白血病",
+      "diagnosis": "急性单核细胞白血病",
+      "similarity": 0.8663325905799866,
+      "raw_text": "病例标题：非急性早幼粒细胞白血病变异型，伴t(11;17)的急性髓系白血病\n主要诊断：急性单核细胞白血病\n病例摘要：一名21岁女性因乏力、高热和全身皮疹1个月就诊。此前门诊评估发现全血细胞减少，但外周血无循环异型细胞，经验性抗生素和外用激素治疗无改善。入院时生命体征以持续发热为显著。实验室检查显示：WBC 0.49×10^9/L，RBC 2.98×10^12/L，血红蛋白87 g/L，红细胞压积25.8%，MCV 86.6 fL，血小板13×10^9/L；钙2.09 mmol/L，尿素3 mmol/L，肌酐106 μmol/L；D-二聚体14.91 mg/L，纤维蛋白原3.91 g/L；PT 17.9 sec（INR 1.4），PTT 39.5 sec（比值1.2）。外周血涂片确认明显全血细胞减少，并见偶发原始细胞和罕见异常早幼粒细胞。鉴于凝血功能异常背景下发现异常早幼粒细胞，等待紧急PML-RARA易位荧光原位杂交期间启动全反式维甲酸（ATRA）治疗。",
+      "metadata": {
+        "pmcid": "PMC6406162",
+        "journal": "Clinical Case Reports",
+        "publication_date": "2019-02-10",
+        "split": "train",
+        "source_file": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "source_line_no": 1191,
+        "original_id": "medcase_reasoning:1190",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\medcase_reasoning_part_0024.jsonl",
+        "original_title": "Non‐acute promyelocytic leukemia variant, acute myeloid leukemia with translocation (11;17)",
+        "original_text": "A 21-year-old woman presented with a one-month history of fatigue, high-grade fevers, and a generalized skin rash. Prior outpatient evaluation revealed pancytopenia without circulating atypical cells, and empirical antibiotics and topical steroids yielded no improvement. On admission, vital signs were notable for persistent fever. Laboratory studies showed: • WBC 0.49×10^9/L, RBC 2.98×10^12/L, hemoglobin 87 g/L, hematocrit 25.8%, MCV 86.6 fL, platelets 13×10^9/L • Calcium 2.09 mmol/L, urea 3 mmol/L, creatinine 106 μmol/L • D-dimer 14.91 mg/L, fibrinogen 3.91 g/L • PT 17.9 sec (INR 1.4), PTT 39.5 sec (ratio 1.2) Peripheral-blood smear confirmed marked pancytopenia and showed occasional blasts and rare abnormal promyelocytes. Given the finding of abnormal promyelocytes in the context of coagulopathy, all-trans retinoic acid (ATRA) was initiated pending urgent fluorescence in situ hybridization for PML-RARA translocation.",
+        "original_diagnosis": "acute monoblastic leukemia",
+        "source_jsonl": "data_zh\\external\\medcase_reasoning_zh.jsonl",
+        "diagnosis_original": "acute monoblastic leukemia",
+        "diagnosis_zh": "急性单核细胞白血病"
+      }
+    },
+    {
+      "case_id": "open_patients:pmc-8696182-1",
+      "source": "open_patients",
+      "title": "pmc-8696182-1",
+      "diagnosis": "",
+      "similarity": 0.8408575057983398,
+      "raw_text": "病例标题：pmc-8696182-1\n病例摘要：一名1岁9个月大的女孩于2016年3月因4天的发热和咳嗽被转诊至我院，既往无特殊病史。体格检查显示体温37.4°C，心率120次/分，呼吸频率50次/分，血压90/60 mm Hg，在未吸氧的情况下血氧饱和度为92%，存在胸骨上窝、锁骨上窝和肋间隙凹陷。由于出现低氧血症，使用了6 L/min的储气囊面罩进行通气支持。右肺呼吸音减弱。心脏、神经系统、四肢、抗核抗体（ANA）及可提取核抗原（ENA）检查结果均正常。常规血液检测结果显示：血红蛋白（Hb）118 g/l，白细胞（WBC）7.83 × 109/L，中性粒细胞（N）53.3%，淋巴细胞（L）40.4%，C-反应蛋白（CRP）156 mg/l。动脉血气分析显示pH值为7.48，动脉二氧化碳分压（PaCO2）42 mm Hg，动脉氧分压（PaO2）50 mm Hg，碱剩余（BE）6.9 mmol/l，氧合指数238。肺部CT提示右中叶实变伴萎陷。心电图显示窦性心动过速及部分导联钝T波，双峰可见。患者入院后接受头孢噻吩抗感染治疗。第2天，由于CT检查发现肺炎合并萎陷，进行了首次纤维支气管镜（FB）以缓解萎陷并获取呼吸道样本进行细菌学、细胞学和组织病理学检测。第3天，MP-免疫球蛋白M（IgM）滴度为1:160，随后给予阿奇霉素和甲基泼尼松龙抗炎治疗。第5天，由于持续发热、咳嗽加重及胸部X线检查显示病变进展，在常规抗感染治疗后进行了第二次FB，并发现气道内有塑料支气管炎。支气管肺泡灌洗液（BALF）未检测到其他微生物，仅检出MP-DNA达5.1 × 108拷贝/ml。MP耐药突变位点2063/2064呈阳性。在体液或分泌物中未发现其他病原学证据。第9天，体温恢复正常，临床症状和影像学检查有所改善。第14天，血氧恢复正常并停止吸氧。第17天出院。然而，在第24天突然出现高热。由于经过3天的常规抗感染治疗后仍未见好转且X线显示持续存在实变影，于第27天在门诊进行了第三次FB，并移除了支气管铸型物。次日体温恢复正常，第30天胸部X线检查明显改善（）。60天内未出现任何不适症状。",
+      "metadata": {
+        "source_file": "data_zh\\external\\open_patients_zh.jsonl",
+        "source_line_no": 280,
+        "original_id": "open_patients:pmc-8696182-1",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "translation_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_translated_at": "2026-07-09T17:23:35",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\open_patients_part_0006.jsonl",
+        "original_title": "pmc-8696182-1",
+        "original_text": "A 1.9-year-old girl was referred to our hospital on March, 2016 due to 4-day fever and cough, with no pertinent past medical history. Physical examination revealed temperature 37.4°C, heart rate 120 beats/min, respiration 50 times/min, blood pressure 90/60 mm Hg, and transcutaneous oxygen saturation 92% without oxygen administration, fatigue, and depressions in suprasternal fossa, supraclavicular fossa, and intercostal space. She developed hypoxemia, so the reservoir mask of 6 l/min was utilized for ventilatory support. The right lung showed diminished breath sounds. Cardiovascular, nervous system, extremities, antinuclear antibodies (ANAs), and extractable nuclear antigens (ENAs) examinations were normal. Routine blood tests showed the following results: hemoglobin (Hb) 118 g/l, white blood cell (WBC) 7.83 × 109/L, neutrophils (N) 53.3%, lymphocytes (L) 40.4%, and C-reactive protein (CRP) 156 mg/l. Arterial blood gas analysis revealed a pH of 7.48, partial pressure of carbon dioxide in artery (PaCO2) of 42 mm Hg, partial pressure of oxygen in artery (PaO2) of 50 mm Hg, base excess (BE) of 6.9 mmol/l, and oxygenation index of 238. Pulmonary CT suggested consolidation with atelectasis in the middle lobe of right lung (). Electrocardiogram indicated sinus rhythm with blunt T wave of part of the lead, visible in double peak. The patient received cephalothin for anti-infection at admission. On 2nd day, due to pneumonia complicated with atelectasis in her CT scan, the first fiberoptic bronchoscopy (FB) was used to relieve atelectasis and obtain respiratory samples for bacteriologic, cytologic, and histologic detection. On 3rd day, the titer of MP-immunoglobulin M (IgM) was 1:160 and then azithromycin and methylprednisolone were applied for anti-inflammation. On 5th day, due to persistent fever, aggravated cough, and lesions on chest radiography progressed after conventional anti-infective therapy, the second FB was performed and found plastic bronchitis in the airway (). Bronchoalveolar lavage (BAL) fluid (BALF) was negative in other microorganism, except MP-DNA up to 5.1 × 108 copies/ml. MP resistance mutation site 2063/2064 showed positive. No other etiological evidence was found in body fluid or secretions. On 9th day, the body temperature returned to normal level and the clinical symptoms and imaging improved. On 14th day, the blood oxygen turned to normal and stopped oxygen inhalation. The titer of MP-IgM was increased to 1:10240. She was discharged on the 17th day. However, on 24th day, she had sudden high fever. Because she was still not getting better after 3-day conventional anti-infective therapy and persistent consolidations in X-ray, the third FB was used on 27th day on outpatient department and removed bronchial casts. Her temperature was normal on the next day and the chest X-ray on the 30th day had great improvement (, ). She did not present any discomfort within 60 days.",
+        "original_diagnosis": "",
+        "source_jsonl": "data_zh\\external\\open_patients_zh.jsonl",
+        "diagnosis_original": "",
+        "diagnosis_zh": ""
+      }
+    },
+    {
+      "case_id": "open_patients:pmc-8684121-1",
+      "source": "open_patients",
+      "title": "pmc-8684121-1",
+      "diagnosis": "",
+      "similarity": 0.8390425443649292,
+      "raw_text": "病例标题：pmc-8684121-1\n病例摘要：一名32岁的中东肥胖男性，体重指数（BMI）为33，在急诊部门因持续6天的严重、逐渐加重的全腹痛和呕吐症状入院。他在当前住院前13天在一家私立医院接受了袖状胃切除术（LSG）。他被开具了质子泵抑制剂和每日40毫克依诺肝素，一直按时服用。体检时，患者看起来病态，脱水且疼痛。格拉斯哥昏迷量表评分为15分，心率为每分钟135次，血压为132/82毫米汞柱，呼吸频率为每分钟20次，体温为36.5摄氏度。体检发现腹部膨胀并有弥漫性压痛，但腹腔镜切口已愈合。初步实验室检查显示白细胞计数（WBC）为27,300/μL（4000-11,000 μL），血红蛋白为17.3 g/dL（10-15 g/dL），血清乳酸水平为7.6 mmol/L（0.5-1.9 mmol/L）。腹部和骨盆的增强CT检查显示慢性与急性期并存的门静脉和上腔静脉血栓形成，导致小肠缺血（图示）。他被转至急腹外科团队护理，并进行了复苏治疗，随后接受了腹腔镜探查手术，确认了CT检查结果。在转换为中线开腹后，切除了一段255厘米的小肠（图示），并使用负压封闭引流敷料开放腹部（图示）。患者被转至重症监护室。24小时后的复查显示小肠和大肠均健康，因此进行了原位吻合术和腹部闭合手术。逐渐引入固体饮食，并在术后第12天开始服用华法林出院。凝血功能筛查结果为阴性。患者多次随访，能够耐受口服摄入，并将BMI降至19，无短肠综合征的临床表现。",
+      "metadata": {
+        "source_file": "data_zh\\external\\open_patients_zh.jsonl",
+        "source_line_no": 526,
+        "original_id": "open_patients:pmc-8684121-1",
+        "language": "zh",
+        "translation_backend": "web-gpt",
+        "translation_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_translated_at": "2026-07-09T18:22:12",
+        "web_gpt_merged_at": "2026-07-10T15:15:10",
+        "web_gpt_chunk_file": "data_zh\\external_web_gpt\\translated\\open_patients_part_0011.jsonl",
+        "original_title": "pmc-8684121-1",
+        "original_text": "An obese 32-year-old Middle Eastern man with a body mass index (BMI) of 33 presented to the emergency department (ED) with a 6-day history of severe, worsening, generalized abdominal pain and vomiting. He had undergone LSG 13 days prior to the current admission at a private hospital. He was prescribed a protein pump inhibitor and enoxaparin 40 mg daily, which he had taken regularly. On examination, the patient looked unwell, dehydrated, and in pain. His Glasgow Coma Scale score was 15, and he had a heart rate of 135 beats per minute, blood pressure 132/82 mmHg, respiratory rate 20 breaths per minute, and body temperature 36.5 °C. On examination, his abdomen was distended with generalized tenderness, but his laparoscopic wounds had healed. Initial laboratory investigations revealed a white blood cell count (WBC) of 27,300/μL (4000–11,000 μL), hemoglobin 17.3 g/dL (10–15 g/dL), and serum lactate 7.6 mmol/L (0.5–1.9 mmol/L). Computed tomography (CT) of the abdomen and pelvis with intravenous contrast revealed extensive acute on chronic portosplenic and superior mesenteric vein thrombosis, with consequent small bowel ischemia (Fig. ). He was admitted under the care of the acute surgical team and resuscitated, and underwent laparoscopic exploration, which confirmed the CT findings. After conversion to midline laparotomy, 255 cm of small bowel was resected (Fig. ) and the abdomen was left open with a vacuum-assisted closure device dressing (Fig. ). The patient was transferred to the intensive care unit. A second look was carried out 24 hours later, and both the small and large intestines appeared healthy, so primary anastomosis and abdominal closure were performed. A solid diet was introduced gradually, and the patient was discharged home on day 12 postoperation on warfarin. A thrombophilia screen was negative. The patient was seen multiple times for follow-up; he was tolerating oral intake and had reduced his BMI to 19 with no clinical manifestations of short bowel syndrome.",
+        "original_diagnosis": "",
+        "source_jsonl": "data_zh\\external\\open_patients_zh.jsonl",
+        "diagnosis_original": "",
+        "diagnosis_zh": ""
+      }
+    },
+    {
+      "case_id": "275",
+      "diagnosis": "急性肺水肿",
+      "diagnosis_original": "Acute pulmonary edema",
+      "diagnosis_zh": "急性肺水肿",
+      "similarity": 0.8030955791473389,
+      "raw_text": "年龄：36 岁\n性别：女\n症状与病史：是否明显气短或呼吸困难；症状问诊项；症状问诊项；是否出现明显出汗；是否有与本次就诊原因相关的疼痛；疼痛性质：钝痛；疼痛性质：敏感样；疼痛部位：编码 V_42；疼痛部位：编码 V_118；疼痛部位：编码 V_137；疼痛部位：编码 V_139；疼痛部位：编码 V_188；疼痛强度：8；疼痛是否向其他部位放射：编码 V_44；疼痛是否向其他部位放射：编码 V_140；疼痛是否向其他部位放射：编码 V_146；疼痛是否向其他部位放射：编码 V_147；疼痛是否向其他部位放射：triceps（右）；疼痛定位是否明确：7；疼痛出现速度：1；症状问诊项；是否患有高血压或服用降压药；是否患有心力衰竭；身体一个或多个部位是否肿胀；肿胀部位：编码 V_47；肿胀部位：编码 V_137；肿胀部位：编码 V_139；肿胀部位：tibia（右）；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：急性肺水肿（0.09412583041917719）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.09403744029465065）；不稳定型心绞痛（0.07547237758394135）；肺栓塞（0.07480432110866746）；心肌炎（0.06843802096285596）；稳定型心绞痛（0.059860864989788064）；吉兰-巴雷综合征（0.05920979949190623）；心房颤动（0.056556065550713186）\n最终诊断：急性肺水肿"
+    }
+  ],
+  "kg_evidence": [
+    {
+      "head": "急性纤维素性及组织性肺炎",
+      "relation": "外部病例弱证据",
+      "tail": "一名70岁男性，过去两天出现咳嗽和发热。他的血压为120/74 mmHg，心率为72次/min，呼吸频率为20次/min，体温38.2 °C，在鼻导管吸氧2 L/min的情况下血氧饱和度为98%。实验室检查结果显示：白细胞计数7.41 × 10^9/L，血红蛋白132 g/L，血小板计数387 × 10^9/L，红细胞沉降率72 mm/h，CRP大于150 mg/L。",
+      "text": "急性纤维素性及组织性肺炎 外部病例弱证据 一名70岁男性，过去两天出现咳嗽和发热。他的血压为120/74 mmHg，心率为72次/min，呼吸频率为20次/min，体温38.2 °C，在鼻导管吸氧2 L/min的情况下血氧饱和度为98%。实验室检查结果显示：白细胞计数7.41 × 10^9/L，血红蛋白132 g/L，血小板计数387 × 10^9/L，红细胞沉降率72 mm/h，CRP大于150 mg/L。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:7873",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T11:55:08"
+      },
+      "relation_category": "case_evidence",
+      "score": 26.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一名39岁男性，伴有急性B细胞淋巴母细胞白血病，6周前接受了异基因造血干细胞移植。他表现为1周的无痰咳嗽和发热。生命体征稳定，吸氧饱和度为96%（在常压空气中）。肺部检查发现右肺尖部有轻微湿啰音。实验室",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一位39岁白种女性，主诉持续8个月的非productive咳嗽和进行性呼吸困难。初始胸部X线检查提示肺炎并接受cefuroxime治疗但未见好转。高分辨率胸部CT显示外周分布为主的局灶性间质浸润伴磨玻璃样阴影和间隔增厚。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "急性纤维素性及组织性肺炎",
+          "relation": "外部病例弱证据",
+          "tail": "一名78岁男性，伴有2型糖尿病和类风湿关节炎，表现为1周的双侧眼睑水肿、3天的发热及呼吸困难。他因类风湿关节炎服用甲氨蝶呤、伊格拉提莫德和泼尼松。入院时体温为40.3°C，需鼻导管吸氧3L/min。体格检查显示双侧眼睑明显肿胀。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 3
+    },
+    {
+      "head": "布鲁氏菌病(Bruceellosis)",
+      "relation": "外部病例弱证据",
+      "tail": "一名57岁男性，一个月前有高热、夜间盗汗及渐进性背部疼痛。他报告称约一个月前用手触摸了一个受伤的手指并接触了未巴氏杀菌的羊胃。初始门诊治疗使用口服cefprozil未能提供持久疗效。入院时无发热，但抱怨背部疼痛加重和全身不适。实验室检查结果显示血沉（ESR）升高至105 mm/h，C反应蛋白（CRP）为23 mg/L，白细胞计数为14.5×10^9/L，中性粒细胞比例为85%。腰椎MRI显示L4-L5椎间盘突出并伴有右侧神经根受压。初步诊断考虑感染性脊柱炎，拟行进一步检查和治疗。",
+      "text": "布鲁氏菌病(Bruceellosis) 外部病例弱证据 一名57岁男性，一个月前有高热、夜间盗汗及渐进性背部疼痛。他报告称约一个月前用手触摸了一个受伤的手指并接触了未巴氏杀菌的羊胃。初始门诊治疗使用口服cefprozil未能提供持久疗效。入院时无发热，但抱怨背部疼痛加重和全身不适。实验室检查结果显示血沉（ESR）升高至105 mm/h，C反应蛋白（CRP）为23 mg/L，白细胞计数为14.5×10^9/L，中性粒细胞比例为85%。腰椎MRI显示L4-L5椎间盘突出并伴有右侧神经根受压。初步诊断考虑感染性脊柱炎，拟行进一步检查和治疗。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:9665",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T14:50:00"
+      },
+      "relation_category": "case_evidence",
+      "score": 19.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "布鲁氏菌病(Bruceellosis)",
+          "relation": "外部病例弱证据",
+          "tail": "一名27岁女性，表现为两周的夜间发热、关节痛、右上腹痛和黄疸。她是一名羊农，食用非巴氏杀菌奶酪，无药物使用史。体检结果显示体温38.5°C，血压70/45 mmHg，心率70次/分，呼吸18次/分，血氧饱和度96%（在室息状态下）。她体态正常。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "布鲁氏菌病(Bruceellosis)",
+          "relation": "外部病例弱证据",
+          "tail": "一名28岁男性，来自孟加拉国，既往健康，表现为7天右膝疼痛，对非甾体抗炎药（NSAIDs）治疗无效，且无发热。第3天，他出现肿胀并因关节活动受限而行走困难。他否认有动物接触史、未巴氏杀菌乳摄入史、外伤史或皮疹，且其他关节未受累。查体时体温正常（afebrile），颈部无抵抗（n）。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 2
+    },
+    {
+      "head": "结核病",
+      "relation": "外部病例弱证据",
+      "tail": "一名30多岁的男性患者来自摩洛哥，既往有肝包虫囊肿手术史，并伴有进行性体重下降。主诉急性腹痛、恶心和完全性便秘，持续3天。查体心率127次/分，血压正常，腹部膨隆并弥漫性压痛；直肠检查发现粪便滞留于结肠壶腹处。实验室检查结果显示白细胞计数升高（WBC 15.6×10^9/L），C反应蛋白水平升高（CRP 128 mg/L）。",
+      "text": "结核病 外部病例弱证据 一名30多岁的男性患者来自摩洛哥，既往有肝包虫囊肿手术史，并伴有进行性体重下降。主诉急性腹痛、恶心和完全性便秘，持续3天。查体心率127次/分，血压正常，腹部膨隆并弥漫性压痛；直肠检查发现粪便滞留于结肠壶腹处。实验室检查结果显示白细胞计数升高（WBC 15.6×10^9/L），C反应蛋白水平升高（CRP 128 mg/L）。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:1332",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-07T19:13:24"
+      },
+      "relation_category": "case_evidence",
+      "score": 17.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "结核病",
+          "relation": "症状表现为",
+          "tail": "持续超过 3 周的咳嗽, 夜间盗汗, 体重下降",
+          "relation_category": "symptom"
+        },
+        {
+          "head": "结核病",
+          "relation": "病史提示",
+          "tail": "知识图谱描述项",
+          "relation_category": "risk_factor"
+        },
+        {
+          "head": "结核病",
+          "relation": "治疗方式包括",
+          "tail": "知识图谱描述项",
+          "relation_category": "treatment"
+        }
+      ],
+      "neighbor_count": 3
+    },
+    {
+      "head": "胆管穿孔",
+      "relation": "外部病例弱证据",
+      "tail": "一名72岁 previously healthy 男性患者突然出现上腹部疼痛、食欲不振和呕吐。他无发热；血压84/59 mmHg；心率70次/分；呼吸频率25次/分。腹部柔软，右上腹及上腹部有压痛，但无腹膜刺激征。实验室检查显示白细胞计数升高（27.15×10^9/L），C-反应蛋白400 mg/L，淀粉酶1",
+      "text": "胆管穿孔 外部病例弱证据 一名72岁 previously healthy 男性患者突然出现上腹部疼痛、食欲不振和呕吐。他无发热；血压84/59 mmHg；心率70次/分；呼吸频率25次/分。腹部柔软，右上腹及上腹部有压痛，但无腹膜刺激征。实验室检查显示白细胞计数升高（27.15×10^9/L），C-反应蛋白400 mg/L，淀粉酶1",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:1646",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-07T19:24:31"
+      },
+      "relation_category": "case_evidence",
+      "score": 17.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    },
+    {
+      "head": "血管性水肿",
+      "relation": "外部病例弱证据",
+      "tail": "一个5岁男孩，既往健康，本次表现为1周的咳嗽和发热。体格检查发现呼吸急促，并在右侧胸腔听到湿啰音。实验室检查显示溶血性贫血（血红蛋白，10.9 g/dL；正常范围，11.5–14.0），白细胞计数正常（6.8×10^9/L，无嗜酸粒细胞增多）和C-反应蛋白水平升高（22.0 mg/L；正常）。",
+      "text": "血管性水肿 外部病例弱证据 一个5岁男孩，既往健康，本次表现为1周的咳嗽和发热。体格检查发现呼吸急促，并在右侧胸腔听到湿啰音。实验室检查显示溶血性贫血（血红蛋白，10.9 g/dL；正常范围，11.5–14.0），白细胞计数正常（6.8×10^9/L，无嗜酸粒细胞增多）和C-反应蛋白水平升高（22.0 mg/L；正常）。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:13288",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T20:20:49"
+      },
+      "relation_category": "case_evidence",
+      "score": 17.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "血管性水肿",
+          "relation": "外部病例弱证据",
+          "tail": "一名38岁男性，有4年高血压病史，服用缬沙坦160 mg/d治疗，无并发症。他否认药物不耐受、过敏史或家族性血管性水肿史，在围手术期未使用非甾体抗炎药。预检时无其他特殊情况。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 1
+    },
+    {
+      "head": "慢性髓系白血病的淋巴样blast危机",
+      "relation": "外部病例弱证据",
+      "tail": "一名36岁亚洲男性，过去一个月表现为进行性乏力和视力下降。两个月前，他因伴有输血的贫血治疗但无持久改善。入院时体检发现肝脾肿大。实验室检查结果显示：红细胞计数1.81×10^12/L，血红蛋白54 g/L；血小板计数214×10^9/L；白细胞计数未给出。",
+      "text": "慢性髓系白血病的淋巴样blast危机 外部病例弱证据 一名36岁亚洲男性，过去一个月表现为进行性乏力和视力下降。两个月前，他因伴有输血的贫血治疗但无持久改善。入院时体检发现肝脾肿大。实验室检查结果显示：红细胞计数1.81×10^12/L，血红蛋白54 g/L；血小板计数214×10^9/L；白细胞计数未给出。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:5776",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T09:43:07"
+      },
+      "relation_category": "case_evidence",
+      "score": 16.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    },
+    {
+      "head": "弥漫大B细胞淋巴瘤（Anaplastic Large-Cell Lymphoma）",
+      "relation": "外部病例弱证据",
+      "tail": "一名13岁女孩因进行性吞咽困难、呼吸困难、面部肿胀、苍白和乏力症状入院。体格检查显示上腔静脉综合征征象。实验室检查结果显示白细胞计数为6×10^9/L（淋巴细胞48%，中性粒细胞42%），血红蛋白85 g/L，C-反应蛋白117 mg/L。胸部X线片提示",
+      "text": "弥漫大B细胞淋巴瘤（Anaplastic Large-Cell Lymphoma） 外部病例弱证据 一名13岁女孩因进行性吞咽困难、呼吸困难、面部肿胀、苍白和乏力症状入院。体格检查显示上腔静脉综合征征象。实验室检查结果显示白细胞计数为6×10^9/L（淋巴细胞48%，中性粒细胞42%），血红蛋白85 g/L，C-反应蛋白117 mg/L。胸部X线片提示",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:8740",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T12:28:09"
+      },
+      "relation_category": "case_evidence",
+      "score": 16.0,
+      "retrieval_method": "rule",
+      "neighbors": [
+        {
+          "head": "弥漫大B细胞淋巴瘤（Anaplastic Large Cell Lymphoma）",
+          "relation": "外部病例弱证据",
+          "tail": "一名60多岁男性，过去2周内出现进行性便秘、多次非胆汁性呕吐以及无法耐受口服摄入。他没有个人或家族癌症史。体格检查显示心率加快，腹部膨隆但无压痛和紧张；未见淋巴结肿大。实验室检查发现白细胞计数升高。",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "弥漫大B细胞淋巴瘤（Anaplastic Large Cell Lymphoma）",
+          "relation": "外部病例弱证据",
+          "tail": "一个15岁营养不良的男孩，过去4个月间断低热、干咳、食欲不振和体重下降，近1个月活动后呼吸困难逐渐加重，现已限制了他的活动。他仅接受了对症治疗，但症状持续存在。体检时他显得瘦弱，并有轻度呼吸窘迫。Vi",
+          "relation_category": "case_evidence"
+        },
+        {
+          "head": "弥漫大B细胞淋巴瘤（Anaplastic Large Cell Lymphoma）",
+          "relation": "外部病例弱证据",
+          "tail": "一名60岁男性，右乳头下方出现无痛性肿块已四个月。他报告无疼痛、瘙痒或乳头分泌物，并且无个人或家族癌症史。在当地医院进行核心针活检显示肿瘤细胞具有侵袭性特征。免疫组化染色结果显示ER、PR、HER2、E-cadherin、P120、CK5/6和P40均为阴性。",
+          "relation_category": "case_evidence"
+        }
+      ],
+      "neighbor_count": 3
+    },
+    {
+      "head": "混合性冷热自身免疫性溶血性贫血",
+      "relation": "外部病例弱证据",
+      "tail": "一名70岁女性，过去3个月出现渐进性头晕、先兆晕厥和乏力。入院时：血红蛋白62 g/L，血细胞比容0.16 L/L，平均红细胞体积105 fL，白细胞计数13.6 × 10^9/L，中性粒细胞计数9.6 × 10^9/L，C反应蛋白18.95 mg/L；电解质、促甲状腺激素、INR、活化部分凝血活酶时间（aPTT）和肌酐均在正常范围内。",
+      "text": "混合性冷热自身免疫性溶血性贫血 外部病例弱证据 一名70岁女性，过去3个月出现渐进性头晕、先兆晕厥和乏力。入院时：血红蛋白62 g/L，血细胞比容0.16 L/L，平均红细胞体积105 fL，白细胞计数13.6 × 10^9/L，中性粒细胞计数9.6 × 10^9/L，C反应蛋白18.95 mg/L；电解质、促甲状腺激素、INR、活化部分凝血活酶时间（aPTT）和肌酐均在正常范围内。",
+      "source": "external_case_evidence",
+      "metadata": {
+        "case_id": "medcase_reasoning:10730",
+        "original_source": "medcase_reasoning",
+        "evidence_level": "weak_case_evidence",
+        "qwen_refine_backend": "qwen-local",
+        "qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+        "qwen_refined_at": "2026-07-08T16:21:25"
+      },
+      "relation_category": "case_evidence",
+      "score": 16.0,
+      "retrieval_method": "rule",
+      "neighbors": [],
+      "neighbor_count": 0
+    }
+  ],
+  "agent_opinions": [
+    {
+      "source": "llm_mdt",
+      "specialty": "cardiovascular",
+      "agent_name": "呼吸内科",
+      "risk_level": "low",
+      "confidence": 0.75,
+      "diagnosis": [
+        "急性支气管炎（细菌性感染可能）"
+      ],
+      "evidence": [
+        "发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，鼻塞流黄涕，全身肌肉酸痛",
+        "查体：T38.9℃，咽部黏膜充血水肿，双侧扁桃体Ⅰ度肿大",
+        "白细胞12.8×10^9/L（升高），中性粒细胞百分比86.4%（升高），淋巴细胞百分比10.2%（降低）",
+        "C反应蛋白48.6 mg/L（升高），血沉32 mm/h（升高）",
+        "流感病毒抗原快速检测甲型/乙型均阴性",
+        "胸部X线：双肺纹理增粗，未见实变或浸润影"
+      ],
+      "suggestion": "初步评估错误选择心血管内科，缺乏呼吸道专科考量；依赖'无心脏症状'而忽略主诉和感染指标；相似病例（多发性骨髓瘤、白血病等）和知识图谱（布鲁氏菌病、结核等）均不匹配，患者临床表现符合急性支气管炎（细菌性感染可能），故修正专科为呼吸内科，疾病调整为急性支气管炎，风险等级低，置信度因PCT结果未回报而设为0.75。",
+      "raw": {
+        "specialty": "呼吸内科",
+        "revised_suspected_disease": "急性支气管炎（细菌性感染可能）",
+        "revised_risk_level": "low",
+        "revised_confidence": 0.75,
+        "revised_supporting_evidence": [
+          "发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，鼻塞流黄涕，全身肌肉酸痛",
+          "查体：T38.9℃，咽部黏膜充血水肿，双侧扁桃体Ⅰ度肿大",
+          "白细胞12.8×10^9/L（升高），中性粒细胞百分比86.4%（升高），淋巴细胞百分比10.2%（降低）",
+          "C反应蛋白48.6 mg/L（升高），血沉32 mm/h（升高）",
+          "流感病毒抗原快速检测甲型/乙型均阴性",
+          "胸部X线：双肺纹理增粗，未见实变或浸润影"
+        ],
+        "revised_exclusion_evidence": [
+          "胸部X线未见实变或浸润影，排除肺炎",
+          "无胸痛、气促、咯血、呼吸困难等重症表现",
+          "流感病毒抗原阴性，排除甲乙型流感",
+          "双肺呼吸音清，未闻及干湿性啰音，排除明显下呼吸道感染体征"
+        ],
+        "self_critique_log": "初步评估错误选择心血管内科，缺乏呼吸道专科考量；依赖'无心脏症状'而忽略主诉和感染指标；相似病例（多发性骨髓瘤、白血病等）和知识图谱（布鲁氏菌病、结核等）均不匹配，患者临床表现符合急性支气管炎（细菌性感染可能），故修正专科为呼吸内科，疾病调整为急性支气管炎，风险等级低，置信度因PCT结果未回报而设为0.75。"
+      }
+    },
+    {
+      "source": "llm_mdt",
+      "specialty": "digestive_liver",
+      "agent_name": "呼吸内科",
+      "risk_level": "medium",
+      "confidence": 0.85,
+      "diagnosis": [
+        "急性支气管炎（细菌性感染可能）"
+      ],
+      "evidence": [
+        "主诉发热、咽痛、咳嗽4天，加重1天，咳黄绿色黏稠痰",
+        "体温38.9°C，咽部充血水肿，扁桃体I度肿大",
+        "白细胞计数12.8×10^9/L（升高），中性粒细胞百分比86.4%（升高），淋巴细胞百分比10.2%（降低）",
+        "C反应蛋白48.6 mg/L（升高），血沉32 mm/h（升高）",
+        "胸部X线双肺纹理增粗，提示支气管炎症"
+      ],
+      "suggestion": "初步评估误选消化与肝胆内科，患者无任何消化道或肝胆症状及指标异常；实际患者所有表现均指向急性呼吸道感染，结合白细胞、中性粒细胞、CRP、ESR显著升高及黄痰，细菌性支气管炎可能性大。相似病例和知识图谱提供的多发性骨髓瘤、白血病、布鲁氏菌病等虽文本相似度高，但缺乏对应临床表现和接触史，不作为主要诊断依据。修正专科为呼吸内科，疾病为急性支气管炎（细菌性感染可能），风险等级medium，置信度0.85（PCT结果待回报，可进一步支持细菌感染）。",
+      "raw": {
+        "specialty": "呼吸内科",
+        "revised_suspected_disease": "急性支气管炎（细菌性感染可能）",
+        "revised_risk_level": "medium",
+        "revised_confidence": 0.85,
+        "revised_supporting_evidence": [
+          "主诉发热、咽痛、咳嗽4天，加重1天，咳黄绿色黏稠痰",
+          "体温38.9°C，咽部充血水肿，扁桃体I度肿大",
+          "白细胞计数12.8×10^9/L（升高），中性粒细胞百分比86.4%（升高），淋巴细胞百分比10.2%（降低）",
+          "C反应蛋白48.6 mg/L（升高），血沉32 mm/h（升高）",
+          "胸部X线双肺纹理增粗，提示支气管炎症"
+        ],
+        "revised_exclusion_evidence": [
+          "流感病毒抗原快速检测（甲型/乙型）阴性，排除流感",
+          "胸部X线未见实变或浸润影，排除典型肺炎",
+          "无胸痛、气促、咯血，无低氧表现"
+        ],
+        "self_critique_log": "初步评估误选消化与肝胆内科，患者无任何消化道或肝胆症状及指标异常；实际患者所有表现均指向急性呼吸道感染，结合白细胞、中性粒细胞、CRP、ESR显著升高及黄痰，细菌性支气管炎可能性大。相似病例和知识图谱提供的多发性骨髓瘤、白血病、布鲁氏菌病等虽文本相似度高，但缺乏对应临床表现和接触史，不作为主要诊断依据。修正专科为呼吸内科，疾病为急性支气管炎（细菌性感染可能），风险等级medium，置信度0.85（PCT结果待回报，可进一步支持细菌感染）。"
+      }
+    },
+    {
+      "source": "llm_mdt",
+      "specialty": "endocrine_metabolic",
+      "agent_name": "呼吸内科",
+      "risk_level": "medium",
+      "confidence": 0.85,
+      "diagnosis": [
+        "急性细菌性支气管炎"
+      ],
+      "evidence": [
+        "发热、咽痛、咳嗽伴黄绿色黏痰，提示下呼吸道细菌感染",
+        "白细胞计数升高（12.8×10^9/L）且中性粒细胞百分比升高（86.4%），支持细菌感染",
+        "C反应蛋白升高（48.6 mg/L）和血沉升高（32.0 mm/h），为急性炎症指标",
+        "流感病毒抗原快速检测（甲型/乙型）阴性，排除流行性感冒"
+      ],
+      "suggestion": "初步评估的专科选择错误（内分泌与代谢科与患者临床表现不符），且将疾病方向泛化为‘无明确专科风险’，忽略了急性感染的具体定位。根据患者发热、咳黄痰、白细胞及中性粒细胞升高、CRP和ESR升高等证据，应聚焦于呼吸道细菌感染。相似病例中的白血病或多发性骨髓瘤均无对应支持证据（血象正常、无贫血或血小板异常），知识图谱中布鲁氏菌病或结核缺乏流行病学史和典型影像证据。因此修正为呼吸内科的急性细菌性支气管炎，风险等级调整为中等（需抗感染治疗但无重症肺炎表现），置信度0.85（因PCT结果待回报，仍有一定不确定性）。",
+      "raw": {
+        "specialty": "呼吸内科",
+        "revised_suspected_disease": "急性细菌性支气管炎",
+        "revised_risk_level": "medium",
+        "revised_confidence": 0.85,
+        "revised_supporting_evidence": [
+          "发热、咽痛、咳嗽伴黄绿色黏痰，提示下呼吸道细菌感染",
+          "白细胞计数升高（12.8×10^9/L）且中性粒细胞百分比升高（86.4%），支持细菌感染",
+          "C反应蛋白升高（48.6 mg/L）和血沉升高（32.0 mm/h），为急性炎症指标",
+          "流感病毒抗原快速检测（甲型/乙型）阴性，排除流行性感冒"
+        ],
+        "revised_exclusion_evidence": [
+          "胸部X线未见实变或浸润影，不支持肺炎诊断",
+          "红细胞计数、血红蛋白、血小板计数均在正常范围，排除明显血液系统疾病",
+          "无基础代谢性疾病病史，血糖、血脂等代谢指标未提供但无临床表现指向"
+        ],
+        "self_critique_log": "初步评估的专科选择错误（内分泌与代谢科与患者临床表现不符），且将疾病方向泛化为‘无明确专科风险’，忽略了急性感染的具体定位。根据患者发热、咳黄痰、白细胞及中性粒细胞升高、CRP和ESR升高等证据，应聚焦于呼吸道细菌感染。相似病例中的白血病或多发性骨髓瘤均无对应支持证据（血象正常、无贫血或血小板异常），知识图谱中布鲁氏菌病或结核缺乏流行病学史和典型影像证据。因此修正为呼吸内科的急性细菌性支气管炎，风险等级调整为中等（需抗感染治疗但无重症肺炎表现），置信度0.85（因PCT结果待回报，仍有一定不确定性）。"
+      }
+    }
+  ],
+  "critique": {
+    "conflicts": [],
+    "low_confidence_agents": [
+      "cardiovascular",
+      "liver",
+      "endocrine"
+    ],
+    "calibration_note": "Phase-1 rule critique; KG consistency checks are planned for phase 2.",
+    "llm_mdt": {
+      "source": "llm_mdt",
+      "raw_specialist_opinions": {
+        "cardiovascular": {
+          "specialty": "心血管内科",
+          "suspected_disease": "无明确专科风险",
+          "risk_level": "low",
+          "confidence_score": 0.95,
+          "supporting_evidence": [
+            "血压118/76 mmHg正常范围",
+            "心率102次/分，律齐，无心律失常",
+            "心脏听诊各瓣膜区未闻及杂音",
+            "无胸痛、气促、咯血等心脏相关症状",
+            "否认高血压、糖尿病、心脏病史"
+          ],
+          "exclusion_evidence": [
+            "白细胞计数升高、中性粒细胞百分比升高、CRP和血沉升高提示感染，心脏相关指标无异常"
+          ],
+          "suggestion": "当前主要表现为急性呼吸道感染，建议继续抗感染治疗，监测体温及症状变化，若出现胸痛、心悸、呼吸困难等需及时心内科就诊。"
+        },
+        "digestive_liver": {
+          "specialty": "消化与肝胆内科",
+          "suspected_disease": "无明确专科风险",
+          "risk_level": "low",
+          "confidence_score": 0.85,
+          "supporting_evidence": [
+            "患者无黄疸、无恶心呕吐、无腹痛等消化道或肝胆相关症状",
+            "体格检查腹软、无压痛",
+            "实验室检查无胆红素、ALT、AST、GGT等肝胆相关指标异常"
+          ],
+          "exclusion_evidence": [
+            "患者主要表现为发热、咽痛、咳嗽，伴白细胞、中性粒细胞、CRP、血沉升高，提示呼吸道感染",
+            "流感病毒抗原检测阴性",
+            "胸部X线仅双肺纹理增粗，未见实变或浸润影"
+          ],
+          "suggestion": "患者目前症状与检查结果指向急性呼吸道感染（细菌性可能大），建议咨询呼吸内科或感染科进行进一步诊治。"
+        },
+        "endocrine_metabolic": {
+          "specialty": "内分泌与代谢科",
+          "suspected_disease": "无明确专科风险",
+          "risk_level": "low",
+          "confidence_score": 0.95,
+          "supporting_evidence": [
+            "患者无糖尿病、高血压、高血脂等代谢病史，未提供血糖、HbA1c、血脂、尿酸、甲状腺功能等代谢指标",
+            "临床表现和实验室检查（白细胞升高、中性粒细胞比例升高、CRP升高、血沉升高）明确指向急性感染（如细菌性支气管炎或肺炎）",
+            "流感病毒抗原阴性，胸片无实变或浸润影，不支持典型病毒性肺炎"
+          ],
+          "exclusion_evidence": [
+            "无代谢综合征相关指标异常",
+            "贫血、血小板异常等血液系统疾病证据不足（RBC、HGB、PLT均在正常范围）"
+          ],
+          "suggestion": "当前临床表现符合急性感染，建议至呼吸内科或感染科就诊，完善降钙素原等检查，并抗感染治疗。暂无需内分泌与代谢科专科处理。"
+        }
+      },
+      "revised_specialist_opinions": {
+        "cardiovascular": {
+          "specialty": "呼吸内科",
+          "revised_suspected_disease": "急性支气管炎（细菌性感染可能）",
+          "revised_risk_level": "low",
+          "revised_confidence": 0.75,
+          "revised_supporting_evidence": [
+            "发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，鼻塞流黄涕，全身肌肉酸痛",
+            "查体：T38.9℃，咽部黏膜充血水肿，双侧扁桃体Ⅰ度肿大",
+            "白细胞12.8×10^9/L（升高），中性粒细胞百分比86.4%（升高），淋巴细胞百分比10.2%（降低）",
+            "C反应蛋白48.6 mg/L（升高），血沉32 mm/h（升高）",
+            "流感病毒抗原快速检测甲型/乙型均阴性",
+            "胸部X线：双肺纹理增粗，未见实变或浸润影"
+          ],
+          "revised_exclusion_evidence": [
+            "胸部X线未见实变或浸润影，排除肺炎",
+            "无胸痛、气促、咯血、呼吸困难等重症表现",
+            "流感病毒抗原阴性，排除甲乙型流感",
+            "双肺呼吸音清，未闻及干湿性啰音，排除明显下呼吸道感染体征"
+          ],
+          "self_critique_log": "初步评估错误选择心血管内科，缺乏呼吸道专科考量；依赖'无心脏症状'而忽略主诉和感染指标；相似病例（多发性骨髓瘤、白血病等）和知识图谱（布鲁氏菌病、结核等）均不匹配，患者临床表现符合急性支气管炎（细菌性感染可能），故修正专科为呼吸内科，疾病调整为急性支气管炎，风险等级低，置信度因PCT结果未回报而设为0.75。"
+        },
+        "digestive_liver": {
+          "specialty": "呼吸内科",
+          "revised_suspected_disease": "急性支气管炎（细菌性感染可能）",
+          "revised_risk_level": "medium",
+          "revised_confidence": 0.85,
+          "revised_supporting_evidence": [
+            "主诉发热、咽痛、咳嗽4天，加重1天，咳黄绿色黏稠痰",
+            "体温38.9°C，咽部充血水肿，扁桃体I度肿大",
+            "白细胞计数12.8×10^9/L（升高），中性粒细胞百分比86.4%（升高），淋巴细胞百分比10.2%（降低）",
+            "C反应蛋白48.6 mg/L（升高），血沉32 mm/h（升高）",
+            "胸部X线双肺纹理增粗，提示支气管炎症"
+          ],
+          "revised_exclusion_evidence": [
+            "流感病毒抗原快速检测（甲型/乙型）阴性，排除流感",
+            "胸部X线未见实变或浸润影，排除典型肺炎",
+            "无胸痛、气促、咯血，无低氧表现"
+          ],
+          "self_critique_log": "初步评估误选消化与肝胆内科，患者无任何消化道或肝胆症状及指标异常；实际患者所有表现均指向急性呼吸道感染，结合白细胞、中性粒细胞、CRP、ESR显著升高及黄痰，细菌性支气管炎可能性大。相似病例和知识图谱提供的多发性骨髓瘤、白血病、布鲁氏菌病等虽文本相似度高，但缺乏对应临床表现和接触史，不作为主要诊断依据。修正专科为呼吸内科，疾病为急性支气管炎（细菌性感染可能），风险等级medium，置信度0.85（PCT结果待回报，可进一步支持细菌感染）。"
+        },
+        "endocrine_metabolic": {
+          "specialty": "呼吸内科",
+          "revised_suspected_disease": "急性细菌性支气管炎",
+          "revised_risk_level": "medium",
+          "revised_confidence": 0.85,
+          "revised_supporting_evidence": [
+            "发热、咽痛、咳嗽伴黄绿色黏痰，提示下呼吸道细菌感染",
+            "白细胞计数升高（12.8×10^9/L）且中性粒细胞百分比升高（86.4%），支持细菌感染",
+            "C反应蛋白升高（48.6 mg/L）和血沉升高（32.0 mm/h），为急性炎症指标",
+            "流感病毒抗原快速检测（甲型/乙型）阴性，排除流行性感冒"
+          ],
+          "revised_exclusion_evidence": [
+            "胸部X线未见实变或浸润影，不支持肺炎诊断",
+            "红细胞计数、血红蛋白、血小板计数均在正常范围，排除明显血液系统疾病",
+            "无基础代谢性疾病病史，血糖、血脂等代谢指标未提供但无临床表现指向"
+          ],
+          "self_critique_log": "初步评估的专科选择错误（内分泌与代谢科与患者临床表现不符），且将疾病方向泛化为‘无明确专科风险’，忽略了急性感染的具体定位。根据患者发热、咳黄痰、白细胞及中性粒细胞升高、CRP和ESR升高等证据，应聚焦于呼吸道细菌感染。相似病例中的白血病或多发性骨髓瘤均无对应支持证据（血象正常、无贫血或血小板异常），知识图谱中布鲁氏菌病或结核缺乏流行病学史和典型影像证据。因此修正为呼吸内科的急性细菌性支气管炎，风险等级调整为中等（需抗感染治疗但无重症肺炎表现），置信度0.85（因PCT结果待回报，仍有一定不确定性）。"
+        }
+      },
+      "critique_calibration": {
+        "evidence_verification": {
+          "cardiovascular": {
+            "validity": "支持证据全部来自患者输入：发热、咽痛、咳嗽、咳黄痰、鼻塞流涕、全身酸痛；查体咽部充血、T38.9℃；白细胞和中性粒细胞升高、淋巴细胞降低；CRP和ESR升高；流感阴性；胸片纹理增粗。排除证据也真实：胸片无实变、无胸痛气促、双肺呼吸音清。无遗漏关键阴性证据（如无心脏杂音、无心衰体征）。",
+            "missing_negative_evidence": "无遗漏，已包含胸片无实变、无重症表现、流感阴性等关键阴性证据。",
+            "kg_alignment": "知识图谱中的急性纤维素性肺炎、布鲁氏菌病、结核等均不匹配，因患者无相应流行病学史或影像特征。急性支气管炎与KG中弱证据病例（如血管性水肿伴咳嗽发热）有部分重叠，但更精确的诊断符合现有证据。"
+          },
+          "digestive_liver": {
+            "validity": "支持证据全部来自患者输入：发热、咽痛、咳嗽、咳黄痰；T38.9℃、咽充血、扁桃体I度肿大；白细胞及中性粒细胞升高、淋巴细胞降低；CRP、ESR升高；胸片纹理增粗。排除证据真实：流感阴性、胸片无实变、无胸痛气促。",
+            "missing_negative_evidence": "无遗漏，已包含流感阴性、排除肺炎、无下呼吸道体征。但未提及无消化道症状（如恶心呕吐），不过患者已述无恶心呕吐，可认为已含。",
+            "kg_alignment": "相似病例中多发性骨髓瘤、白血病因血象无贫血/血小板异常而排除；知识图谱中布鲁氏菌病/结核无接触史或影像依据。患者表现更符合急性支气管炎，与KG中血管性水肿病例（发热咳嗽、CRP升高）有部分相似，但后者有溶血性贫血，故不匹配。诊断与KG整体不一致，但临床合理。"
+          },
+          "endocrine_metabolic": {
+            "validity": "支持证据全部来自输入：发热、咽痛、咳嗽、黄痰；白细胞升高伴中性粒细胞比例增高；CRP和ESR升高；流感阴性。排除证据真实：胸片无实变、血象正常范围（除白细胞外）、无代谢病史。",
+            "missing_negative_evidence": "无遗漏，已提及无基础代谢性疾病病史、血糖等未提供但无临床表现指向。可补充无多饮多尿、无甲状腺功能异常表现，但非必须。",
+            "kg_alignment": "相似病例中白血病/多发性骨髓瘤因患者无贫血/血小板异常而排除；知识图谱中布鲁氏菌病需接触史且影像不支持，结核亦不典型。诊断急性细菌性支气管炎与KG证据无直接冲突，但无高匹配案例。"
+          }
+        },
+        "conflict_resolution": "三位专科Agent均修正为呼吸内科，诊断基本一致（急性支气管炎/急性细菌性支气管炎）。风险等级冲突：一位评估low，两位评估medium。综合考虑患者无重症表现（呼吸频率正常、无低氧、胸片无实变），但细菌感染明确需抗生素治疗，风险等级调整为low-medium，统一为medium低级别。置信度差异（0.75 vs 0.85）源于PCT未回报，建议统一校准为0.80。",
+        "calibrated_confidences": {
+          "急性支气管炎（细菌性感染可能）": {
+            "raw_score": 0.82,
+            "calibrated_score": 0.8,
+            "calibration_reason": "三位Agent平均置信度约0.82，因PCT待回报及缺乏病原学证据，下调0.02至0.80。患者临床表现典型（发热、咳黄痰、白细胞中性粒细胞升高、CRP升高），支持度高，但下呼吸道感染需排除肺炎链球菌等，故不满分。"
+          }
+        },
+        "overall_risk": "medium"
+      }
+    }
+  },
+  "mdt_report": {
+    "enabled": true,
+    "source": "llm_mdt",
+    "final_report": {
+      "final_diagnosis": "急性支气管炎（细菌性感染可能）",
+      "final_risk_level": "medium",
+      "final_confidence": 0.8,
+      "diagnostic_consensual_reasons": [
+        "三位专科Agent一致修正为呼吸内科，诊断方向均为急性支气管炎（细菌性），支持证据充分且无关键冲突",
+        "患者典型临床表现：发热、咽痛、咳嗽、咳黄绿色黏痰，查体咽部充血、扁桃体肿大，实验室检查示白细胞、中性粒细胞、CRP、ESR升高，流感病毒抗原阴性，胸部X线仅见纹理增粗",
+        "排除证据扎实：胸片无实变/浸润影、无胸痛气促、无低氧表现，可基本排除肺炎、流感及重症下呼吸道感染，血液系统疾病和代谢性疾病无对应证据"
+      ],
+      "mdt_consultation_summary": "多学科会诊聚焦急性呼吸道感染，三位专家（原分属心血管、消化、内分泌专科）经自我批判后统一修正专科为呼吸内科，诊断急性支气管炎（细菌性可能）。风险等级综合定为中等（需抗生素治疗但无重症肺炎表现），置信度0.80，主要受限于降钙素原（PCT）结果未回报及缺乏病原学培养证据。审计确认所有支持与排除证据真实、无遗漏，知识图谱中其他疾病（如布鲁氏菌病、结核、白血病等）均不匹配。建议进一步行PCT、痰培养及呼吸道病毒面板检测以明确病原，指导精准治疗。",
+      "clinical_intervention_plan": "1. 复查：血常规+CRP+PCT，痰培养+药敏，呼吸道病毒核酸或抗原检测（如腺病毒、呼吸道合胞病毒等）；2. 检查：若症状持续或加重可考虑胸部CT排除隐匿性肺炎；3. 就医科室：呼吸内科门诊或急诊，根据病情严重程度决定是否需住院（尤其老年人、基础病者）；4. 生活方式：多饮水、休息、退热对症处理，避免辛辣刺激饮食，监测体温及症状变化，若出现气促、胸痛、咯血等及时复诊；5. 经验性抗生素治疗（如阿莫西林/克拉霉素/左氧氟沙星等），待病原学结果后调整。"
+    }
+  },
+  "summary_markdown": "## 医疗检测报告\n\n### 一、检测结论\n- 初步结论：体检指标异常，需进一步评估\n- 综合风险等级：低\n- 结论置信度：68.00%\n- 判断依据：发现异常指标：WBC、PLT、HGB、PLT、HGB\n\n### 二、知识图谱对应疾病症状\n- 结核病：命中 1 条外部病例弱证据；这类证据只作为相似病例补充，不作为知识图谱强症状规则。\n- 急性纤维素性及组织性肺炎：命中 1 条外部病例弱证据；这类证据只作为相似病例补充，不作为知识图谱强症状规则。\n- 布鲁氏菌病(Bruceellosis)：命中 1 条外部病例弱证据；这类证据只作为相似病例补充，不作为知识图谱强症状规则。\n\n### 三、B2 匹配率\n- B2（知识图谱 RAG 与 Agent 综合证据）：56.07%；预测：体检指标异常，需进一步评估；依据：综合相似病例匹配、KG 疾病证据命中和专科 Agent 置信度。\n\n### 四、相似病例证据\n1. 多发性骨髓瘤（相似度=0.8682，case_id=medcase_reasoning:341）\n2. 急性单核细胞白血病（相似度=0.8663，case_id=medcase_reasoning:1190）\n3. 外部相似病例（来源：开放患者病例库）（相似度=0.8409，case_id=open_patients:pmc-8696182-1）\n\n### 五、知识图谱证据明细\n1. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:7873）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n2. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:9665）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n3. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:1332）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n4. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:1646）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n5. 外部病例弱证据（来源：医学推理病例库，case_id=medcase_reasoning:13288）：已作为补充检索证据参与分析，页面报告不展开原始长病例文本。\n\n### 六、专科 Agent 意见\n- 心血管: 风险等级=低，置信度=0.75\n- digestive_肝脏: 风险等级=中，置信度=0.85\n- endocrine_metabolic: 风险等级=中，置信度=0.85\n\n### 七、模型摘要\n**诊断摘要**  \n- **主要风险**：急性支气管炎（细菌性感染可能），风险等级为低-中。目前无重症肺炎、流感或心、肝、内分泌等专科风险的证据。  \n- **关键依据**：  \n  1. 发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，伴鼻塞、流涕、全身肌肉酸痛。  \n  2. 体温38.9℃，咽部充血水肿，扁桃体Ⅰ度肿大，双肺呼吸音清，无啰音。  \n  3. 白细胞12.8×10⁹/L、中性粒细胞86.4%、C反应蛋白48.6 mg/L、血沉32 mm/h均显著升高，提示细菌性感染。  \n  4. 流感病毒抗原检测阴性，胸部X线仅双肺纹理增粗，无实变或浸润影，排除肺炎。  \n- **建议复查或就医方向**：  \n  - 建议至**呼吸内科**或**感染科**就诊。  \n  - 可完善**降钙素原（PCT）**、**痰培养+药敏**以明确病原体，指导抗感染治疗。  \n  - 监测体温、咳嗽及呼吸困难变化，如出现胸痛、气促、咯血等需急诊处理。\n\n### LLM-MDT 会诊报告\n- MDT 结论：急性支气管炎（细菌性感染可能）\n- MDT 风险等级：中\n- MDT 置信度：0.80\n- 共识依据：三位专科Agent一致修正为呼吸内科，诊断方向均为急性支气管炎（细菌性），支持证据充分且无关键冲突；患者典型临床表现：发热、咽痛、咳嗽、咳黄绿色黏痰，查体咽部充血、扁桃体肿大，实验室检查示白细胞、中性粒细胞、CRP、ESR升高，流感病毒抗原阴性，胸部X线仅见纹理增粗；排除证据扎实：胸片无实变/浸润影、无胸痛气促、无低氧表现，可基本排除肺炎、流感及重症下呼吸道感染，血液系统疾病和代谢性疾病无对应证据\n- 会诊摘要：多学科会诊聚焦急性呼吸道感染，三位专家（原分属心血管、消化、内分泌专科）经自我批判后统一修正专科为呼吸内科，诊断急性支气管炎（细菌性可能）。风险等级综合定为中等（需抗生素治疗但无重症肺炎表现），置信度0.80，主要受限于降钙素原（PCT）结果未回报及缺乏病原学培养证据。审计确认所有支持与排除证据真实、无遗漏，知识图谱中其他疾病（如布鲁氏菌病、结核、白血病等）均不匹配。建议进一步行PCT、痰培养及呼吸道病毒面板检测以明确病原，指导精准治疗。\n- 建议方向：1. 复查：血常规+CRP+PCT，痰培养+药敏，呼吸道病毒核酸或抗原检测（如腺病毒、呼吸道合胞病毒等）；2. 检查：若症状持续或加重可考虑胸部CT排除隐匿性肺炎；3. 就医科室：呼吸内科门诊或急诊，根据病情严重程度决定是否需住院（尤其老年人、基础病者）；4. 生活方式：多饮水、休息、退热对症处理，避免辛辣刺激饮食，监测体温及症状变化，若出现气促、胸痛、咯血等及时复诊；5. 经验性抗生素治疗（如阿莫西林/克拉霉素/左氧氟沙星等），待病原学结果后调整。\n\n### 八、安全提示\n本结果仅用于课程演示和辅助参考，不能替代医生诊断。",
+  "followup_questions": [
+    "确认症状起病时间、持续时间、既往病史和用药史。",
+    "对异常指标建议复查，必要时咨询具备资质的临床医生。"
+  ],
+  "entities": [
+    {
+      "name": "收缩压",
+      "value": 118.0,
+      "unit": "mmHg",
+      "ref_low": 90.0,
+      "ref_high": 140.0,
+      "is_abnormal": false,
+      "original_text": "BP 118/76 mmHg"
+    },
+    {
+      "name": "舒张压",
+      "value": 76.0,
+      "unit": "mmHg",
+      "ref_low": 60.0,
+      "ref_high": 90.0,
+      "is_abnormal": false,
+      "original_text": "BP 118/76 mmHg"
+    },
+    {
+      "name": "WBC",
+      "value": 12.8,
+      "unit": "10^9/L",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "RBC",
+      "value": 4.52,
+      "unit": "10^12/L",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": false,
+      "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "PLT",
+      "value": 256.0,
+      "unit": "10^9/L",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "HGB",
+      "value": 135.0,
+      "unit": "g/L",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": true,
+      "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "WBC",
+      "value": 4.0,
+      "unit": "10^9/L",
+      "ref_low": 3.5,
+      "ref_high": 9.5,
+      "is_abnormal": false,
+      "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "RBC",
+      "value": 4.0,
+      "unit": "10^12/L",
+      "ref_low": 3.8,
+      "ref_high": 5.8,
+      "is_abnormal": false,
+      "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "PLT",
+      "value": 4.0,
+      "unit": "10^9/L",
+      "ref_low": 125.0,
+      "ref_high": 350.0,
+      "is_abnormal": true,
+      "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    },
+    {
+      "name": "HGB",
+      "value": 4.0,
+      "unit": "g/L",
+      "ref_low": 115.0,
+      "ref_high": 150.0,
+      "is_abnormal": true,
+      "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+    }
+  ],
+  "raw_baseline_result": {
+    "prediction": "**诊断摘要** - **主要风险**：急性支气管炎（细菌性感染可能），风险等级为低-中。目前无重症肺炎、流感或心、肝、内分泌等专科风险的证据。 - **关键依据**： 1. 发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，伴鼻塞、流涕、全身肌肉酸痛",
+    "llm_response": "**诊断摘要**  \n- **主要风险**：急性支气管炎（细菌性感染可能），风险等级为低-中。目前无重症肺炎、流感或心、肝、内分泌等专科风险的证据。  \n- **关键依据**：  \n  1. 发热、咽痛、咳嗽4天，咳黄绿色黏稠痰，伴鼻塞、流涕、全身肌肉酸痛。  \n  2. 体温38.9℃，咽部充血水肿，扁桃体Ⅰ度肿大，双肺呼吸音清，无啰音。  \n  3. 白细胞12.8×10⁹/L、中性粒细胞86.4%、C反应蛋白48.6 mg/L、血沉32 mm/h均显著升高，提示细菌性感染。  \n  4. 流感病毒抗原检测阴性，胸部X线仅双肺纹理增粗，无实变或浸润影，排除肺炎。  \n- **建议复查或就医方向**：  \n  - 建议至**呼吸内科**或**感染科**就诊。  \n  - 可完善**降钙素原（PCT）**、**痰培养+药敏**以明确病原体，指导抗感染治疗。  \n  - 监测体温、咳嗽及呼吸困难变化，如出现胸痛、气促、咯血等需急诊处理。",
+    "features": {
+      "age": 35,
+      "sex": "F",
+      "symptoms": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5\n中性粒细胞百分比 86.4 % 参考范围 40-75\n淋巴细胞百分比 10.2 % 参考范围 20-50\n红细胞计数 4.52 10^12/L 参考范围 3.8-5.8\n血红蛋白 135.0 g/L 参考范围 115-150\n血小板计数 256.0 10^9/L 参考范围 125-350\nC反应蛋白 48.6 mg/L 参考范围 0-10\n血沉 32.0 mm/h 参考范围 0-20\nraw text 。 症状描述 (主诉及现病虫)\n主诉: '发热 咽痛伴咳嗽4天, 加1天。\n现病虫: 患者4夭前受凉后出现畏寒 发热, 体温最高达38.6%C (午后为著) 伴咽部疼痛 干痒, 偶有\n刺激性干咳。自服\"板蓝根冲剂\"及\"对乙酰氨基酚\"后体温可暂时下降,但数小时后复升。 近1天咳嘞加\n重 咳出较多黄绿色黏稠痰液, 量中等 不易咳出。自觉鼻塞。流黄涕, 伴全身肌肉酸痛。头痛乏\n力。无胸痛 气促 无咯血, 无恶心呕吐。食欲明显减退. 睡眠欠佳。\n一 病历摘要 (含既往虫 体格检查。初步检查)\n一般情况: 女性 35岁。公司职员。\n既往史: 平素体健, 否认高血压。糖尿病。心脏病史; 否认药物过敏史; 无吸烟饮酒史; 近期无疫区接\n触史。家人有类似轻微症状。\n体格检查: T38.9% (口温) P102次分; R22次1分 BP 118/76 mmHg。 急性病容,咽部黏膜明显\n充血。水肿。双侧扁桃体 I度肿大。表面未见脓性分泌物。双肺呼吸音清。未闻及干湿性哕音。心率\n快。律齐。各瓣膜区未闻及杂音。腹软。无压痛。\n辅助检查 (已做)\n流感病毒抗原快速检测 (鼻咽拭子) 甲型/乙型流感均阴性。\n胸部X线 (正位片) 双肺纹理增粗, 未见实娈或浸润影。\n降钙素原 (PCT) 结果待回报。\n姓名 白细胞计数\n姓名 中性粒细胞百分比\n姓名 淋巴细胞百分比\n姓名 红细胞计数\n姓名 血红蛋白\n姓名 血小板计数\n姓名 C反应蛋白\n姓名 血沉\n姓名 综合分析 Agent\n。 症状描述 (主诉及现病虫)\n主诉: '发热 咽痛伴咳嗽4天, 加1天。\n现病虫: 患者4夭前受凉后出现畏寒 发热, 体温最高达38.6%C (午后为著) 伴咽部疼痛 干痒, 偶有\n刺激性干咳。自服\"板蓝根冲剂\"及\"对乙酰氨基酚\"后体温可暂时下降,但数小时后复升。 近1天咳嘞加\n重 咳出较多黄绿色黏稠痰液, 量中等 不易咳出。自觉鼻塞。流黄涕, 伴全身肌肉酸痛。头痛乏\n力。无胸痛 气促 无咯血, 无恶心呕吐。食欲明显减退. 睡眠欠佳。\n一 病历摘要 (含既往虫 体格检查。初步检查)\n一般情况: 女性 35岁。公司职员。\n既往史: 平素体健, 否认高血压。糖尿病。心脏病史; 否认药物过敏史; 无吸烟饮酒史; 近期无疫区接\n触史。家人有类似轻微症状。\n体格检查: T38.9% (口温) P102次分; R22次1分 BP 118/76 mmHg。 急性病容,咽部黏膜明显\n充血。水肿。双侧扁桃体 I度肿大。表面未见脓性分泌物。双肺呼吸音清。未闻及干湿性哕音。心率\n快。律齐。各瓣膜区未闻及杂音。腹软。无压痛。\n辅助检查 (已做)\n流感病毒抗原快速检测 (鼻咽拭子) 甲型/乙型流感均阴性。\n胸部X线 (正位片) 双肺纹理增粗, 未见实娈或浸润影。\n降钙素原 (PCT) 结果待回报。",
+      "location": "",
+      "restriction": "",
+      "indicators": [
+        {
+          "name": "收缩压",
+          "value": 118.0,
+          "unit": "mmHg",
+          "ref_low": 90.0,
+          "ref_high": 140.0,
+          "is_abnormal": false,
+          "original_text": "BP 118/76 mmHg"
+        },
+        {
+          "name": "舒张压",
+          "value": 76.0,
+          "unit": "mmHg",
+          "ref_low": 60.0,
+          "ref_high": 90.0,
+          "is_abnormal": false,
+          "original_text": "BP 118/76 mmHg"
+        },
+        {
+          "name": "WBC",
+          "value": 12.8,
+          "unit": "10^9/L",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "RBC",
+          "value": 4.52,
+          "unit": "10^12/L",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": false,
+          "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "PLT",
+          "value": 256.0,
+          "unit": "10^9/L",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "HGB",
+          "value": 135.0,
+          "unit": "g/L",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": true,
+          "original_text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5 中性粒细胞百分比 86.4 % 参考范围 40-75 淋巴细胞百分比 10.2 % 参考范围 20-50 红细胞计数 4.52 10^12/L 参考范围 3.8-5.8 血红蛋白 135.0 g/L 参考范围 115-150 血小板计数 256.0 10^9/L 参考范围 125-350 C反应蛋白 48.6 mg/L 参考范围 0-10 血沉 32.0 mm/h 参考范围 0-20 raw text 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "WBC",
+          "value": 4.0,
+          "unit": "10^9/L",
+          "ref_low": 3.5,
+          "ref_high": 9.5,
+          "is_abnormal": false,
+          "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "RBC",
+          "value": 4.0,
+          "unit": "10^12/L",
+          "ref_low": 3.8,
+          "ref_high": 5.8,
+          "is_abnormal": false,
+          "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "PLT",
+          "value": 4.0,
+          "unit": "10^9/L",
+          "ref_low": 125.0,
+          "ref_high": 350.0,
+          "is_abnormal": true,
+          "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        },
+        {
+          "name": "HGB",
+          "value": 4.0,
+          "unit": "g/L",
+          "ref_low": 115.0,
+          "ref_high": 150.0,
+          "is_abnormal": true,
+          "original_text": "未见实娈或浸润影。 降钙素原 (PCT) 结果待回报。 姓名白细胞计数姓名中性粒细胞百分比姓名淋巴细胞百分比姓名红细胞计数姓名血红蛋白姓名血小板计数姓名 C反应蛋白姓名血沉姓名综合分析 Agent 。 症状描述 (主诉及现病虫) 主诉: '发热咽痛伴咳嗽4天"
+        }
+      ]
+    },
+    "retrieval_mode": "multi_vector_or_faiss",
+    "selected_baseline_modes": [
+      "B2"
+    ],
+    "detection_report_version": "detailed_v1"
+  },
+  "safety_note": "本结果仅用于课程演示和辅助参考，不能替代医生诊断。",
+  "input_type": "ocr_json",
+  "normalized_input": {
+    "case_id": null,
+    "source_format": "structured_medical_json",
+    "line_count": 19,
+    "text": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5\n中性粒细胞百分比 86.4 % 参考范围 40-75\n淋巴细胞百分比 10.2 % 参考范围 20-50\n红细胞计数 4.52 10^12/L 参考范围 3.8-5.8\n血红蛋白 135.0 g/L 参考范围 115-150\n血小板计数 256.0 10^9/L 参考范围 125-350\nC反应蛋白 48.6 mg/L 参考范围 0-10\n血沉 32.0 mm/h 参考范围 0-20\nraw text 。 症状描述 (主诉及现病虫)\n主诉: '发热 咽痛伴咳嗽4天, 加1天。\n现病虫: 患者4夭前受凉后出现畏寒 发热, 体温最高达38.6%C (午后为著) 伴咽部疼痛 干痒, 偶有\n刺激性干咳。自服\"板蓝根冲剂\"及\"对乙酰氨基酚\"后体温可暂时下降,但数小时后复升。 近1天咳嘞加\n重 咳出较多黄绿色黏稠痰液, 量中等 不易咳出。自觉鼻塞。流黄涕, 伴全身肌肉酸痛。头痛乏\n力。无胸痛 气促 无咯血, 无恶心呕吐。食欲明显减退. 睡眠欠佳。\n一 病历摘要 (含既往虫 体格检查。初步检查)\n一般情况: 女性 35岁。公司职员。\n既往史: 平素体健, 否认高血压。糖尿病。心脏病史; 否认药物过敏史; 无吸烟饮酒史; 近期无疫区接\n触史。家人有类似轻微症状。\n体格检查: T38.9% (口温) P102次分; R22次1分 BP 118/76 mmHg。 急性病容,咽部黏膜明显\n充血。水肿。双侧扁桃体 I度肿大。表面未见脓性分泌物。双肺呼吸音清。未闻及干湿性哕音。心率\n快。律齐。各瓣膜区未闻及杂音。腹软。无压痛。\n辅助检查 (已做)\n流感病毒抗原快速检测 (鼻咽拭子) 甲型/乙型流感均阴性。\n胸部X线 (正位片) 双肺纹理增粗, 未见实娈或浸润影。\n降钙素原 (PCT) 结果待回报。\n姓名 白细胞计数\n姓名 中性粒细胞百分比\n姓名 淋巴细胞百分比\n姓名 红细胞计数\n姓名 血红蛋白\n姓名 血小板计数\n姓名 C反应蛋白\n姓名 血沉\n姓名 综合分析 Agent\n。 症状描述 (主诉及现病虫)\n主诉: '发热 咽痛伴咳嗽4天, 加1天。\n现病虫: 患者4夭前受凉后出现畏寒 发热, 体温最高达38.6%C (午后为著) 伴咽部疼痛 干痒, 偶有\n刺激性干咳。自服\"板蓝根冲剂\"及\"对乙酰氨基酚\"后体温可暂时下降,但数小时后复升。 近1天咳嘞加\n重 咳出较多黄绿色黏稠痰液, 量中等 不易咳出。自觉鼻塞。流黄涕, 伴全身肌肉酸痛。头痛乏\n力。无胸痛 气促 无咯血, 无恶心呕吐。食欲明显减退. 睡眠欠佳。\n一 病历摘要 (含既往虫 体格检查。初步检查)\n一般情况: 女性 35岁。公司职员。\n既往史: 平素体健, 否认高血压。糖尿病。心脏病史; 否认药物过敏史; 无吸烟饮酒史; 近期无疫区接\n触史。家人有类似轻微症状。\n体格检查: T38.9% (口温) P102次分; R22次1分 BP 118/76 mmHg。 急性病容,咽部黏膜明显\n充血。水肿。双侧扁桃体 I度肿大。表面未见脓性分泌物。双肺呼吸音清。未闻及干湿性哕音。心率\n快。律齐。各瓣膜区未闻及杂音。腹软。无压痛。\n辅助检查 (已做)\n流感病毒抗原快速检测 (鼻咽拭子) 甲型/乙型流感均阴性。\n胸部X线 (正位片) 双肺纹理增粗, 未见实娈或浸润影。\n降钙素原 (PCT) 结果待回报。",
+    "text_preview": "白细胞计数 12.8 10^9/L 参考范围 3.5-9.5\n中性粒细胞百分比 86.4 % 参考范围 40-75\n淋巴细胞百分比 10.2 % 参考范围 20-50\n红细胞计数 4.52 10^12/L 参考范围 3.8-5.8\n血红蛋白 135.0 g/L 参考范围 115-150\n血小板计数 256.0 10^9/L 参考范围 125-350\nC反应蛋白 48.6 mg/L 参考范围 0-10\n血沉 32.0 mm/h 参考范围 0-20\nraw text 。 症状描述 (主诉及现病虫)\n主诉: '发热 咽痛伴咳嗽4天, 加1天。\n现病虫: 患者4夭前受凉后出现畏寒 发热, 体温最高达38.6%C (午后为著) 伴咽部疼痛 干痒, 偶有\n刺激性干咳。自服\"板蓝根冲剂\"及\"对乙酰氨基酚\"后体温可暂时下降,但数小时后复升。 近1天咳嘞加\n重 咳出较多黄绿色黏稠痰液, 量中等 不易咳出。自觉鼻塞。流黄涕, 伴全身肌肉酸痛。头痛乏\n力。无胸痛 气促 无咯血, 无恶心呕吐。食欲明显减退. 睡眠欠佳。\n一 病历摘要 (含既往虫 体格检查。初步检查)\n一般情况: 女性 35岁。公司职员。\n既往",
+    "interpretive_notes": [
+      {
+        "field": "summary",
+        "label": "总结",
+        "text": "{'health_conclusion': '共识别到 0 项检验指标，其中疑似异常 0 项。', 'recommendation': ['建议结合原始报告和医生意见复核异常指标。']}"
+      },
+      {
+        "field": "conclusion",
+        "label": "结论",
+        "text": "系统已完成体检报告综合解析，建议结合异常指标、既往病史和临床症状进一步复核。"
+      },
+      {
+        "field": "recommendation",
+        "label": "建议",
+        "text": "[]"
+      },
+      {
+        "field": "advice",
+        "label": "建议",
+        "text": "[{'title': '综合健康建议', 'content': '请结合体检指标、既往病史和临床症状综合判断。若存在持续异常或明显不适，应及时前往医疗机构就诊。', 'tags': ['综合建议']}]"
+      },
+      {
+        "field": "summary",
+        "label": "总结",
+        "text": "{'health_conclusion': '共识别到 0 项检验指标，其中疑似异常 0 项。', 'recommendation': ['建议结合原始报告和医生意见复核异常指标。']}"
+      }
+    ]
+  }
+}

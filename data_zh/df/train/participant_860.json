@@ -1,0 +1,20 @@
+{
+  "Participant No.": 860,
+  "Age": "24",
+  "Sex": "M",
+  "Symptoms": "Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, dans les mains, les pieds et autour de la bouche?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous des engourdissements, une perte de sensibilité ou des fourmillements dans les pieds?; Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Guillain-Barré syndrome",
+  "Differential Diagnosis": "Guillain-Barré syndrome (0.2755509576141496); Acute dystonic reactions (0.15422144494249923); Anemia (0.15422144494249923); Anaphylaxis (0.15422144494249923); Scombroid food poisoning (0.09755386374763361); SLE (0.07139716721699844); Possible NSTEMI / STEMI (0.04641683829686022); Chagas (0.04641683829686022)",
+  "Level 2": "Guillain-Barré syndrome",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：24 岁\n性别：男\n症状与病史：症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：吉兰-巴雷综合征（0.2755509576141496）；急性肌张力障碍反应（0.15422144494249923）；贫血（0.15422144494249923）；过敏性休克（0.15422144494249923）；鲭鱼中毒（0.09755386374763361）；系统性红斑狼疮（0.07139716721699844）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.04641683829686022）；恰加斯病（0.04641683829686022）\n最终诊断：吉兰-巴雷综合征",
+  "Text_original": "Age: 24\nSex: M\nSymptoms: Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, dans les mains, les pieds et autour de la bouche?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous des engourdissements, une perte de sensibilité ou des fourmillements dans les pieds?; Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Guillain-Barré syndrome (0.2755509576141496); Acute dystonic reactions (0.15422144494249923); Anemia (0.15422144494249923); Anaphylaxis (0.15422144494249923); Scombroid food poisoning (0.09755386374763361); SLE (0.07139716721699844); Possible NSTEMI / STEMI (0.04641683829686022); Chagas (0.04641683829686022)\nDiagnosis: Guillain-Barré syndrome",
+  "Symptoms_original": "Avez-vous présentement ou avez-vous eu récemment des engourdissements, une perte de sensibilité ou des fourmillements, dans les mains, les pieds et autour de la bouche?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous des engourdissements, une perte de sensibilité ou des fourmillements dans les pieds?; Avez-vous noté une faiblesse ou paralysie d’un ou plusieurs de vos membres ou au niveau du visage, encore présentes ou résolues?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Guillain-Barré syndrome",
+  "Differential Diagnosis_original": "Guillain-Barré syndrome (0.2755509576141496); Acute dystonic reactions (0.15422144494249923); Anemia (0.15422144494249923); Anaphylaxis (0.15422144494249923); Scombroid food poisoning (0.09755386374763361); SLE (0.07139716721699844); Possible NSTEMI / STEMI (0.04641683829686022); Chagas (0.04641683829686022)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "吉兰-巴雷综合征",
+  "Differential Diagnosis_zh": "吉兰-巴雷综合征（0.2755509576141496）；急性肌张力障碍反应（0.15422144494249923）；贫血（0.15422144494249923）；过敏性休克（0.15422144494249923）；鲭鱼中毒（0.09755386374763361）；系统性红斑狼疮（0.07139716721699844）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.04641683829686022）；恰加斯病（0.04641683829686022）",
+  "Text_zh": "年龄：24 岁\n性别：男\n症状与病史：症状问诊项；是否明显气短或呼吸困难；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：吉兰-巴雷综合征（0.2755509576141496）；急性肌张力障碍反应（0.15422144494249923）；贫血（0.15422144494249923）；过敏性休克（0.15422144494249923）；鲭鱼中毒（0.09755386374763361）；系统性红斑狼疮（0.07139716721699844）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.04641683829686022）；恰加斯病（0.04641683829686022）\n最终诊断：吉兰-巴雷综合征"
+}

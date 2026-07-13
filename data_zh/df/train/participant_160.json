@@ -1,0 +1,20 @@
+{
+  "Participant No.": 160,
+  "Age": "4",
+  "Sex": "F",
+  "Symptoms": "Avez-vous visualisé du sang dans vos crachats?; Avez-vous été en contact avec une autre personne qui présentait des symptômes similaires, dans les 2 dernières semaines?; Habitez-vous avec 4 personnes ou plus?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_46; Avez-vous de la douleur quelque part?: V_159; Avez-vous de la douleur quelque part?: V_171; Avez-vous de la douleur quelque part?: V_195; Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 10; À quelle vitesse la douleur est-elle apparue ?: 2; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Viral pharyngitis",
+  "Differential Diagnosis": "Viral pharyngitis (1.0)",
+  "Level 2": "Viral pharyngitis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：4 岁\n性别：女\n症状与病史：痰中是否见血；症状问诊项；是否与 4 人或更多人共同居住；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：烧灼样；疼痛部位：编码 V_34；疼痛部位：编码 V_46；疼痛部位：编码 V_159；疼痛部位：编码 V_171；疼痛部位：编码 V_195；疼痛强度：3；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：10；疼痛出现速度：2；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：病毒性咽炎（1.0）\n最终诊断：病毒性咽炎",
+  "Text_original": "Age: 4\nSex: F\nSymptoms: Avez-vous visualisé du sang dans vos crachats?; Avez-vous été en contact avec une autre personne qui présentait des symptômes similaires, dans les 2 dernières semaines?; Habitez-vous avec 4 personnes ou plus?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_46; Avez-vous de la douleur quelque part?: V_159; Avez-vous de la douleur quelque part?: V_171; Avez-vous de la douleur quelque part?: V_195; Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 10; À quelle vitesse la douleur est-elle apparue ?: 2; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Viral pharyngitis (1.0)\nDiagnosis: Viral pharyngitis",
+  "Symptoms_original": "Avez-vous visualisé du sang dans vos crachats?; Avez-vous été en contact avec une autre personne qui présentait des symptômes similaires, dans les 2 dernières semaines?; Habitez-vous avec 4 personnes ou plus?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_46; Avez-vous de la douleur quelque part?: V_159; Avez-vous de la douleur quelque part?: V_171; Avez-vous de la douleur quelque part?: V_195; Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 10; À quelle vitesse la douleur est-elle apparue ?: 2; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Viral pharyngitis",
+  "Differential Diagnosis_original": "Viral pharyngitis (1.0)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "痰中是否见血；症状问诊项；是否与 4 人或更多人共同居住；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：烧灼样；疼痛部位：编码 V_34；疼痛部位：编码 V_46；疼痛部位：编码 V_159；疼痛部位：编码 V_171；疼痛部位：编码 V_195；疼痛强度：3；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：10；疼痛出现速度：2；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "病毒性咽炎",
+  "Differential Diagnosis_zh": "病毒性咽炎（1.0）",
+  "Text_zh": "年龄：4 岁\n性别：女\n症状与病史：痰中是否见血；症状问诊项；是否与 4 人或更多人共同居住；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：烧灼样；疼痛部位：编码 V_34；疼痛部位：编码 V_46；疼痛部位：编码 V_159；疼痛部位：编码 V_171；疼痛部位：编码 V_195；疼痛强度：3；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：10；疼痛出现速度：2；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：病毒性咽炎（1.0）\n最终诊断：病毒性咽炎"
+}

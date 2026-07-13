@@ -1,0 +1,20 @@
+{
+  "Participant No.": 1554,
+  "Age": "7",
+  "Sex": "M",
+  "Symptoms": "Avez-vous une toux aboyante?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Croup",
+  "Differential Diagnosis": "Pneumonia (0.153575727156047); Bronchitis (0.1425705226370791); Croup (0.12915258446667152); Tuberculosis (0.11987438155958305); Bronchospasm / acute asthma exacerbation (0.08369113580598725); Atrial fibrillation (0.08237630516651229); Guillain-Barré syndrome (0.06073221660378748); Acute dystonic reactions (0.06073221660378748)",
+  "Level 2": "Croup",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：7 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺炎（0.153575727156047）；支气管炎（0.1425705226370791）；哮吼（0.12915258446667152）；结核病（0.11987438155958305）；支气管痉挛或急性哮喘加重（0.08369113580598725）；心房颤动（0.08237630516651229）；吉兰-巴雷综合征（0.06073221660378748）；急性肌张力障碍反应（0.06073221660378748）\n最终诊断：哮吼",
+  "Text_original": "Age: 7\nSex: M\nSymptoms: Avez-vous une toux aboyante?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Pneumonia (0.153575727156047); Bronchitis (0.1425705226370791); Croup (0.12915258446667152); Tuberculosis (0.11987438155958305); Bronchospasm / acute asthma exacerbation (0.08369113580598725); Atrial fibrillation (0.08237630516651229); Guillain-Barré syndrome (0.06073221660378748); Acute dystonic reactions (0.06073221660378748)\nDiagnosis: Croup",
+  "Symptoms_original": "Avez-vous une toux aboyante?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Croup",
+  "Differential Diagnosis_original": "Pneumonia (0.153575727156047); Bronchitis (0.1425705226370791); Croup (0.12915258446667152); Tuberculosis (0.11987438155958305); Bronchospasm / acute asthma exacerbation (0.08369113580598725); Atrial fibrillation (0.08237630516651229); Guillain-Barré syndrome (0.06073221660378748); Acute dystonic reactions (0.06073221660378748)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "哮吼",
+  "Differential Diagnosis_zh": "肺炎（0.153575727156047）；支气管炎（0.1425705226370791）；哮吼（0.12915258446667152）；结核病（0.11987438155958305）；支气管痉挛或急性哮喘加重（0.08369113580598725）；心房颤动（0.08237630516651229）；吉兰-巴雷综合征（0.06073221660378748）；急性肌张力障碍反应（0.06073221660378748）",
+  "Text_zh": "年龄：7 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺炎（0.153575727156047）；支气管炎（0.1425705226370791）；哮吼（0.12915258446667152）；结核病（0.11987438155958305）；支气管痉挛或急性哮喘加重（0.08369113580598725）；心房颤动（0.08237630516651229）；吉兰-巴雷综合征（0.06073221660378748）；急性肌张力障碍反应（0.06073221660378748）\n最终诊断：哮吼"
+}

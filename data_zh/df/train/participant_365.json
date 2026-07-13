@@ -1,0 +1,20 @@
+{
+  "Participant No.": 365,
+  "Age": "0",
+  "Sex": "M",
+  "Symptoms": "Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Ressentez-vous une certaine anxiété, une fébrilité?; Caractérisez votre douleur:: V_191; Avez-vous de la douleur quelque part?: V_142; Quelle est l’intensité de la douleur?: 0; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 0; À quelle vitesse la douleur est-elle apparue ?: 0; Prenez-vous des boissons énergisantes régulièrement?; Prenez-vous régulièrement des substances illicites stimulantes?; Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous pris récemment, en vente libre, des décongestionnant ou autres substances pouvant avoir des effets stimulants ?",
+  "Diagnosis": "PSVT",
+  "Differential Diagnosis": "PSVT (0.5867820144275099); Anemia (0.4132179855724901)",
+  "Level 2": "PSVT",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：0 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；疼痛性质：编码 V_191；疼痛部位：编码 V_142；疼痛强度：0；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：0；疼痛出现速度：0；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：阵发性室上性心动过速（0.5867820144275099）；贫血（0.4132179855724901）\n最终诊断：阵发性室上性心动过速",
+  "Text_original": "Age: 0\nSex: M\nSymptoms: Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Ressentez-vous une certaine anxiété, une fébrilité?; Caractérisez votre douleur:: V_191; Avez-vous de la douleur quelque part?: V_142; Quelle est l’intensité de la douleur?: 0; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 0; À quelle vitesse la douleur est-elle apparue ?: 0; Prenez-vous des boissons énergisantes régulièrement?; Prenez-vous régulièrement des substances illicites stimulantes?; Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous pris récemment, en vente libre, des décongestionnant ou autres substances pouvant avoir des effets stimulants ?\nDifferential diagnosis: PSVT (0.5867820144275099); Anemia (0.4132179855724901)\nDiagnosis: PSVT",
+  "Symptoms_original": "Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Ressentez-vous une certaine anxiété, une fébrilité?; Caractérisez votre douleur:: V_191; Avez-vous de la douleur quelque part?: V_142; Quelle est l’intensité de la douleur?: 0; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 0; À quelle vitesse la douleur est-elle apparue ?: 0; Prenez-vous des boissons énergisantes régulièrement?; Prenez-vous régulièrement des substances illicites stimulantes?; Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous pris récemment, en vente libre, des décongestionnant ou autres substances pouvant avoir des effets stimulants ?",
+  "Diagnosis_original": "PSVT",
+  "Differential Diagnosis_original": "PSVT (0.5867820144275099); Anemia (0.4132179855724901)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；疼痛性质：编码 V_191；疼痛部位：编码 V_142；疼痛强度：0；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：0；疼痛出现速度：0；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "阵发性室上性心动过速",
+  "Differential Diagnosis_zh": "阵发性室上性心动过速（0.5867820144275099）；贫血（0.4132179855724901）",
+  "Text_zh": "年龄：0 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；疼痛性质：编码 V_191；疼痛部位：编码 V_142；疼痛强度：0；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：0；疼痛出现速度：0；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：阵发性室上性心动过速（0.5867820144275099）；贫血（0.4132179855724901）\n最终诊断：阵发性室上性心动过速"
+}

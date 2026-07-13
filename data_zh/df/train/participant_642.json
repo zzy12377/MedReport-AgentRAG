@@ -1,0 +1,20 @@
+{
+  "Participant No.": 642,
+  "Age": "2",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la toux?; Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Bronchitis (0.33826622488448593); Tuberculosis (0.29803071865720443); Pneumonia (0.23609536520685015); Pulmonary embolism (0.12760769125145957)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：2 岁\n性别：男\n症状与病史：是否咳嗽；痰中是否见血；是否患有糖尿病；是否过量饮酒或存在酒精依赖；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.33826622488448593）；结核病（0.29803071865720443）；肺炎（0.23609536520685015）；肺栓塞（0.12760769125145957）\n最终诊断：结核病",
+  "Text_original": "Age: 2\nSex: M\nSymptoms: Avez-vous de la toux?; Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Bronchitis (0.33826622488448593); Tuberculosis (0.29803071865720443); Pneumonia (0.23609536520685015); Pulmonary embolism (0.12760769125145957)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous de la toux?; Avez-vous visualisé du sang dans vos crachats?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Bronchitis (0.33826622488448593); Tuberculosis (0.29803071865720443); Pneumonia (0.23609536520685015); Pulmonary embolism (0.12760769125145957)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否咳嗽；痰中是否见血；是否患有糖尿病；是否过量饮酒或存在酒精依赖；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "支气管炎（0.33826622488448593）；结核病（0.29803071865720443）；肺炎（0.23609536520685015）；肺栓塞（0.12760769125145957）",
+  "Text_zh": "年龄：2 岁\n性别：男\n症状与病史：是否咳嗽；痰中是否见血；是否患有糖尿病；是否过量饮酒或存在酒精依赖；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.33826622488448593）；结核病（0.29803071865720443）；肺炎（0.23609536520685015）；肺栓塞（0.12760769125145957）\n最终诊断：结核病"
+}

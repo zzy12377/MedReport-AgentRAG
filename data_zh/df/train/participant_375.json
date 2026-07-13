@@ -1,0 +1,20 @@
+{
+  "Participant No.": 375,
+  "Age": "20",
+  "Sex": "M",
+  "Symptoms": "Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Êtes-vous connu pour un problème au niveau d’une valve cardiaque?; Êtes-vous considéré comme une personne ayant une maladie pulmonaire obstructive chronique sévère?; Souffrez-vous de diabète?; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Souffrez-vous d’hypertension ou prenez-vous des médicaments pour traiter la haute pression?; Sentez-vous que votre cœur bat de façon très irrégulière ou désorganisée?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Atrial fibrillation",
+  "Differential Diagnosis": "PSVT (0.36355392493051925); Atrial fibrillation (0.35727940717237566); Anemia (0.18196655263884853); Scombroid food poisoning (0.09720011525825648)",
+  "Level 2": "Atrial fibrillation",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：20 岁\n性别：男\n症状与病史：症状问诊项；是否已知存在心脏瓣膜问题；症状问诊项；是否患有糖尿病；症状问诊项；症状问诊项；是否患有高血压或服用降压药；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：阵发性室上性心动过速（0.36355392493051925）；心房颤动（0.35727940717237566）；贫血（0.18196655263884853）；鲭鱼中毒（0.09720011525825648）\n最终诊断：心房颤动",
+  "Text_original": "Age: 20\nSex: M\nSymptoms: Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Êtes-vous connu pour un problème au niveau d’une valve cardiaque?; Êtes-vous considéré comme une personne ayant une maladie pulmonaire obstructive chronique sévère?; Souffrez-vous de diabète?; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Souffrez-vous d’hypertension ou prenez-vous des médicaments pour traiter la haute pression?; Sentez-vous que votre cœur bat de façon très irrégulière ou désorganisée?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: PSVT (0.36355392493051925); Atrial fibrillation (0.35727940717237566); Anemia (0.18196655263884853); Scombroid food poisoning (0.09720011525825648)\nDiagnosis: Atrial fibrillation",
+  "Symptoms_original": "Avez-vous l’impression que votre coeur bat vite, de façon irrégulière ou ressentez-vous des palpitations?; Êtes-vous connu pour un problème au niveau d’une valve cardiaque?; Êtes-vous considéré comme une personne ayant une maladie pulmonaire obstructive chronique sévère?; Souffrez-vous de diabète?; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Souffrez-vous d’hypertension ou prenez-vous des médicaments pour traiter la haute pression?; Sentez-vous que votre cœur bat de façon très irrégulière ou désorganisée?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Atrial fibrillation",
+  "Differential Diagnosis_original": "PSVT (0.36355392493051925); Atrial fibrillation (0.35727940717237566); Anemia (0.18196655263884853); Scombroid food poisoning (0.09720011525825648)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；是否已知存在心脏瓣膜问题；症状问诊项；是否患有糖尿病；症状问诊项；症状问诊项；是否患有高血压或服用降压药；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "心房颤动",
+  "Differential Diagnosis_zh": "阵发性室上性心动过速（0.36355392493051925）；心房颤动（0.35727940717237566）；贫血（0.18196655263884853）；鲭鱼中毒（0.09720011525825648）",
+  "Text_zh": "年龄：20 岁\n性别：男\n症状与病史：症状问诊项；是否已知存在心脏瓣膜问题；症状问诊项；是否患有糖尿病；症状问诊项；症状问诊项；是否患有高血压或服用降压药；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：阵发性室上性心动过速（0.36355392493051925）；心房颤动（0.35727940717237566）；贫血（0.18196655263884853）；鲭鱼中毒（0.09720011525825648）\n最终诊断：心房颤动"
+}

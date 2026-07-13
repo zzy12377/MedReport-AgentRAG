@@ -1,0 +1,20 @@
+{
+  "Participant No.": 362,
+  "Age": "2",
+  "Sex": "M",
+  "Symptoms": "Avez-vous noté que vous produisez plus de salive que d’habitude?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Avez-vous une toux aboyante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Ressentez vous davantage vos symptômes la nuit?",
+  "Diagnosis": "Croup",
+  "Differential Diagnosis": "Croup (0.14226358025619865); Pneumonia (0.13034936830609728); Bronchitis (0.12276127387525332); Tuberculosis (0.09547839168688253); Larygospasm (0.08321517222487843); Bronchospasm / acute asthma exacerbation (0.06914194240145019); Atrial fibrillation (0.06805568704756197); Epiglottitis (0.05017429124233566)",
+  "Level 2": "Croup",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：2 岁\n性别：男\n症状与病史：症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：哮吼（0.14226358025619865）；肺炎（0.13034936830609728）；支气管炎（0.12276127387525332）；结核病（0.09547839168688253）；喉痉挛（0.08321517222487843）；支气管痉挛或急性哮喘加重（0.06914194240145019）；心房颤动（0.06805568704756197）；会厌炎（0.05017429124233566）\n最终诊断：哮吼",
+  "Text_original": "Age: 2\nSex: M\nSymptoms: Avez-vous noté que vous produisez plus de salive que d’habitude?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Avez-vous une toux aboyante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Ressentez vous davantage vos symptômes la nuit?\nDifferential diagnosis: Croup (0.14226358025619865); Pneumonia (0.13034936830609728); Bronchitis (0.12276127387525332); Tuberculosis (0.09547839168688253); Larygospasm (0.08321517222487843); Bronchospasm / acute asthma exacerbation (0.06914194240145019); Atrial fibrillation (0.06805568704756197); Epiglottitis (0.05017429124233566)\nDiagnosis: Croup",
+  "Symptoms_original": "Avez-vous noté que vous produisez plus de salive que d’habitude?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Avez-vous une toux aboyante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Ressentez vous davantage vos symptômes la nuit?",
+  "Diagnosis_original": "Croup",
+  "Differential Diagnosis_original": "Croup (0.14226358025619865); Pneumonia (0.13034936830609728); Bronchitis (0.12276127387525332); Tuberculosis (0.09547839168688253); Larygospasm (0.08321517222487843); Bronchospasm / acute asthma exacerbation (0.06914194240145019); Atrial fibrillation (0.06805568704756197); Epiglottitis (0.05017429124233566)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "哮吼",
+  "Differential Diagnosis_zh": "哮吼（0.14226358025619865）；肺炎（0.13034936830609728）；支气管炎（0.12276127387525332）；结核病（0.09547839168688253）；喉痉挛（0.08321517222487843）；支气管痉挛或急性哮喘加重（0.06914194240145019）；心房颤动（0.06805568704756197）；会厌炎（0.05017429124233566）",
+  "Text_zh": "年龄：2 岁\n性别：男\n症状与病史：症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：哮吼（0.14226358025619865）；肺炎（0.13034936830609728）；支气管炎（0.12276127387525332）；结核病（0.09547839168688253）；喉痉挛（0.08321517222487843）；支气管痉挛或急性哮喘加重（0.06914194240145019）；心房颤动（0.06805568704756197）；会厌炎（0.05017429124233566）\n最终诊断：哮吼"
+}

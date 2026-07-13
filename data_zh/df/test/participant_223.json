@@ -1,0 +1,20 @@
+{
+  "Participant No.": 1523,
+  "Age": "1",
+  "Sex": "F",
+  "Symptoms": "Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?; Avez-vous pris ou commencer un antipsychotique dans les derniers 7 jours?; Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Avez-vous de la difficulté à garder votre langue dans votre bouche?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?",
+  "Diagnosis": "Acute dystonic reactions",
+  "Differential Diagnosis": "Acute dystonic reactions (0.626705084816586); Myasthenia gravis (0.37329491518341407)",
+  "Level 2": "Acute dystonic reactions",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：1 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：急性肌张力障碍反应（0.626705084816586）；重症肌无力（0.37329491518341407）\n最终诊断：急性肌张力障碍反应",
+  "Text_original": "Age: 1\nSex: F\nSymptoms: Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?; Avez-vous pris ou commencer un antipsychotique dans les derniers 7 jours?; Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Avez-vous de la difficulté à garder votre langue dans votre bouche?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?\nDifferential diagnosis: Acute dystonic reactions (0.626705084816586); Myasthenia gravis (0.37329491518341407)\nDiagnosis: Acute dystonic reactions",
+  "Symptoms_original": "Avez-vous l’impression qu’il y a des muscles spasmés ou endoloris, dans votre cou, qui vous empêchent de tourner votre tête d’un bord ou de l’autre?; Avez-vous pris ou commencer un antipsychotique dans les derniers 7 jours?; Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Avez-vous de la difficulté à garder votre langue dans votre bouche?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?",
+  "Diagnosis_original": "Acute dystonic reactions",
+  "Differential Diagnosis_original": "Acute dystonic reactions (0.626705084816586); Myasthenia gravis (0.37329491518341407)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "急性肌张力障碍反应",
+  "Differential Diagnosis_zh": "急性肌张力障碍反应（0.626705084816586）；重症肌无力（0.37329491518341407）",
+  "Text_zh": "年龄：1 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：急性肌张力障碍反应（0.626705084816586）；重症肌无力（0.37329491518341407）\n最终诊断：急性肌张力障碍反应"
+}

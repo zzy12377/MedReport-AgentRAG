@@ -1,0 +1,20 @@
+{
+  "Participant No.": 1594,
+  "Age": "25",
+  "Sex": "F",
+  "Symptoms": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Êtes-vous atteint par la fibrose kystique?; Souffrez-vous d’arthrite rhumatoïde?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?; Avez-vous déjà fait une pneumonie?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?",
+  "Diagnosis": "Bronchiectasis",
+  "Differential Diagnosis": "Bronchitis (0.13589613138769951); Bronchiectasis (0.12688665355453366); Pneumonia (0.12354390452522913); Pulmonary embolism (0.0852213548080423); Guillain-Barré syndrome (0.07296670612479646); Bronchospasm / acute asthma exacerbation (0.07080884228164344); Atrial fibrillation (0.06969639907626643); Myocarditis (0.06883004069651827)",
+  "Level 2": "Bronchiectasis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：25 岁\n性别：女\n症状与病史：是否明显气短或呼吸困难；症状问诊项；症状问诊项；症状问诊项；是否有咳嗽并伴有有色或较平时更多的痰；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.13589613138769951）；支气管扩张（0.12688665355453366）；肺炎（0.12354390452522913）；肺栓塞（0.0852213548080423）；吉兰-巴雷综合征（0.07296670612479646）；支气管痉挛或急性哮喘加重（0.07080884228164344）；心房颤动（0.06969639907626643）；心肌炎（0.06883004069651827）\n最终诊断：支气管扩张",
+  "Text_original": "Age: 25\nSex: F\nSymptoms: Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Êtes-vous atteint par la fibrose kystique?; Souffrez-vous d’arthrite rhumatoïde?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?; Avez-vous déjà fait une pneumonie?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?\nDifferential diagnosis: Bronchitis (0.13589613138769951); Bronchiectasis (0.12688665355453366); Pneumonia (0.12354390452522913); Pulmonary embolism (0.0852213548080423); Guillain-Barré syndrome (0.07296670612479646); Bronchospasm / acute asthma exacerbation (0.07080884228164344); Atrial fibrillation (0.06969639907626643); Myocarditis (0.06883004069651827)\nDiagnosis: Bronchiectasis",
+  "Symptoms_original": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Êtes-vous atteint par la fibrose kystique?; Souffrez-vous d’arthrite rhumatoïde?; Souffrez-vous de la maladie de Crohn ou de la colite ulcéreuse?; Avez-vous une toux produisant des crachats colorés ou plus abondants qu’habituellement?; Avez-vous déjà fait une pneumonie?; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?",
+  "Diagnosis_original": "Bronchiectasis",
+  "Differential Diagnosis_original": "Bronchitis (0.13589613138769951); Bronchiectasis (0.12688665355453366); Pneumonia (0.12354390452522913); Pulmonary embolism (0.0852213548080423); Guillain-Barré syndrome (0.07296670612479646); Bronchospasm / acute asthma exacerbation (0.07080884228164344); Atrial fibrillation (0.06969639907626643); Myocarditis (0.06883004069651827)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否明显气短或呼吸困难；症状问诊项；症状问诊项；症状问诊项；是否有咳嗽并伴有有色或较平时更多的痰；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "支气管扩张",
+  "Differential Diagnosis_zh": "支气管炎（0.13589613138769951）；支气管扩张（0.12688665355453366）；肺炎（0.12354390452522913）；肺栓塞（0.0852213548080423）；吉兰-巴雷综合征（0.07296670612479646）；支气管痉挛或急性哮喘加重（0.07080884228164344）；心房颤动（0.06969639907626643）；心肌炎（0.06883004069651827）",
+  "Text_zh": "年龄：25 岁\n性别：女\n症状与病史：是否明显气短或呼吸困难；症状问诊项；症状问诊项；症状问诊项；是否有咳嗽并伴有有色或较平时更多的痰；症状问诊项；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.13589613138769951）；支气管扩张（0.12688665355453366）；肺炎（0.12354390452522913）；肺栓塞（0.0852213548080423）；吉兰-巴雷综合征（0.07296670612479646）；支气管痉挛或急性哮喘加重（0.07080884228164344）；心房颤动（0.06969639907626643）；心肌炎（0.06883004069651827）\n最终诊断：支气管扩张"
+}

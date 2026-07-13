@@ -1,0 +1,20 @@
+{
+  "Participant No.": 172,
+  "Age": "65",
+  "Sex": "F",
+  "Symptoms": "Avez-vous visualisé du sang dans vos crachats?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Souffrez-vous de diabète?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Tuberculosis (0.314386562376957); Bronchitis (0.2955865201573755); Pulmonary neoplasm (0.2542575550631018); Pneumonia (0.13576936240256557)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：65 岁\n性别：女\n症状与病史：痰中是否见血；症状问诊项；是否患有糖尿病；是否出现或感觉发热；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：结核病（0.314386562376957）；支气管炎（0.2955865201573755）；肺部肿瘤（0.2542575550631018）；肺炎（0.13576936240256557）\n最终诊断：结核病",
+  "Text_original": "Age: 65\nSex: F\nSymptoms: Avez-vous visualisé du sang dans vos crachats?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Souffrez-vous de diabète?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Tuberculosis (0.314386562376957); Bronchitis (0.2955865201573755); Pulmonary neoplasm (0.2542575550631018); Pneumonia (0.13576936240256557)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous visualisé du sang dans vos crachats?; Êtes-vous infecté par le virus de l’immunodéficience humaine ou êtes-vous séropositif?; Souffrez-vous de diabète?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Tuberculosis (0.314386562376957); Bronchitis (0.2955865201573755); Pulmonary neoplasm (0.2542575550631018); Pneumonia (0.13576936240256557)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "痰中是否见血；症状问诊项；是否患有糖尿病；是否出现或感觉发热；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "结核病（0.314386562376957）；支气管炎（0.2955865201573755）；肺部肿瘤（0.2542575550631018）；肺炎（0.13576936240256557）",
+  "Text_zh": "年龄：65 岁\n性别：女\n症状与病史：痰中是否见血；症状问诊项；是否患有糖尿病；是否出现或感觉发热；症状问诊项；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：结核病（0.314386562376957）；支气管炎（0.2955865201573755）；肺部肿瘤（0.2542575550631018）；肺炎（0.13576936240256557）\n最终诊断：结核病"
+}

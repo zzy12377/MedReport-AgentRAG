@@ -1,0 +1,20 @@
+{
+  "Participant No.": 115,
+  "Age": "57",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la toux?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous de diabète?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Pulmonary neoplasm (0.13789190222508743); Bronchitis (0.13363302645881822); Pulmonary embolism (0.09659952186768161); Acute pulmonary edema (0.09048517106864264); Guillain-Barré syndrome (0.08270871707908832); Bronchospasm / acute asthma exacerbation (0.08026275015009895); Atrial fibrillation (0.07900178120649999); Tuberculosis (0.07663385584774031)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：57 岁\n性别：男\n症状与病史：是否咳嗽；是否明显气短或呼吸困难；是否患有糖尿病；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺部肿瘤（0.13789190222508743）；支气管炎（0.13363302645881822）；肺栓塞（0.09659952186768161）；急性肺水肿（0.09048517106864264）；吉兰-巴雷综合征（0.08270871707908832）；支气管痉挛或急性哮喘加重（0.08026275015009895）；心房颤动（0.07900178120649999）；结核病（0.07663385584774031）\n最终诊断：结核病",
+  "Text_original": "Age: 57\nSex: M\nSymptoms: Avez-vous de la toux?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous de diabète?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Pulmonary neoplasm (0.13789190222508743); Bronchitis (0.13363302645881822); Pulmonary embolism (0.09659952186768161); Acute pulmonary edema (0.09048517106864264); Guillain-Barré syndrome (0.08270871707908832); Bronchospasm / acute asthma exacerbation (0.08026275015009895); Atrial fibrillation (0.07900178120649999); Tuberculosis (0.07663385584774031)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous de la toux?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous de diabète?; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Pulmonary neoplasm (0.13789190222508743); Bronchitis (0.13363302645881822); Pulmonary embolism (0.09659952186768161); Acute pulmonary edema (0.09048517106864264); Guillain-Barré syndrome (0.08270871707908832); Bronchospasm / acute asthma exacerbation (0.08026275015009895); Atrial fibrillation (0.07900178120649999); Tuberculosis (0.07663385584774031)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否咳嗽；是否明显气短或呼吸困难；是否患有糖尿病；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "肺部肿瘤（0.13789190222508743）；支气管炎（0.13363302645881822）；肺栓塞（0.09659952186768161）；急性肺水肿（0.09048517106864264）；吉兰-巴雷综合征（0.08270871707908832）；支气管痉挛或急性哮喘加重（0.08026275015009895）；心房颤动（0.07900178120649999）；结核病（0.07663385584774031）",
+  "Text_zh": "年龄：57 岁\n性别：男\n症状与病史：是否咳嗽；是否明显气短或呼吸困难；是否患有糖尿病；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺部肿瘤（0.13789190222508743）；支气管炎（0.13363302645881822）；肺栓塞（0.09659952186768161）；急性肺水肿（0.09048517106864264）；吉兰-巴雷综合征（0.08270871707908832）；支气管痉挛或急性哮喘加重（0.08026275015009895）；心房颤动（0.07900178120649999）；结核病（0.07663385584774031）\n最终诊断：结核病"
+}

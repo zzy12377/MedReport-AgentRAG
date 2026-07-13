@@ -1,0 +1,26 @@
+{
+  "Participant No.": 103,
+  "Age": "42",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous des membres de votre famille qui ont déjà été diagnostiqué avec des céphalée en grappes?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: V_126; Avez-vous de la douleur quelque part?: V_127; Avez-vous de la douleur quelque part?: V_144; Avez-vous de la douleur quelque part?: V_145; Quelle est l’intensité de la douleur?: 9; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 9; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Prenez-vous un médicament qui vasodilate vos vaisseaux sanguins?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Cluster headache",
+  "Differential Diagnosis": "Cluster headache (0.6850030416248103); Anemia (0.31499695837518965)",
+  "Level 2": "Cluster headache",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：42 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如鬼魅般；疼痛性质：如刀割般；疼痛性质：牵拉感；疼痛性质：剧烈；疼痛部位：编码 V_104、V_126、V_127、V_144、V_145；疼痛强度：9/10；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：8/10；疼痛出现速度：9/10；是否过量饮酒或存在酒精依赖；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：丛集性头痛（0.6850030416248103）；贫血（0.31499695837518965） 最终诊断：丛集性头痛",
+  "Text_original": "Age: 42\nSex: M\nSymptoms: Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous des membres de votre famille qui ont déjà été diagnostiqué avec des céphalée en grappes?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: V_126; Avez-vous de la douleur quelque part?: V_127; Avez-vous de la douleur quelque part?: V_144; Avez-vous de la douleur quelque part?: V_145; Quelle est l’intensité de la douleur?: 9; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 9; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Prenez-vous un médicament qui vasodilate vos vaisseaux sanguins?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Cluster headache (0.6850030416248103); Anemia (0.31499695837518965)\nDiagnosis: Cluster headache",
+  "Symptoms_original": "Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous des membres de votre famille qui ont déjà été diagnostiqué avec des céphalée en grappes?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: V_126; Avez-vous de la douleur quelque part?: V_127; Avez-vous de la douleur quelque part?: V_144; Avez-vous de la douleur quelque part?: V_145; Quelle est l’intensité de la douleur?: 9; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 8; À quelle vitesse la douleur est-elle apparue ?: 9; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Prenez-vous un médicament qui vasodilate vos vaisseaux sanguins?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Cluster headache",
+  "Differential Diagnosis_original": "Cluster headache (0.6850030416248103); Anemia (0.31499695837518965)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：如鬼魅般；疼痛性质：如刀刺般；疼痛性质：牵拉感；疼痛性质：剧烈；疼痛部位：编码 V_104；疼痛部位：编码 V_126；疼痛部位：编码 V_127；疼痛部位：编码 V_144；疼痛部位：编码 V_145；疼痛强度：9；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：8；疼痛出现速度：9；是否过量饮酒或存在酒精依赖；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "丛集性头痛",
+  "Differential Diagnosis_zh": "丛集性头痛（0.6850030416248103）；贫血（0.31499695837518965）",
+  "Text_zh": "年龄：42 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如鬼魅般；疼痛性质：如刀割般；疼痛性质：牵拉感；疼痛性质：剧烈；疼痛部位：编码 V_104、V_126、V_127、V_144、V_145；疼痛强度：9/10；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：8/10；疼痛出现速度：9/10；是否过量饮酒或存在酒精依赖；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：丛集性头痛（0.6850030416248103）；贫血（0.31499695837518965） 最终诊断：丛集性头痛",
+  "_qwen_refined_at": "2026-07-07T10:08:07",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "Participant No.": 1326,
+  "Age": "47",
+  "Sex": "F",
+  "Symptoms": "Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Prenez-vous régulièrement des substances illicites stimulantes?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?",
+  "Diagnosis": "Acute dystonic reactions",
+  "Differential Diagnosis": "Acute dystonic reactions (1.0)",
+  "Level 2": "Acute dystonic reactions",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：47 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：急性肌张力障碍反应（1.0）\n最终诊断：急性肌张力障碍反应",
+  "Text_original": "Age: 47\nSex: F\nSymptoms: Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Prenez-vous régulièrement des substances illicites stimulantes?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?\nDifferential diagnosis: Acute dystonic reactions (1.0)\nDiagnosis: Acute dystonic reactions",
+  "Symptoms_original": "Avez-vous eu l’impression que vous étouffiez pendant un court instant et que vous étiez incapable de respirer ou parler?; Prenez-vous régulièrement des substances illicites stimulantes?; Avez-vous de la misère à ouvrir/relever une ou les deux paupières?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous soudainement de la difficulté ou une incapacité à ouvrir la bouche ou même de la douleur au niveau de la mâchoire lors de l’ouverture de celle-ci?",
+  "Diagnosis_original": "Acute dystonic reactions",
+  "Differential Diagnosis_original": "Acute dystonic reactions (1.0)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "急性肌张力障碍反应",
+  "Differential Diagnosis_zh": "急性肌张力障碍反应（1.0）",
+  "Text_zh": "年龄：47 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：急性肌张力障碍反应（1.0）\n最终诊断：急性肌张力障碍反应"
+}

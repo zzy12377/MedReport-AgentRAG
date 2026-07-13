@@ -1,0 +1,20 @@
+{
+  "Participant No.": 817,
+  "Age": "11",
+  "Sex": "M",
+  "Symptoms": "Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous été en contact avec une autre personne qui présentait des symptômes similaires, dans les 2 dernières semaines?; Avez-vous visualisé du sang dans vos crachats?; Fréquentez-vous ou travaillez-vous dans une garderie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_171; Avez-vous de la douleur quelque part?: V_195; Quelle est l’intensité de la douleur?: 5; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 0; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Viral pharyngitis",
+  "Differential Diagnosis": "Viral pharyngitis (1.0)",
+  "Level 2": "Viral pharyngitis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：11 岁\n性别：男\n症状与病史：是否出现或感觉发热；症状问诊项；痰中是否见血；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：烧灼样；疼痛部位：编码 V_33；疼痛部位：编码 V_34；疼痛部位：编码 V_171；疼痛部位：编码 V_195；疼痛强度：5；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：4；疼痛出现速度：0；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：病毒性咽炎（1.0）\n最终诊断：病毒性咽炎",
+  "Text_original": "Age: 11\nSex: M\nSymptoms: Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous été en contact avec une autre personne qui présentait des symptômes similaires, dans les 2 dernières semaines?; Avez-vous visualisé du sang dans vos crachats?; Fréquentez-vous ou travaillez-vous dans une garderie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_171; Avez-vous de la douleur quelque part?: V_195; Quelle est l’intensité de la douleur?: 5; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 0; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Viral pharyngitis (1.0)\nDiagnosis: Viral pharyngitis",
+  "Symptoms_original": "Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous été en contact avec une autre personne qui présentait des symptômes similaires, dans les 2 dernières semaines?; Avez-vous visualisé du sang dans vos crachats?; Fréquentez-vous ou travaillez-vous dans une garderie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_171; Avez-vous de la douleur quelque part?: V_195; Quelle est l’intensité de la douleur?: 5; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 0; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Viral pharyngitis",
+  "Differential Diagnosis_original": "Viral pharyngitis (1.0)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否出现或感觉发热；症状问诊项；痰中是否见血；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：烧灼样；疼痛部位：编码 V_33；疼痛部位：编码 V_34；疼痛部位：编码 V_171；疼痛部位：编码 V_195；疼痛强度：5；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：4；疼痛出现速度：0；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "病毒性咽炎",
+  "Differential Diagnosis_zh": "病毒性咽炎（1.0）",
+  "Text_zh": "年龄：11 岁\n性别：男\n症状与病史：是否出现或感觉发热；症状问诊项；痰中是否见血；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：烧灼样；疼痛部位：编码 V_33；疼痛部位：编码 V_34；疼痛部位：编码 V_171；疼痛部位：编码 V_195；疼痛强度：5；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：4；疼痛出现速度：0；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：病毒性咽炎（1.0）\n最终诊断：病毒性咽炎"
+}

@@ -1,0 +1,26 @@
+{
+  "Participant No.": 840,
+  "Age": "69",
+  "Sex": "F",
+  "Symptoms": "Avez-vous visualisé du sang dans vos crachats?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: posterior chest wall(R); Avez-vous de la douleur quelque part?: posterior chest wall(L); Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 4; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?",
+  "Diagnosis": "Pulmonary neoplasm",
+  "Differential Diagnosis": "Pulmonary neoplasm (0.22399680557202983); Bronchitis (0.2045233488400301); Tuberculosis (0.1872152735309857); Spontaneous rib fracture (0.15460088740531458); Possible NSTEMI / STEMI (0.11879213819409765); Unstable angina (0.11087154645754206)",
+  "Level 2": "Pulmonary neoplasm",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：69 岁 性别：女 症状与病史：痰中是否见血；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样、耗竭感；疼痛部位：右侧后胸壁、左侧后胸壁；疼痛强度：3；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：3；疼痛出现速度：4。症状问诊项：是否咳嗽；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟。 鉴别诊断候选：肺部肿瘤（0.22399680557202983）；支气管炎（0.2045233488400301）；结核病（0.1872152735309857）；自发性肋骨骨折（0.15460088740531458）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.11879213819409765）；不稳定型心绞痛（0.11087154645754206）。 最终诊断：肺部肿瘤",
+  "Text_original": "Age: 69\nSex: F\nSymptoms: Avez-vous visualisé du sang dans vos crachats?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: posterior chest wall(R); Avez-vous de la douleur quelque part?: posterior chest wall(L); Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 4; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?\nDifferential diagnosis: Pulmonary neoplasm (0.22399680557202983); Bronchitis (0.2045233488400301); Tuberculosis (0.1872152735309857); Spontaneous rib fracture (0.15460088740531458); Possible NSTEMI / STEMI (0.11879213819409765); Unstable angina (0.11087154645754206)\nDiagnosis: Pulmonary neoplasm",
+  "Symptoms_original": "Avez-vous visualisé du sang dans vos crachats?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: posterior chest wall(R); Avez-vous de la douleur quelque part?: posterior chest wall(L); Quelle est l’intensité de la douleur?: 3; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 4; Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?",
+  "Diagnosis_original": "Pulmonary neoplasm",
+  "Differential Diagnosis_original": "Pulmonary neoplasm (0.22399680557202983); Bronchitis (0.2045233488400301); Tuberculosis (0.1872152735309857); Spontaneous rib fracture (0.15460088740531458); Possible NSTEMI / STEMI (0.11879213819409765); Unstable angina (0.11087154645754206)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "痰中是否带血；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：耗竭性；疼痛部位：右侧后胸壁；疼痛部位：左侧后胸壁；疼痛强度：3；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：3；疼痛出现速度：4；症状问诊项：是否有咳嗽；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟",
+  "Diagnosis_zh": "肺部肿瘤",
+  "Differential Diagnosis_zh": "肺部肿瘤（0.22399680557202983）；支气管炎（0.2045233488400301）；结核病（0.1872152735309857）；自发性肋骨骨折（0.15460088740531458）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.11879213819409765）；不稳定型心绞痛（0.11087154645754206）",
+  "Text_zh": "年龄：69 岁 性别：女 症状与病史：痰中是否见血；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样、耗竭感；疼痛部位：右侧后胸壁、左侧后胸壁；疼痛强度：3；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：3；疼痛出现速度：4。症状问诊项：是否咳嗽；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟。 鉴别诊断候选：肺部肿瘤（0.22399680557202983）；支气管炎（0.2045233488400301）；结核病（0.1872152735309857）；自发性肋骨骨折（0.15460088740531458）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.11879213819409765）；不稳定型心绞痛（0.11087154645754206）。 最终诊断：肺部肿瘤",
+  "_qwen_refined_at": "2026-07-07T12:15:17",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

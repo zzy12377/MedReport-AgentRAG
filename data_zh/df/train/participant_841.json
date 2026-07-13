@@ -1,0 +1,27 @@
+{
+  "Participant No.": 841,
+  "Age": "83",
+  "Sex": "M",
+  "Symptoms": "Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 0; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Fumez-vous la cigarette quotidiennement?; Avez-vous une hernie hiatale?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "GERD",
+  "Differential Diagnosis": "Bronchitis (0.2285254158936341); GERD (0.22562196832747927); Possible NSTEMI / STEMI (0.16164065240657116); Spontaneous rib fracture (0.15205649320106512); Pericarditis (0.10048025535977238); Boerhaave (0.08062995105510964); Anaphylaxis (0.051045263756368114)",
+  "Level 2": "GERD",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：83 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样、烧灼样、scary；疼痛部位：上腹部；疼痛强度：4；疼痛是否向其他部位放射：否；疼痛定位是否明确：是；疼痛出现速度：无记录；是否每天吸烟：未询问；是否咳嗽：未询问；过去 4 周内是否旅行：否。鉴别诊断候选：支气管炎（0.2285）；胃食管反流病（0.2256）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.1616）；自发性肋骨骨折（0.1521）；心包炎（0.1005）；Boerhaave 综合征（0.0806）；过敏性休克（0.0510）。最终诊断：胃食管反流病",
+  "Text_original": "Age: 83\nSex: M\nSymptoms: Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 0; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Fumez-vous la cigarette quotidiennement?; Avez-vous une hernie hiatale?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Bronchitis (0.2285254158936341); GERD (0.22562196832747927); Possible NSTEMI / STEMI (0.16164065240657116); Spontaneous rib fracture (0.15205649320106512); Pericarditis (0.10048025535977238); Boerhaave (0.08062995105510964); Anaphylaxis (0.051045263756368114)\nDiagnosis: GERD",
+  "Symptoms_original": "Avez-vous une sensation de brûlure partant du creux de l’estomac et remontant vers la bouche avec même parfois un goût amer associé?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: burning; Caractérisez votre douleur:: scary; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 0; Avez-vous un surpoids important par rapport aux personnes de la même taille que vous?; Fumez-vous la cigarette quotidiennement?; Avez-vous une hernie hiatale?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "GERD",
+  "Differential Diagnosis_original": "Bronchitis (0.2285254158936341); GERD (0.22562196832747927); Possible NSTEMI / STEMI (0.16164065240657116); Spontaneous rib fracture (0.15205649320106512); Pericarditis (0.10048025535977238); Boerhaave (0.08062995105510964); Anaphylaxis (0.051045263756368114)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：烧灼样；疼痛性质：令人恐惧的；疼痛部位：上腹部（V_42）；疼痛强度：4；疼痛是否向其他部位放射：否（V_42，V_118）；疼痛定位是否明确：是（5分）；疼痛出现速度：无特定时间；症状问诊项：每天吸烟情况；症状问诊项：咳嗽情况；过去4周内是否旅行：否（V_9）",
+  "Diagnosis_zh": "胃食管反流病",
+  "Differential Diagnosis_zh": "支气管炎（0.2285254158936341）；胃食管反流病（0.22562196832747927）；疑似非ST段抬高型或ST段抬高型心肌梗死（0.16164065240657116）；自发性肋骨骨折（0.15205649320106512）；心包炎（0.10048025535977238）；Boerhaave综合征（0.08062995105510964）；过敏性休克（0.051045263756368114）",
+  "Text_zh": "年龄：83 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样、烧灼样、scary；疼痛部位：上腹部；疼痛强度：4；疼痛是否向其他部位放射：否；疼痛定位是否明确：是；疼痛出现速度：无记录；是否每天吸烟：未询问；是否咳嗽：未询问；过去 4 周内是否旅行：否。鉴别诊断候选：支气管炎（0.2285）；胃食管反流病（0.2256）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.1616）；自发性肋骨骨折（0.1521）；心包炎（0.1005）；Boerhaave 综合征（0.0806）；过敏性休克（0.0510）。最终诊断：胃食管反流病",
+  "_qwen_refined_at": "2026-07-07T12:15:29",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh",
+    "Differential Diagnosis_zh"
+  ]
+}

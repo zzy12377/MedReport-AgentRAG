@@ -1,0 +1,8 @@
+{
+  "source": "open_patients",
+  "num_records": 800,
+  "dim": 384,
+  "embedding_backend": "local",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "created_at": "2026-07-10T15:25:22.715059"
+}

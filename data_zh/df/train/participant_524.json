@@ -1,0 +1,26 @@
+{
+  "Participant No.": 524,
+  "Age": "17",
+  "Sex": "F",
+  "Symptoms": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous une mauvaise alimentation?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Prenez-vous des nouveaux anticoagulants oraux?; Croyez-vous être enceinte ou êtes vous présentement enceinte?; Avez-vous voyagé dans les 4 dernières semaines?: V_5; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Anemia",
+  "Differential Diagnosis": "Anemia (0.5073222073679221); Chagas (0.16610503210484523); Cluster headache (0.16610503210484523); Myocarditis (0.16046772842238746)",
+  "Level 2": "Anemia",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：17 岁，性别：女。症状与病史：是否有明显气短或呼吸困难；疼痛性质：敏感样、牵拉感、抽筋样、疲劳感；疼痛部位：右太阳穴；疼痛强度：1；疼痛是否向其他部位放射：否；疼痛定位是否明确：是；疼痛出现速度：3 天内。过去 4 周内是否有旅行史：否。 鉴别诊断候选：贫血（0.5073222073679221）；恰加斯病（0.16610503210484523）；丛集性头痛（0.16610503210484523）；心肌炎（0.16046772842238746）。 最终诊断：贫血。",
+  "Text_original": "Age: 17\nSex: F\nSymptoms: Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous une mauvaise alimentation?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Prenez-vous des nouveaux anticoagulants oraux?; Croyez-vous être enceinte ou êtes vous présentement enceinte?; Avez-vous voyagé dans les 4 dernières semaines?: V_5; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Anemia (0.5073222073679221); Chagas (0.16610503210484523); Cluster headache (0.16610503210484523); Myocarditis (0.16046772842238746)\nDiagnosis: Anemia",
+  "Symptoms_original": "Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous une mauvaise alimentation?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 3; Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Prenez-vous des nouveaux anticoagulants oraux?; Croyez-vous être enceinte ou êtes vous présentement enceinte?; Avez-vous voyagé dans les 4 dernières semaines?: V_5; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Anemia",
+  "Differential Diagnosis_original": "Anemia (0.5073222073679221); Chagas (0.16610503210484523); Cluster headache (0.16610503210484523); Myocarditis (0.16046772842238746)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有明显气短或呼吸困难；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：牵拉样；疼痛性质：抽搐样；疼痛性质：耗竭样；疼痛部位：编码 V_38；疼痛部位：编码 V_76；疼痛部位：右太阳穴；疼痛强度：1；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：5；疼痛出现速度：3；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_5；症状问诊项",
+  "Diagnosis_zh": "贫血",
+  "Differential Diagnosis_zh": "贫血（0.5073222073679221）；恰加斯病（0.16610503210484523）；丛集性头痛（0.16610503210484523）；心肌炎（0.16046772842238746）",
+  "Text_zh": "年龄：17 岁，性别：女。症状与病史：是否有明显气短或呼吸困难；疼痛性质：敏感样、牵拉感、抽筋样、疲劳感；疼痛部位：右太阳穴；疼痛强度：1；疼痛是否向其他部位放射：否；疼痛定位是否明确：是；疼痛出现速度：3 天内。过去 4 周内是否有旅行史：否。 鉴别诊断候选：贫血（0.5073222073679221）；恰加斯病（0.16610503210484523）；丛集性头痛（0.16610503210484523）；心肌炎（0.16046772842238746）。 最终诊断：贫血。",
+  "_qwen_refined_at": "2026-07-07T11:47:01",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

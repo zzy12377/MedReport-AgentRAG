@@ -1,0 +1,20 @@
+{
+  "Participant No.": 706,
+  "Age": "7",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la toux?; Prenez-vous des corticostéroïdes?; Avez-vous visualisé du sang dans vos crachats?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Pneumonia (0.17071557335912316); Bronchitis (0.15700125850041188); Tuberculosis (0.15500955466058783); Bronchospasm / acute asthma exacerbation (0.09216220438720332); Atrial fibrillation (0.09071428891846404); Guillain-Barré syndrome (0.06687942403484194); Acute dystonic reactions (0.06687942403484194); Myocarditis (0.06687942403484194)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：7 岁\n性别：男\n症状与病史：是否咳嗽；症状问诊项；痰中是否见血；是否明显气短或呼吸困难；是否患有糖尿病；是否过量饮酒或存在酒精依赖；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺炎（0.17071557335912316）；支气管炎（0.15700125850041188）；结核病（0.15500955466058783）；支气管痉挛或急性哮喘加重（0.09216220438720332）；心房颤动（0.09071428891846404）；吉兰-巴雷综合征（0.06687942403484194）；急性肌张力障碍反应（0.06687942403484194）；心肌炎（0.06687942403484194）\n最终诊断：结核病",
+  "Text_original": "Age: 7\nSex: M\nSymptoms: Avez-vous de la toux?; Prenez-vous des corticostéroïdes?; Avez-vous visualisé du sang dans vos crachats?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Pneumonia (0.17071557335912316); Bronchitis (0.15700125850041188); Tuberculosis (0.15500955466058783); Bronchospasm / acute asthma exacerbation (0.09216220438720332); Atrial fibrillation (0.09071428891846404); Guillain-Barré syndrome (0.06687942403484194); Acute dystonic reactions (0.06687942403484194); Myocarditis (0.06687942403484194)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous de la toux?; Prenez-vous des corticostéroïdes?; Avez-vous visualisé du sang dans vos crachats?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous de diabète?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Pneumonia (0.17071557335912316); Bronchitis (0.15700125850041188); Tuberculosis (0.15500955466058783); Bronchospasm / acute asthma exacerbation (0.09216220438720332); Atrial fibrillation (0.09071428891846404); Guillain-Barré syndrome (0.06687942403484194); Acute dystonic reactions (0.06687942403484194); Myocarditis (0.06687942403484194)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否咳嗽；症状问诊项；痰中是否见血；是否明显气短或呼吸困难；是否患有糖尿病；是否过量饮酒或存在酒精依赖；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "肺炎（0.17071557335912316）；支气管炎（0.15700125850041188）；结核病（0.15500955466058783）；支气管痉挛或急性哮喘加重（0.09216220438720332）；心房颤动（0.09071428891846404）；吉兰-巴雷综合征（0.06687942403484194）；急性肌张力障碍反应（0.06687942403484194）；心肌炎（0.06687942403484194）",
+  "Text_zh": "年龄：7 岁\n性别：男\n症状与病史：是否咳嗽；症状问诊项；痰中是否见血；是否明显气短或呼吸困难；是否患有糖尿病；是否过量饮酒或存在酒精依赖；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：肺炎（0.17071557335912316）；支气管炎（0.15700125850041188）；结核病（0.15500955466058783）；支气管痉挛或急性哮喘加重（0.09216220438720332）；心房颤动（0.09071428891846404）；吉兰-巴雷综合征（0.06687942403484194）；急性肌张力障碍反应（0.06687942403484194）；心肌炎（0.06687942403484194）\n最终诊断：结核病"
+}

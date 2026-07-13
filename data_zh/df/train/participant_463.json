@@ -1,0 +1,26 @@
+{
+  "Participant No.": 463,
+  "Age": "53",
+  "Sex": "F",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous été infecté par un virus récemment?; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Quelle est l’intensité de la douleur?: 6; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(L); À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 3; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Pericarditis",
+  "Differential Diagnosis": "Possible NSTEMI / STEMI (0.23657784029458168); GERD (0.15341585128736437); Acute dystonic reactions (0.12073358420771306); Anaphylaxis (0.12073358420771306); Sarcoidosis (0.09887084083761534); Pericarditis (0.09541170182466632); Scombroid food poisoning (0.07637088102730508); Myocarditis (0.05367886341037815)",
+  "Level 2": "Pericarditis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：53 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：刀割样痛；疼痛性质：锐痛；疼痛部位：编码 V_42、V_118；疼痛强度：6；疼痛是否向其他部位放射：编码 V_52，后胸壁（左）；疼痛定位是否明确：7；疼痛出现速度：3；是否明显气短或呼吸困难：否；过去 4 周内是否旅行：编码 V_9。鉴别诊断候选：疑似非 ST 段抬高型心肌梗死、ST 段抬高型心肌梗死（0.23657784029458168）；胃食管反流病（0.15341585128736437）；急性肌张力障碍反应（0.12073358420771306）；过敏性休克（0.12073358420771306）；结节病（0.09887084083761534）；心包炎（0.09541170182466632）；鲭鱼中毒（0.07637088102730508）；心肌炎（0.05367886341037815）。最终诊断：心包炎。",
+  "Text_original": "Age: 53\nSex: F\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous été infecté par un virus récemment?; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Quelle est l’intensité de la douleur?: 6; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(L); À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 3; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Possible NSTEMI / STEMI (0.23657784029458168); GERD (0.15341585128736437); Acute dystonic reactions (0.12073358420771306); Anaphylaxis (0.12073358420771306); Sarcoidosis (0.09887084083761534); Pericarditis (0.09541170182466632); Scombroid food poisoning (0.07637088102730508); Myocarditis (0.05367886341037815)\nDiagnosis: Pericarditis",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous été infecté par un virus récemment?; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sharp; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Quelle est l’intensité de la douleur?: 6; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(L); À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 3; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Pericarditis",
+  "Differential Diagnosis_original": "Possible NSTEMI / STEMI (0.23657784029458168); GERD (0.15341585128736437); Acute dystonic reactions (0.12073358420771306); Anaphylaxis (0.12073358420771306); Sarcoidosis (0.09887084083761534); Pericarditis (0.09541170182466632); Scombroid food poisoning (0.07637088102730508); Myocarditis (0.05367886341037815)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：刀割样痛；疼痛性质：锐痛；疼痛部位：编码 V_42；疼痛部位：编码 V_118；疼痛强度：6；疼痛是否向其他部位放射：编码 V_52；疼痛是否向其他部位放射：左后胸壁；疼痛定位是否明确：7；疼痛出现速度：3；是否明显气短或呼吸困难；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "心包炎",
+  "Differential Diagnosis_zh": "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.23657784029458168）；胃食管反流病（0.15341585128736437）；急性肌张力障碍反应（0.12073358420771306）；过敏性休克（0.12073358420771306）；结节病（0.09887084083761534）；心包炎（0.09541170182466632）；鲭鱼中毒（0.07637088102730508）；心肌炎（0.05367886341037815）",
+  "Text_zh": "年龄：53 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：刀割样痛；疼痛性质：锐痛；疼痛部位：编码 V_42、V_118；疼痛强度：6；疼痛是否向其他部位放射：编码 V_52，后胸壁（左）；疼痛定位是否明确：7；疼痛出现速度：3；是否明显气短或呼吸困难：否；过去 4 周内是否旅行：编码 V_9。鉴别诊断候选：疑似非 ST 段抬高型心肌梗死、ST 段抬高型心肌梗死（0.23657784029458168）；胃食管反流病（0.15341585128736437）；急性肌张力障碍反应（0.12073358420771306）；过敏性休克（0.12073358420771306）；结节病（0.09887084083761534）；心包炎（0.09541170182466632）；鲭鱼中毒（0.07637088102730508）；心肌炎（0.05367886341037815）。最终诊断：心包炎。",
+  "_qwen_refined_at": "2026-07-07T11:41:26",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

@@ -1,2 +1,0 @@
-"""Gradio frontend package."""
-

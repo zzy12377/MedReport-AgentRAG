@@ -1,0 +1,26 @@
+{
+  "Participant No.": 1381,
+  "Age": "20",
+  "Sex": "M",
+  "Symptoms": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez vous déjà fait un pneumothorax spontané?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_188; Quelle est l’intensité de la douleur?: 6; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 6; À quelle vitesse la douleur est-elle apparue ?: 6; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous des membres de votre famille qui ont déjà fait un pneumothorax?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Spontaneous pneumothorax",
+  "Differential Diagnosis": "Possible NSTEMI / STEMI (0.39542981047477216); Pulmonary embolism (0.3808911015492677); Spontaneous pneumothorax (0.221821767595299); Pericarditis (0.0018573203806612178)",
+  "Level 2": "Spontaneous pneumothorax",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：20 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般剧烈、暴力般的疼痛；疼痛部位：编码 V_42、V_118、V_188；疼痛强度：6；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：6；疼痛出现速度：6；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.39542981047477216）；肺栓塞（0.3808911015492677）；自发性气胸（0.221821767595299）；心包炎（0.0018573203806612178） 最终诊断：自发性气胸",
+  "Text_original": "Age: 20\nSex: M\nSymptoms: Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez vous déjà fait un pneumothorax spontané?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_188; Quelle est l’intensité de la douleur?: 6; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 6; À quelle vitesse la douleur est-elle apparue ?: 6; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous des membres de votre famille qui ont déjà fait un pneumothorax?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Possible NSTEMI / STEMI (0.39542981047477216); Pulmonary embolism (0.3808911015492677); Spontaneous pneumothorax (0.221821767595299); Pericarditis (0.0018573203806612178)\nDiagnosis: Spontaneous pneumothorax",
+  "Symptoms_original": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez vous déjà fait un pneumothorax spontané?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_188; Quelle est l’intensité de la douleur?: 6; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 6; À quelle vitesse la douleur est-elle apparue ?: 6; Souffrez-vous de maladie pulmonaire obstructive chronique?; Avez-vous des membres de votre famille qui ont déjà fait un pneumothorax?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Spontaneous pneumothorax",
+  "Differential Diagnosis_original": "Possible NSTEMI / STEMI (0.39542981047477216); Pulmonary embolism (0.3808911015492677); Spontaneous pneumothorax (0.221821767595299); Pericarditis (0.0018573203806612178)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：心碎样痛；疼痛性质：刀割样痛；疼痛性质：剧烈痛；疼痛部位：编码 V_42；疼痛部位：编码 V_118；疼痛部位：编码 V_188；疼痛强度：6；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：6；疼痛出现速度：6；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "自发性气胸",
+  "Differential Diagnosis_zh": "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.39542981047477216）；肺栓塞（0.3808911015492677）；自发性气胸（0.221821767595299）；心包炎（0.0018573203806612178）",
+  "Text_zh": "年龄：20 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般剧烈、暴力般的疼痛；疼痛部位：编码 V_42、V_118、V_188；疼痛强度：6；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：6；疼痛出现速度：6；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.39542981047477216）；肺栓塞（0.3808911015492677）；自发性气胸（0.221821767595299）；心包炎（0.0018573203806612178） 最终诊断：自发性气胸",
+  "_qwen_refined_at": "2026-07-07T12:55:55",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

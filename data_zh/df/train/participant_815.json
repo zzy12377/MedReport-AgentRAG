@@ -1,0 +1,27 @@
+{
+  "Participant No.": 815,
+  "Age": "61",
+  "Sex": "M",
+  "Symptoms": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous été infecté par un virus récemment?; Avez-vous déjà eu une péricardite?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 7; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 7; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?",
+  "Diagnosis": "Pericarditis",
+  "Differential Diagnosis": "Pericarditis (0.1914360046148343); Possible NSTEMI / STEMI (0.13181857523285928); Pulmonary embolism (0.12697202131730032); Unstable angina (0.1238908305188097); Boerhaave (0.1169262697419811); GERD (0.0898854227059529); Stable angina (0.06898534195296015); Pancreatic neoplasm (0.06823274448230175)",
+  "Level 2": "Pericarditis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：61 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般；疼痛部位：编码 V_42、V_118，上腹部；疼痛强度：7；疼痛是否向其他部位放射：编码 V_52，后胸壁（右侧）；疼痛定位是否明确：5；疼痛出现速度：7；过去 4 周内是否旅行：编码 V_9。鉴别诊断候选：心包炎（0.1914360046148343）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.13181857523285928）；肺栓塞（0.12697202131730032）；不稳定型心绞痛（0.1238908305188097）；Boerhaave 综合征（0.1169262697419811）；胃食管反流病（0.0898854227059529）；稳定型心绞痛（0.06898534195296015）；胰腺肿瘤（0.06823274448230175）。最终诊断：心包炎。",
+  "Text_original": "Age: 61\nSex: M\nSymptoms: Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous été infecté par un virus récemment?; Avez-vous déjà eu une péricardite?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 7; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 7; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?\nDifferential diagnosis: Pericarditis (0.1914360046148343); Possible NSTEMI / STEMI (0.13181857523285928); Pulmonary embolism (0.12697202131730032); Unstable angina (0.1238908305188097); Boerhaave (0.1169262697419811); GERD (0.0898854227059529); Stable angina (0.06898534195296015); Pancreatic neoplasm (0.06823274448230175)\nDiagnosis: Pericarditis",
+  "Symptoms_original": "Avez-vous une douleur qui est pire à l’inspiration profonde?; Avez-vous été infecté par un virus récemment?; Avez-vous déjà eu une péricardite?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 7; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 7; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?",
+  "Diagnosis_original": "Pericarditis",
+  "Differential Diagnosis_original": "Pericarditis (0.1914360046148343); Possible NSTEMI / STEMI (0.13181857523285928); Pulmonary embolism (0.12697202131730032); Unstable angina (0.1238908305188097); Boerhaave (0.1169262697419811); GERD (0.0898854227059529); Stable angina (0.06898534195296015); Pancreatic neoplasm (0.06823274448230175)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般；疼痛部位：编码 V_42，V_118，上腹部；疼痛强度：7；疼痛是否向其他部位放射：编码 V_52，后胸壁（右侧）；疼痛定位是否明确：5；疼痛出现速度：7；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "心包炎",
+  "Differential Diagnosis_zh": "心包炎（0.1914360046148343）；疑似非ST段抬高型或ST段抬高型心肌梗死（0.13181857523285928）；肺栓塞（0.12697202131730032）；不稳定型心绞痛（0.1238908305188097）；Boerhaave综合征（0.1169262697419811）；胃食管反流病（0.0898854227059529）；稳定型心绞痛（0.06898534195296015）；胰腺肿瘤（0.06823274448230175）",
+  "Text_zh": "年龄：61 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：如刀割般；疼痛部位：编码 V_42、V_118，上腹部；疼痛强度：7；疼痛是否向其他部位放射：编码 V_52，后胸壁（右侧）；疼痛定位是否明确：5；疼痛出现速度：7；过去 4 周内是否旅行：编码 V_9。鉴别诊断候选：心包炎（0.1914360046148343）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.13181857523285928）；肺栓塞（0.12697202131730032）；不稳定型心绞痛（0.1238908305188097）；Boerhaave 综合征（0.1169262697419811）；胃食管反流病（0.0898854227059529）；稳定型心绞痛（0.06898534195296015）；胰腺肿瘤（0.06823274448230175）。最终诊断：心包炎。",
+  "_qwen_refined_at": "2026-07-07T12:12:58",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh",
+    "Differential Diagnosis_zh"
+  ]
+}

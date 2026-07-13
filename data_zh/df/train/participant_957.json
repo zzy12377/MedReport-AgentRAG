@@ -1,0 +1,20 @@
+{
+  "Participant No.": 957,
+  "Age": "0",
+  "Sex": "F",
+  "Symptoms": "Avez-vous de la congestion nasale ou le nez qui coule clair?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis": "Croup",
+  "Differential Diagnosis": "Croup (0.14059803455705674); Acute otitis media (0.09908690470750099); HIV (initial infection) (0.0917978871477319); Larygospasm (0.09047549693621496); Epiglottitis (0.08831567430192976); Atrial fibrillation (0.07399338294132449); Bronchiolitis (0.05455187812752652); Guillain-Barré syndrome (0.05455187812752652)",
+  "Level 2": "Croup",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：0 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：哮吼（0.14059803455705674）；急性中耳炎（0.09908690470750099）；HIV 初次感染（0.0917978871477319）；喉痉挛（0.09047549693621496）；会厌炎（0.08831567430192976）；心房颤动（0.07399338294132449）；未映射疾病（0.05455187812752652）；吉兰-巴雷综合征（0.05455187812752652）\n最终诊断：哮吼",
+  "Text_original": "Age: 0\nSex: F\nSymptoms: Avez-vous de la congestion nasale ou le nez qui coule clair?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?\nDifferential diagnosis: Croup (0.14059803455705674); Acute otitis media (0.09908690470750099); HIV (initial infection) (0.0917978871477319); Larygospasm (0.09047549693621496); Epiglottitis (0.08831567430192976); Atrial fibrillation (0.07399338294132449); Bronchiolitis (0.05455187812752652); Guillain-Barré syndrome (0.05455187812752652)\nDiagnosis: Croup",
+  "Symptoms_original": "Avez-vous de la congestion nasale ou le nez qui coule clair?; Est-ce que vous ou un membre de votre famille a déjà eu le croup?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis_original": "Croup",
+  "Differential Diagnosis_original": "Croup (0.14059803455705674); Acute otitis media (0.09908690470750099); HIV (initial infection) (0.0917978871477319); Larygospasm (0.09047549693621496); Epiglottitis (0.08831567430192976); Atrial fibrillation (0.07399338294132449); Bronchiolitis (0.05455187812752652); Guillain-Barré syndrome (0.05455187812752652)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "哮吼",
+  "Differential Diagnosis_zh": "哮吼（0.14059803455705674）；急性中耳炎（0.09908690470750099）；HIV 初次感染（0.0917978871477319）；喉痉挛（0.09047549693621496）；会厌炎（0.08831567430192976）；心房颤动（0.07399338294132449）；未映射疾病（0.05455187812752652）；吉兰-巴雷综合征（0.05455187812752652）",
+  "Text_zh": "年龄：0 岁\n性别：女\n症状与病史：症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：哮吼（0.14059803455705674）；急性中耳炎（0.09908690470750099）；HIV 初次感染（0.0917978871477319）；喉痉挛（0.09047549693621496）；会厌炎（0.08831567430192976）；心房颤动（0.07399338294132449）；未映射疾病（0.05455187812752652）；吉兰-巴雷综合征（0.05455187812752652）\n最终诊断：哮吼"
+}

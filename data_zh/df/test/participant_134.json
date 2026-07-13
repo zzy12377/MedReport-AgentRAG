@@ -1,0 +1,26 @@
+{
+  "Participant No.": 1434,
+  "Age": "58",
+  "Sex": "F",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Fréquentez-vous ou travaillez-vous dans une garderie?; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_159; Avez-vous de la douleur quelque part?: V_195; Avez-vous de la douleur quelque part?: trachea; Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 1; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Acute laryngitis",
+  "Differential Diagnosis": "Possible NSTEMI / STEMI (0.3845050716071708); Acute laryngitis (0.19869701767417292); Unstable angina (0.1874542592241065); Stable angina (0.13191344899367305); Viral pharyngitis (0.09743020250087686)",
+  "Level 2": "Acute laryngitis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：58 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：烧灼样；疼痛部位：编码 V_33、V_34、V_159、V_195、trachea；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：5；疼痛出现速度：1；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.3845050716071708）；急性喉炎（0.19869701767417292）；不稳定型心绞痛（0.1874542592241065）；稳定型心绞痛（0.13191344899367305）；病毒性咽炎（0.09743020250087686） 最终诊断：急性喉炎",
+  "Text_original": "Age: 58\nSex: F\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Fréquentez-vous ou travaillez-vous dans une garderie?; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_159; Avez-vous de la douleur quelque part?: V_195; Avez-vous de la douleur quelque part?: trachea; Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 1; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Possible NSTEMI / STEMI (0.3845050716071708); Acute laryngitis (0.19869701767417292); Unstable angina (0.1874542592241065); Stable angina (0.13191344899367305); Viral pharyngitis (0.09743020250087686)\nDiagnosis: Acute laryngitis",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Fréquentez-vous ou travaillez-vous dans une garderie?; Caractérisez votre douleur:: burning; Avez-vous de la douleur quelque part?: V_33; Avez-vous de la douleur quelque part?: V_34; Avez-vous de la douleur quelque part?: V_159; Avez-vous de la douleur quelque part?: V_195; Avez-vous de la douleur quelque part?: trachea; Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 1; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Acute laryngitis",
+  "Differential Diagnosis_original": "Possible NSTEMI / STEMI (0.3845050716071708); Acute laryngitis (0.19869701767417292); Unstable angina (0.1874542592241065); Stable angina (0.13191344899367305); Viral pharyngitis (0.09743020250087686)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：烧灼样；疼痛部位：编码 V_33、V_34、V_159、V_195、trachea；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：5；疼痛出现速度：1；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "急性喉炎",
+  "Differential Diagnosis_zh": "疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.3845050716071708）；急性喉炎（0.19869701767417292）；不稳定型心绞痛（0.1874542592241065）；稳定型心绞痛（0.13191344899367305）；病毒性咽炎（0.09743020250087686）",
+  "Text_zh": "年龄：58 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：烧灼样；疼痛部位：编码 V_33、V_34、V_159、V_195、trachea；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：5；疼痛出现速度：1；是否出现或感觉发热；过去 4 周内是否旅行：编码 V_9 鉴别诊断候选：疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.3845050716071708）；急性喉炎（0.19869701767417292）；不稳定型心绞痛（0.1874542592241065）；稳定型心绞痛（0.13191344899367305）；病毒性咽炎（0.09743020250087686） 最终诊断：急性喉炎",
+  "_qwen_refined_at": "2026-07-07T12:34:05",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

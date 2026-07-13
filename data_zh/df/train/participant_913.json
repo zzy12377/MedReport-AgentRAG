@@ -1,0 +1,26 @@
+{
+  "Participant No.": 913,
+  "Age": "38",
+  "Sex": "M",
+  "Symptoms": "Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 3; Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Avez-vous un teint beaucoup plus pâle que d’habitude?; Avez-vous noté du sang rouge clair ou des caillots de sang dans vos selles?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Anemia",
+  "Differential Diagnosis": "Anemia (0.5766070525471764); Cluster headache (0.23270173212031814); Atrial fibrillation (0.19069121533250555)",
+  "Level 2": "Anemia",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：38 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛？疼痛性质：牵拉感；疼痛性质：抽搐；疼痛性质：疲劳；疼痛部位：编码 V_38（太阳穴，右）；疼痛部位：编码 V_76；疼痛部位：编码 V_104；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：7；疼痛出现速度：3。过去 4 周内是否旅行？编码 V_9。 鉴别诊断候选：贫血（0.5766070525471764）；丛集性头痛（0.23270173212031814）；心房颤动（0.19069121533250555） 最终诊断：贫血",
+  "Text_original": "Age: 38\nSex: M\nSymptoms: Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 3; Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Avez-vous un teint beaucoup plus pâle que d’habitude?; Avez-vous noté du sang rouge clair ou des caillots de sang dans vos selles?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Anemia (0.5766070525471764); Cluster headache (0.23270173212031814); Atrial fibrillation (0.19069121533250555)\nDiagnosis: Anemia",
+  "Symptoms_original": "Avez-vous l’impression de vous sentir légèrement étourdi ou d’avoir une impression de déséquilibre léger?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_38; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(R); Quelle est l’intensité de la douleur?: 2; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 7; À quelle vitesse la douleur est-elle apparue ?: 3; Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Avez-vous un teint beaucoup plus pâle que d’habitude?; Avez-vous noté du sang rouge clair ou des caillots de sang dans vos selles?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Anemia",
+  "Differential Diagnosis_original": "Anemia (0.5766070525471764); Cluster headache (0.23270173212031814); Atrial fibrillation (0.19069121533250555)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：牵拉样痛；疼痛性质：抽搐样痛；疼痛性质：疲劳感；疼痛部位：编码 V_38；疼痛部位：编码 V_76；疼痛部位：编码 V_104；疼痛部位：太阳穴（右）；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：7；疼痛出现速度：3；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；过去 4 周内是否旅行：编码 V_9；是否有与本次就诊原因相关的症状",
+  "Diagnosis_zh": "贫血",
+  "Differential Diagnosis_zh": "贫血（0.5766070525471764）；丛集性头痛（0.23270173212031814）；心房颤动（0.19069121533250555）",
+  "Text_zh": "年龄：38 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛？疼痛性质：牵拉感；疼痛性质：抽搐；疼痛性质：疲劳；疼痛部位：编码 V_38（太阳穴，右）；疼痛部位：编码 V_76；疼痛部位：编码 V_104；疼痛强度：2；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：7；疼痛出现速度：3。过去 4 周内是否旅行？编码 V_9。 鉴别诊断候选：贫血（0.5766070525471764）；丛集性头痛（0.23270173212031814）；心房颤动（0.19069121533250555） 最终诊断：贫血",
+  "_qwen_refined_at": "2026-07-07T12:21:42",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

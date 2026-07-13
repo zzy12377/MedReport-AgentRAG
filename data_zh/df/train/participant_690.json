@@ -1,0 +1,27 @@
+{
+  "Participant No.": 690,
+  "Age": "17",
+  "Sex": "F",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 9; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 2; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous des symptômes qui sont pires après les repas?; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?",
+  "Diagnosis": "GERD",
+  "Differential Diagnosis": "GERD (0.3705264338481471); Bronchitis (0.3575983280034459); Boerhaave (0.1949939881964085); Anaphylaxis (0.0768812499519985)",
+  "Level 2": "GERD",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：17 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的、敏感样、刀割样的；疼痛部位：腹部；疼痛强度：9；疼痛是否向其他部位放射：否；疼痛定位是否明确：不确定；疼痛出现速度：不确定；是否过量饮酒或存在酒精依赖：否；是否每天吸烟：否；症状问诊项：咳嗽；过去 4 周内是否旅行：否。鉴别诊断候选：胃食管反流病（0.3705264338481471）；支气管炎（0.3575983280034459）；Boerhaave 综合征（0.1949939881964085）；过敏性休克（0.0768812499519985）。最终诊断：胃食管反流病。",
+  "Text_original": "Age: 17\nSex: F\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 9; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 2; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous des symptômes qui sont pires après les repas?; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?\nDifferential diagnosis: GERD (0.3705264338481471); Bronchitis (0.3575983280034459); Boerhaave (0.1949939881964085); Anaphylaxis (0.0768812499519985)\nDiagnosis: GERD",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_120; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 9; Est-ce que la douleur se propage vers un autre endroit?: V_42; Est-ce que la douleur se propage vers un autre endroit?: V_118; À quel point la douleur est-elle précisément localisée?: 2; À quelle vitesse la douleur est-elle apparue ?: 2; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Fumez-vous la cigarette quotidiennement?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous des symptômes qui sont pires après les repas?; Vos symptômes sont-ils pire en position couchée et améliorés en position assise?",
+  "Diagnosis_original": "GERD",
+  "Differential Diagnosis_original": "GERD (0.3705264338481471); Bronchitis (0.3575983280034459); Boerhaave (0.1949939881964085); Anaphylaxis (0.0768812499519985)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的、敏感样、刀割样；疼痛部位：腹部（V_120）；疼痛强度：9/10；疼痛是否向其他部位放射：否（V_42）、是（V_118）；疼痛定位是否明确：不确定；疼痛出现速度：不确定；是否过量饮酒或存在酒精依赖；是否每天吸烟；症状问诊项；是否咳嗽；过去 4 周内是否旅行：否（V_9）；症状问诊项；症状问诊项",
+  "Diagnosis_zh": "胃食管反流病",
+  "Differential Diagnosis_zh": "胃食管反流病（0.3705264338481471）；支气管炎（0.3575983280034459）；Boerhaave综合征（0.1949939881964085）；过敏性休克（0.0768812499519985）",
+  "Text_zh": "年龄：17 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的、敏感样、刀割样的；疼痛部位：腹部；疼痛强度：9；疼痛是否向其他部位放射：否；疼痛定位是否明确：不确定；疼痛出现速度：不确定；是否过量饮酒或存在酒精依赖：否；是否每天吸烟：否；症状问诊项：咳嗽；过去 4 周内是否旅行：否。鉴别诊断候选：胃食管反流病（0.3705264338481471）；支气管炎（0.3575983280034459）；Boerhaave 综合征（0.1949939881964085）；过敏性休克（0.0768812499519985）。最终诊断：胃食管反流病。",
+  "_qwen_refined_at": "2026-07-07T12:02:03",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh",
+    "Differential Diagnosis_zh"
+  ]
+}

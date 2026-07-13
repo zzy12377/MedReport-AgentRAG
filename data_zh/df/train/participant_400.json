@@ -1,0 +1,20 @@
+{
+  "Participant No.": 400,
+  "Age": "22",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la toux?; Souffrez-vous d’arthrite rhumatoïde?; Avez-vous visualisé du sang dans vos crachats?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?",
+  "Diagnosis": "Bronchiectasis",
+  "Differential Diagnosis": "Bronchitis (0.12916366701937299); Tuberculosis (0.10108855530038086); Bronchiectasis (0.08984629700206295); Acute pulmonary edema (0.08745889257924479); Guillain-Barré syndrome (0.07994252226035654); Bronchospasm / acute asthma exacerbation (0.07757836074782999); Atrial fibrillation (0.07635956493762674); Myocarditis (0.0754103803336238)",
+  "Level 2": "Bronchiectasis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：22 岁\n性别：男\n症状与病史：是否咳嗽；症状问诊项；痰中是否见血；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.12916366701937299）；结核病（0.10108855530038086）；支气管扩张（0.08984629700206295）；急性肺水肿（0.08745889257924479）；吉兰-巴雷综合征（0.07994252226035654）；支气管痉挛或急性哮喘加重（0.07757836074782999）；心房颤动（0.07635956493762674）；心肌炎（0.0754103803336238）\n最终诊断：支气管扩张",
+  "Text_original": "Age: 22\nSex: M\nSymptoms: Avez-vous de la toux?; Souffrez-vous d’arthrite rhumatoïde?; Avez-vous visualisé du sang dans vos crachats?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?\nDifferential diagnosis: Bronchitis (0.12916366701937299); Tuberculosis (0.10108855530038086); Bronchiectasis (0.08984629700206295); Acute pulmonary edema (0.08745889257924479); Guillain-Barré syndrome (0.07994252226035654); Bronchospasm / acute asthma exacerbation (0.07757836074782999); Atrial fibrillation (0.07635956493762674); Myocarditis (0.0754103803336238)\nDiagnosis: Bronchiectasis",
+  "Symptoms_original": "Avez-vous de la toux?; Souffrez-vous d’arthrite rhumatoïde?; Avez-vous visualisé du sang dans vos crachats?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous immunosupprimé?",
+  "Diagnosis_original": "Bronchiectasis",
+  "Differential Diagnosis_original": "Bronchitis (0.12916366701937299); Tuberculosis (0.10108855530038086); Bronchiectasis (0.08984629700206295); Acute pulmonary edema (0.08745889257924479); Guillain-Barré syndrome (0.07994252226035654); Bronchospasm / acute asthma exacerbation (0.07757836074782999); Atrial fibrillation (0.07635956493762674); Myocarditis (0.0754103803336238)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否咳嗽；症状问诊项；痰中是否见血；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "支气管扩张",
+  "Differential Diagnosis_zh": "支气管炎（0.12916366701937299）；结核病（0.10108855530038086）；支气管扩张（0.08984629700206295）；急性肺水肿（0.08745889257924479）；吉兰-巴雷综合征（0.07994252226035654）；支气管痉挛或急性哮喘加重（0.07757836074782999）；心房颤动（0.07635956493762674）；心肌炎（0.0754103803336238）",
+  "Text_zh": "年龄：22 岁\n性别：男\n症状与病史：是否咳嗽；症状问诊项；痰中是否见血；是否明显气短或呼吸困难；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.12916366701937299）；结核病（0.10108855530038086）；支气管扩张（0.08984629700206295）；急性肺水肿（0.08745889257924479）；吉兰-巴雷综合征（0.07994252226035654）；支气管痉挛或急性哮喘加重（0.07757836074782999）；心房颤动（0.07635956493762674）；心肌炎（0.0754103803336238）\n最终诊断：支气管扩张"
+}

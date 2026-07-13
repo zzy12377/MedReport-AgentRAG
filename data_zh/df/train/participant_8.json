@@ -1,0 +1,26 @@
+{
+  "Participant No.": 8,
+  "Age": "39",
+  "Sex": "M",
+  "Symptoms": "Vous sentez-vous incapable de faire vos activités ou êtes-vous cloué au lit toute la journée?; Avez-vous une mauvaise alimentation?; Avez-vous déjà eu un diagnostic d’anémie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 4; Vous sentez-vous faible et étourdi ou avez vous l’impression que vous allez perdre conscience?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Prenez-vous des nouveaux anticoagulants oraux?; Avez-vous un teint beaucoup plus pâle que d’habitude?; Avez-vous voyagé dans les 4 dernières semaines?: V_2; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Anemia",
+  "Differential Diagnosis": "Anemia (0.35566843677250953); Anaphylaxis (0.21268182257212317); Chagas (0.20576235465053702); Cluster headache (0.17268629616141862); Scombroid food poisoning (0.053201089843411604)",
+  "Level 2": "Anemia",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：39 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛？疼痛性质：牵拉感；疼痛性质：抽搐；疼痛部位：左太阳穴；疼痛强度：1；疼痛是否向其他部位放射：否；疼痛定位是否明确：是；疼痛出现速度：较快。过去 4 周内是否旅行：否。 鉴别诊断候选：贫血（0.356）；过敏性休克（0.213）；恰加斯病（0.206）；丛集性头痛（0.173）；鲭鱼中毒（0.053）。 最终诊断：贫血",
+  "Text_original": "Age: 39\nSex: M\nSymptoms: Vous sentez-vous incapable de faire vos activités ou êtes-vous cloué au lit toute la journée?; Avez-vous une mauvaise alimentation?; Avez-vous déjà eu un diagnostic d’anémie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 4; Vous sentez-vous faible et étourdi ou avez vous l’impression que vous allez perdre conscience?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Prenez-vous des nouveaux anticoagulants oraux?; Avez-vous un teint beaucoup plus pâle que d’habitude?; Avez-vous voyagé dans les 4 dernières semaines?: V_2; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Anemia (0.35566843677250953); Anaphylaxis (0.21268182257212317); Chagas (0.20576235465053702); Cluster headache (0.17268629616141862); Scombroid food poisoning (0.053201089843411604)\nDiagnosis: Anemia",
+  "Symptoms_original": "Vous sentez-vous incapable de faire vos activités ou êtes-vous cloué au lit toute la journée?; Avez-vous une mauvaise alimentation?; Avez-vous déjà eu un diagnostic d’anémie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: tugging; Caractérisez votre douleur:: a cramp; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 4; Vous sentez-vous faible et étourdi ou avez vous l’impression que vous allez perdre conscience?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Prenez-vous des nouveaux anticoagulants oraux?; Avez-vous un teint beaucoup plus pâle que d’habitude?; Avez-vous voyagé dans les 4 dernières semaines?: V_2; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Anemia",
+  "Differential Diagnosis_original": "Anemia (0.35566843677250953); Anaphylaxis (0.21268182257212317); Chagas (0.20576235465053702); Cluster headache (0.17268629616141862); Scombroid food poisoning (0.053201089843411604)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：牵拉感；疼痛性质：抽痛；疼痛部位：左太阳穴；疼痛强度：1；疼痛是否向其他部位放射：否；疼痛定位是否明确：3；疼痛出现速度：4；过去 4 周内是否旅行：否。",
+  "Diagnosis_zh": "贫血",
+  "Differential Diagnosis_zh": "贫血（0.35566843677250953）；过敏性休克（0.21268182257212317）；恰加斯病（0.20576235465053702）；丛集性头痛（0.17268629616141862）；鲭鱼中毒（0.053201089843411604）",
+  "Text_zh": "年龄：39 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛？疼痛性质：牵拉感；疼痛性质：抽搐；疼痛部位：左太阳穴；疼痛强度：1；疼痛是否向其他部位放射：否；疼痛定位是否明确：是；疼痛出现速度：较快。过去 4 周内是否旅行：否。 鉴别诊断候选：贫血（0.356）；过敏性休克（0.213）；恰加斯病（0.206）；丛集性头痛（0.173）；鲭鱼中毒（0.053）。 最终诊断：贫血",
+  "_qwen_refined_at": "2026-07-07T12:11:35",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

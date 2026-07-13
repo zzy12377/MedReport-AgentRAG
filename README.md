@@ -1,340 +1,419 @@
-# MedRAG — DDXPlus 差分诊断辅助系统
+# MedRAG-basic 说明文档
 
-基于检索增强生成（RAG）与知识图谱（KG）的 DDXPlus 医疗差分诊断决策支持系统。
+## 1. 项目简介
 
-## 项目功能
+`MedRAG-basic` 是从开发版 `MedRAG-main` 中整理出来的答辩演示版。
 
-- **病例检索（RAG）**：使用 FAISS 对训练集病例做语义检索，找到与当前患者最相似的病例，辅助 LLM 推理。
-- **知识图谱增强（KG）**：利用 DDXPlus 疾病知识图谱，从症状出发定位候选疾病和相关医学关系。
-- **LLM 诊断推理**：结合检索到的相似病例和知识图谱信息，由 LLM 生成结构化的诊断报告。
-- **自动回退机制**：当远程 Embedding API 不可用时，自动切换到本地 `sentence-transformers` 模型，保证流程不中断。
+它保留了后端运行、中文数据、中文知识图谱、病例向量库、Embedding 模型缓存和启动脚本，删除了翻译脚本、数据构建脚本、备份文件、测试文件等非运行必需内容。
 
-## 环境安装
+一句话概括：
 
-```bash
-# 1. 克隆仓库
-git clone <your-repo-url>
-cd MedRAG-main
+```text
+输入体检/OCR JSON → 抽取医学指标 → 检索相似病例 → 查询知识图谱 → 多 Agent 综合分析 → 输出 Markdown 医疗报告
+```
 
-# 2. 创建虚拟环境（推荐）
-python -m venv venv
-# Windows:
-venv\Scripts\activate
-# Linux / macOS:
-source venv/bin/activate
+本项目仅用于课程演示和辅助参考，不能替代医生诊断。
 
-# 3. 安装依赖
+## 2. 当前目录结构
+
+```text
+D:\MedRAG-basic
+├── backend
+├── data
+├── data_zh
+├── engines
+├── models
+├── storage
+├── vector_db_zh
+├── vector_store
+├── .env
+├── embedding_backend.py
+├── requirements.txt
+├── start_backend_zh.bat
+└── start_backend_zh_apifox.bat
+```
+
+目录说明：
+
+| 路径 | 作用 |
+|---|---|
+| `backend` | FastAPI 后端接口和业务流程 |
+| `backend/app/main.py` | 后端应用入口 |
+| `backend/app/api/router_diagnosis.py` | 诊断和报告生成接口 |
+| `backend/app/services/pipeline.py` | 核心诊断流程调度 |
+| `backend/app/services/ocr_json_service.py` | OCR JSON / 结构化 JSON 输入标准化 |
+| `backend/app/services/report_service.py` | 报告保存 |
+| `engines` | 检索、知识图谱、NER、多 Agent、LLM 等算法模块 |
+| `engines/agents` | 多 Agent 分析模块 |
+| `engines/retrieval` | FAISS 相似病例检索模块 |
+| `engines/kg` | 知识图谱检索模块 |
+| `engines/ner` | 医学实体和指标抽取模块 |
+| `vector_store` | 向量库构建、加载和检索工具 |
+| `data_zh` | 中文病例和中文知识图谱数据 |
+| `vector_db_zh` | 外部中文病例向量库 |
+| `storage/indexes` | 内部病例 FAISS 向量索引 |
+| `models/embedding` | 本地 Embedding 模型缓存 |
+| `data/reports` | 接口运行后保存的报告 JSON |
+| `.env` | 本地运行配置，不建议公开展示 |
+| `requirements.txt` | Python 依赖 |
+| `start_backend_zh.bat` | 中文后端启动脚本 |
+| `start_backend_zh_apifox.bat` | Apifox 本地测试启动脚本 |
+
+## 3. 当前数据规模
+
+答辩演示版当前主要数据如下：
+
+| 数据类型 | 路径 | 数量 |
+|---|---|---:|
+| 中文训练病例 | `data_zh/df/train` | 1000 条 |
+| 中文测试病例 | `data_zh/df/test` | 300 条 |
+| 中文知识图谱三元组 | `data_zh/kg/combined_kg_zh.jsonl` | 17732 条 |
+| 内部病例向量索引元数据 | `storage/indexes/ddxplus_cases_zh_metadata.jsonl` | 1000 条 |
+| 外部病例库 `medcase_reasoning` | `vector_db_zh/medcase_reasoning/meta.jsonl` | 2300 条 |
+| 外部病例库 `open_patients` | `vector_db_zh/open_patients/meta.jsonl` | 800 条 |
+
+可检索病例证据总数：
+
+```text
+内部病例 1000 条 + 外部病例 2300 条 + 外部病例 800 条 = 4100 条
+```
+
+另外还有：
+
+```text
+中文知识图谱：17732 条三元组
+中文测试病例：300 条
+```
+
+## 4. 运行环境
+
+推荐使用 Anaconda 环境：
+
+```bat
+conda activate medrag
+```
+
+如果还没有安装依赖，可以在项目目录下执行：
+
+```bat
+cd /d D:\MedRAG-basic
 pip install -r requirements.txt
 ```
 
-**主要依赖**：`openai`、`faiss-cpu`、`numpy`、`pandas`、`sentence-transformers`、`transformers`、`torch`、`networkx`、`scikit-learn`、`openpyxl`
+注意：
 
-## 配置 API Key
+- 推荐使用 Windows 的 Anaconda Prompt 或 CMD 运行。
+- `.env` 中可能包含模型 API 配置，不要在答辩 PPT 或公开仓库中展示。
+- 如果没有配置可用的大模型 API，系统会使用 fallback / mock 输出，核心检索流程仍可运行。
 
-本项目使用**硅基流动（SiliconFlow）**作为 LLM 和 Embedding 的 API 后端。
+## 5. 启动后端
 
-1. 将 `authentication.example.py` 复制为 `authentication.py`：
-   ```bash
-   # Windows
-   copy authentication.example.py authentication.py
-   # Linux / macOS
-   cp authentication.example.py authentication.py
-   ```
+进入项目目录：
 
-2. 编辑 `authentication.py`，将 `api_key` 替换为你自己的硅基流动 API Key：
-   ```python
-   api_key = "sk-your-actual-api-key"
-   ```
-
-3. （可选）如需使用 Hugging Face 模型，可填入 `hf_token`。当前版本不使用 Hugging Face 推理 API，可留空。
-
-> ⚠️ **安全警告**：`authentication.py` 已被 `.gitignore` 忽略，**切勿**将包含真实 API Key 的 `authentication.py` 上传到公开仓库。
-
-## 数据准备
-
-数据集文件**不随仓库上传**，你需要自行准备 DDXPlus 原始数据。
-
-### 1. 下载 DDXPlus 数据集
-
-将以下文件放入 `dataset/ddxplus_raw/` 目录：
-
-```
-dataset/ddxplus_raw/
-├── release_train_patients.zip      # 训练集
-├── release_validate_patients.zip   # 验证集
-├── release_test_patients.zip       # 测试集
-├── release_evidences.json          # 证据定义
-├── release_conditions.json         # 疾病条件映射
-└── ...
+```bat
+cd /d D:\MedRAG-basic
 ```
 
-### 2. 准备知识图谱文件
+启动 Apifox 测试版后端：
 
-将 DDXPlus 知识图谱 Excel 文件放入：
-```
-dataset/knowledge graph of DDXPlus.xlsx
-```
-
-### 3. 运行数据转换脚本
-
-```bash
-# 少量测试（默认 1000 条训练 / 300 条测试）
-python scripts/prepare_ddxplus_for_medrag.py
-
-# 全量生成
-python scripts/prepare_ddxplus_for_medrag.py --all
-
-# 自定义数量
-python scripts/prepare_ddxplus_for_medrag.py --max-train 200 --max-test 100
+```bat
+start_backend_zh.bat
 ```
 
-转换完成后会生成：
-```
-dataset/
-├── AI Data Set with Categories.csv    # 总标注 CSV
-├── df/
-│   ├── train/
-│   │   ├── participant_1.json         # 训练病例
-│   │   └── ...
-│   └── test/
-│       ├── participant_1.json         # 测试病例
-│       └── ...
+启动后默认地址：
+
+```text
+http://0.0.0.0:8000
 ```
 
-## 运行
+OpenAPI 文档地址：
 
-```bash
-python main.py
+```text
+http://0.0.0.0:8000/docs
 ```
 
-首次运行时会：
-1. 调用 SiliconFlow Embedding API 为所有训练病例生成向量（约需几分钟）。
-2. 缓存向量到 `dataset/document_embeddings_*.npy`，下次运行直接加载。
-3. 对前 5 个测试病例逐一执行：检索 → KG 增强 → LLM 诊断。
-4. 结果保存为 `test_results_medrag_topk3_topn1_matchn5_cases5.csv`。
+健康检查接口：
 
-### 可调参数
-
-在 `main.py` 的 `main` 部分修改：
-
-```python
-run_medrag(
-    top_k=3,        # FAISS 检索的相似病例数
-    top_n=1,        # KG 候选类别数
-    match_n=5,      # KG 症状匹配数
-    max_cases=5,    # 运行的测试病例数（调大可以跑更多）
-)
+```text
+GET http://0.0.0.0:8000/health
 ```
 
-## Embedding 回退机制
+## 6. 推荐测试接口
 
-当 SiliconFlow Embedding API 调用失败时，系统会**自动回退**到本地 `sentence-transformers` 模型：
+推荐使用 Markdown 报告接口：
 
-| 优先级 | 模型 | 维度 | 说明 |
-|--------|------|------|------|
-| 1 | `BAAI/bge-small-en-v1.5` | 384 | 约 100MB，CPU 友好，默认首选 |
-| 2 | `sentence-transformers/all-MiniLM-L6-v2` | 384 | 更小兜底模型 |
-| 3 | `BAAI/bge-m3` | 1024 | 与远程模型同名，需要较多内存（~5GB） |
-
-回退逻辑：
-- 远程 API 报错 → 自动下载本地模型到 `./models/embedding/`
-- 自动重建 document embeddings 和 KG embeddings
-- 可通过 `authentication.py` 配置本地模型参数：
-
-```python
-local_embedding_model = "BAAI/bge-small-en-v1.5"   # 首选本地模型
-local_embedding_device = "cpu"                      # 默认 CPU，可改为 "cuda"
-local_embedding_batch_size = 16                     # 批处理大小
-local_embedding_max_memory_gb = 16.0                # 内存上限
+```text
+POST http://0.0.0.0:8000/api/v1/reports/from-ocr-json/markdown
 ```
 
-## 项目结构
+请求体示例：
 
-```
-MedRAG-main/
-├── main.py                     # 入口：数据检查 + 运行诊断流程
-├── main_MedRAG.py              # 核心：RAG 检索 + KG 增强 + LLM 诊断
-├── KG_Retrieve.py              # 知识图谱症状检索与类别推断
-├── embedding_backend.py        # Embedding 后端（远程 API / 本地回退）
-├── authentication.example.py   # 配置文件模板（需复制为 authentication.py）
-├── requirements.txt            # Python 依赖
-├── .gitignore                  # Git 忽略规则
-├── LICENCE                     # 许可证
-├── vector_store/               # 多向量库模块
-│   ├── adapters.py             #   数据源适配器（7 种格式 → 统一 record）
-│   ├── builder.py              #   FAISS 向量库构建
-│   ├── retriever.py            #   单库检索
-│   ├── registry.py             #   多库联合检索
-│   └── utils.py                #   Embedding 函数工厂
-├── scripts/
-│   ├── prepare_ddxplus_for_medrag.py  # DDXPlus 原始数据 → MedRAG 格式
-│   ├── build_vector_stores.py         # 构建向量库
-│   ├── retrieve_multi_vector.py       # 多库检索
-│   └── inspect_vector_store.py        # 检查向量库
-├── dataset/                    # 数据目录（不上传 GitHub）
-│   ├── df/train/               # 训练病例 JSON
-│   ├── df/test/                # 测试病例 JSON
-│   └── ...
-├── external_datasets/          # 外部数据集（不上传 GitHub）
-├── vector_db/                  # 向量库构建产物（不上传 GitHub）
-├── images/                     # 论文插图
-├── appendix/                   # 论文附录
-└── metrics/                    # 评估指标脚本
+```json
+{
+  "case_id": "flow-test-001",
+  "name": "张三",
+  "gender": "男",
+  "age": 28,
+  "height": {
+    "value": 175.0,
+    "unit": "cm"
+  },
+  "weight": {
+    "value": 68.0,
+    "unit": "kg"
+  },
+  "blood_pressure": {
+    "systolic": 150,
+    "diastolic": 95,
+    "unit": "mmHg"
+  },
+  "heart_rate": {
+    "value": 72,
+    "unit": "bpm"
+  },
+  "conclusion": "各项指标基本正常，建议保持规律作息、均衡饮食、适量运动，每年定期体检。"
+}
 ```
 
-## 多向量库设计 (Multi-Vector Store Design)
+主要返回字段：
 
-### 为什么不把所有数据混成一个库？
+| 字段 | 说明 |
+|---|---|
+| `status` | 任务状态 |
+| `report_id` | 报告 ID |
+| `report_path` | 报告保存路径 |
+| `format` | 输出格式 |
+| `report_text` | Markdown 医疗报告正文 |
 
-如果将所有临床文本（DDXPlus、PubMed 病例、诊断推理、KG 三元组）混入一个 FAISS 索引：
+## 7. 核心流程
 
-- **语义混淆**：KG 三元组（如"Bronchitis has_symptomatology cough"）和临床叙事属于完全不同的语义空间
-- **维度不一致**：不同后端/模型产生的向量维度可能不同（远程 BAAI/bge-m3 1024 维 vs 本地 bge-small 384 维）
-- **无法按需选择**：某些诊断场景只需搜 DDXPlus 历史病例，不需要 PubMed 文章干扰
-- **增量更新困难**：加一个新数据源需要重建整个索引，而独立库只需重建新库
+系统核心流程如下：
 
-### 支持的向量库
-
-| 库名 | 数据来源 | 用途 | 含诊断标签 |
-|------|----------|------|:---:|
-| `ddxplus_cases` | `dataset/df/train/*.json` | DDXPlus 症状-诊断相似病例检索 | ✅ |
-| `ddxplus_kg` | `dataset/knowledge graph of DDXPlus.xlsx` | 知识图谱三元组检索 | ❌ |
-| `pmc_patients` | `external_datasets/pmc_patients/` | PMC 临床病例摘要检索（167k+） | ❌ |
-| `medcase_reasoning` | `external_datasets/medcase_reasoning/` | 诊断推理案例检索（14k+） | ✅ |
-| `open_patients` | `external_datasets/open_patients/` | 多源患者描述检索（180k+） | ❌ |
-| `multicare_cases` | Zenodo (DOI: 10.5281/zenodo.10079369) | 多模态病例文本检索 | ❌ |
-| `synthea_records` | `external_datasets/synthea/output/` | 模拟患者记录检索 | ❌ |
-
-> **注意**：MultiCaRe 临床文本托管在 Zenodo，Synthea 需要 JDK 运行生成器。这两种数据需要额外步骤才能用于构建向量库。
-
-### 下载外部数据集
-
-外部数据集**不随仓库上传**，需要自行下载并放入 `external_datasets/`：
-
-```bash
-external_datasets/
-├── pmc_patients/
-│   └── PMC-Patients.csv          # https://github.com/zhao-zw/PMC-Patients
-├── medcase_reasoning/
-│   └── medcasereasoning_core.csv # https://huggingface.co/datasets/MedCase/MedCase-Reasoning
-├── open_patients/
-│   └── Open-Patients.jsonl       # https://github.com/zhao-zw/Open-Patients
-├── multicare_repo/               # git clone + Zenodo 下载
-└── synthea/                      # git clone + ./run_synthea 生成
+```text
+用户输入 JSON
+    ↓
+FastAPI 接口接收
+    ↓
+OCR JSON / 结构化 JSON 标准化
+    ↓
+医学实体和指标抽取
+    ↓
+B0：规则直接判断
+    ↓
+B1：相似病例 RAG 检索
+    ↓
+B2：知识图谱 + 多 Agent 综合分析
+    ↓
+LLMGateway / fallback 生成摘要
+    ↓
+Markdown 报告输出
+    ↓
+保存 JSON 报告
 ```
 
-### 构建向量库
+## 8. B0 / B1 / B2 说明
 
-```bash
-# 只构建 ddxplus_cases，100 条，强制覆盖，纯本地 embedding
-python scripts/build_vector_stores.py --sources ddxplus_cases --max-per-source 100 --force --local
+### B0：直接指标判断
 
-# 构建所有可用源（每个源最多 5000 条）
-python scripts/build_vector_stores.py --sources all --max-per-source 5000
+B0 只使用输入中的结构化指标，不检索病例，也不查询知识图谱。
 
-# 构建指定几个源
-python scripts/build_vector_stores.py --sources ddxplus_cases ddxplus_kg pmc_patients --max-per-source 1000 --batch-size 8
+例如：
+
+```text
+收缩压 ≥ 140 或舒张压 ≥ 90
+→ 判断为血压升高 / 高血压风险
 ```
 
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| `--sources` | 要构建的库名（可多个），`all` 表示全部 | 必填 |
-| `--max-per-source` | 每个源最大记录数 | 5000 |
-| `--batch-size` | 每批 embedding 文本数 | 8 |
-| `--force` | 强制覆盖已有索引 | 关闭 |
-| `--local` | 仅使用本地 sentence-transformers | 关闭 |
+特点：
 
-构建产物：
-```
-vector_db/<source_name>/
-├── index.faiss     # FAISS 向量索引
-├── meta.jsonl      # 每行一条标准化 record JSON
-└── config.json     # source, dim, num_records, embedding_backend, model
-```
+- 稳定
+- 便宜
+- 可解释
+- 可作为 fallback
 
-### 检索
+### B1：相似病例 RAG
 
-```bash
-# 查询所有可用库
-python scripts/retrieve_multi_vector.py --query "70-year-old with cough, night sweats and chest pain" --top-k 10 --local
+B1 使用 Embedding + FAISS 检索相似病例。
 
-# 只在指定库中检索
-python scripts/retrieve_multi_vector.py --query "fever and rash" --sources ddxplus_cases pmc_patients --top-k 10
+流程：
+
+```text
+输入病例文本
+→ Embedding 模型转向量
+→ FAISS 检索相似病例
+→ 返回 Top-K 病例证据
 ```
 
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| `--query` / `-q` | 查询文本 | 必填 |
-| `--sources` | 检索的库名（可多个） | 全部 |
-| `--top-k` | 最终返回结果数 | 10 |
-| `--top-k-per-source` | 每个库返回数 | 5 |
-| `--local` | 仅使用本地 embedding | 关闭 |
-| `--output` | 保存结果到 JSON 文件 | 无 |
-| `--verbose` | 打印完整字段 | 关闭 |
+使用的数据：
 
-### 检查向量库
-
-```bash
-python scripts/inspect_vector_store.py --source ddxplus_cases
-python scripts/inspect_vector_store.py --source pmc_patients --samples 10
+```text
+storage/indexes/ddxplus_cases_zh.faiss
+vector_db_zh/medcase_reasoning/index.faiss
+vector_db_zh/open_patients/index.faiss
 ```
 
-### 多库检索 Python API
+作用：
 
-```python
-from vector_store.registry import MultiVectorRetriever
-from vector_store.utils import create_embedding_fn, create_query_embedding_fn
+- 给诊断提供历史病例参考
+- 减少模型凭空生成
+- 增强报告可解释性
 
-# 创建 embedding 函数
-embed_fn = create_embedding_fn(force_local=True)
-query_fn = create_query_embedding_fn(embed_fn)
+### B2：知识图谱 + 多 Agent 综合
 
-# 初始化检索器
-retriever = MultiVectorRetriever(base_dir="./vector_db")
-print("Available sources:", retriever.sources)
+B2 综合以下信息：
 
-# 联合检索
-results = retriever.search(
-    query="fever, cough, night sweats",
-    embedding_fn=query_fn,
-    sources=["ddxplus_cases", "pmc_patients"],
-    top_k_per_source=5,
-    final_top_k=10,
-)
-
-for r in results:
-    print(f"[{r['score']:.4f}] [{r['source']}] {r['title']}: {r['text'][:100]}...")
+```text
+输入指标
+相似病例
+知识图谱证据
+专科 Agent 意见
 ```
 
-### 数据流
+知识图谱三元组示例：
 
-```
-external_datasets/     adapters.py       builder.py        vector_db/
-┌───────────────┐    ┌──────────┐      ┌──────────┐      ┌──────────────┐
-│ PMC-Patients  │ -> │ adapter  │ ->   │  build   │ ->   │ index.faiss  │
-│ MedCase       │    │ per src  │      │  FAISS   │      │ meta.jsonl   │
-│ Open-Patients │    └──────────┘      │  store   │      │ config.json  │
-│ DDXPlus       │                      └──────────┘      └──────────────┘
-└───────────────┘                           │
-                                        embedding_fn
-                                            │
-                                  embedding_backend.py
-                                  (SiliconFlow / local)
+```text
+疾病 --has_symptom--> 症状
+疾病 --has_exposure--> 暴露因素
+疾病 --is_a--> 疾病类别
 ```
 
-### Embedding 一致性
+作用：
 
-每个向量库的 `config.json` 记录了构建时使用的 embedding 后端和模型名。`embedding_backend.py` 的全局状态确保同一进程中 query embedding 和 document embedding 使用相同的模型和维度，避免 FAISS 维度不匹配错误。如果切换了 embedding 后端（如远程 API 失败切到本地），已缓存的向量库需要用 `--force` 重建。
+- 补充医学关系证据
+- 提供疾病和症状之间的结构化解释
+- 支持多 Agent 综合判断
 
-## 许可证
+## 9. 多 Agent 说明
 
-本项目代码基于 [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/) 许可。
+多 Agent 模块位于：
 
-Copyright (c) 2024 Xuejiao Zhao. Contact: xuejiaozhao_snow@foxmail.com
+```text
+engines/agents
+```
 
-## 致谢
+主要 Agent：
 
-- [DDXPlus](https://github.com/mila-iqia/ddxplus) — 合成医疗诊断数据集
-- [SNOWTEAM2023/MedRAG](https://github.com/SNOWTEAM2023/MedRAG) — 原始 RAG 框架
-- [SiliconFlow](https://siliconflow.cn) — LLM & Embedding API 服务
-- [sentence-transformers](https://www.sbert.net/) — 本地 Embedding 模型
+| Agent | 作用 |
+|---|---|
+| 心血管 Agent | 关注血压、心率、胸痛、心血管风险 |
+| 肝脏 Agent | 关注肝功能和相关风险 |
+| 内分泌 Agent | 关注代谢、血糖、肥胖等风险 |
+| Summary Agent | 汇总专科意见 |
+| Critique Agent | 复核和风险提示 |
+| LLM-MDT Agent | 可选的大模型多学科会诊分析 |
+
+输出字段：
+
+```text
+agent_opinions
+critique
+mdt_report
+```
+
+## 10. LLMGateway 说明
+
+本项目不在业务代码中写死某个大模型，而是通过 LLMGateway 统一调用。
+
+结构：
+
+```text
+业务代码
+    ↓
+LLMGateway
+    ↓
+OpenAI-compatible API / DeepSeek / Ollama / Qwen / fallback
+```
+
+好处：
+
+- 可以切换模型
+- 可以使用本地 Qwen
+- 可以使用远程 API
+- 没有模型时可 fallback
+- 不影响主流程代码
+
+## 11. 输出报告结构
+
+接口最终返回 Markdown 报告，通常包括：
+
+```text
+## 医疗检测报告
+
+### 一、检测结论
+### 二、知识图谱对应疾病症状
+### 三、B0 / B1 / B2 匹配率
+### 四、相似病例证据
+### 五、知识图谱证据明细
+### 六、专科 Agent 意见
+### 七、模型摘要
+### 八、安全提示
+```
+
+报告会同时保存为 JSON 文件：
+
+```text
+data/reports/{report_id}.json
+```
+
+## 12. 与原始 MedRAG 的区别
+
+原始 MedRAG 更像论文实验脚本：
+
+```text
+读取固定测试病例
+→ 检索相似病例
+→ 查询 Excel 知识图谱
+→ 拼 prompt
+→ 调用大模型
+→ 保存 CSV 实验结果
+```
+
+当前 `MedRAG-basic` 是工程化后的中文后端系统：
+
+```text
+HTTP 接口输入
+→ 中文数据处理
+→ B0 / B1 / B2 分层分析
+→ 中文 KG 检索
+→ 多 Agent 综合
+→ Markdown 报告输出
+```
+
+主要新增：
+
+- FastAPI 后端接口
+- Apifox 本地测试
+- 中文病例数据
+- 中文知识图谱
+- 外部病例向量库
+- B0 / B1 / B2 分层证据
+- 多 Agent 分析
+- LLMGateway 模型网关
+- Markdown 医疗报告
+
+## 13. 答辩推荐表述
+
+可以这样介绍项目：
+
+```text
+本项目基于 MedRAG 思想，将原始论文实验代码工程化为一个中文医学 RAG 后端系统。
+系统首先接收体检或 OCR JSON 输入，经过标准化和医学指标抽取后，分别进行 B0 规则判断、B1 相似病例检索和 B2 知识图谱加多 Agent 综合分析。
+最后通过 LLMGateway 调用本地或远程模型生成摘要，并输出 Markdown 医疗报告。
+系统的核心特点是结果不是单纯由大模型生成，而是结合了输入指标、病例库、知识图谱和多 Agent 证据，因此具有更好的可解释性。
+```
+
+一句话总结：
+
+```text
+这是一个“规则 + 病例 RAG + 知识图谱 + 多 Agent + 大模型总结”的中文医疗辅助分析系统。
+```
+
+## 14. 注意事项
+
+- 本系统仅用于课程演示和辅助参考，不能替代医生诊断。
+- `.env` 可能包含 API Key，不要公开展示。
+- 如果启动时报缺少依赖，先执行 `pip install -r requirements.txt`。
+- 如果 LLM API 未配置，报告中的模型摘要可能使用 fallback 输出。
+- 如果端口 `8000` 被占用，可以修改环境变量 `BACKEND_PORT` 后再启动。
+- `data/reports` 中的报告文件是运行时生成结果，可以按需清理。
+

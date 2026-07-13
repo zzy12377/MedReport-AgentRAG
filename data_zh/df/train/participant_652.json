@@ -1,0 +1,20 @@
+{
+  "Participant No.": 652,
+  "Age": "27",
+  "Sex": "M",
+  "Symptoms": "Avez-vous eu des vomissements après des quintes de toux?; Avez-vous une inspiration sifflante après vos quintes de toux?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous des quintes de toux intenses et dérangeantes?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis": "Whooping cough",
+  "Differential Diagnosis": "Whooping cough (0.5363081514145991); Bronchitis (0.46369184858540086)",
+  "Level 2": "Whooping cough",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：27 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：百日咳（0.5363081514145991）；支气管炎（0.46369184858540086）\n最终诊断：百日咳",
+  "Text_original": "Age: 27\nSex: M\nSymptoms: Avez-vous eu des vomissements après des quintes de toux?; Avez-vous une inspiration sifflante après vos quintes de toux?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous des quintes de toux intenses et dérangeantes?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?\nDifferential diagnosis: Whooping cough (0.5363081514145991); Bronchitis (0.46369184858540086)\nDiagnosis: Whooping cough",
+  "Symptoms_original": "Avez-vous eu des vomissements après des quintes de toux?; Avez-vous une inspiration sifflante après vos quintes de toux?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous des quintes de toux intenses et dérangeantes?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis_original": "Whooping cough",
+  "Differential Diagnosis_original": "Whooping cough (0.5363081514145991); Bronchitis (0.46369184858540086)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "百日咳",
+  "Differential Diagnosis_zh": "百日咳（0.5363081514145991）；支气管炎（0.46369184858540086）",
+  "Text_zh": "年龄：27 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：百日咳（0.5363081514145991）；支气管炎（0.46369184858540086）\n最终诊断：百日咳"
+}

@@ -1,0 +1,26 @@
+{
+  "Participant No.": 381,
+  "Age": "32",
+  "Sex": "M",
+  "Symptoms": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous déjà eu une péricardite?; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_42; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(L); À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 4; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous une douleur qui est pire à l’inspiration profonde?",
+  "Diagnosis": "Pericarditis",
+  "Differential Diagnosis": "Pulmonary embolism (0.11286414550897651); Spontaneous pneumothorax (0.11044728570318635); Possible NSTEMI / STEMI (0.10540807995838566); Panic attack (0.07989147619500847); Pericarditis (0.07822270839490582); Guillain-Barré syndrome (0.0714029876524603); Atrial fibrillation (0.06820276516459621); GERD (0.06389412793448301)",
+  "Level 2": "Pericarditis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：32 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：如刀割般；疼痛部位：编码 V_42；疼痛强度：10；疼痛是否向其他部位放射：编码 V_52；疼痛是否向其他部位放射：后胸壁（右）；疼痛是否向其他部位放射：后胸壁（左）；疼痛定位是否明确：5；疼痛出现速度：4；是否明显气短或呼吸困难：否；过去 4 周内是否旅行：编码 V_9；症状问诊项 鉴别诊断候选：肺栓塞（0.11286414550897651）；自发性气胸（0.11044728570318635）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.10540807995838566）；惊恐发作（0.07989147619500847）；心包炎（0.07822270839490582）；吉兰-巴雷综合征（0.0714029876524603）；心房颤动（0.06820276516459621）；胃食管反流病（0.06389412793448301） 最终诊断：心包炎",
+  "Text_original": "Age: 32\nSex: M\nSymptoms: Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous déjà eu une péricardite?; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_42; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(L); À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 4; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous une douleur qui est pire à l’inspiration profonde?\nDifferential diagnosis: Pulmonary embolism (0.11286414550897651); Spontaneous pneumothorax (0.11044728570318635); Possible NSTEMI / STEMI (0.10540807995838566); Panic attack (0.07989147619500847); Pericarditis (0.07822270839490582); Guillain-Barré syndrome (0.0714029876524603); Atrial fibrillation (0.06820276516459621); GERD (0.06389412793448301)\nDiagnosis: Pericarditis",
+  "Symptoms_original": "Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Avez-vous déjà eu une péricardite?; Caractérisez votre douleur:: a knife stroke; Avez-vous de la douleur quelque part?: V_42; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(R); Est-ce que la douleur se propage vers un autre endroit?: posterior chest wall(L); À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 4; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous une douleur qui est pire à l’inspiration profonde?",
+  "Diagnosis_original": "Pericarditis",
+  "Differential Diagnosis_original": "Pulmonary embolism (0.11286414550897651); Spontaneous pneumothorax (0.11044728570318635); Possible NSTEMI / STEMI (0.10540807995838566); Panic attack (0.07989147619500847); Pericarditis (0.07822270839490582); Guillain-Barré syndrome (0.0714029876524603); Atrial fibrillation (0.06820276516459621); GERD (0.06389412793448301)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：如刀割般；疼痛部位：编码 V_42；疼痛强度：10；疼痛是否向其他部位放射：编码 V_52；疼痛是否向其他部位放射：后胸壁（右）；疼痛是否向其他部位放射：后胸壁（左）；疼痛定位是否明确：5；疼痛出现速度：4；是否明显气短或呼吸困难；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "心包炎",
+  "Differential Diagnosis_zh": "肺栓塞（0.11286414550897651）；自发性气胸（0.11044728570318635）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.10540807995838566）；惊恐发作（0.07989147619500847）；心包炎（0.07822270839490582）；吉兰-巴雷综合征（0.0714029876524603）；心房颤动（0.06820276516459621）；胃食管反流病（0.06389412793448301）",
+  "Text_zh": "年龄：32 岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；症状问诊项；疼痛性质：如刀割般；疼痛部位：编码 V_42；疼痛强度：10；疼痛是否向其他部位放射：编码 V_52；疼痛是否向其他部位放射：后胸壁（右）；疼痛是否向其他部位放射：后胸壁（左）；疼痛定位是否明确：5；疼痛出现速度：4；是否明显气短或呼吸困难：否；过去 4 周内是否旅行：编码 V_9；症状问诊项 鉴别诊断候选：肺栓塞（0.11286414550897651）；自发性气胸（0.11044728570318635）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.10540807995838566）；惊恐发作（0.07989147619500847）；心包炎（0.07822270839490582）；吉兰-巴雷综合征（0.0714029876524603）；心房颤动（0.06820276516459621）；胃食管反流病（0.06389412793448301） 最终诊断：心包炎",
+  "_qwen_refined_at": "2026-07-07T11:33:00",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

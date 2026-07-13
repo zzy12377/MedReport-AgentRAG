@@ -1,0 +1,20 @@
+{
+  "Participant No.": 283,
+  "Age": "3",
+  "Sex": "M",
+  "Symptoms": "Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous noté que vous produisez plus de salive que d’habitude?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis": "Croup",
+  "Differential Diagnosis": "Croup (0.15968930835606696); HIV (initial infection) (0.10096121927793122); Larygospasm (0.09950682710982946); Atrial fibrillation (0.08137945645995812); Epiglottitis (0.05999728643855029); Guillain-Barré syndrome (0.05999728643855029); Acute dystonic reactions (0.05999728643855029); Myocarditis (0.05999728643855029)",
+  "Level 2": "Croup",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：3 岁\n性别：男\n症状与病史：症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：哮吼（0.15968930835606696）；HIV 初次感染（0.10096121927793122）；喉痉挛（0.09950682710982946）；心房颤动（0.08137945645995812）；会厌炎（0.05999728643855029）；吉兰-巴雷综合征（0.05999728643855029）；急性肌张力障碍反应（0.05999728643855029）；心肌炎（0.05999728643855029）\n最终诊断：哮吼",
+  "Text_original": "Age: 3\nSex: M\nSymptoms: Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous noté que vous produisez plus de salive que d’habitude?; Avez-vous voyagé dans les 4 dernières semaines?: V_9\nDifferential diagnosis: Croup (0.15968930835606696); HIV (initial infection) (0.10096121927793122); Larygospasm (0.09950682710982946); Atrial fibrillation (0.08137945645995812); Epiglottitis (0.05999728643855029); Guillain-Barré syndrome (0.05999728643855029); Acute dystonic reactions (0.05999728643855029); Myocarditis (0.05999728643855029)\nDiagnosis: Croup",
+  "Symptoms_original": "Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Avez-vous objectivé ou ressenti de la fièvre?; Avez-vous de la congestion nasale ou le nez qui coule clair?; Avez-vous noté que vous produisez plus de salive que d’habitude?; Avez-vous voyagé dans les 4 dernières semaines?: V_9",
+  "Diagnosis_original": "Croup",
+  "Differential Diagnosis_original": "Croup (0.15968930835606696); HIV (initial infection) (0.10096121927793122); Larygospasm (0.09950682710982946); Atrial fibrillation (0.08137945645995812); Epiglottitis (0.05999728643855029); Guillain-Barré syndrome (0.05999728643855029); Acute dystonic reactions (0.05999728643855029); Myocarditis (0.05999728643855029)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9",
+  "Diagnosis_zh": "哮吼",
+  "Differential Diagnosis_zh": "哮吼（0.15968930835606696）；HIV 初次感染（0.10096121927793122）；喉痉挛（0.09950682710982946）；心房颤动（0.08137945645995812）；会厌炎（0.05999728643855029）；吉兰-巴雷综合征（0.05999728643855029）；急性肌张力障碍反应（0.05999728643855029）；心肌炎（0.05999728643855029）",
+  "Text_zh": "年龄：3 岁\n性别：男\n症状与病史：症状问诊项；是否明显气短或呼吸困难；是否出现或感觉发热；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9\n鉴别诊断候选：哮吼（0.15968930835606696）；HIV 初次感染（0.10096121927793122）；喉痉挛（0.09950682710982946）；心房颤动（0.08137945645995812）；会厌炎（0.05999728643855029）；吉兰-巴雷综合征（0.05999728643855029）；急性肌张力障碍反应（0.05999728643855029）；心肌炎（0.05999728643855029）\n最终诊断：哮吼"
+}

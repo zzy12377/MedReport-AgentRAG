@@ -1,0 +1,20 @@
+{
+  "Participant No.": 754,
+  "Age": "19",
+  "Sex": "F",
+  "Symptoms": "Avez-vous de la toux?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous le nez et/ou le palais qui pique?; Avez-vous des démangeaisons importantes au niveau d’un oeil ou des 2 yeux simultanément?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Habitez-vous en dans une grande ville?; Êtes-vous susceptible de développer plus facilement que la population générale des allergies courantes?",
+  "Diagnosis": "Allergic sinusitis",
+  "Differential Diagnosis": "Bronchitis (0.6840881043322263); Allergic sinusitis (0.3159118956677738)",
+  "Level 2": "Allergic sinusitis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：19 岁\n性别：女\n症状与病史：是否咳嗽；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状问诊项\n鉴别诊断候选：支气管炎（0.6840881043322263）；过敏性鼻窦炎（0.3159118956677738）\n最终诊断：过敏性鼻窦炎",
+  "Text_original": "Age: 19\nSex: F\nSymptoms: Avez-vous de la toux?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous le nez et/ou le palais qui pique?; Avez-vous des démangeaisons importantes au niveau d’un oeil ou des 2 yeux simultanément?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Habitez-vous en dans une grande ville?; Êtes-vous susceptible de développer plus facilement que la population générale des allergies courantes?\nDifferential diagnosis: Bronchitis (0.6840881043322263); Allergic sinusitis (0.3159118956677738)\nDiagnosis: Allergic sinusitis",
+  "Symptoms_original": "Avez-vous de la toux?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous le nez et/ou le palais qui pique?; Avez-vous des démangeaisons importantes au niveau d’un oeil ou des 2 yeux simultanément?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Habitez-vous en dans une grande ville?; Êtes-vous susceptible de développer plus facilement que la population générale des allergies courantes?",
+  "Diagnosis_original": "Allergic sinusitis",
+  "Differential Diagnosis_original": "Bronchitis (0.6840881043322263); Allergic sinusitis (0.3159118956677738)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否咳嗽；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状问诊项",
+  "Diagnosis_zh": "过敏性鼻窦炎",
+  "Differential Diagnosis_zh": "支气管炎（0.6840881043322263）；过敏性鼻窦炎（0.3159118956677738）",
+  "Text_zh": "年龄：19 岁\n性别：女\n症状与病史：是否咳嗽；症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项；症状问诊项\n鉴别诊断候选：支气管炎（0.6840881043322263）；过敏性鼻窦炎（0.3159118956677738）\n最终诊断：过敏性鼻窦炎"
+}

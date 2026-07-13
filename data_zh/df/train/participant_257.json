@@ -1,0 +1,20 @@
+{
+  "Participant No.": 257,
+  "Age": "2",
+  "Sex": "M",
+  "Symptoms": "Avez-vous des quintes de toux intenses et dérangeantes?; Avez-vous été en contact avec quelqu’un qui a eu la coqueluche?; Avez-vous eu des vomissements après des quintes de toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis": "Whooping cough",
+  "Differential Diagnosis": "Whooping cough (0.41467144518644367); Bronchitis (0.3944176020793164); Pneumonia (0.1909109527342399)",
+  "Level 2": "Whooping cough",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：2 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：百日咳（0.41467144518644367）；支气管炎（0.3944176020793164）；肺炎（0.1909109527342399）\n最终诊断：百日咳",
+  "Text_original": "Age: 2\nSex: M\nSymptoms: Avez-vous des quintes de toux intenses et dérangeantes?; Avez-vous été en contact avec quelqu’un qui a eu la coqueluche?; Avez-vous eu des vomissements après des quintes de toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?\nDifferential diagnosis: Whooping cough (0.41467144518644367); Bronchitis (0.3944176020793164); Pneumonia (0.1909109527342399)\nDiagnosis: Whooping cough",
+  "Symptoms_original": "Avez-vous des quintes de toux intenses et dérangeantes?; Avez-vous été en contact avec quelqu’un qui a eu la coqueluche?; Avez-vous eu des vomissements après des quintes de toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Vos vaccins sont-ils à jour?",
+  "Diagnosis_original": "Whooping cough",
+  "Differential Diagnosis_original": "Whooping cough (0.41467144518644367); Bronchitis (0.3944176020793164); Pneumonia (0.1909109527342399)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "百日咳",
+  "Differential Diagnosis_zh": "百日咳（0.41467144518644367）；支气管炎（0.3944176020793164）；肺炎（0.1909109527342399）",
+  "Text_zh": "年龄：2 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：百日咳（0.41467144518644367）；支气管炎（0.3944176020793164）；肺炎（0.1909109527342399）\n最终诊断：百日咳"
+}

@@ -1,0 +1,20 @@
+{
+  "Participant No.": 409,
+  "Age": "47",
+  "Sex": "F",
+  "Symptoms": "Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Fumez-vous la cigarette quotidiennement?; Avez-vous eu un rhume, au cours des 2 dernières semaines?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?",
+  "Diagnosis": "Larygospasm",
+  "Differential Diagnosis": "Larygospasm (1.0)",
+  "Level 2": "Larygospasm",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：47 岁\n性别：女\n症状与病史：症状问诊项；是否每天吸烟；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟\n鉴别诊断候选：喉痉挛（1.0）\n最终诊断：喉痉挛",
+  "Text_original": "Age: 47\nSex: F\nSymptoms: Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Fumez-vous la cigarette quotidiennement?; Avez-vous eu un rhume, au cours des 2 dernières semaines?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?\nDifferential diagnosis: Larygospasm (1.0)\nDiagnosis: Larygospasm",
+  "Symptoms_original": "Avez-vous noté un bruit respiratoire aigu surtout à l’inspiration?; Fumez-vous la cigarette quotidiennement?; Avez-vous eu un rhume, au cours des 2 dernières semaines?; Souffrez-vous d’asthme ou avez vous déjà eu une prescription de bronchodilatateurs dans le passé?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?",
+  "Diagnosis_original": "Larygospasm",
+  "Differential Diagnosis_original": "Larygospasm (1.0)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；是否每天吸烟；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟",
+  "Diagnosis_zh": "喉痉挛",
+  "Differential Diagnosis_zh": "喉痉挛（1.0）",
+  "Text_zh": "年龄：47 岁\n性别：女\n症状与病史：症状问诊项；是否每天吸烟；症状问诊项；症状问诊项；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟\n鉴别诊断候选：喉痉挛（1.0）\n最终诊断：喉痉挛"
+}

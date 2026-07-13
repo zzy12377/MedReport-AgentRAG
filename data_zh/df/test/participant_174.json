@@ -1,0 +1,28 @@
+{
+  "Participant No.": 1474,
+  "Age": "45",
+  "Sex": "F",
+  "Symptoms": "Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 8; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous eu plusieurs vomissements ou fait plusieurs efforts pour vomir?",
+  "Diagnosis": "Boerhaave",
+  "Differential Diagnosis": "Boerhaave (0.3186301454738336); Possible NSTEMI / STEMI (0.2793920489153572); Anaphylaxis (0.1355088109215628); Pancreatic neoplasm (0.11799620254428726); Chagas (0.08259635058514625); Scombroid food poisoning (0.065876441559813)",
+  "Level 2": "Boerhaave",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：45 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的疼痛；疼痛性质：如刀割般的疼痛；疼痛性质：令人生厌的疼痛；疼痛部位：上腹部（编码 V_118）；疼痛强度：10；疼痛是否向其他部位放射：否（编码 V_146，V_147）；疼痛定位是否明确：是（4）；疼痛出现速度：快（8）；过去 4 周内是否旅行：否（编码 V_9）；鉴别诊断候选：Boerhaave 综合征（0.3186301454738336）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.2793920489153572）；过敏性休克（0.1355088109215628）；胰腺肿瘤（0.11799620254428726）；恰加斯病（0.08259635058514625）；鲭鱼中毒（0.065876441559813） 最终诊断：Boerhaave 综合征",
+  "Text_original": "Age: 45\nSex: F\nSymptoms: Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 8; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous eu plusieurs vomissements ou fait plusieurs efforts pour vomir?\nDifferential diagnosis: Boerhaave (0.3186301454738336); Possible NSTEMI / STEMI (0.2793920489153572); Anaphylaxis (0.1355088109215628); Pancreatic neoplasm (0.11799620254428726); Chagas (0.08259635058514625); Scombroid food poisoning (0.065876441559813)\nDiagnosis: Boerhaave",
+  "Symptoms_original": "Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: a knife stroke; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 8; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous eu plusieurs vomissements ou fait plusieurs efforts pour vomir?",
+  "Diagnosis_original": "Boerhaave",
+  "Differential Diagnosis_original": "Boerhaave (0.3186301454738336); Possible NSTEMI / STEMI (0.2793920489153572); Anaphylaxis (0.1355088109215628); Pancreatic neoplasm (0.11799620254428726); Chagas (0.08259635058514625); Scombroid food poisoning (0.065876441559813)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；是否有与本次就诊原因相关的疼痛；疼痛性质：如鬼魅般；疼痛性质：如刀割般；疼痛性质：令人不适的；疼痛部位：编码 V_118，上腹部；疼痛强度：10；疼痛是否向其他部位放射：编码 V_146，V_147；疼痛定位是否明确：4；疼痛出现速度：8；是否过量饮酒或存在酒精依赖；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "博雷尔综合征",
+  "Differential Diagnosis_zh": "Boerhaave综合征（0.3186301454738336）；疑似非ST段抬高型或ST段抬高型心肌梗死（0.2793920489153572）；过敏性休克（0.1355088109215628）；胰腺肿瘤（0.11799620254428726）；恰加斯病（0.08259635058514625）；鲭鱼中毒（0.065876441559813）",
+  "Text_zh": "年龄：45 岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的疼痛；疼痛性质：如刀割般的疼痛；疼痛性质：令人生厌的疼痛；疼痛部位：上腹部（编码 V_118）；疼痛强度：10；疼痛是否向其他部位放射：否（编码 V_146，V_147）；疼痛定位是否明确：是（4）；疼痛出现速度：快（8）；过去 4 周内是否旅行：否（编码 V_9）；鉴别诊断候选：Boerhaave 综合征（0.3186301454738336）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.2793920489153572）；过敏性休克（0.1355088109215628）；胰腺肿瘤（0.11799620254428726）；恰加斯病（0.08259635058514625）；鲭鱼中毒（0.065876441559813） 最终诊断：Boerhaave 综合征",
+  "_qwen_refined_at": "2026-07-07T12:38:13",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh",
+    "Diagnosis_zh",
+    "Differential Diagnosis_zh"
+  ]
+}

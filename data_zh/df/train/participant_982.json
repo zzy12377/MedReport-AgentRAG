@@ -1,0 +1,20 @@
+{
+  "Participant No.": 982,
+  "Age": "9",
+  "Sex": "M",
+  "Symptoms": "Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Prenez-vous des corticostéroïdes?; Faites-vous actuellement usage de drogues intraveineuses?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Tuberculosis",
+  "Differential Diagnosis": "Bronchitis (0.13979142717013762); Pneumonia (0.11946955848603963); Pulmonary embolism (0.10105125494555496); Tuberculosis (0.0882654222030052); Guillain-Barré syndrome (0.08652030045476783); Bronchospasm / acute asthma exacerbation (0.08396161255496372); Atrial fibrillation (0.08264253258712925); Myocarditis (0.08161524779796643)",
+  "Level 2": "Tuberculosis",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：9 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否过量饮酒或存在酒精依赖；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.13979142717013762）；肺炎（0.11946955848603963）；肺栓塞（0.10105125494555496）；结核病（0.0882654222030052）；吉兰-巴雷综合征（0.08652030045476783）；支气管痉挛或急性哮喘加重（0.08396161255496372）；心房颤动（0.08264253258712925）；心肌炎（0.08161524779796643）\n最终诊断：结核病",
+  "Text_original": "Age: 9\nSex: M\nSymptoms: Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Prenez-vous des corticostéroïdes?; Faites-vous actuellement usage de drogues intraveineuses?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Bronchitis (0.13979142717013762); Pneumonia (0.11946955848603963); Pulmonary embolism (0.10105125494555496); Tuberculosis (0.0882654222030052); Guillain-Barré syndrome (0.08652030045476783); Bronchospasm / acute asthma exacerbation (0.08396161255496372); Atrial fibrillation (0.08264253258712925); Myocarditis (0.08161524779796643)\nDiagnosis: Tuberculosis",
+  "Symptoms_original": "Avez-vous eu une perte de poids involontaire dans les 3 derniers mois?; Prenez-vous des corticostéroïdes?; Faites-vous actuellement usage de drogues intraveineuses?; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous de la toux?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Tuberculosis",
+  "Differential Diagnosis_original": "Bronchitis (0.13979142717013762); Pneumonia (0.11946955848603963); Pulmonary embolism (0.10105125494555496); Tuberculosis (0.0882654222030052); Guillain-Barré syndrome (0.08652030045476783); Bronchospasm / acute asthma exacerbation (0.08396161255496372); Atrial fibrillation (0.08264253258712925); Myocarditis (0.08161524779796643)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "症状问诊项；症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否过量饮酒或存在酒精依赖；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "结核病",
+  "Differential Diagnosis_zh": "支气管炎（0.13979142717013762）；肺炎（0.11946955848603963）；肺栓塞（0.10105125494555496）；结核病（0.0882654222030052）；吉兰-巴雷综合征（0.08652030045476783）；支气管痉挛或急性哮喘加重（0.08396161255496372）；心房颤动（0.08264253258712925）；心肌炎（0.08161524779796643）",
+  "Text_zh": "年龄：9 岁\n性别：男\n症状与病史：症状问诊项；症状问诊项；症状问诊项；是否明显气短或呼吸困难；是否过量饮酒或存在酒精依赖；是否咳嗽；过去 4 周内是否旅行：编码 V_9；症状问诊项\n鉴别诊断候选：支气管炎（0.13979142717013762）；肺炎（0.11946955848603963）；肺栓塞（0.10105125494555496）；结核病（0.0882654222030052）；吉兰-巴雷综合征（0.08652030045476783）；支气管痉挛或急性哮喘加重（0.08396161255496372）；心房颤动（0.08264253258712925）；心肌炎（0.08161524779796643）\n最终诊断：结核病"
+}

@@ -1,0 +1,26 @@
+{
+  "Participant No.": 751,
+  "Age": "21",
+  "Sex": "F",
+  "Symptoms": "Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Avez-vous déjà eu un diagnostic d’anémie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(R); Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 1; Vous sentez-vous incapable de faire vos activités ou êtes-vous cloué au lit toute la journée?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Prenez-vous des nouveaux anticoagulants oraux?; Croyez-vous être enceinte ou êtes vous présentement enceinte?; Avez-vous noté du sang rouge clair ou des caillots de sang dans vos selles?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis": "Anemia",
+  "Differential Diagnosis": "Anemia (0.617969275174959); Cluster headache (0.382030724825041)",
+  "Level 2": "Anemia",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：21岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛？疼痛性质：敏感、类似抽筋、疲劳；疼痛部位：太阳穴（右侧）、太阳穴（左侧）；疼痛强度：4级；疼痛是否向其他部位放射？疼痛定位是否明确：3；疼痛出现速度：1。过去4周内是否旅行？鉴别诊断候选：贫血（0.617969275174959）、丛集性头痛（0.382030724825041）。最终诊断：贫血。",
+  "Text_original": "Age: 21\nSex: F\nSymptoms: Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Avez-vous déjà eu un diagnostic d’anémie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(R); Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 1; Vous sentez-vous incapable de faire vos activités ou êtes-vous cloué au lit toute la journée?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Prenez-vous des nouveaux anticoagulants oraux?; Croyez-vous être enceinte ou êtes vous présentement enceinte?; Avez-vous noté du sang rouge clair ou des caillots de sang dans vos selles?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?\nDifferential diagnosis: Anemia (0.617969275174959); Cluster headache (0.382030724825041)\nDiagnosis: Anemia",
+  "Symptoms_original": "Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Avez-vous déjà eu un diagnostic d’anémie?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: sensitive; Caractérisez votre douleur:: a cramp; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: V_76; Avez-vous de la douleur quelque part?: V_104; Avez-vous de la douleur quelque part?: temple(R); Avez-vous de la douleur quelque part?: temple(L); Quelle est l’intensité de la douleur?: 4; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 3; À quelle vitesse la douleur est-elle apparue ?: 1; Vous sentez-vous incapable de faire vos activités ou êtes-vous cloué au lit toute la journée?; Souffrez-vous d’insuffisance rénale chronique?; Avez-vous eu récemment des selles noires comme du charbon?; Prenez-vous des nouveaux anticoagulants oraux?; Croyez-vous être enceinte ou êtes vous présentement enceinte?; Avez-vous noté du sang rouge clair ou des caillots de sang dans vos selles?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous un IMC plus petit que 18.5, soit un poids plus petit que la normal?",
+  "Diagnosis_original": "Anemia",
+  "Differential Diagnosis_original": "Anemia (0.617969275174959); Cluster headache (0.382030724825041)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：敏感样；疼痛性质：类似抽筋；疼痛性质：耗竭性；疼痛部位：编码 V_76；疼痛部位：编码 V_104；疼痛部位：右太阳穴；疼痛部位：左太阳穴；疼痛强度：4；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：3；疼痛出现速度：1；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；是否有与本次就诊原因相关的症状；过去 4 周内是否旅行：编码 V_9；是否有与本次就诊原因相关的症状",
+  "Diagnosis_zh": "贫血",
+  "Differential Diagnosis_zh": "贫血（0.617969275174959）；丛集性头痛（0.382030724825041）",
+  "Text_zh": "年龄：21岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛？疼痛性质：敏感、类似抽筋、疲劳；疼痛部位：太阳穴（右侧）、太阳穴（左侧）；疼痛强度：4级；疼痛是否向其他部位放射？疼痛定位是否明确：3；疼痛出现速度：1。过去4周内是否旅行？鉴别诊断候选：贫血（0.617969275174959）、丛集性头痛（0.382030724825041）。最终诊断：贫血。",
+  "_qwen_refined_at": "2026-07-07T12:07:41",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

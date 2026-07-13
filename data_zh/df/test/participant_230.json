@@ -1,0 +1,28 @@
+{
+  "Participant No.": 1530,
+  "Age": "13",
+  "Sex": "F",
+  "Symptoms": "Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_99; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 7; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?",
+  "Diagnosis": "Boerhaave",
+  "Differential Diagnosis": "Boerhaave (1.0)",
+  "Level 2": "Boerhaave",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：13岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的疼痛、剧烈疼痛；疼痛部位：编码 V_42、编码 V_99、编码 V_118、编码 V_121、腹部；疼痛强度：8/10；疼痛是否向其他部位放射：编码 V_52、编码 V_146、编码 V_147；疼痛定位是否明确：5（部分明确）；疼痛出现速度：7（突然发作）；过去4周内是否旅行：编码 V_9；鉴别诊断候选：Boerhaave综合征（1.0）；最终诊断：Boerhaave综合征",
+  "Text_original": "Age: 13\nSex: F\nSymptoms: Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_99; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 7; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?\nDifferential diagnosis: Boerhaave (1.0)\nDiagnosis: Boerhaave",
+  "Symptoms_original": "Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: violent; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_99; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: V_121; Avez-vous de la douleur quelque part?: belly; Quelle est l’intensité de la douleur?: 8; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 5; À quelle vitesse la douleur est-elle apparue ?: 7; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?",
+  "Diagnosis_original": "Boerhaave",
+  "Differential Diagnosis_original": "Boerhaave (1.0)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的；疼痛性质：剧烈的；疼痛部位：编码 V_42；疼痛部位：编码 V_99；疼痛部位：编码 V_118；疼痛部位：编码 V_121；疼痛部位：腹部；疼痛强度：8；疼痛是否向其他部位放射：编码 V_52；疼痛是否向其他部位放射：编码 V_146；疼痛是否向其他部位放射：编码 V_147；疼痛定位是否明确：5；疼痛出现速度：7；是否过量饮酒或存在酒精依赖；过去 4 周内是否旅行：编码 V_9；症状问诊项",
+  "Diagnosis_zh": "博雷尔综合征",
+  "Differential Diagnosis_zh": "博雷尔综合征（1.0）",
+  "Text_zh": "年龄：13岁 性别：女 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：令人困扰的疼痛、剧烈疼痛；疼痛部位：编码 V_42、编码 V_99、编码 V_118、编码 V_121、腹部；疼痛强度：8/10；疼痛是否向其他部位放射：编码 V_52、编码 V_146、编码 V_147；疼痛定位是否明确：5（部分明确）；疼痛出现速度：7（突然发作）；过去4周内是否旅行：编码 V_9；鉴别诊断候选：Boerhaave综合征（1.0）；最终诊断：Boerhaave综合征",
+  "_qwen_refined_at": "2026-07-07T12:44:00",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh",
+    "Diagnosis_zh",
+    "Differential Diagnosis_zh"
+  ]
+}

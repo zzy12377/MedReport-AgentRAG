@@ -1,0 +1,26 @@
+{
+  "Participant No.": 896,
+  "Age": "76",
+  "Sex": "F",
+  "Symptoms": "Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Avez-vous visualisé du sang dans vos crachats?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: posterior chest wall(R); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 6; À quelle vitesse la douleur est-elle apparue ?: 2; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Fumez-vous la cigarette quotidiennement?; Dans le passé, fumiez-vous la cigarette quotidiennement?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?; Avez-vous des membres de votre famille ayant eu le cancer des poumons?",
+  "Diagnosis": "Pulmonary neoplasm",
+  "Differential Diagnosis": "Pulmonary embolism (0.23601129536189405); Pulmonary neoplasm (0.2207968396895229); Possible NSTEMI / STEMI (0.21689274442523748); Acute dystonic reactions (0.11501496169638635); Anemia (0.11501496169638635); Myocarditis (0.09626919713057279)",
+  "Level 2": "Pulmonary neoplasm",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：76 岁 性别：女 症状与病史：是否有痰中带血；是否有关于本次就诊原因的疼痛；疼痛性质：耗竭性；疼痛部位：右侧胸后壁；疼痛强度：1；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：6；疼痛出现速度：2；是否明显气短或呼吸困难；是否每天吸烟；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟。鉴别诊断候选：肺栓塞（0.236）；肺部肿瘤（0.221）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.217）；急性肌张力障碍反应（0.115）；贫血（0.115）；心肌炎（0.096）。最终诊断：肺部肿瘤。",
+  "Text_original": "Age: 76\nSex: F\nSymptoms: Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Avez-vous visualisé du sang dans vos crachats?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: posterior chest wall(R); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 6; À quelle vitesse la douleur est-elle apparue ?: 2; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Fumez-vous la cigarette quotidiennement?; Dans le passé, fumiez-vous la cigarette quotidiennement?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?; Avez-vous des membres de votre famille ayant eu le cancer des poumons?\nDifferential diagnosis: Pulmonary embolism (0.23601129536189405); Pulmonary neoplasm (0.2207968396895229); Possible NSTEMI / STEMI (0.21689274442523748); Acute dystonic reactions (0.11501496169638635); Anemia (0.11501496169638635); Myocarditis (0.09626919713057279)\nDiagnosis: Pulmonary neoplasm",
+  "Symptoms_original": "Ressentez-vous une fatigue constante ou avez-vous un sommeil non réparateur?; Avez-vous visualisé du sang dans vos crachats?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: exhausting; Avez-vous de la douleur quelque part?: posterior chest wall(R); Quelle est l’intensité de la douleur?: 1; Est-ce que la douleur se propage vers un autre endroit?: V_142; À quel point la douleur est-elle précisément localisée?: 6; À quelle vitesse la douleur est-elle apparue ?: 2; Vous sentez-vous essoufflé ou avez vous de la difficulté à respirer de façon importante?; Fumez-vous la cigarette quotidiennement?; Dans le passé, fumiez-vous la cigarette quotidiennement?; Avez-vous voyagé dans les 4 dernières semaines?: V_9; Êtes-vous en contact régulièrement avec de la fumée de cigarette sans être vous-même fumeur?; Avez-vous des membres de votre famille ayant eu le cancer des poumons?",
+  "Diagnosis_original": "Pulmonary neoplasm",
+  "Differential Diagnosis_original": "Pulmonary embolism (0.23601129536189405); Pulmonary neoplasm (0.2207968396895229); Possible NSTEMI / STEMI (0.21689274442523748); Acute dystonic reactions (0.11501496169638635); Anemia (0.11501496169638635); Myocarditis (0.09626919713057279)",
+  "Sex_zh": "女",
+  "Symptoms_zh": "症状问诊项；痰中是否见血；是否有与本次就诊原因相关的疼痛；疼痛性质：耗竭性；疼痛部位：右后胸壁；疼痛强度：1；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：6；疼痛出现速度：2；是否明显气短或呼吸困难；是否每天吸烟；症状问诊项；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟；症状问诊项",
+  "Diagnosis_zh": "肺部肿瘤",
+  "Differential Diagnosis_zh": "肺栓塞（0.23601129536189405）；肺部肿瘤（0.2207968396895229）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.21689274442523748）；急性肌张力障碍反应（0.11501496169638635）；贫血（0.11501496169638635）；心肌炎（0.09626919713057279）",
+  "Text_zh": "年龄：76 岁 性别：女 症状与病史：是否有痰中带血；是否有关于本次就诊原因的疼痛；疼痛性质：耗竭性；疼痛部位：右侧胸后壁；疼痛强度：1；疼痛是否向其他部位放射：编码 V_142；疼痛定位是否明确：6；疼痛出现速度：2；是否明显气短或呼吸困难；是否每天吸烟；过去 4 周内是否旅行：编码 V_9；是否经常接触二手烟。鉴别诊断候选：肺栓塞（0.236）；肺部肿瘤（0.221）；疑似非 ST 段抬高型或 ST 段抬高型心肌梗死（0.217）；急性肌张力障碍反应（0.115）；贫血（0.115）；心肌炎（0.096）。最终诊断：肺部肿瘤。",
+  "_qwen_refined_at": "2026-07-07T12:20:07",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "Participant No.": 431,
+  "Age": "29",
+  "Sex": "M",
+  "Symptoms": "Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: violent; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_99; Avez-vous de la douleur quelque part?: V_100; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 8; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_3; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?; Avez-vous eu plusieurs vomissements ou fait plusieurs efforts pour vomir?",
+  "Diagnosis": "Boerhaave",
+  "Differential Diagnosis": "Boerhaave (1.0)",
+  "Level 2": "Boerhaave",
+  "Level 1": "DDXPlus",
+  "Text": "年龄：29岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：心碎样痛、萦绕痛、剧烈痛、恶心性痛；疼痛部位：上腹部（编码 V_42, V_99, V_100, V_118）；疼痛强度：10/10；疼痛是否向其他部位放射：否（编码 V_52, V_146, V_147）；疼痛定位是否明确：是，程度为4；疼痛出现速度：快，程度为8；过去4周内是否有过量饮酒或存在酒精依赖；过去4周内是否旅行：否（编码 V_3） 鉴别诊断候选：Boerhaave综合征（1.0） 最终诊断：Boerhaave综合征",
+  "Text_original": "Age: 29\nSex: M\nSymptoms: Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: violent; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_99; Avez-vous de la douleur quelque part?: V_100; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 8; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_3; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?; Avez-vous eu plusieurs vomissements ou fait plusieurs efforts pour vomir?\nDifferential diagnosis: Boerhaave (1.0)\nDiagnosis: Boerhaave",
+  "Symptoms_original": "Avez-vous des nausées ou envie de vomir?; Avez-vous de la douleur à quelque part en lien avec votre raison de consultation?; Caractérisez votre douleur:: heartbreaking; Caractérisez votre douleur:: haunting; Caractérisez votre douleur:: violent; Caractérisez votre douleur:: sickening; Avez-vous de la douleur quelque part?: V_42; Avez-vous de la douleur quelque part?: V_99; Avez-vous de la douleur quelque part?: V_100; Avez-vous de la douleur quelque part?: V_118; Avez-vous de la douleur quelque part?: epigastric; Quelle est l’intensité de la douleur?: 10; Est-ce que la douleur se propage vers un autre endroit?: V_52; Est-ce que la douleur se propage vers un autre endroit?: V_146; Est-ce que la douleur se propage vers un autre endroit?: V_147; À quel point la douleur est-elle précisément localisée?: 4; À quelle vitesse la douleur est-elle apparue ?: 8; Prenez-vous de l’alcool de façon excessive ou avez-vous une dépendance à l’alcool?; Avez-vous voyagé dans les 4 dernières semaines?: V_3; Avez-vous récemment remarqué du sang dans vos vomissements ou quelque chose qui ressemble à des grains de café?; Avez-vous eu plusieurs vomissements ou fait plusieurs efforts pour vomir?",
+  "Diagnosis_original": "Boerhaave",
+  "Differential Diagnosis_original": "Boerhaave (1.0)",
+  "Sex_zh": "男",
+  "Symptoms_zh": "是否有与本次就诊原因相关的疼痛；疼痛性质：心碎般的；疼痛性质：令人难忘的；疼痛性质：剧烈的；疼痛性质：恶心的；疼痛部位：编码 V_42；疼痛部位：编码 V_99；疼痛部位：编码 V_100；疼痛部位：编码 V_118；疼痛部位：上腹部；疼痛强度：10；疼痛是否向其他部位放射：编码 V_52；疼痛是否向其他部位放射：编码 V_146；疼痛是否向其他部位放射：编码 V_147；疼痛定位是否明确：4；疼痛出现速度：8；是否过量饮酒或存在酒精依赖；过去 4 周内是否旅行：编码 V_3；症状问诊项；症状问诊项",
+  "Diagnosis_zh": "博雷尔综合征",
+  "Differential Diagnosis_zh": "Boerhaave综合征（1.0）",
+  "Text_zh": "年龄：29岁 性别：男 症状与病史：是否有与本次就诊原因相关的疼痛；疼痛性质：心碎样痛、萦绕痛、剧烈痛、恶心性痛；疼痛部位：上腹部（编码 V_42, V_99, V_100, V_118）；疼痛强度：10/10；疼痛是否向其他部位放射：否（编码 V_52, V_146, V_147）；疼痛定位是否明确：是，程度为4；疼痛出现速度：快，程度为8；过去4周内是否有过量饮酒或存在酒精依赖；过去4周内是否旅行：否（编码 V_3） 鉴别诊断候选：Boerhaave综合征（1.0） 最终诊断：Boerhaave综合征",
+  "_qwen_refined_at": "2026-07-07T11:37:12",
+  "_qwen_model": "qwen2.5:7b-instruct-q4_K_M",
+  "_qwen_refined_fields": [
+    "Text_zh",
+    "Symptoms_zh",
+    "Diagnosis_zh",
+    "Differential Diagnosis_zh"
+  ]
+}
